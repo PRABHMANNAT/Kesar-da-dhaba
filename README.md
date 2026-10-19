@@ -14,6 +14,8 @@ npm run dev
 
 Open http://127.0.0.1:4173. Deploy the `dist` folder on a static host.
 
+For Vercel, import this repository with the repository root as the Root Directory. The committed `vercel.json` selects the static-site preset, runs `npm run build`, and publishes `dist` rather than the default `public` folder.
+
 ## Editing
 
 - `build.mjs`: content, shared layout, menu and page generation.
