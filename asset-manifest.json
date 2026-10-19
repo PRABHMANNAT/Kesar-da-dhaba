@@ -1,0 +1,192 @@
+{
+  "sourceSite": "https://kesardadhaba.com/",
+  "notes": "Authentic source assets downloaded unchanged. Existing website font files retained. Portrait names require verified captions. No food imagery was generated.",
+  "assets": [
+    {
+      "filename": "assets/heritage-border.png",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/07/Untitled-design950.png",
+      "alt": "Traditional yellow and green ornamental border",
+      "bytes": 88411,
+      "width": 750,
+      "height": 80
+    },
+    {
+      "filename": "assets/heritage-border-fine.png",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/06/Untitled-design941.png",
+      "alt": "Fine ornamental heritage border",
+      "bytes": 151773,
+      "width": 1600,
+      "height": 70
+    },
+    {
+      "filename": "assets/hero-thali.jpg",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/02/DSC00060-scaled.jpg",
+      "alt": "Makki roti and saag served with pickle, onion and lime on a metal thali",
+      "bytes": 828862,
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "filename": "assets/seasonal-thali.webp",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/03/Untitled-design624.webp",
+      "alt": "Seasonal makki roti and saag thali",
+      "bytes": 18416,
+      "width": 480,
+      "height": 320
+    },
+    {
+      "filename": "assets/phirni.png",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/03/Untitled-design625.png",
+      "alt": "Phirni served in a traditional earthen dish",
+      "bytes": 99299,
+      "width": 480,
+      "height": 320
+    },
+    {
+      "filename": "assets/storefront.webp",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/07/Untitled-design-95.webp",
+      "alt": "The Kesar Da Dhaba storefront in Amritsar",
+      "bytes": 209852,
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "filename": "assets/founder-lala-kesar-mal.png",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/06/Untitled-design-92.png",
+      "alt": "Founder portrait from the restaurant legacy page",
+      "bytes": 121102,
+      "width": 300,
+      "height": 300
+    },
+    {
+      "filename": "assets/family-portrait.png",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/06/Untitled-design-93.png",
+      "alt": "Family portrait from the restaurant legacy page",
+      "bytes": 124483,
+      "width": 300,
+      "height": 300
+    },
+    {
+      "filename": "assets/family-portrait-2.png",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/07/Copy-of-Untitled-Design.png",
+      "alt": "Family portrait from the restaurant legacy page",
+      "bytes": 64237,
+      "width": 300,
+      "height": 300
+    },
+    {
+      "filename": "assets/achaar.webp",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/03/Join-a-heritage-brand-with-over-100-years-of-trust.-Fill-out-the-form-and-explore-franchise-opportunities-with-Kesar-Da-Dhaba.webp",
+      "alt": "Kesar Da Dhaba pickle photographed in glass bowls",
+      "bytes": 38116,
+      "width": 500,
+      "height": 500
+    },
+    {
+      "filename": "assets/mukhwas.webp",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/03/Join-a-heritage-brand-with-over-100-years-of-trust.-Fill-out-the-form-and-explore-franchise-opportunities-with-Kesar-Da-Dhaba.-1.webp",
+      "alt": "Colourful mukhwas seed mixture",
+      "bytes": 46438,
+      "width": 500,
+      "height": 500
+    },
+    {
+      "filename": "assets/kitchen-cooks.webp",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/07/1-2.webp",
+      "alt": "Cooks preparing breads in the Kesar Da Dhaba kitchen",
+      "bytes": 135692,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "filename": "assets/kitchen-service.webp",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/07/3-1.webp",
+      "alt": "Freshly prepared curries and bread at the kitchen counter",
+      "bytes": 132542,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "filename": "assets/restaurant-counter.webp",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/07/8.webp",
+      "alt": "Restaurant counter with framed family photographs and awards",
+      "bytes": 156520,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "filename": "assets/paranthas.webp",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/07/6.webp",
+      "alt": "Fresh paranthas stacked beside the hot griddle",
+      "bytes": 148126,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "filename": "assets/thali-preparation.webp",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/07/2-3.webp",
+      "alt": "Rows of thalis being prepared in the restaurant kitchen",
+      "bytes": 254866,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "filename": "assets/restaurant-entrance.webp",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/07/4-4.webp",
+      "alt": "Guests gathering at the restaurant entrance",
+      "bytes": 130872,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "filename": "assets/dining-room.png",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/07/52.png",
+      "alt": "Diners sharing a meal inside Kesar Da Dhaba",
+      "bytes": 888353,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "filename": "assets/maragsa-display.woff",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/02/Maragsa-Display.woff",
+      "alt": "Existing website Maragsa display font",
+      "bytes": 37028
+    },
+    {
+      "filename": "assets/futura.woff",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/02/FuturaLT.woff",
+      "alt": "Existing website Futura body font",
+      "bytes": 12704
+    },
+    {
+      "filename": "assets/wordmark-white.png",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2022/04/Untitled-design618.png",
+      "alt": "Official Kesar Da Dhaba white wordmark",
+      "bytes": 30302,
+      "width": 875,
+      "height": 438
+    },
+    {
+      "filename": "assets/lotus-white.png",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2022/04/Untitled-design603.png",
+      "alt": "Official white lotus monogram",
+      "bytes": 46559,
+      "width": 350,
+      "height": 350
+    },
+    {
+      "filename": "assets/supplied-traditional-logo.png",
+      "source": "User supplied local asset: Kesar Da Dhaba Traditional Logo.png",
+      "width": 1996,
+      "height": 788,
+      "bytes": 1307300
+    },
+    {
+      "filename": "assets/supplied-lotus-logo.png",
+      "source": "User supplied local asset: Forest Green Lotus Monogram Logo.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1320714
+    }
+  ]
+}

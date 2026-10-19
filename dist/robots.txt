@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kesar-da-dhaba-heritage.erarnavhooda.chatgpt.site/sitemap.xml

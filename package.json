@@ -1,0 +1,6 @@
+{
+  "name": "kesar-da-dhaba-heritage",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node build.mjs", "dev": "node serve.mjs", "check": "node check.mjs" }
+}
