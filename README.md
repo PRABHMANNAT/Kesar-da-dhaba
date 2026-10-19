@@ -17,9 +17,11 @@ Open http://127.0.0.1:4173. Deploy the `dist` folder on a static host.
 ## Editing
 
 - `build.mjs`: content, shared layout, menu and page generation.
+- `experience.mjs`: signature-dish showcase, photo journal, visit drawer, homepage FAQ and footer composition.
 - `dist/styles.css`: responsive design and typography.
 - `dist/app.js`: menu filtering, mobile navigation and photo viewer.
 - `dist/motion.css` and `dist/motion.js`: headline entrances, scroll reveals, image movement, reading progress and video playback controls.
+- `dist/experience.css` and `dist/experience.js`: accessible dish tabs, six-image gallery navigation, visit planner and address copy.
 - `video-assets.json`: provenance for the two official films and their extracted poster frames.
 - `dist/assets`: original brand photography, graphics and fonts.
 - `asset-manifest.json`: asset sources and metadata.
@@ -40,3 +42,5 @@ The local link checker validates generated pages, anchors and assets. Browser ve
 ## Video and motion
 
 The homepage includes two self-hosted, original Kesar Da Dhaba films. They play muted when at least 25% visible and pause outside the viewport or when the document is hidden. Visitors can pause each film, enable sound, and turn autoplay off. Preferences are saved locally when browser storage is available. Reduced-motion and data-saving preferences disable automatic playback by default. The animation control independently disables visual movement, and operating-system reduced motion always suppresses CSS animation. Native player controls remain available for seeking and fullscreen.
+
+Films also pause while a modal is open. The signature tabs support Left/Right, Home and End keys. The photo journal supports Previous/Next buttons and arrow keys; both modal interfaces close with Escape and restore focus. The visit planner uses the restaurant's published hours rather than claiming real-time availability.

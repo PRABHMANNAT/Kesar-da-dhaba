@@ -16,7 +16,7 @@
     savePreference('kesar-motion-paused',motionPaused);
     paintMotion();
   }));
-  const revealSelectors='.section-heading,.dish,.story-image,.story-copy,.visit-image,.visit-copy,.pantry>div,.pantry-image,.films-intro,.film-card,.history-intro>div,.timeline article,.legacy-text,.contact-cards>div,.faq-section>div,.product';
+  const revealSelectors='.section-heading,.dish,.story-image,.story-copy,.visit-image,.visit-copy,.pantry>div,.pantry-image,.films-intro,.film-card,.history-intro>div,.timeline article,.legacy-text,.contact-cards>div,.faq-section>div,.product,.signature-stage,.signature-tabs,.journal-card,.home-notes>div';
   const revealItems=document.querySelectorAll(revealSelectors);
   if ('IntersectionObserver' in window) {
     const reveals = new IntersectionObserver(entries => entries.forEach(entry => {
@@ -64,12 +64,12 @@
     try {
       if(!state.video.getAttribute('src')){state.video.src=state.video.dataset.src;state.video.load();}
       await state.video.play();
-      if(document.hidden||(!manual&&!state.visible)||(!manual&&!autoplay))systemPause(state);
+      if(document.hidden||document.querySelector('dialog[open]')||(!manual&&!state.visible)||(!manual&&!autoplay))systemPause(state);
     } catch { /* Autoplay may be blocked: the poster and Play button remain usable. */ }
     finally {state.pending=false;paintPlayer(state);}
   };
   const synchronize=()=>states.forEach(state=>{
-    if(document.hidden||!state.visible){systemPause(state);return;}
+    if(document.hidden||document.querySelector('dialog[open]')||!state.visible){systemPause(state);return;}
     if((autoplay||state.manualStarted)&&!state.manualPaused&&state.video.paused)play(state);
   });
   states.forEach(state=>{
@@ -122,6 +122,7 @@
     paintAutoplay();synchronize();
   });
   document.addEventListener('visibilitychange',synchronize);
+  document.addEventListener('kesar:dialogchange',synchronize);
   reduced.addEventListener('change',()=>{
     if(reduced.matches){motionPaused=true;autoplay=false;states.forEach(systemPause);paintMotion();paintAutoplay();}
   });

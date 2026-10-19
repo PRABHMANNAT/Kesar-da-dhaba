@@ -12,7 +12,3 @@ const filterMenu=()=>{
   document.querySelector('.results-count').textContent=`${count} dishes shown`;
 };
 if(search){search.addEventListener('input',filterMenu);document.querySelectorAll('[data-category]').forEach(button=>button.addEventListener('click',()=>{activeCategory=button.dataset.category;document.querySelectorAll('[data-category]').forEach(b=>{const active=b===button;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});filterMenu();}));}
-const dialog=document.querySelector('.photo-dialog');
-document.querySelectorAll('[data-photo]').forEach(button=>button.addEventListener('click',()=>{dialog.querySelector('img').src=button.dataset.photo;dialog.querySelector('img').alt=button.dataset.caption;dialog.querySelector('p').textContent=button.dataset.caption;dialog.showModal();}));
-dialog?.querySelector('.dialog-close').addEventListener('click',()=>dialog.close());
-dialog?.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});
