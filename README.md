@@ -19,6 +19,8 @@ Open http://127.0.0.1:4173. Deploy the `dist` folder on a static host.
 - `build.mjs`: content, shared layout, menu and page generation.
 - `dist/styles.css`: responsive design and typography.
 - `dist/app.js`: menu filtering, mobile navigation and photo viewer.
+- `dist/motion.css` and `dist/motion.js`: headline entrances, scroll reveals, image movement, reading progress and video playback controls.
+- `video-assets.json`: provenance for the two official films and their extracted poster frames.
 - `dist/assets`: original brand photography, graphics and fonts.
 - `asset-manifest.json`: asset sources and metadata.
 - `media.json`: selected image mapping.
@@ -34,3 +36,7 @@ Confirm business hours, contact details, product prices and asset/font usage wit
 ## Verification
 
 The local link checker validates generated pages, anchors and assets. Browser verification covered five pages at 320, 768 and 1280 pixel widths, menu search and categories, mobile navigation, photo viewer and the visitor FAQ.
+
+## Video and motion
+
+The homepage includes two self-hosted, original Kesar Da Dhaba films. They play muted when at least 25% visible and pause outside the viewport or when the document is hidden. Visitors can pause each film, enable sound, and turn autoplay off. Preferences are saved locally when browser storage is available. Reduced-motion and data-saving preferences disable automatic playback by default. The animation control independently disables visual movement, and operating-system reduced motion always suppresses CSS animation. Native player controls remain available for seeking and fullscreen.

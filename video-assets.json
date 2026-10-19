@@ -1,0 +1,25 @@
+{
+  "sourcePage": "https://kesardadhaba.com/",
+  "videos": [
+    {
+      "file": "dist/assets/kesar-heritage.mp4",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/03/Where-Punjabi-heritage-meets-your-plate-%E2%80%94-Kesar-Da-Dhaba-a-journey-through-taste-and-time.kesa_.mp4",
+      "width": 360,
+      "height": 640,
+      "durationSeconds": 16.763401,
+      "poster": "dist/assets/kesar-heritage-poster.jpg",
+      "posterFrameSeconds": 4,
+      "description": "Official portrait film of the restaurant and traditional kitchen. Original footage and audio retained."
+    },
+    {
+      "file": "dist/assets/kesar-memories.mp4",
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/03/For-over-a-century-generations-have-shared-their-trust-memories-and-love-for-flavours-that-re.mp4",
+      "width": 720,
+      "height": 1280,
+      "durationSeconds": 47.209375,
+      "poster": "dist/assets/kesar-memories-poster.jpg",
+      "posterFrameSeconds": 6,
+      "description": "Official customer-story film with original footage, embedded subtitles and audio retained."
+    }
+  ]
+}
