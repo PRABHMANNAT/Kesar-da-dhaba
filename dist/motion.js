@@ -16,7 +16,7 @@
     savePreference('kesar-motion-paused',motionPaused);
     paintMotion();
   }));
-  const revealSelectors='.section-heading,.dish,.story-image,.story-copy,.visit-image,.visit-copy,.pantry>div,.pantry-image,.films-intro,.film-card,.history-intro>div,.timeline article,.legacy-text,.contact-cards>div,.faq-section>div,.product,.signature-stage,.signature-tabs,.journal-card,.home-notes>div';
+  const revealSelectors='.section-heading,.dish,.story-image,.story-copy,.visit-image,.visit-copy,.pantry>div,.pantry-image,.films-intro,.film-card,.history-intro>div,.timeline article,.legacy-text,.contact-cards>div,.faq-section>div,.product,.signature-stage,.signature-tabs,.journal-card,.home-notes>div,.honours-hero-copy,.honours-hero-art,.media-mention,.community-section>div,.honours-food-note>div';
   const revealItems=document.querySelectorAll(revealSelectors);
   if ('IntersectionObserver' in window) {
     const reveals = new IntersectionObserver(entries => entries.forEach(entry => {

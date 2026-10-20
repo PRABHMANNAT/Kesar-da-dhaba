@@ -1,0 +1,31 @@
+{
+  "source": "https://kesardadhaba.com/honors-recognitions/",
+  "marqueeSource": "https://kesardadhaba.com/",
+  "recognitions": [
+    {"id":"zomato","issuer":"Zomato","kind":"honours","label":"Restaurant recognition","title":"Best North Indian Restaurant in Amritsar","years":"2023 · 2024 · 2025","image":"award-1.png"},
+    {"id":"tasteatlas","issuer":"TasteAtlas","kind":"guides","label":"Food guide","title":"A place on the food map","description":"Amritsar’s flavours, shared with food lovers around the world.","image":"award-612.png"},
+    {"id":"redfoodie","issuer":"Redfoodie","kind":"honours","label":"Restaurant recognition","title":"Amritsar’s Best Restaurant","image":"award-933.png"},
+    {"id":"golden-star","issuer":"The Golden Star Awards","kind":"honours","label":"Quality & tradition","title":"The Most Trusted Indian Restaurant for Quality Traditional Food","region":"Punjab","years":"2018","image":"award-935.png"},
+    {"id":"merit","issuer":"Merit Awards & Market Research","kind":"honours","label":"Punjabi flavours","title":"Best Traditional Punjabi Flavour Restaurant in Amritsar","years":"2017","image":"award-936.png"},
+    {"id":"hospitality","issuer":"Hospitality recognition","kind":"honours","label":"Hospitality & trust","title":"The Most Trusted Hospitality Brand for North Indian Cuisines","region":"Punjab","image":"award-937.png"}
+  ],
+  "ratings":[
+    {"issuer":"Tripadvisor","rating":"4.2","image":"award-934.png","label":"User rating shown by Kesar Da Dhaba"},
+    {"issuer":"Justdial","rating":"4.3","image":"award-939.png","label":"User’s Choice rating shown by Kesar Da Dhaba"}
+  ],
+  "media":[
+    {"issuer":"The Hindu","image":"mark-4.png","title":"Lassi. Phirni. Amritsar.","description":"A food-and-travel mention celebrating the indulgent flavours of the city."},
+    {"issuer":"Curly Tales","image":"mark-5.png","title":"A thali worth travelling for.","description":"The restaurant’s archive highlights a mention of its parantha thali."},
+    {"issuer":"The Indian Express","image":"mark-621.png","title":"Recipes with a story.","description":"Coverage of the dhaba’s longstanding dal and laccha parantha traditions."}
+  ],
+  "marquee":[
+    {"name":"The Hindu","image":"mark-4.png"},
+    {"name":"Justdial","image":"mark-3.png"},
+    {"name":"TasteAtlas","image":"mark-2.png"},
+    {"name":"Zomato","image":"award-1.png"},
+    {"name":"FICCI FLO","image":"mark-96.png"},
+    {"name":"Tripadvisor","image":"mark-622.png"},
+    {"name":"The Indian Express","image":"mark-621.png"},
+    {"name":"Curly Tales","image":"mark-5.png"}
+  ]
+}

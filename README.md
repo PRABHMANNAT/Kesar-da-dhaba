@@ -1,6 +1,6 @@
 # Kesar Da Dhaba
 
-A responsive five-page restaurant website using Kesar Da Dhaba's existing green/yellow identity, original photography and brand fonts.
+A responsive six-page restaurant website using Kesar Da Dhaba's existing green/yellow identity, original photography and brand fonts.
 
 ## Run
 
@@ -20,10 +20,12 @@ For Vercel, import this repository with the repository root as the Root Director
 
 - `build.mjs`: content, shared layout, menu and page generation.
 - `experience.mjs`: signature-dish showcase, photo journal, visit drawer, homepage FAQ and footer composition.
+- `honours.mjs` and `honours-data.json`: homepage recognition-logo marquee and the Awards & Honours page, sourced from the official restaurant website.
 - `dist/styles.css`: responsive design and typography.
 - `dist/app.js`: menu filtering, mobile navigation and photo viewer.
 - `dist/motion.css` and `dist/motion.js`: headline entrances, scroll reveals, image movement, reading progress and video playback controls.
 - `dist/experience.css` and `dist/experience.js`: accessible dish tabs, six-image gallery navigation, visit planner and address copy.
+- `dist/honours.css` and `dist/honours.js`: recognition marquee, award filters and culinary illustrations. The marquee pauses on hover and has its own pause control; reduced motion displays a scrollable static strip.
 - `video-assets.json`: provenance for the two official films and their extracted poster frames.
 - `dist/assets`: original brand photography, graphics and fonts.
 - `asset-manifest.json`: asset sources and metadata.
@@ -33,7 +35,7 @@ Build generation preserves CSS, JavaScript and image assets in `dist`.
 
 ## Content
 
-Content and assets were collected from https://kesardadhaba.com/ and its official menu, legacy, shop and contact pages. Restaurant menu prices were not provided on the source page and are intentionally omitted. Shop prices reflect the source and ask customers to confirm availability with the team. Shop enquiries use the existing WhatsApp link; there is no checkout or reservation backend. Footer links for honours, notable visitors and journal lead to the existing website.
+Content and assets were collected from https://kesardadhaba.com/ and its official menu, legacy, shop, honours and contact pages. Restaurant menu prices were not provided on the source page and are intentionally omitted. Shop prices reflect the source and ask customers to confirm availability with the team. Shop enquiries use the existing WhatsApp link; there is no checkout or reservation backend. Awards & Honours is a local page; footer links for notable visitors and journal lead to the existing website. Award wording is attributed to the restaurant’s published recognition archive; community ratings are identified as website snapshots rather than live platform scores. Logo provenance is recorded in `honours-assets.json`.
 
 Confirm business hours, contact details, product prices and asset/font usage with the restaurant before replacing its main website. Update the canonical base URL in `build.mjs` when moving to the final domain.
 
