@@ -10,7 +10,7 @@
   const close = (focus = false) => {
     animations.forEach(animation => animation.cancel());animations = [];
     toggle.setAttribute('aria-expanded','false');
-    toggle.setAttribute('aria-label','Open menu');
+    toggle.setAttribute('aria-label','Open navigation');
     label.textContent = 'Menu';
     nav.hidden = true;
     if (focus) toggle.focus({preventScroll:true});
@@ -19,7 +19,7 @@
     if (!nav.hidden) {close();return;}
     nav.hidden = false;
     toggle.setAttribute('aria-expanded','true');
-    toggle.setAttribute('aria-label','Close menu');
+    toggle.setAttribute('aria-label','Close navigation');
     label.textContent = 'Close';
     if (motion()) {
       animations.push(nav.animate([{opacity:0,transform:'translateY(-8px) scale(.985)'},{opacity:1,transform:'none'}], {duration:220,easing:'cubic-bezier(.2,.8,.2,1)'}));
