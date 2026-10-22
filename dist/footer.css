@@ -31,11 +31,11 @@
 .footer-connect>a:is(:hover,:focus-visible) .footer-social-icon{color:#f7f2e6;transform:translateY(-2px)}
 .footer-connect>a:is(:hover,:focus-visible) .footer-social-name{text-decoration-color:currentColor}
 .footer-content:has(.footer-map){grid-template-columns:1.1fr .95fr .75fr 1.4fr;gap:28px}
-.footer-map{padding:6px;border:1px solid #dcc48a;border-radius:20px;overflow:hidden;background:#f0e6cf;align-self:start;box-shadow:0 0 0 4px #e3ca8409,0 10px 25px #00000018}
-.footer-map iframe{display:block;width:100%;height:165px;border:1px solid #d4c5a3;border-radius:14px;background:#e5e8df;color-scheme:light}
+.footer-map{padding:6px;border:1px solid #ffde59;border-radius:20px;overflow:hidden;background:var(--yellow,#ffde59);align-self:start;box-shadow:0 0 0 4px #ffde5912,0 10px 25px #00000018}
+.footer-map iframe{display:block;width:100%;height:165px;border:1px solid #062c1a24;border-radius:14px;background:#e5e8df;color-scheme:light}
 .footer-map>a{display:flex;align-items:center;justify-content:space-between;gap:15px;min-height:40px;padding:9px 9px 4px;font-size:11px;color:#062c1a;border-radius:10px}
 .footer-map>a>span{font-size:18px}
-.site-footer-refined .footer-map>a:is(:hover,:focus-visible){color:#062c1a;background:#e6d6ae}
+.site-footer-refined .footer-map>a:is(:hover,:focus-visible){color:#062c1a;background:#fff4bb}
 .site-footer-refined a:focus-visible{outline:2px solid #e3ca84;outline-offset:5px;border-radius:3px}
 .site-footer-refined .footer-directions:focus-visible{border-radius:100px}
 .site-footer-refined a:hover{color:#f5d96f}
