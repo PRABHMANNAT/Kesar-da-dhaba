@@ -10,6 +10,7 @@ import { legacyDocument } from './legacy.mjs';
 import { shopDocument } from './shop.mjs';
 import { visitDocument } from './visit.mjs';
 import { reviewsDocument } from './reviews.mjs';
+import { celebritiesDocument } from './celebrities.mjs';
 import { signatureShowcase, journalGallery, photoViewer, visitDrawer, homeNotes } from './experience.mjs';
 
 const dist=path.resolve('dist');
@@ -48,7 +49,9 @@ fs.writeFileSync(path.join(dist,'our-shop','index.html'),shopDocument(origin));
 fs.writeFileSync(path.join(dist,'contact-us','index.html'),visitDocument(origin));
 fs.mkdirSync(path.join(dist,'reviews'),{recursive:true});
 fs.writeFileSync(path.join(dist,'reviews','index.html'),reviewsDocument(origin));
+fs.mkdirSync(path.join(dist,'celebrities'),{recursive:true});
+fs.writeFileSync(path.join(dist,'celebrities','index.html'),celebritiesDocument(origin));
 for(const route of blogRoutes){const dir=path.join(dist,route);fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(path.join(dir,'index.html'),blogArticleDocument(origin,route.split('/')[1]));}
 fs.writeFileSync(path.join(dist,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${origin}/sitemap.xml\n`);
-fs.writeFileSync(path.join(dist,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[...pages,['blogs'],['reviews'],...blogRoutes.map(route=>[route])].map(([s])=>`<url><loc>${origin}/${s?s+'/':''}</loc></url>`).join('')}</urlset>`);
-console.log(`Built ${pages.length + 2 + blogRoutes.length} pages, 404, sitemap and robots.txt.`);
+fs.writeFileSync(path.join(dist,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[...pages,['blogs'],['reviews'],['celebrities'],...blogRoutes.map(route=>[route])].map(([s])=>`<url><loc>${origin}/${s?s+'/':''}</loc></url>`).join('')}</urlset>`);
+console.log(`Built ${pages.length + 3 + blogRoutes.length} pages, 404, sitemap and robots.txt.`);

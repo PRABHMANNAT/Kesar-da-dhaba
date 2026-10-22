@@ -53,3 +53,6 @@
 @media(max-width:380px){.site-header-navigation{gap:10px}.site-header-navigation .menu-toggle{width:44px;min-height:44px;padding:4px;gap:0;justify-content:center}.menu-toggle [data-menu-label]{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.site-header-navigation .brand{gap:7px}.site-header-navigation .brand img{width:32px;height:32px}.site-header-navigation .brand>span{font-size:18px}.site-header-navigation .mobile-nav{left:9px;right:9px;padding-inline:12px}.mobile-nav-links>a{grid-template-columns:20px minmax(0,1fr) 32px;gap:7px}}
 @media(prefers-reduced-motion:reduce){.site-header-navigation *,.site-header-navigation *::before,.site-header-navigation *::after{transition:none!important}}
 .motion-off .site-header-navigation *,.motion-off .site-header-navigation *::before,.motion-off .site-header-navigation *::after{transition:none!important}
+
+/* Keep the full page directory comfortable on smaller laptops. */
+@media(min-width:1024px) and (max-width:1200px){.site-header-navigation{padding-inline:28px}.site-header-navigation .brand>span{font-size:21px}.site-header-navigation .desktop-nav>a{padding-left:6px;padding-right:14px}.site-header-navigation .desktop-nav{gap:0;font-size:12px}}
