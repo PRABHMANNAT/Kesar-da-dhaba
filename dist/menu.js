@@ -99,6 +99,36 @@
   if ('ResizeObserver' in window) new ResizeObserver(syncControls).observe(track);
   syncControls();
 
+  // A single small nudge introduces the horizontal gallery without rotating posts.
+  let hintPlayed = false;
+  let hintFrame = 0;
+  const stopHint = () => {
+    hintPlayed = true;
+    cancelAnimationFrame(hintFrame);
+    track.classList.remove('menu-gallery-hint');
+  };
+  ['pointerdown','touchstart','wheel','keydown','focusin'].forEach(type => track.addEventListener(type, stopHint, {passive:true}));
+  controls.forEach(button => button.addEventListener('pointerdown', stopHint));
+  if ('IntersectionObserver' in window) {
+    const hintObserver = new IntersectionObserver(entries => {
+      if (!entries[0].isIntersecting) { if (hintFrame) stopHint(); return; }
+      if (hintPlayed || !motion() || track.scrollLeft > 2 || track.scrollWidth <= track.clientWidth) return;
+      hintPlayed = true;
+      track.classList.add('menu-gallery-hint');
+      const start = performance.now();
+      const distance = Math.min(34, track.clientWidth * .08);
+      const nudge = time => {
+        if (!motion() || document.hidden) {track.scrollLeft = 0;stopHint();return;}
+        const progress = Math.min(1, (time - start) / 1100);
+        track.scrollLeft = Math.sin(progress * Math.PI) ** 2 * distance;
+        if (progress < 1) hintFrame = requestAnimationFrame(nudge);
+        else {hintFrame = 0;track.scrollLeft = 0;track.classList.remove('menu-gallery-hint');}
+      };
+      hintFrame = requestAnimationFrame(nudge);
+    }, {threshold:.25});
+    hintObserver.observe(track);
+  }
+
   // Attach reel sources only when the card is visible, including horizontal clipping.
   const reels = [...page.querySelectorAll('[data-menu-reel]')].map(video => ({
     video, sound: video.closest('.menu-post-media').querySelector('.menu-reel-sound'), visible: false, pending: false
