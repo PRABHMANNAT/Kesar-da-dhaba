@@ -10,27 +10,22 @@ A cinematic opening followed by an editorial journey through Kesar. Use deep gre
 
 ## Visitor journey
 
-1. Full-width video hero, responsive portrait/landscape cooking footage, heritage headline and menu action.
-2. A second immersive kitchen film introducing the spirit of Kesar and linking to the legacy page.
-3. Yellow animated food ribbon.
-4. Menu welcome adapted from the menu page: thali film postcard, floating dish and original K seal, green View full menu action and PDF download.
-5. A scrollable six-dish menu frame beside an interactive food photograph. Use actual menu descriptions and no invented prices.
-6. Summarised family legacy, labelled Partition train illustration, original legacy film and floating 1916 seal.
-7. Celebrity films: three cards on desktop and a draggable spring-animated deck on mobile. The first album action reveals all 27 photographs; its second click opens the full Celebrities page.
-8. A continuous marquee with all six complete awards: image, issuer, title, years and region. Pause controls and static horizontal scrolling support reduced motion.
-9. Pride of Punjab on solid green, with a complete award photograph, family message and recognition-page link.
-10. Guest review cards, using all 18 existing films and the exact botanical background from the reviews page. Horizontal snapping and swipe gestures, active-card yellow outline, individual play and sound controls, and a Planning a visit strip.
-11. A compact shop introduction using the same botanical background and overlapping product-photo treatment as the shop page.
-12. The shop's video background, with three actual kitchen reels replacing the central photo placeholder. Each reel has sound/play controls and its Instagram link.
-13. Zomato and Swiggy listing actions, with the existing firni cutout.
-14. Instagram post cards from the menu's existing post data, in a horizontal rail with controls.
-15. Three journal stories, followed by the original address, hours, phone and visit actions.
+1. Full-width cooking-video hero, followed by the yellow animated food ribbon. The second Spirit of Kesar video section has been removed.
+2. Menu welcome with the thali film postcard, floating dish, green View full menu action and PDF download. The separate Signature Dishes list has been removed.
+3. A fuller two-paragraph family legacy, Partition train illustration, original legacy film and floating 1916 seal.
+4. Celebrity films and the two-stage 27-photograph album action.
+5. A complete six-award marquee and green Pride of Punjab section.
+6. All 18 guest films with the botanical background, swipe/paging controls, and Planning a visit strip.
+7. A compact shop introduction. Its overlapping square product photographs use intrinsic image heights and an auto-sizing grid, with their captions fully inside the section.
+8. Kitchen films on the shop-style video background, presented as a single Instagram-style carousel. It includes profile header, count, reel caption/link, arrow buttons, dots, keyboard controls and swipe gestures. Videos advance at their end when autoplay is permitted; hidden slides pause. Desktop copy and carousel sit side by side, with a compact stacked mobile layout.
+9. Zomato/Swiggy links, Instagram feed cards and journal stories.
+10. Original address, hours, phone and visit actions beside an interactive Google map and a direct Maps link.
 
 ## Motion and responsiveness
 
-Motion 12.23.24 is locally hosted in dist/assets/home/motion-12.23.24.js, with its MIT license alongside it. Use Motion.animate, Motion.inView and Motion.scroll for word-mask reveals, staggered entrances, hero zoom, film parallax, postcard rotations, dish transitions, photo expansion and spring card gestures. Native horizontal scrolling and pointer dragging preserve normal page scrolling. CSS supplies the continuously moving ribbon, awards and floating cutout.
+Motion 12.23.24 is locally hosted in dist/assets/home/motion-12.23.24.js, with its MIT license alongside it. Use Motion.animate, Motion.inView and Motion.scroll for word-mask reveals, staggered entrances, hero zoom, film parallax, postcard rotations, a perspective-and-parallax legacy film with a floating seal, photo expansion and spring card gestures. Native horizontal scrolling and pointer dragging preserve normal page scrolling. CSS supplies the continuously moving ribbon, awards and floating cutout.
 
-Mobile layouts stack in a clear reading order. Film rails show the next card as a swipe cue, the celebrity deck supports drag plus labelled arrow buttons, shop postcards overlap at a compact size, and the menu list scrolls inside its frame. At tablet and desktop widths, editorial sections become two columns and reviews/celebrity films show three cards.
+Mobile layouts stack in a clear reading order. Film rails show the next card as a swipe cue, the celebrity deck supports drag plus labelled arrow buttons, shop postcards overlap at a compact size, and the kitchen-reel carousel shows one video at a time. At tablet and desktop widths, editorial sections become two columns and reviews/celebrity films show three cards.
 
 Respect system reduced motion, data saving and saved autoplay preferences. The homepage motion preference is separate from other pages. Videos load on visibility and pause when offscreen, behind a dialog or in a hidden tab; inactive stacked celebrity films pause. Only one film can be audible. Posters remain visible without autoplay. Interactive controls are keyboard accessible and all actions have accessible names. Animation failure leaves the content readable.
 
