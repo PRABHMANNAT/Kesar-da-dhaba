@@ -12,7 +12,7 @@
  dialog.querySelector('button').addEventListener('click',()=>dialog.close());
  dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();}});
  dialog.addEventListener('close',()=>opener?.focus({preventScroll:true}));
- document.querySelectorAll('[data-share-post]').forEach(button=>button.addEventListener('click',async()=>{const status=document.querySelector('.legacy-share-status');try{const url=location.origin+'/our-legacy/#postcards-title';if(navigator.share)await navigator.share({title:'Postcards from our past — Kesar Da Dhaba',url});else{await navigator.clipboard.writeText(url);status.textContent='Link copied. Share a little Kesar.';}}catch(error){if(error.name!=='AbortError')status.textContent='Copy this page’s address to share the postcards.';}}));
+ document.querySelectorAll('[data-share-post]').forEach(button=>button.addEventListener('click',async()=>{const status=document.querySelector('.legacy-share-status');try{const url=location.origin+'/our-legacy/#postcards-title';if(navigator.share)await navigator.share({title:'From Sheikhupura to Amritsar — Kesar Da Dhaba',url});else{await navigator.clipboard.writeText(url);status.textContent='Link copied. Share a little Kesar.';}}catch(error){if(error.name!=='AbortError')status.textContent='Copy this page’s address to share the postcards.';}}));
 })();
 // Touch feedback for the history photograph without intercepting page scrolling.
 (() => {
@@ -25,4 +25,30 @@
   timer=setTimeout(()=>photo.classList.remove('is-photo-touched'),1300);
  },{passive:true});
  photo?.addEventListener('pointercancel',()=>{clearTimeout(timer);photo.classList.remove('is-photo-touched');},{passive:true});
+})();
+// Rotate only while the opening photograph is visible; keep user pause preferences.
+(() => {
+ const frame=document.querySelector('.legacy-slideshow');
+ if(!frame)return;
+ const slides=[...frame.querySelectorAll('img')],button=frame.querySelector('button');
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ let index=0,visible=false,paused=reduced.matches,timer;
+ const update=()=>{
+  clearInterval(timer);
+  button.setAttribute('aria-pressed',String(paused));
+  button.setAttribute('aria-label',paused?'Play photo slideshow':'Pause photo slideshow');
+  button.firstElementChild.textContent=paused?'▷':'Ⅱ';
+  if(paused||!visible||document.hidden)return;
+  timer=setInterval(()=>{
+   const next=(index+1)%slides.length;
+   if(!slides[next].complete||!slides[next].naturalWidth)return;
+   slides[index].classList.remove('is-current');slides[index].setAttribute('aria-hidden','true');
+   index=next;slides[index].classList.add('is-current');slides[index].removeAttribute('aria-hidden');
+  },2000);
+ };
+ new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;update();},{threshold:.15}).observe(frame);
+ button.addEventListener('click',()=>{paused=!paused;update();});
+ document.addEventListener('visibilitychange',update);
+ reduced.addEventListener('change',()=>{paused=reduced.matches;update();});
+ update();
 })();
