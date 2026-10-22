@@ -36,3 +36,4 @@
 
 /* Mobile masthead: legacy on the left, visit action on the right. */
 @media(max-width:600px){}@media(max-width:360px){}
+@media(max-width:1023px){.journal-card .journal-image-contain img{object-fit:cover;object-position:center 35%;width:100%;height:100%}}
