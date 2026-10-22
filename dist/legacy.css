@@ -72,3 +72,15 @@
 @keyframes legacy-postcard-zoom{from{transform:scale(1.2);filter:brightness(.85)}to{transform:scale(1.09);filter:brightness(1)}}
 @keyframes legacy-postcard-light{from{translate:-80% 0}to{translate:80% 0}}
 @media(prefers-reduced-motion:reduce){.legacy-post-image.is-image-revealing:after{display:none}}
+
+/* An illustrated journey above the original place-to-place route. */
+.legacy-journey{margin:34px 0 0;max-width:520px;padding:14px 16px 12px;background:#fffdf5;border:1px solid #dbd3bc;border-radius:18px;box-shadow:0 12px 30px #062c1a08;overflow:hidden}
+.legacy-journey>img{display:block;width:100%;height:auto;border-radius:9px;mix-blend-mode:multiply}
+.legacy-journey-route{display:grid;grid-template-columns:auto minmax(44px,1fr) auto;align-items:center;gap:18px;margin-top:14px;padding:0 6px}
+.legacy-journey-route>span:last-child{text-align:right}
+.legacy-journey-route strong{display:block;font:400 26px/1.2 Georgia,serif;color:#062c1a}
+.legacy-journey-route small{display:block;margin-top:5px;font:11px/1.4 var(--sans);letter-spacing:.04em;color:#626f57}
+.legacy-journey-line svg{display:block;width:100%;height:24px;stroke:#a38d50;stroke-width:1.5}
+.legacy-journey-line circle{fill:#a38d50}
+.legacy-journey figcaption{margin-top:14px;padding-top:10px;border-top:1px solid #e8e0cc;text-align:center;font:10px/1.4 var(--sans);color:#74775f;letter-spacing:.03em}
+@media(max-width:700px){.legacy-journey{margin-top:28px;max-width:none;padding:10px 12px 11px;border-radius:14px}.legacy-journey-route{gap:14px}.legacy-journey-route strong{font-size:24px}.legacy-journey-route small{font-size:10px}}
