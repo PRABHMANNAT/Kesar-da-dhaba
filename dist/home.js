@@ -9,7 +9,7 @@
  const videos=[...root.querySelectorAll('[data-kh-video]')];
  const visible=new Set(),manual=new Set();
  const auto=()=>motion()&&!navigator.connection?.saveData&&read('kesar-autoplay')!=='false';
- const load=video=>{if(!video.hasAttribute('src'))video.src=video.dataset.khVideo;};
+ const load=video=>{if(!video.hasAttribute('src'))video.src=video.dataset.khMobile&&matchMedia('(max-width:760px)').matches?video.dataset.khMobile:video.dataset.khVideo;};
  const syncVideos=()=>videos.forEach(video=>{
   if(visible.has(video)&&!document.hidden&&!document.querySelector('dialog[open]')&&(auto()||manual.has(video))){
    load(video);video.play().catch(()=>{});
