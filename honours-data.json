@@ -3,21 +3,34 @@
   "marqueeSource": "https://kesardadhaba.com/",
   "recognitions": [
     {"id":"zomato","issuer":"Zomato","kind":"honours","label":"Restaurant recognition","title":"Best North Indian Restaurant in Amritsar","years":"2023 · 2024 · 2025","image":"award-1.png"},
-    {"id":"tasteatlas","issuer":"TasteAtlas","kind":"guides","label":"Food guide","title":"A place on the food map","description":"Amritsar’s flavours, shared with food lovers around the world.","image":"award-612.png"},
+    {"id":"tasteatlas","issuer":"TasteAtlas","kind":"guides","label":"Food guide recognition","title":"Best North Indian Restaurant in Amritsar","years":"2024 · 2025","image":"award-612.png"},
     {"id":"redfoodie","issuer":"Redfoodie","kind":"honours","label":"Restaurant recognition","title":"Amritsar’s Best Restaurant","image":"award-933.png"},
     {"id":"golden-star","issuer":"The Golden Star Awards","kind":"honours","label":"Quality & tradition","title":"The Most Trusted Indian Restaurant for Quality Traditional Food","region":"Punjab","years":"2018","image":"award-935.png"},
     {"id":"merit","issuer":"Merit Awards & Market Research","kind":"honours","label":"Punjabi flavours","title":"Best Traditional Punjabi Flavour Restaurant in Amritsar","years":"2017","image":"award-936.png"},
-    {"id":"hospitality","issuer":"Hospitality recognition","kind":"honours","label":"Hospitality & trust","title":"The Most Trusted Hospitality Brand for North Indian Cuisines","region":"Punjab","image":"award-937.png"}
+    {"id":"hospitality","issuer":"IPSA","kind":"honours","label":"Hospitality & trust","title":"The Most Trusted Hospitality Brand for North Indian Cuisines","region":"Punjab","image":"award-937.png"}
   ],
   "ratings":[
     {"issuer":"Tripadvisor","rating":"4.2","image":"award-934.png","label":"User rating shown by Kesar Da Dhaba"},
     {"issuer":"Justdial","rating":"4.3","image":"award-939.png","label":"User’s Choice rating shown by Kesar Da Dhaba"}
   ],
-  "media":[
-    {"issuer":"The Hindu","image":"mark-4.png","title":"Lassi. Phirni. Amritsar.","description":"A food-and-travel mention celebrating the indulgent flavours of the city."},
-    {"issuer":"Curly Tales","image":"mark-5.png","title":"A thali worth travelling for.","description":"The restaurant’s archive highlights a mention of its parantha thali."},
-    {"issuer":"The Indian Express","image":"mark-621.png","title":"Recipes with a story.","description":"Coverage of the dhaba’s longstanding dal and laccha parantha traditions."}
+  "reviews":[
+    {"issuer":"The Hindu","image":"mark-4.png","quote":true,"text":"Lassi so thick you need a spoon to scoop it, served with dollops of ghee.","note":"The review also celebrates creamy phirni served in earthen pots. Excerpt from our official archive."},
+    {"issuer":"Curly Tales","image":"mark-5.png","quote":true,"text":"Try paratha thali at the iconic Kesar Da Dhaba in Amritsar.","note":"A recommendation featured in our official archive."},
+    {"issuer":"The Indian Express","image":"mark-621.png","quote":true,"text":"This Amritsar dhaba has a century-old recipe of ‘mah ki daal’ and laccha parantha.","note":"A review featured in our official archive."},
+    {"issuer":"Secret Sauce","quote":false,"text":"A landmark of the Golden City, celebrated in the stories of India’s great restaurants.","note":"A mention in Secret Sauce – Inspiring Stories of Great Indian Restaurants. Summarised from our archive."},
+    {"issuer":"Sluurrp","quote":false,"text":"A journey through Amritsar’s food, with Kesar Da Dhaba at the heart of the experience.","note":"A food-and-travel mention. Summarised from our official archive."}
   ],
+  "instagram": {
+    "profile":"https://www.instagram.com/kesardadhaba/",
+    "handle":"@kesardadhaba",
+    "images":[
+      {"file":"prantha-thali-with-dal-and-raita-instagram-post.jpg","label":"The Kesar table","alt":"Punjabi prantha thali with dal, raita and curries"},
+      {"file":"guests-sharing-a-meal-instagram-post.jpg","label":"A warm welcome","alt":"Guests sharing a meal as the Kesar team serves them"},
+      {"file":"original-dhaba-storefront-instagram-post.jpg","label":"One original address","alt":"The original Kesar Da Dhaba sign and storefront in Amritsar"},
+      {"file":"busy-dining-room-service-instagram-post.jpg","label":"Everyday, extraordinary","alt":"Service in the bustling Kesar Da Dhaba dining room"},
+      {"file":"pranthas-and-dal-table-spread-instagram-post.jpg","label":"Made to be shared","alt":"Pranthas and dal laid out for a shared Punjabi meal"}
+    ]
+  },
   "marquee":[
     {"name":"The Hindu","image":"mark-4.png"},
     {"name":"Justdial","image":"mark-3.png"},

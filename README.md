@@ -20,12 +20,13 @@ For Vercel, import this repository with the repository root as the Root Director
 
 - `build.mjs`: content, shared layout, menu and page generation.
 - `experience.mjs`: signature-dish showcase, photo journal, visit drawer, homepage FAQ and footer composition.
-- `honours.mjs` and `honours-data.json`: homepage recognition-logo marquee and the Awards & Honours page, sourced from the official restaurant website.
+- `honours.mjs`, `honours-sections.mjs` and `honours-data.json`: homepage recognition-logo marquee and the Awards & Honours page, sourced from the official restaurant website. The page includes six recognitions, two published rating snapshots, five attributed press excerpts/summaries and five original Instagram photographs.
 - `dist/styles.css`: responsive design and typography.
 - `dist/app.js`: menu filtering, mobile navigation and photo viewer.
 - `dist/motion.css` and `dist/motion.js`: headline entrances, scroll reveals, image movement, reading progress and video playback controls.
 - `dist/experience.css` and `dist/experience.js`: accessible dish tabs, six-image gallery navigation, visit planner and address copy.
-- `dist/honours.css` and `dist/honours.js`: recognition marquee, award filters and culinary illustrations. The marquee pauses on hover and has its own pause control; reduced motion displays a scrollable static strip.
+- `dist/honours.css` and `dist/honours.js`: recognition marquee, animated award filters, culinary illustrations, manual press-review navigation and the Instagram gallery. Reviews support previous/next, publication selectors, arrow keys, Home/End and touch swipes; the Instagram strip uses native horizontal scrolling and scroll snapping on mobile. Native Web Animations provide entrances and transitions without a React dependency. The page pause control and system reduced-motion preference suppress animation. Reviews remain readable as a full list without JavaScript.
+- `dist/assets/instagram`: original downloaded images from the shared official Instagram feed, copied from the supplied asset collection. Gallery links open the official profile. This is a curated selection, not a live feed; provenance is recorded in `honours-assets.json`.
 - `video-assets.json`: provenance for the two official films and their extracted poster frames.
 - `dist/assets`: original brand photography, graphics and fonts.
 - `asset-manifest.json`: asset sources and metadata.
