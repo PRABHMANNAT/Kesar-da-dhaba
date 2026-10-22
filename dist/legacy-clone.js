@@ -1,46 +1,5 @@
 (() => {
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-  const panel = document.querySelector('.sidemenu');
-  const page = document.querySelector('#page');
-  const toggles = [...document.querySelectorAll('.menu-toggle')];
-  const close = panel?.querySelector('.close-button');
-  let opener;
-  const closeMenu = () => {
-    panel?.classList.remove('show');
-    panel?.setAttribute('aria-hidden','true');
-    toggles.forEach(toggle => toggle.setAttribute('aria-expanded','false'));
-    document.body.classList.remove('legacy-menu-open');
-    if (page) page.inert = false;
-    opener?.focus();
-  };
-  toggles.forEach(toggle => {
-    if (!toggle.matches('button,a[href]')) toggle.tabIndex = 0;
-    toggle.addEventListener('click', () => {
-      opener = toggle;
-      panel?.classList.add('show');
-      panel?.setAttribute('aria-hidden','false');
-      toggles.forEach(button => button.setAttribute('aria-expanded','true'));
-      document.body.classList.add('legacy-menu-open');
-      if (page) page.inert = true;
-      requestAnimationFrame(() => close?.focus());
-    });
-    if (!toggle.matches('button')) toggle.addEventListener('keydown', event => {
-      if (event.key === 'Enter' || event.key === ' ') {event.preventDefault();toggle.click();}
-    });
-  });
-  close?.addEventListener('click', closeMenu);
-  panel?.addEventListener('click', event => {if (event.target === panel || event.target.closest('a')) closeMenu();});
-  document.addEventListener('keydown', event => {
-    if (!panel?.classList.contains('show')) return;
-    if (event.key === 'Escape') {event.preventDefault();closeMenu();}
-    if (event.key === 'Tab') {
-      const items = [...panel.querySelectorAll('a[href],button,[tabindex="0"]')].filter(el => el.getClientRects().length);
-      const first = items[0], last = items.at(-1);
-      if (event.shiftKey && document.activeElement === first) {event.preventDefault();last?.focus();}
-      else if (!event.shiftKey && document.activeElement === last) {event.preventDefault();first?.focus();}
-    }
-  });
-
   const header = document.querySelector('#masthead');
   const sticky = document.querySelector('.custom-sticky-header');
   const banner = document.querySelector('#content .pt-parallax-on-scroll');

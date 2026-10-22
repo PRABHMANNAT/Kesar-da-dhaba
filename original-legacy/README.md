@@ -7,3 +7,5 @@ Captured from https://kesardadhaba.com/our-legacy/ on 2026-10-22.
 The original responsive styles and content are retained. Native adapters in `dist/legacy-clone.js` handle navigation, sticky headers, parallax, back-to-top and the gallery. Instagram thumbnails are a static snapshot; links open the original posts.
 
 Rebuild the site with `node build.mjs`. To refresh the prepared snapshot after source changes, run `python original-legacy/prepare.py` (requires BeautifulSoup), then `node original-legacy/mirror.mjs`, then rebuild.
+
+Navigation now uses siteHeader from navigation.mjs, with scoped theme compatibility styles in dist/legacy-navigation.css. The rest of the original page remains the clone baseline.

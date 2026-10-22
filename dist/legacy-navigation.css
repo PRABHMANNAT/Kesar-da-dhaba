@@ -1,0 +1,30 @@
+/* Scoped foundation for the same shared header used on the redesigned pages. */
+@font-face{font-family:Maragsa;src:url('/assets/maragsa-display.woff') format('woff');font-display:swap}
+@font-face{font-family:Futura;src:url('/assets/futura.woff') format('woff');font-display:swap}
+.original-legacy-clone{--green:#062c1a;--yellow:#ffde59;--ivory:#f7f2e7;--line:#d7d9cc;--serif:Maragsa,Georgia,serif;--sans:Futura,'Trebuchet MS',sans-serif;--gutter:clamp(24px,5.5vw,88px)}
+.original-legacy-clone .site-header-navigation,.original-legacy-clone .announcement{font-family:var(--sans);line-height:1.65;color:var(--green)}
+.original-legacy-clone .site-header-navigation *{box-sizing:border-box}
+.original-legacy-clone .site-header-navigation a{color:inherit;text-decoration:none}
+.original-legacy-clone .site-header-navigation button{font-family:inherit;cursor:pointer;letter-spacing:normal;text-transform:none}
+.original-legacy-clone .site-header-navigation [hidden]{display:none!important}
+.original-legacy-clone .announcement{background:var(--green);color:var(--ivory);display:flex;justify-content:space-between;align-items:center;padding:8px var(--gutter);font-size:10px;letter-spacing:.16em;line-height:1.4}
+.original-legacy-clone .announcement b{color:var(--yellow);margin:0 14px;font-weight:400}
+.original-legacy-clone .site-header-navigation{height:102px;display:flex;align-items:center;justify-content:space-between;padding:0 var(--gutter);background:var(--ivory);position:sticky;top:0;left:auto;right:auto;width:100%;z-index:1001;border-bottom:1px solid #062c1a1f}
+.original-legacy-clone .brand{display:flex;gap:12px;align-items:center;white-space:nowrap}
+.original-legacy-clone .brand img{width:51px;height:51px;object-fit:contain;filter:url('/assets/monogram-ink.svg#ink')}
+.original-legacy-clone .brand>span{font-family:var(--serif);font-size:24px;letter-spacing:-.03em;line-height:1}
+.original-legacy-clone .brand small{display:block;font-family:var(--sans);font-size:8px;letter-spacing:.16em;margin-top:9px}
+.original-legacy-clone .desktop-nav{display:flex;align-items:center}
+.original-legacy-clone .desktop-nav a{position:relative}
+.original-legacy-clone .desktop-nav a::after{content:'';position:absolute;height:1px;background:var(--green);transform:scaleX(0);transform-origin:left}
+.original-legacy-clone .desktop-nav a[aria-current]::after{transform:scaleX(1)}
+.original-legacy-clone .skip{position:absolute;left:20px;top:-80px;background:var(--yellow);padding:12px 20px;z-index:1100;color:var(--green)}
+.original-legacy-clone .skip:focus{top:10px}
+@media(max-width:1023px){.original-legacy-clone .announcement{justify-content:center;font-size:9px;padding-block:9px}.original-legacy-clone .announcement>span:first-child{display:none}.original-legacy-clone .site-header-navigation{height:82px;padding-inline:24px}.original-legacy-clone .brand>span{font-size:21px}.original-legacy-clone .brand img{width:43px;height:43px}.original-legacy-clone .brand small{font-size:7px}.original-legacy-clone .site-header-navigation .desktop-nav{display:none}}
+@media(max-width:600px){.original-legacy-clone .announcement{font-size:8px;letter-spacing:.12em}.original-legacy-clone .site-header-navigation{height:77px;padding-inline:20px;gap:15px}.original-legacy-clone .brand{gap:9px}.original-legacy-clone .brand>span{font-size:19px}.original-legacy-clone .brand img{width:38px;height:38px}.original-legacy-clone .brand small{font-size:6.5px;letter-spacing:.12em}}
+@media(max-width:380px){.original-legacy-clone .site-header-navigation .brand{gap:7px}.original-legacy-clone .site-header-navigation .brand img{width:32px;height:32px}.original-legacy-clone .site-header-navigation .brand>span{font-size:18px}}
+/* Neutralize the original theme's hamburger and navigation sizing. */
+.original-legacy-clone .site-header-navigation .menu-toggle{width:auto;min-width:0;height:auto;font-size:13px!important;line-height:1.4;flex:0 0 auto}
+.original-legacy-clone .site-header-navigation .menu-toggle::before,.original-legacy-clone .site-header-navigation .menu-toggle::after{display:none;content:none}
+.original-legacy-clone .site-header-navigation .mobile-nav{width:auto;min-width:0}
+@media(max-width:380px){.original-legacy-clone .site-header-navigation .menu-toggle{width:44px}}

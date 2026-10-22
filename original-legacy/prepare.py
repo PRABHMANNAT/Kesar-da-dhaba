@@ -80,6 +80,13 @@ for node in gallery.select('a'):
 feed = soup.select_one('#instagram-gallery-feed-0')
 if feed:
     feed.replace_with(gallery.select_one('#instagram-gallery-feed-0'))
+# Reuse the redesigned site's shared navigation above the original content.
+for node in soup.select('#masthead, #sticky-site-header, .sidemenu'):
+    node.decompose()
+soup.select_one('#page').insert(0, '__SHARED_LEGACY_HEADER__')
+soup.head.append(soup.new_tag('link', rel='stylesheet', href='/legacy-navigation.css'))
+soup.head.append(soup.new_tag('link', rel='stylesheet', href='/navigation.css'))
+soup.body.append(soup.new_tag('script', src='/navigation.js', defer=''))
 resources = set()
 def collect(value):
     if value and not value.startswith(('data:', '#')):
@@ -87,7 +94,7 @@ def collect(value):
         if urlparse(url).scheme in ['https', 'http']:
             resources.add(url)
 for node in soup.select('link[rel="stylesheet"],link[rel="icon"],link[rel="apple-touch-icon"]'):
-    if not node.get('href', '').startswith('/legacy-clone'):
+    if not node.get('href', '').startswith(('/legacy-clone', '/legacy-navigation', '/navigation')):
         collect(node.get('href'))
 for node in soup.select('img,source,video,[data-pt-background-image]'):
     for attr in ['src', 'poster', 'data-pt-background-image']:
