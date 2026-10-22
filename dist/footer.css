@@ -85,3 +85,5 @@
 @media(prefers-reduced-motion:reduce){.footer-directory>nav>a:hover>span:last-child{transform:none}}
 
 .site-footer-refined .footer-brand{grid-column:auto}.site-footer-refined .footer-brand>a{display:block}.site-footer-refined .footer-brand p{display:block}
+
+.site-footer-refined .footer-directory>.footer-colophon{margin-top:0;padding-top:0;border-top:0}
