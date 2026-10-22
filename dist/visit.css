@@ -209,3 +209,35 @@
  .arrival-find-grid .arrival-map-bottom .arrival-button{margin-top:8px}
 }
 @media(prefers-reduced-motion:reduce){.arrival-contact.is-visible .arrival-contact-links>a,.arrival-contact.is-visible .arrival-contact-icon{animation:none}.arrival-contact-links a:hover .arrival-contact-icon{rotate:none}}
+/* Mobile hero: compact introduction, paired actions and an earlier film preview. */
+@media(max-width:700px){
+ .arrival-opening{width:calc(100% - 28px);margin-top:14px;border-radius:20px;box-shadow:0 12px 35px #062c1a10}
+ .arrival-opening-copy{padding:25px 22px 20px}
+ .arrival-opening-copy .arrival-kicker{font-size:9px;letter-spacing:.13em;color:#d8c57d}
+ .arrival-opening h1{display:flex;align-items:baseline;gap:.18em;font-size:clamp(42px,13vw,64px);line-height:1.08;letter-spacing:-.055em;margin:15px 0 12px;white-space:nowrap}
+ .arrival-opening h1 em{display:inline}
+ .arrival-opening-copy>p{font-size:14px;line-height:1.55;margin:0 0 20px}
+ .arrival-hero-actions{display:grid;grid-template-columns:1.35fr 1fr;gap:10px}
+ .arrival-hero-actions .arrival-button{width:100%;min-height:50px;gap:8px;padding:7px 8px 7px 15px;font-size:12px;white-space:nowrap}
+ .arrival-hero-actions .arrival-button>span{width:32px;height:32px;font-size:22px}
+ .arrival-hero-actions .arrival-call-link{min-width:0;min-height:50px;padding:10px 12px;font-size:12px;gap:8px;white-space:nowrap}
+ .arrival-hero-actions .arrival-call-link>svg{width:17px;height:17px;flex-shrink:0}
+ .arrival-hero-actions .arrival-call-link>span{display:none}
+ .arrival-welcome-note{margin-top:18px;padding-top:13px;font-size:9px;line-height:1.5;color:#d6ddc7}
+ .arrival-opening-photo{aspect-ratio:4/5;min-height:0;border-radius:0}
+ .arrival-opening-photo>video{object-position:center}
+ .arrival-opening-photo .kesar-video-controls{left:14px;right:14px;bottom:14px}
+ .arrival-opening-photo .kesar-video-controls button{min-height:40px;padding:9px 14px}
+ .arrival-opening .arrival-details{display:grid;grid-template-columns:1fr 1fr;gap:0;padding:0 20px;border-top-width:2px}
+ .arrival-opening .arrival-detail{padding:18px 0;min-width:0}
+ .arrival-opening .arrival-detail:first-child{grid-column:1/-1;padding:18px 0 15px}
+ .arrival-opening .arrival-detail:nth-child(2){padding-right:13px;border-bottom:0}
+ .arrival-opening .arrival-detail:last-child{padding-left:14px;border-left:1px solid #d7cfb5;margin-block:18px;padding-block:0}
+ .arrival-opening .arrival-detail h3{font-size:9px!important;gap:6px;margin-bottom:9px}
+ .arrival-opening .arrival-detail h3 svg{width:15px;height:15px}
+ .arrival-opening .arrival-detail address{font-size:13px;line-height:1.6}
+ .arrival-opening .arrival-detail-value{font-size:clamp(16px,4.7vw,22px);line-height:1.35;white-space:nowrap}
+ .arrival-opening .arrival-detail-value>span{display:none}
+ .arrival-opening .arrival-detail-note{font-size:10px;line-height:1.6;margin-top:7px}
+ .arrival-opening .arrival-copy-address{padding-top:7px;min-height:30px}
+}
