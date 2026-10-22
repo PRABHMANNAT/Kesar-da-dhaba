@@ -64,3 +64,5 @@
 [data-kh-cycle]{position:relative}[data-kh-cycle]:after{content:"";display:inline-block;width:2px;height:.7em;margin-left:5px;background:currentColor;opacity:0}.is-typing[data-kh-cycle]:after{opacity:.7}.kh-motion-paused [data-kh-cycle]:after{display:none}
 
 .kh-life-link{width:100%;max-width:380px;margin-top:28px;min-height:64px;font-size:15px;white-space:normal;text-align:left}.kh-life-link>span{width:45px;height:45px}
+
+.kh-review-divider{display:flex;align-items:center;justify-content:center;gap:24px;background:#ffde59;color:#062c1a;padding:24px 20px;border-block:1px solid #d6bc52}.kh-review-divider p{font:italic clamp(25px,4vw,45px)/1.2 Georgia,serif;letter-spacing:-.04em}.kh-review-divider>span{font-size:22px}
