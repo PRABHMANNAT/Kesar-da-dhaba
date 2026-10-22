@@ -23,7 +23,10 @@
 .footer-inline-link{display:inline-flex;align-items:center;gap:20px;min-height:44px;font-size:12px;border-bottom:1px solid #c9bc8e88;margin-top:10px}
 .footer-inline-link>span{color:#e3ca84;font-size:19px}
 .footer-connect>a{display:flex;align-items:center;max-width:180px;gap:11px;font-size:12px;min-height:48px}
-.footer-connect>a>span:last-child{margin-left:auto;color:#b4c3ad}
+.footer-connect>a>span:last-child{margin-left:auto;color:#ffde59}
+.footer-social-arrow{display:grid;place-items:center;width:28px;height:28px;overflow:hidden}
+.footer-social-arrow svg{width:19px;height:19px;transition:transform .25s ease}
+.footer-connect>a:is(:hover,:focus-visible) .footer-social-arrow svg{transform:translate(2px,-2px)}
 .footer-social-icon{display:grid;place-items:center;flex:0 0 27px;width:27px;height:27px;color:#e3ca84;transition:color .2s,transform .2s}
 .footer-social-icon svg{width:23px;height:23px}
 .footer-connect>a{color:#f7f2e6}
@@ -72,4 +75,4 @@
   .site-footer-refined .footer-bottom>nav{gap:20px}
 }
 @media(max-width:370px){.footer-identity strong{font-size:23px;white-space:nowrap}.footer-identity img{width:28px;height:28px}.footer-identity small{font-size:6px}.footer-masthead{gap:10px}.footer-connect{gap:9px}.footer-content{gap:25px 15px}}
-@media(prefers-reduced-motion:reduce){.footer-directions,.footer-directions-arrow svg,.footer-social-icon{transition:none}.footer-directions:is(:hover,:focus-visible){transform:none}.footer-directions::after{display:none}.footer-directions:is(:hover,:focus-visible) .footer-directions-arrow svg{transform:none}.footer-connect>a:is(:hover,:focus-visible) .footer-social-icon{transform:none}}
+@media(prefers-reduced-motion:reduce){.footer-directions,.footer-directions-arrow svg,.footer-social-icon,.footer-social-arrow svg{transition:none}.footer-directions:is(:hover,:focus-visible){transform:none}.footer-directions::after{display:none}.footer-directions:is(:hover,:focus-visible) .footer-directions-arrow svg{transform:none}.footer-connect>a:is(:hover,:focus-visible) :is(.footer-social-icon,.footer-social-arrow svg){transform:none}}

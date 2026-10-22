@@ -1,5 +1,6 @@
 const external = 'target="_blank" rel="noopener noreferrer"';
 const arrow = '<span aria-hidden="true">↗</span>';
+const socialArrow = '<span class="footer-social-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19 19 5M7 5h12v12"/></svg></span>';
 
 const socialIcons = {
   instagram: '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/>',
@@ -14,7 +15,7 @@ export function siteFooter(map) {
     <div class="footer-content">
       <section class="footer-address"><h2>Find us.</h2><address>Chowk Passian, Gali Rajpura<br>Near Telephone Exchange<br>Amritsar, Punjab</address><a class="footer-inline-link" href="${map}" ${external}>Get directions ${arrow}</a></section>
       <section class="footer-hours"><h2>Visit us.</h2><p>12 noon – 11 pm</p><small>Closed on the last Monday<br>of every month.</small><a class="footer-inline-link" href="tel:01832532227">0183 253 2227 ${arrow}</a></section>
-      <nav class="footer-connect" aria-label="Stay connected"><h2>Stay connected.</h2><a href="https://www.instagram.com/kesardadhaba/" ${external}>${socialIcon('instagram')}<span class="footer-social-name">Instagram</span>${arrow}</a><a href="https://www.facebook.com/kesardadhaba" ${external}>${socialIcon('facebook')}<span class="footer-social-name">Facebook</span>${arrow}</a><a href="mailto:kesardadhabaamritsar@gmail.com">${socialIcon('email')}<span class="footer-social-name">Email</span>${arrow}</a></nav>
+      <nav class="footer-connect" aria-label="Stay connected"><h2>Stay connected.</h2><a href="https://www.instagram.com/kesardadhaba/" ${external}>${socialIcon('instagram')}<span class="footer-social-name">Instagram</span>${socialArrow}</a><a href="https://www.facebook.com/kesardadhaba" ${external}>${socialIcon('facebook')}<span class="footer-social-name">Facebook</span>${socialArrow}</a><a href="mailto:kesardadhabaamritsar@gmail.com">${socialIcon('email')}<span class="footer-social-name">Email</span>${socialArrow}</a></nav>
       <section class="footer-map" aria-label="Kesar Da Dhaba on the map"><iframe title="Map of Kesar Da Dhaba, Chowk Passian, Amritsar" src="https://maps.google.com/maps?q=Kesar+Da+Dhaba,+Chowk+Passian,+Amritsar&amp;ll=31.6242351,74.8729981&amp;z=16&amp;output=embed" width="360" height="190" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><a href="${map}" ${external}>Open in Google Maps ${arrow}</a></section>
     </div>
     <div class="footer-bottom"><span>© ${new Date().getFullYear()} Kesar Da Dhaba</span><nav aria-label="More from Kesar"><a href="/honors-recognitions/">Honours</a><a href="https://kesardadhaba.com/notable-visitors/" ${external}>Notable visitors</a><a href="https://kesardadhaba.com/blogs/" ${external}>Journal</a></nav></div>
