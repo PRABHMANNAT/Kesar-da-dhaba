@@ -1,26 +1,41 @@
-# Homepage film hero
+# Kesar homepage
 
-## Reference and interpretation
+## Direction
 
-Reference: [Amrit Palace](https://amritpalace.com/), inspected on 22 October 2026 using the supplied screenshots, live browser and rendered HTML. The Kesar implementation follows native scrolling with a short sticky interval, a 1.00–1.09 camera zoom, slight upward parallax and a small headline lift. No scroll interception or video seeking is used.
+A warm invitation into the original Amritsar restaurant. Keep the shared navigation, cream paper, deep green and Kesar yellow. The homepage introduces each part of the site through its existing photographs, local films, products and stories.
 
 ## Visual system
 
-- Retain the shared ivory navigation and existing Maragsa display / Futura body fonts.
-- Full-width footage at every scroll position, without an inset frame or rounded corners.
-- One headline: “OVER 100 YEARS OF GREAT TASTE”, followed only by “SINCE 1916”. Desktop keeps the headline on one line; narrow screens wrap it naturally.
-- Original footage colours, without a green tint or video filter. A light neutral black scrim and text shadow support legibility.
-- No controls or buttons inside the hero. The existing page-wide animation and autoplay controls manage playback.
-- Mobile uses portrait footage and a shorter sticky interval. Short screens use normal document scrolling with the same camera effect. Reduced motion disables the scroll effect and automatic playback.
+- Deep green #062c1a, yellow #ffde59, paper #faf7ef, muted sage and fine olive rules.
+- Large Georgia display headings with italic accents, paired with the existing Futura body font.
+- Arched films, tilted paper postcards, circular arrow controls and generous section spacing.
+- Alternating cream, paper and yellow sections; botanical detail is reserved for the legacy section.
+- The shared navbar remains consistent with the other pages, including the highlighted Our Menu link.
 
-## Original media and delivery
+## Page sequence
 
-Use local asset U21 from the supplied official Kesar archive: `slow-cooked-dal-preparation-reel-24s.mp4`. The 6–16 second sequence shows cooking and serving, avoiding interviews and the closing overlay. Silent, fast-start H.264 renditions retain the original colours: 720×450 desktop and 576×1024 mobile, at 24 fps. See `video-assets.json` for dimensions, sizes and provenance.
+1. Green split hero: invitation, menu and visit actions, arched kitchen film, 1916 seal and opening hours.
+2. Yellow animated food ribbon.
+3. Four accessible dish tabs: Dal Fry, Pranthas, Special Thali and Firni, linked to the corresponding menu categories.
+4. Legacy introduction and the existing illustrated Partition train postcard, explicitly labelled as an illustration.
+5. Three real guest films from the reviews archive, with individual sound controls.
+6. Recognition logos and three celebrity visit films, linked to the recognition and celebrities pages.
+7. Achaar and mukhwas from the shop.
+8. Three articles from the existing journal.
+9. Address, hours, phone and visit actions, followed by the shared footer.
 
-Responsive WebP posters weigh about 12 KB desktop / 19 KB mobile and match each rendition’s exact first frame. Preload only the matching poster and the display font. Native muted, inline autoplay is declared in HTML with `preload="auto"`; the controller requests playback immediately without a load or idle delay. The video fades in over its matching poster as soon as a decoded frame is ready. Use a 208-pixel WebP monogram for shared navigation and a separate small favicon, retaining the original source asset.
+## Responsive layout and motion
 
-## Interaction and fallback
+The desktop hero uses two columns. At 760px and below it stacks into a readable introduction and a shorter film. Menu tabs remain four across; their content stacks. Guest and celebrity films become native horizontal swipe tracks with scroll snapping; guest films also have arrow controls. Shop products remain a compact pair. Journal and visit sections stack.
 
-Pause out of view, when the tab is hidden or a dialog opens. Respect reduced motion, data saving, saved autoplay preferences and the page’s animation setting. Keep the poster and headline visible if playback is disabled, blocked or unavailable. If the browser blocks autoplay, retry on a subsequent pointer or keyboard interaction when playback is permitted. Scroll updates use requestAnimationFrame and compositor transforms only while the hero is visible. No animation framework is loaded.
+Use staggered hero entrances, one-time scroll reveals, a gentle hero zoom, a small postcard rotation as it scrolls into view, and hover feedback. Preserve native document scrolling. Respect reduced motion and saved preferences. A page motion control can pause and resume animation and automatic playback.
 
-Implementation: `hero.mjs`, `dist/hero.css`, `dist/hero.js`. The extra CSS and script load only on the homepage.
+Films load when visible, loop silently, pause offscreen or when the document is hidden, and retain their posters if autoplay is unavailable. Sound requires an explicit action, and only one film is audible at a time. Pause playback behind an open dialog. Data-saving and saved autoplay preferences are respected. Keyboard navigation is available for the dish tabs and film tracks.
+
+## Sources and implementation
+
+Use existing local assets and data: reviews-media.json, notable-videos.json, blog-posts.json, menu food images, recognition logos, product photography and the previously generated train illustration. Do not invent guest quotations or current platform ratings.
+
+The homepage kitchen loop is a 22-second H.264/AAC excerpt from the existing menu welcome reel, omitting its closing logo card. It retains the original audio for opt-in listening and uses a fast-start container. Output: dist/assets/home/kitchen-loop.mp4.
+
+Implementation: home.mjs, dist/home.css, dist/home.js, generated through build.mjs into dist/index.html. Homepage CSS and JavaScript load only on the homepage. The older cinematic hero files remain available but are no longer loaded by the homepage.
