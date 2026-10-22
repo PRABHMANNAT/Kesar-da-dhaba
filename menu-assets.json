@@ -172,6 +172,14 @@
       "width": 240,
       "height": 400,
       "bytes": 5380
+    },
+    {
+      "file": "/assets/menu/rotiyan-breads.webp",
+      "source": "Local asset: dist/assets/paranthas.webp",
+      "changes": "Square bread-detail crop, resize and WebP compression",
+      "width": 300,
+      "height": 300,
+      "bytes": 21786
     }
   ],
   "reels": [

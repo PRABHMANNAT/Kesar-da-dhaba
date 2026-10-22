@@ -23,7 +23,7 @@ const categoryArt = {
   sabziyan: ['dal-thumb.webp', 'Dal being finished in the Kesar kitchen'],
   pranthas: ['pranthas-thumb.webp', 'Golden Punjabi pranthas'],
   thali: ['kesar-thali-portrait-small.webp', 'A generous Kesar thali'],
-  rotiyan: ['seasonal-cutout.webp', 'Makki di roti and saag'],
+  rotiyan: ['rotiyan-breads.webp', 'Golden Punjabi breads stacked fresh from the griddle'],
   meetha: ['firni-cutout.webp', 'Traditional firni']
 };
 export const deliveryLinks = {
