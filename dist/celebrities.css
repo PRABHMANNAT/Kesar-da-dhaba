@@ -13,3 +13,19 @@
 @media(min-width:701px){.celebs-featured{padding-top:32px}.celebs-featured-intro{margin-bottom:24px}.celebs-featured-intro h1{font-size:clamp(48px,5.4vw,72px)}.celebs-featured-card>button{height:clamp(300px,29vw,370px)}}
 .celebs-featured-card:first-child video{object-position:35% center}
 @media(max-width:700px){.celebs-featured-card>button{height:clamp(320px,88vw,390px)}}
+/* Film controls sit at the two ends of the posters. */
+.celebs-film-stage{position:relative;isolation:isolate}.celebs-film-stage .celebs-film-arrows{position:absolute;left:0;right:0;top:var(--film-arrow-y,40%);height:0;z-index:3;display:flex;justify-content:space-between;pointer-events:none}.celebs-film-stage .celebs-film-arrows button{pointer-events:auto;width:64px;height:64px;flex:0 0 64px;display:grid;place-items:center;border:5px solid #faf7ef;background:#062c1a;color:#ffde59;font-size:31px;line-height:1;box-shadow:0 5px 18px #062c1a25;transition:background .2s,transform .2s}.celebs-film-stage .celebs-film-arrows button:first-child{transform:translate(-50%,-50%)}.celebs-film-stage .celebs-film-arrows button:last-child{transform:translate(50%,-50%)}.celebs-film-stage .celebs-film-arrows button:hover{background:#ffde59;color:#062c1a}.celebs-film-stage .celebs-film-arrows button:disabled{opacity:1;background:#e2dfd2;color:#9b9f8b;box-shadow:none}.celebs-row-progress{max-width:none}.celebs-stack-hint{display:none}
+@media(max-width:700px){
+ .celebs-page main{overflow-x:clip}.celebs-film-stage{margin-inline:9px}.celebs-film-stage .celebs-film-arrows button{width:54px;height:54px;flex-basis:54px;font-size:27px;border-width:4px}
+ .celebs-featured-track.is-card-stack{position:relative;display:block;overflow:visible;height:calc(clamp(330px,91vw,410px) + 48px);padding:0;margin-top:5px;scroll-snap-type:none;perspective:1000px;touch-action:pan-y;isolation:isolate}
+ .is-card-stack .celebs-featured-card{position:absolute;top:18px;left:7%;width:86%;margin:0;padding:7px;border:1px solid #c6b98e80;border-radius:14px;background:#fffdf5;box-shadow:0 10px 22px #062c1a18;transform-origin:50% 90%;transition:transform .42s cubic-bezier(.2,.7,.25,1),opacity .3s,box-shadow .3s;will-change:transform;backface-visibility:hidden}
+ .is-card-stack .celebs-featured-card>button{height:clamp(330px,91vw,410px);border-radius:8px;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+ .is-card-stack .celebs-featured-card[data-stack-slot="0"]{z-index:3;transform:translate3d(var(--swipe-x,0px),var(--swipe-y,0px),0) rotate(var(--swipe-rotation,0deg));box-shadow:0 18px 28px #062c1a22}
+ .is-card-stack .celebs-featured-card[data-stack-slot="1"]{z-index:2;transform:translate3d(18px,-8px,0) rotate(6deg) scale(.96)}
+ .is-card-stack .celebs-featured-card[data-stack-slot="2"]{z-index:1;transform:translate3d(-18px,-8px,0) rotate(-6deg) scale(.96)}
+ .is-card-stack .celebs-featured-card.is-dragging{transition:none;cursor:grabbing}
+ .is-card-stack .celebs-featured-card.is-flying{opacity:0;pointer-events:none;transition:transform .3s ease-out,opacity .28s}
+ .is-card-stack .celebs-featured-card:not([data-stack-slot="0"]) .celebs-featured-name,.is-card-stack .celebs-featured-card:not([data-stack-slot="0"]) .celebs-featured-label,.is-card-stack .celebs-featured-card:not([data-stack-slot="0"]) .celebs-featured-number{opacity:0}
+ .is-card-stack .celebs-featured-name{font-size:27px;left:17px;right:17px}.is-card-stack .celebs-featured-card>button:hover video{transform:none}.celebs-stack-hint{display:block;text-align:center;font-size:10px;color:#807341;margin-top:8px}.celebs-featured-footer{padding-top:2px}.celebs-featured-paging button{width:44px;height:44px}
+}
+@media(prefers-reduced-motion:reduce){.is-card-stack .celebs-featured-card{transition:none!important}.celebs-film-stage .celebs-film-arrows button{transition:none!important}}
