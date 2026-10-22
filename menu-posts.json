@@ -6,6 +6,12 @@
     "video": "/assets/menu/instagram-01.mp4"
   },
   {
+    "url": "https://www.instagram.com/reel/DOgTqrWEl-9/",
+    "image": "/assets/social/DOgTqrWEl-9.webp",
+    "type": "Reel",
+    "video": "/assets/social/DOgTqrWEl-9.mp4"
+  },
+  {
     "url": "https://www.instagram.com/p/DeREeXblICm/",
     "image": "/assets/menu/instagram-02.webp",
     "type": "Post"

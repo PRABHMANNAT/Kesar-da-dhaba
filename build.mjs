@@ -7,6 +7,8 @@ import { siteFooter } from './footer.mjs';
 import { blogsDocument, blogArticleDocument, blogRoutes } from './blogs.mjs';
 import { siteHeader } from './navigation.mjs';
 import { legacyDocument } from './legacy.mjs';
+import { shopDocument } from './shop.mjs';
+import { visitDocument } from './visit.mjs';
 import { signatureShowcase, journalGallery, photoViewer, visitDrawer, homeNotes } from './experience.mjs';
 
 const dist=path.resolve('dist');
@@ -41,6 +43,8 @@ fs.mkdirSync(path.join(dist,'blogs'),{recursive:true});
 fs.writeFileSync(path.join(dist,'blogs','index.html'),blogsDocument(origin));
 // The redesigned legacy document retains the original historical copy.
 fs.writeFileSync(path.join(dist,'our-legacy','index.html'),legacyDocument(origin));
+fs.writeFileSync(path.join(dist,'our-shop','index.html'),shopDocument(origin));
+fs.writeFileSync(path.join(dist,'contact-us','index.html'),visitDocument(origin));
 for(const route of blogRoutes){const dir=path.join(dist,route);fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(path.join(dir,'index.html'),blogArticleDocument(origin,route.split('/')[1]));}
 fs.writeFileSync(path.join(dist,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${origin}/sitemap.xml\n`);
 fs.writeFileSync(path.join(dist,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[...pages,['blogs'],...blogRoutes.map(route=>[route])].map(([s])=>`<url><loc>${origin}/${s?s+'/':''}</loc></url>`).join('')}</urlset>`);

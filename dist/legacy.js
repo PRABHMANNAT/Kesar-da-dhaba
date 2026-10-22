@@ -26,29 +26,3 @@
  },{passive:true});
  photo?.addEventListener('pointercancel',()=>{clearTimeout(timer);photo.classList.remove('is-photo-touched');},{passive:true});
 })();
-// Rotate only while the opening photograph is visible; keep user pause preferences.
-(() => {
- const frame=document.querySelector('.legacy-slideshow');
- if(!frame)return;
- const slides=[...frame.querySelectorAll('img')],button=frame.querySelector('button');
- const reduced=matchMedia('(prefers-reduced-motion: reduce)');
- let index=0,visible=false,paused=reduced.matches,timer;
- const update=()=>{
-  clearInterval(timer);
-  button.setAttribute('aria-pressed',String(paused));
-  button.setAttribute('aria-label',paused?'Play photo slideshow':'Pause photo slideshow');
-  button.firstElementChild.textContent=paused?'▷':'Ⅱ';
-  if(paused||!visible||document.hidden)return;
-  timer=setInterval(()=>{
-   const next=(index+1)%slides.length;
-   if(!slides[next].complete||!slides[next].naturalWidth)return;
-   slides[index].classList.remove('is-current');slides[index].setAttribute('aria-hidden','true');
-   index=next;slides[index].classList.add('is-current');slides[index].removeAttribute('aria-hidden');
-  },2000);
- };
- new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;update();},{threshold:.15}).observe(frame);
- button.addEventListener('click',()=>{paused=!paused;update();});
- document.addEventListener('visibilitychange',update);
- reduced.addEventListener('change',()=>{paused=reduced.matches;update();});
- update();
-})();
