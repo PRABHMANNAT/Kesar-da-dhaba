@@ -76,3 +76,5 @@
 .kh-top{padding:0;border:0;width:56px;height:56px}.kh-top-ring{position:absolute;inset:0;width:100%;height:100%;rotate:-90deg;fill:none;stroke-width:1.6}.kh-top-track{stroke:#fff6}.kh-top-fill{stroke:#ffde59;stroke-dasharray:100;stroke-dashoffset:var(--kh-top-offset,100);stroke-linecap:round}.kh-top>span{display:block;transition:translate .2s}.kh-top:hover>span{translate:0 -3px}@media(max-width:600px){.kh-top{width:50px;height:50px}}
 
 .kh-instagram-follow{min-height:66px;font-size:15px;min-width:290px;white-space:normal}.kh-instagram-follow>span{width:46px;height:46px}.kh-instagram .kh-heading{flex-wrap:wrap}@media(max-width:500px){.kh-instagram-follow{width:100%;min-width:0;max-width:380px}}
+
+#kh-instagram-title [data-kh-cycle]{display:inline-block;min-width:5.5em;white-space:nowrap}#kh-instagram-title{font-size:clamp(40px,5.7vw,78px)}
