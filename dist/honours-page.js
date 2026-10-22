@@ -22,7 +22,7 @@
  const soundButton=root.querySelector('[data-hnr-sound]');
  const paintSound=()=>{
   soundButton.textContent=heroVideo.muted?'Sound off':'Sound on';
-  soundButton.setAttribute('aria-label',`${heroVideo.muted?'Unmute':'Mute'} kitchen video`);
+  soundButton.setAttribute('aria-label',`${heroVideo.muted?'Unmute':'Mute'} welcome video`);
   soundButton.setAttribute('aria-pressed',String(!heroVideo.muted));
  };
  soundButton.addEventListener('click',()=>{
