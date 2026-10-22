@@ -10,7 +10,7 @@
     const image = document.createElement('img');image.src = source;image.alt = '';
     container.append(image);banner.prepend(container);
   }
-  const top = document.querySelector('.to-top');
+  const top = document.querySelector('.journal-top');
   let scrollFrame = 0;
   const paintScroll = () => {
     scrollFrame = 0;
@@ -25,7 +25,7 @@
       const progress = Math.max(0,Math.min(1,-bounds.top/Math.max(1,bounds.height)));
       banner.style.setProperty('--legacy-parallax', reduced.matches ? '0px' : `${progress * 90}px`);
     }
-    top?.classList.toggle('show', scrollY > innerHeight);
+    if (top) {top.hidden = scrollY < 500;top.style.setProperty('--top-offset',100-Math.min(100,scrollY/Math.max(1,document.documentElement.scrollHeight-innerHeight)*100));}
   };
   const queueScroll = () => {if (!scrollFrame) scrollFrame = requestAnimationFrame(paintScroll);};
   addEventListener('scroll', queueScroll, {passive:true});

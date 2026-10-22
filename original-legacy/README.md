@@ -9,3 +9,5 @@ The original responsive styles and content are retained. Native adapters in `dis
 Rebuild the site with `node build.mjs`. To refresh the prepared snapshot after source changes, run `python original-legacy/prepare.py` (requires BeautifulSoup), then `node original-legacy/mirror.mjs`, then rebuild.
 
 Navigation now uses siteHeader from navigation.mjs, with scoped theme compatibility styles in dist/legacy-navigation.css. The rest of the original page remains the clone baseline.
+
+The footer now uses siteFooter from footer.mjs and footer.css, with scoped compatibility styles in legacy-footer.css. The back-to-top control matches the journal scroll-progress ring.

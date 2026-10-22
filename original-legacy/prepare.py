@@ -87,6 +87,14 @@ soup.select_one('#page').insert(0, '__SHARED_LEGACY_HEADER__')
 soup.head.append(soup.new_tag('link', rel='stylesheet', href='/legacy-navigation.css'))
 soup.head.append(soup.new_tag('link', rel='stylesheet', href='/navigation.css'))
 soup.body.append(soup.new_tag('script', src='/navigation.js', defer=''))
+old_footer = soup.select_one('#colophon')
+if old_footer:
+    old_footer.replace_with('__SHARED_LEGACY_FOOTER__')
+old_top = soup.select_one('.to-top')
+if old_top:
+    old_top.replace_with('__SHARED_LEGACY_TOP__')
+soup.head.append(soup.new_tag('link', rel='stylesheet', href='/footer.css'))
+soup.head.append(soup.new_tag('link', rel='stylesheet', href='/legacy-footer.css'))
 resources = set()
 def collect(value):
     if value and not value.startswith(('data:', '#')):
@@ -94,7 +102,7 @@ def collect(value):
         if urlparse(url).scheme in ['https', 'http']:
             resources.add(url)
 for node in soup.select('link[rel="stylesheet"],link[rel="icon"],link[rel="apple-touch-icon"]'):
-    if not node.get('href', '').startswith(('/legacy-clone', '/legacy-navigation', '/navigation')):
+    if not node.get('href', '').startswith(('/legacy-clone', '/legacy-navigation', '/navigation', '/footer', '/legacy-footer')):
         collect(node.get('href'))
 for node in soup.select('img,source,video,[data-pt-background-image]'):
     for attr in ['src', 'poster', 'data-pt-background-image']:
