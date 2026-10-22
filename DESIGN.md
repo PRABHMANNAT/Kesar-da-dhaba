@@ -1,41 +1,43 @@
-# Kesar homepage
+# Homepage design
+
+## Scope
+
+Only the homepage source, homepage assets and generated dist/index.html are changed. Every other page and shared style/script remains byte-for-byte unchanged. Component designs and media are adapted into homepage-specific markup, CSS and JavaScript.
 
 ## Direction
 
-A warm invitation into the original Amritsar restaurant. Keep the shared navigation, cream paper, deep green and Kesar yellow. The homepage introduces each part of the site through its existing photographs, local films, products and stories.
+A cinematic opening followed by an editorial journey through Kesar. Use deep green #062c1a, cream #faf7ef, yellow #ffde59, sage #78836d, Georgia display type and the existing Futura body font. Preserve the shared navbar and footer. Alternate generous light sections with immersive films and green and yellow accents. Round controls, paper postcards, floating food cutouts and the existing botanical background connect the components.
 
-## Visual system
+## Visitor journey
 
-- Deep green #062c1a, yellow #ffde59, paper #faf7ef, muted sage and fine olive rules.
-- Large Georgia display headings with italic accents, paired with the existing Futura body font.
-- Arched films, tilted paper postcards, circular arrow controls and generous section spacing.
-- Alternating cream, paper and yellow sections; botanical detail is reserved for the legacy section.
-- The shared navbar remains consistent with the other pages, including the highlighted Our Menu link.
+1. Full-width video hero, responsive portrait/landscape cooking footage, heritage headline and menu action.
+2. A second immersive kitchen film introducing the spirit of Kesar and linking to the legacy page.
+3. Yellow animated food ribbon.
+4. Menu welcome adapted from the menu page: thali film postcard, floating dish and original K seal, green View full menu action and PDF download.
+5. A scrollable six-dish menu frame beside an interactive food photograph. Use actual menu descriptions and no invented prices.
+6. Summarised family legacy, labelled Partition train illustration, original legacy film and floating 1916 seal.
+7. Celebrity films: three cards on desktop and a draggable spring-animated deck on mobile. The first album action reveals all 27 photographs; its second click opens the full Celebrities page.
+8. A continuous marquee with all six complete awards: image, issuer, title, years and region. Pause controls and static horizontal scrolling support reduced motion.
+9. Pride of Punjab on solid green, with a complete award photograph, family message and recognition-page link.
+10. Guest review cards, using all 18 existing films and the exact botanical background from the reviews page. Horizontal snapping and swipe gestures, active-card yellow outline, individual play and sound controls, and a Planning a visit strip.
+11. A compact shop introduction using the same botanical background and overlapping product-photo treatment as the shop page.
+12. The shop's video background, with three actual kitchen reels replacing the central photo placeholder. Each reel has sound/play controls and its Instagram link.
+13. Zomato and Swiggy listing actions, with the existing firni cutout.
+14. Instagram post cards from the menu's existing post data, in a horizontal rail with controls.
+15. Three journal stories, followed by the original address, hours, phone and visit actions.
 
-## Page sequence
+## Motion and responsiveness
 
-1. Full-width cooking film hero: minimal centred heritage headline, menu action and scroll cue.
-2. Yellow animated food ribbon.
-3. Four accessible dish tabs: Dal Fry, Pranthas, Special Thali and Firni, linked to the corresponding menu categories.
-4. Legacy introduction and the existing illustrated Partition train postcard, explicitly labelled as an illustration.
-5. Three real guest films from the reviews archive, with individual sound controls.
-6. Recognition logos and three celebrity visit films, linked to the recognition and celebrities pages.
-7. Achaar and mukhwas from the shop.
-8. Three articles from the existing journal.
-9. Address, hours, phone and visit actions, followed by the shared footer.
+Motion 12.23.24 is locally hosted in dist/assets/home/motion-12.23.24.js, with its MIT license alongside it. Use Motion.animate, Motion.inView and Motion.scroll for word-mask reveals, staggered entrances, hero zoom, film parallax, postcard rotations, dish transitions, photo expansion and spring card gestures. Native horizontal scrolling and pointer dragging preserve normal page scrolling. CSS supplies the continuously moving ribbon, awards and floating cutout.
 
-## Responsive layout and motion
+Mobile layouts stack in a clear reading order. Film rails show the next card as a swipe cue, the celebrity deck supports drag plus labelled arrow buttons, shop postcards overlap at a compact size, and the menu list scrolls inside its frame. At tablet and desktop widths, editorial sections become two columns and reviews/celebrity films show three cards.
 
-The hero is full width on desktop and mobile, using landscape and portrait footage respectively. Menu tabs remain four across; their content stacks. Guest and celebrity films become native horizontal swipe tracks with scroll snapping; guest films also have arrow controls. Shop products remain a compact pair. Journal and visit sections stack.
+Respect system reduced motion, data saving and saved autoplay preferences. The homepage motion preference is separate from other pages. Videos load on visibility and pause when offscreen, behind a dialog or in a hidden tab; inactive stacked celebrity films pause. Only one film can be audible. Posters remain visible without autoplay. Interactive controls are keyboard accessible and all actions have accessible names. Animation failure leaves the content readable.
 
-Use staggered hero entrances, one-time scroll reveals, a gentle hero zoom, a small postcard rotation as it scrolls into view, and hover feedback. Preserve native document scrolling. Respect reduced motion and saved preferences. A page motion control can pause and resume animation and automatic playback.
+## Sources
 
-Films load when visible, loop silently, pause offscreen or when the document is hidden, and retain their posters if autoplay is unavailable. Sound requires an explicit action, and only one film is audible at a time. Pause playback behind an open dialog. Data-saving and saved autoplay preferences are respected. Keyboard navigation is available for the dish tabs and film tracks.
+All photography, video, recognition details, dishes, posts and guest films come from the site's existing local assets and data. The Partition image is the previously generated illustration and is explicitly captioned as such. Do not invent visitor identities, testimonials, prices or live ratings.
 
-## Sources and implementation
+Motion API references: https://motion.dev/docs/quick-start, https://motion.dev/docs/inview, https://motion.dev/docs/scroll.
 
-Use existing local assets and data: reviews-media.json, notable-videos.json, blog-posts.json, menu food images, recognition logos, product photography and the previously generated train illustration. Do not invent guest quotations or current platform ratings.
-
-The hero uses the existing silent kesar-hero-desktop.mp4 and kesar-hero-mobile.mp4 cooking clips, with matching responsive posters. The previous kitchen-loop.mp4 remains available but is no longer used in the hero.
-
-Implementation: home.mjs, dist/home.css, dist/home.js, generated through build.mjs into dist/index.html. Homepage CSS and JavaScript load only on the homepage. The older cinematic hero files remain available but are no longer loaded by the homepage.
+Implementation: home.mjs, dist/home.css and dist/home.js. The standard build.mjs still generates the homepage; this revision regenerated only dist/index.html to preserve all other pages.
