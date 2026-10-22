@@ -19,17 +19,18 @@
   let frame=false;
   let scheduled=false;
   let previousProgress='';
+  let readyToLoad=false;
   const initialRect=stage.getBoundingClientRect();
   let visible=initialRect.bottom>(header?.getBoundingClientRect().height||0)&&initialRect.top<innerHeight;
   const motionAllowed=()=>!reduced.matches&&!document.body.classList.contains('motion-off');
-  const mayPlay=()=>visible&&!document.hidden&&!document.querySelector('dialog[open]')&&!failed&&
+  const mayPlay=()=>(readyToLoad||intent===true)&&visible&&!document.hidden&&!document.querySelector('dialog[open]')&&!failed&&
     (intent===true||(intent!==false&&!blocked&&motionAllowed()&&preference('kesar-motion-paused')!=='true'&&preference('kesar-autoplay')!=='false'&&!navigator.connection?.saveData));
   const paint=()=>{
     const playing=!video.paused;
     label.textContent=pending&&mayPlay()?'Loading film':playing?'Pause film':'Play film';
     icon.textContent=playing?'Ⅱ':'▶';
     button.setAttribute('aria-pressed',String(playing));
-    button.setAttribute('aria-label',pending&&mayPlay()?'Cancel loading background film':playing?'Pause background film':'Play background film');
+    button.setAttribute('aria-label',label.textContent);
     root.classList.toggle('has-video-frame',frame);
   };
   const synchronize=()=>{
@@ -57,16 +58,13 @@
     const key=`${enabled}:${mobile.matches}:${progress.toFixed(4)}`;
     if(key===previousProgress)return;
     previousProgress=key;
-    const inset=enabled?(mobile.matches?12:Math.min(36,Math.max(16,innerWidth*.022)))*(1-progress):0;
-    root.style.setProperty('--cinema-inset',`${inset.toFixed(2)}px`);
-    root.style.setProperty('--cinema-scale',enabled?(1.065-.065*progress).toFixed(4):'1');
-    root.style.setProperty('--cinema-copy-y',enabled?`${(-progress*(mobile.matches?16:28)).toFixed(2)}px`:'0px');
-    root.style.setProperty('--cinema-title-opacity',enabled?(1-progress*.2).toFixed(3):'1');
+    root.style.setProperty('--cinema-scale',enabled?(1+.07*progress).toFixed(4):'1');
+    root.style.setProperty('--cinema-copy-y',enabled?`${(-progress*(mobile.matches?28:44)).toFixed(2)}px`:'0px');
+    root.style.setProperty('--cinema-title-opacity',enabled?(1-progress*.35).toFixed(3):'1');
     root.style.setProperty('--cinema-progress',progress.toFixed(4));
   };
   const schedule=()=>{if(!scheduled){scheduled=true;requestAnimationFrame(paintScroll);}};
   root.classList.add('cinema-ready');
-  video.poster=mobile.matches?'/assets/kesar-hero-mobile-poster.jpg':'/assets/kesar-hero-desktop-poster.jpg';
   video.controls=false;
   video.muted=true;
   button.hidden=false;
@@ -101,11 +99,19 @@
   short.addEventListener('change',schedule);
   mobile.addEventListener('change',()=>{
     video.pause();frame=false;blocked=false;previousProgress='';
-    video.poster=mobile.matches?'/assets/kesar-hero-mobile-poster.jpg':'/assets/kesar-hero-desktop-poster.jpg';
     video.load();synchronize();schedule();
   });
   navigator.connection?.addEventListener('change',()=>{synchronize();schedule();});
   document.fonts?.ready.then(schedule);
   if('ResizeObserver' in window&&header)new ResizeObserver(()=>{previousProgress='';schedule();}).observe(header);
-  paint();paintScroll();synchronize();
+  // Let the poster, fonts and first page paint finish before fetching the film.
+  // Explicit playback bypasses this delay; data saving never autoloads video.
+  const queueFilm=()=>requestAnimationFrame(()=>{
+    const ready=()=>{readyToLoad=true;synchronize();};
+    if('requestIdleCallback' in window)requestIdleCallback(ready,{timeout:1500});
+    else setTimeout(ready,250);
+  });
+  if(document.readyState==='complete')queueFilm();
+  else addEventListener('load',queueFilm,{once:true});
+  paint();paintScroll();
 })();

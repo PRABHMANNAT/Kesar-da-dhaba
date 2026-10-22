@@ -28,7 +28,7 @@
 .pairing>span{font-size:8px;letter-spacing:.15em;color:#b7c4ae}
 .pairing>strong{font-weight:400;font-family:var(--serif);font-size:22px;line-height:1.2}
 .signature-copy>.text-link{margin-top:23px;color:var(--yellow);font-size:13px}
-.signature-bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:18px;font-size:10px;color:#68735d}
+.signature-bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:18px;font-size:10px;color:#59665b}
 .signature-bottom>span:first-child{font-size:8px;letter-spacing:.14em}
 .signature-bottom i{font-style:normal;color:var(--green);margin-left:15px}
 .dessert-panel .signature-visual{background:#ece5cd;isolation:isolate}

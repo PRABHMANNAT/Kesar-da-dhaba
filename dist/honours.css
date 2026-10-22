@@ -74,7 +74,7 @@ body:has(.pride-feature) .journal-viewer .viewer-controls{display:none}
 
 .recognition-marquee{padding:45px 0 27px;background:#efecdf;border-bottom:1px solid var(--line);overflow:hidden}
 .recognition-heading,.recognition-foot{display:flex;align-items:center;justify-content:space-between;gap:25px;padding-inline:var(--gutter);max-width:1600px;margin:auto}
-.recognition-heading .eyebrow{font-size:8px;margin-bottom:13px;letter-spacing:.17em;color:#68745d}
+.recognition-heading .eyebrow{font-size:8px;margin-bottom:13px;letter-spacing:.17em;color:#59665b}
 .recognition-heading h2{font-size:clamp(30px,3.4vw,47px)}
 .recognition-actions{display:flex;align-items:center;gap:25px;flex-wrap:wrap;justify-content:flex-end}
 .recognition-actions .text-link{font-size:12px}
@@ -87,7 +87,7 @@ body:has(.pride-feature) .journal-viewer .viewer-controls{display:none}
 .recognition-mark{width:185px;height:110px;display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0}
 .recognition-mark>img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
 .recognition-window:hover .recognition-track,.recognition-marquee.is-paused .recognition-track{animation-play-state:paused}
-.recognition-foot{margin-top:25px;font-size:7px;letter-spacing:.16em;color:#6d785f}
+.recognition-foot{margin-top:25px;font-size:7px;letter-spacing:.16em;color:#59665b}
 .recognition-foot i{font-style:normal;margin-left:13px;font-size:11px;color:#aa8c3c}
 .honours-hero{display:grid;grid-template-columns:1.1fr 1fr;gap:55px;padding:70px var(--gutter) 60px;max-width:1600px;margin:auto;overflow:hidden}
 .honours-hero-copy{padding-top:20px}
