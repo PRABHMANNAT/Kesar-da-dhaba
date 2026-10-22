@@ -1,0 +1,49 @@
+/* Shared footer: clear visit information, gentle curves and generous spacing. */
+.site-footer.site-footer-refined{padding:52px var(--gutter) 24px;background:#062c1a;color:#f7f2e6;position:relative;isolation:isolate}
+.site-footer-refined::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 0 0,#d9c28110,transparent 55%)}
+.footer-masthead{display:flex;justify-content:space-between;align-items:center;gap:30px;padding-bottom:34px;border-bottom:1px solid #f7f2e62b}
+.footer-identity{display:flex;align-items:center;gap:18px}
+.footer-identity img{width:60px;height:60px;filter:grayscale(1) invert(1);mix-blend-mode:screen}
+.footer-identity small{display:block;font-size:8px;letter-spacing:.19em;color:#e3ca84;margin-bottom:9px}
+.footer-identity strong{font:400 clamp(32px,3.6vw,52px)/1.1 var(--serif);letter-spacing:-.025em}
+.footer-directions{display:inline-flex;justify-content:space-between;align-items:center;gap:26px;border:1px solid #d5c28a88;border-radius:100px;padding:13px 19px;min-height:48px;font-size:13px;white-space:nowrap;transition:background .25s,color .25s}
+.footer-directions>span{font-size:23px;color:#e3ca84}
+.footer-directions:hover{background:#e3ca84;color:#062c1a}
+.footer-directions:hover>span{color:inherit}
+.footer-content{display:grid;grid-template-columns:1.15fr 1fr .85fr;gap:clamp(24px,5vw,80px);padding:35px 0 38px}
+.footer-content h2{font:400 22px/1.2 var(--serif);margin-bottom:17px;color:#f7f2e6}
+.footer-content :is(address,p){font-style:normal;font-size:13px;line-height:1.8;color:#d2dccd}
+.footer-hours small{display:block;font-size:11px;line-height:1.7;color:#b6c5af;margin-top:8px}
+.footer-inline-link{display:inline-flex;align-items:center;gap:20px;min-height:44px;font-size:12px;border-bottom:1px solid #c9bc8e88;margin-top:10px}
+.footer-inline-link>span{color:#e3ca84;font-size:19px}
+.footer-connect>a{display:flex;align-items:center;justify-content:space-between;max-width:150px;gap:25px;font-size:12px;min-height:39px}
+.footer-connect>a>span{color:#b4c3ad}
+.site-footer-refined a:focus-visible{outline:2px solid #e3ca84;outline-offset:5px;border-radius:3px}
+.site-footer-refined a:hover{color:#f5d96f}
+.site-footer-refined .footer-directions:hover{color:#062c1a}
+.site-footer-refined .footer-bottom{border-color:#f7f2e62b;padding-top:21px;color:#b6c5af;font-size:10px;flex-wrap:wrap}
+.site-footer-refined .footer-bottom>nav{display:flex;gap:22px;flex-wrap:wrap}
+.site-footer-refined .footer-bottom a{padding:8px 0}
+@media(min-width:1600px){.site-footer.site-footer-refined{padding-inline:max(var(--gutter),calc((100vw - 1424px)/2))}}
+@media(max-width:700px){
+  .site-footer.site-footer-refined{padding:35px 24px 88px}
+  .footer-masthead{gap:22px;align-items:flex-start;padding-bottom:26px}
+  .footer-identity{gap:10px;min-width:0}
+  .footer-identity img{width:42px;height:42px}
+  .footer-identity small{font-size:7px;letter-spacing:.13em;margin-bottom:8px}
+  .footer-identity strong{font-size:32px}
+  .footer-directions{font-size:0;gap:0;width:44px;height:44px;min-height:44px;justify-content:center;padding:0;flex-shrink:0}
+  .footer-directions>span{font-size:22px}
+  .footer-content{grid-template-columns:1.1fr 1fr;gap:30px 20px;padding:28px 0}
+  .footer-content h2{font-size:21px;margin-bottom:13px}
+  .footer-content :is(address,p){font-size:12px;line-height:1.8}
+  .footer-hours small{font-size:10px}
+  .footer-inline-link{font-size:11px;gap:15px}
+  .footer-connect{grid-column:1/-1;display:flex;align-items:center;flex-wrap:wrap;gap:5px 24px;border-top:1px solid #f7f2e623;padding-top:22px}
+  .footer-connect h2{width:100%;margin-bottom:7px}
+  .footer-connect>a{gap:12px;min-height:44px}
+  .site-footer-refined .footer-bottom{gap:14px;flex-direction:column;align-items:flex-start;font-size:9px}
+  .site-footer-refined .footer-bottom>nav{gap:20px}
+}
+@media(max-width:370px){.footer-identity strong{font-size:27px}.footer-identity img{width:35px;height:35px}.footer-identity small{font-size:6px}.footer-masthead{gap:10px}.footer-connect{gap:4px 20px}.footer-content{gap:25px 15px}}
+@media(prefers-reduced-motion:reduce){.footer-directions{transition:none}}
