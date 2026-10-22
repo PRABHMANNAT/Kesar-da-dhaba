@@ -119,16 +119,16 @@ body:has(.menu-page) .mobile-actions>a:nth-child(2){background:var(--yellow);col
 .menu-instagram-follow svg{width:20px;height:20px}
 .menu-instagram-follow>span:last-child{margin-left:16px;font-size:21px}
 .menu-social-track{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-inline:contain;scrollbar-width:thin;scrollbar-color:#bdb18d transparent;padding:4px 2px 22px}
-.menu-post{flex:0 0 calc((100% - 48px)/3);min-width:0;background:#fffdf8;border:1px solid var(--menu-rule);scroll-snap-align:start;box-shadow:0 5px 14px #422e0b05}
+.menu-post{flex:0 0 calc((100% - 48px)/3);min-width:0;background:#fffdf8;border:1px solid #e3dccd;border-radius:22px;overflow:hidden;scroll-snap-align:start;box-shadow:0 8px 25px #422e0b08}
 .menu-post-head{display:flex;align-items:center;gap:10px;padding:15px}
-.menu-post-head img{width:33px;height:33px;mix-blend-mode:multiply}
+.menu-post-head img{width:36px;height:36px;padding:4px;border:1px solid #ded3b7;border-radius:50%;background:#faf6ec;object-fit:contain;mix-blend-mode:multiply}
 .menu-post-head strong{display:block;font-size:12px;font-weight:400;line-height:1.3}
 .menu-post-head small{display:block;font-size:10px;color:#626b58;margin-top:3px}
 .menu-post-head>svg{width:18px;height:18px;margin-left:auto}
 .menu-post-image{position:relative;display:block;aspect-ratio:4/5;overflow:hidden;background:#eee7d9}
 .menu-post-image>img{width:100%;height:100%;object-fit:cover;transition:transform .65s}
-.menu-post-type{position:absolute;top:12px;right:12px;background:#fffdf8ef;padding:5px 8px;font-size:8px;letter-spacing:.1em;color:var(--green)}
-.menu-post-hover{position:absolute;inset:auto 15px 15px;background:var(--ivory);color:var(--green);padding:12px 15px;display:flex;justify-content:space-between;align-items:center;font-size:12px;transform:translateY(70px);opacity:0;transition:transform .3s,opacity .3s}
+.menu-post-type{border-radius:100px;position:absolute;top:12px;right:12px;background:#fffdf8ef;padding:5px 8px;font-size:8px;letter-spacing:.1em;color:var(--green)}
+.menu-post-hover{border-radius:100px;position:absolute;inset:auto 15px 15px;background:var(--ivory);color:var(--green);padding:12px 15px;display:flex;justify-content:space-between;align-items:center;font-size:12px;transform:translateY(70px);opacity:0;transition:transform .3s,opacity .3s}
 .menu-post-image:hover>img{transform:scale(1.035)}
 .menu-post-image:hover .menu-post-hover,.menu-post-image:focus-visible .menu-post-hover{transform:none;opacity:1}
 .menu-post-foot{padding:17px 15px;display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:10px}
