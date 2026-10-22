@@ -76,7 +76,7 @@
       count += chapterCount;
     });
     const filtered = terms.length > 0 || category !== 'all' || preference !== 'all';
-    status.textContent = filtered ? `${count} ${count === 1 ? 'dish' : 'dishes'} found` : `All ${dishes.length} dishes Â· made with tradition`;
+    status.textContent = filtered ? `${count} ${count === 1 ? 'dish' : 'dishes'} found` : `All ${dishes.length} dishes · made with tradition`;
     clear.hidden = !filtered;
     page.querySelector('.menu-no-results').hidden = count > 0;
     if (wasPinned) scrollTo({top:Math.max(0,dockStart - headerHeight),behavior:'instant'});
