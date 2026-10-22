@@ -10,16 +10,14 @@ A cinematic opening followed by an editorial journey through Kesar. Use deep gre
 
 ## Visitor journey
 
-1. Full-width cooking-video hero, followed by the yellow animated food ribbon. The second Spirit of Kesar video section has been removed.
-2. Menu welcome with the thali film postcard, floating dish, green View full menu action and PDF download. The separate Signature Dishes list has been removed.
-3. A fuller two-paragraph family legacy, Partition train illustration, original legacy film and floating 1916 seal.
-4. Celebrity films and the two-stage 27-photograph album action.
-5. A complete six-award marquee and green Pride of Punjab section.
-6. All 18 guest films with the botanical background, swipe/paging controls, and Planning a visit strip.
-7. A compact shop introduction. Its overlapping square product photographs use intrinsic image heights and an auto-sizing grid, with their captions fully inside the section.
-8. Kitchen films on the shop-style video background, presented as a single Instagram-style carousel. It includes profile header, count, reel caption/link, arrow buttons, dots, keyboard controls and swipe gestures. Videos advance at their end when autoplay is permitted; hidden slides pause. Desktop copy and carousel sit side by side, with a compact stacked mobile layout.
-9. Zomato/Swiggy links, Instagram feed cards and journal stories.
-10. Original address, hours, phone and visit actions beside an interactive Google map and a direct Maps link.
+1. Cooking-video hero and a natural-language ribbon: traditional Punjabi cooking, pure desi ghee, the family tradition since 1916, and the heart of Amritsar.
+2. Menu welcome with thali film, View full menu action and PDF download. A green-and-gold emblem divider introduces the family story.
+3. Balanced legacy copy and film columns, with the Partition journey illustration and story link in a compact row underneath.
+4. Kitchen films in the Instagram-style video carousel, followed by guest reviews and celebrity visits.
+5. Framed, arched recognition cards in a marquee, then the green Pride of Punjab section. The archive footnote strip is removed; hover, focus and the page motion control pause the marquee.
+6. Shop postcards and Zomato/Swiggy links group the ways to bring Kesar home.
+7. Blog cards use each article's own local image with explicit dimensions and eager loading, followed by the Instagram feed. The journal action reads Explore all blogs.
+8. Original address, hours and visit actions beside Google Maps, a floating thali cutout and a subtle floral background. The dish responds to scrolling and respects reduced motion.
 
 ## Motion and responsiveness
 

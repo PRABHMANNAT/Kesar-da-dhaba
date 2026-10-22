@@ -46,19 +46,21 @@
  document.addEventListener('kesar:dialogchange',syncVideos);
 
  const motionButton=root.querySelector('[data-kh-motion]');
- function clearScroll(){scrollStops.splice(0).forEach(stop=>stop());root.querySelectorAll('[data-kh-tilt],.kh-hero-media,[data-kh-legacy-scroll],[data-kh-legacy-scroll] video,[data-kh-legacy-scroll] .kh-seal').forEach(el=>{el.style.removeProperty('transform');el.style.removeProperty('opacity')});}
+ function clearScroll(){scrollStops.splice(0).forEach(stop=>stop());root.querySelectorAll('[data-kh-tilt],.kh-hero-media,[data-kh-legacy-scroll],[data-kh-legacy-scroll] video,[data-kh-legacy-scroll] .kh-seal,[data-kh-visit-float]').forEach(el=>{el.style.removeProperty('transform');el.style.removeProperty('opacity')});}
  function setupScroll(){
   clearScroll();if(!motion()||!M)return;
   const hero=root.querySelector('.kh-hero'),heroMedia=root.querySelector('.kh-hero-media');
   scrollStops.push(M.scroll(progress=>{heroMedia.style.transform=`scale(${1+progress*.12})`;},{target:hero,offset:['start start','end start']}));
   const legacy=root.querySelector('[data-kh-legacy-scroll]');
   if(legacy){const clip=legacy.querySelector('video'),seal=legacy.querySelector('.kh-seal');scrollStops.push(M.scroll(progress=>{
-   const shift=(mobile.matches?48:80)*(1-progress)-(mobile.matches?12:30)*progress;
+   const shift=(mobile.matches?24:34)*(1-progress)-(mobile.matches?12:22)*progress;
    const rotate=6-progress*10,turn=mobile.matches?0:10-progress*17,scale=.94+Math.sin(progress*Math.PI)*.08;
    legacy.style.transform=`perspective(1100px) translate3d(0,${shift}px,0) rotate(${rotate}deg) rotateY(${turn}deg) scale(${scale})`;
    clip.style.transform=`scale(1.08) translateY(${(progress-.5)*3}%)`;
    if(seal)seal.style.transform=`translateY(${(progress-.5)*24}px) rotate(${(progress-.5)*14}deg)`;
   },{target:root.querySelector('#home-legacy'),offset:['start end','end start']}));}
+  const visitDish=root.querySelector('[data-kh-visit-float]');
+  if(visitDish)scrollStops.push(M.scroll(progress=>{visitDish.style.transform=`translateY(${(1-progress)*38}px) rotate(${-10+progress*18}deg)`;},{target:root.querySelector('#home-visit'),offset:['start end','end start']}));
   root.querySelectorAll('[data-kh-tilt]').forEach((el,i)=>{
    scrollStops.push(M.scroll(progress=>{el.style.transform=`translateY(${(1-progress)*16}px) rotate(${(progress-.5)*(i%2?-4:4)}deg)`;},{target:el.parentElement,offset:['start end','end start']}));
   });
@@ -142,8 +144,6 @@
   root.querySelector('[data-kh-album-hint]').textContent='All 27 photographs are open below. Click again to visit the complete celebrity page.';
   animate(album,{opacity:[0,1],y:[20,0]},{duration:.7});
  });
- const awardsButton=root.querySelector('[data-kh-awards-pause]');
- awardsButton.addEventListener('click',()=>{const paused=root.classList.toggle('kh-awards-paused');awardsButton.setAttribute('aria-pressed',String(paused));awardsButton.textContent=paused?'Resume honours':'Pause honours'});
  const reelStage=root.querySelector('[data-kh-reel-stage]'),reelSlides=[...root.querySelectorAll('[data-kh-reel]')];let reelIndex=0,reelDrag=null;
  const showReel=(next,direction=1)=>{
   reelIndex=(next+reelSlides.length)%reelSlides.length;
