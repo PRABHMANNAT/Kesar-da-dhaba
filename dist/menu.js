@@ -118,10 +118,10 @@
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(entries => entries.forEach(entry => {
       entry.target.classList.toggle('menu-in-view', entry.isIntersecting);
-      if (entry.isIntersecting && !entry.target.matches('.menu-welcome-art')) observer.unobserve(entry.target);
+      if (entry.isIntersecting && !entry.target.matches('.menu-welcome-art,[data-menu-float]')) observer.unobserve(entry.target);
     }), {threshold:.08});
-    page.querySelectorAll('[data-menu-reveal]').forEach(element => {
-      if (motion()) element.classList.add('menu-reveal-ready');
+    page.querySelectorAll('[data-menu-reveal],[data-menu-float]').forEach(element => {
+      if (motion() && element.hasAttribute('data-menu-reveal')) element.classList.add('menu-reveal-ready');
       observer.observe(element);
     });
   }
