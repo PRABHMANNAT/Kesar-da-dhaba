@@ -115,6 +115,36 @@
   const sizeHeader = () => page.style.setProperty('--menu-header',`${Math.ceil(header?.getBoundingClientRect().height || 82)}px`);
   if ('ResizeObserver' in window && header) new ResizeObserver(sizeHeader).observe(header);
   sizeHeader();
+
+  // Scroll sets the plate's angle directly; no animation loop runs while idle.
+  const seasonalArt = page.querySelector('.menu-seasonal-art');
+  let seasonalVisible = false;
+  let seasonalFrame = 0;
+  const paintSeasonalTilt = () => {
+    seasonalFrame = 0;
+    if (!motion() || document.hidden) {
+      ['--seasonal-tilt','--seasonal-pitch','--seasonal-lift'].forEach(name => seasonalArt.style.removeProperty(name));
+      return;
+    }
+    if (!seasonalVisible) return;
+    const bounds = seasonalArt.getBoundingClientRect();
+    const progress = Math.max(0, Math.min(1, (innerHeight - bounds.top) / (innerHeight + bounds.height)));
+    seasonalArt.style.setProperty('--seasonal-tilt', `${(-12 + progress * 16).toFixed(2)}deg`);
+    seasonalArt.style.setProperty('--seasonal-pitch', `${(7 - progress * 14).toFixed(2)}deg`);
+    seasonalArt.style.setProperty('--seasonal-lift', `${(10 - progress * 20).toFixed(2)}px`);
+  };
+  const queueSeasonalTilt = () => {if (!seasonalFrame && seasonalVisible) seasonalFrame = requestAnimationFrame(paintSeasonalTilt);};
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(entries => {
+      seasonalVisible = entries[0].isIntersecting;
+      queueSeasonalTilt();
+    }).observe(seasonalArt);
+    addEventListener('scroll', queueSeasonalTilt, {passive:true});
+    addEventListener('resize', queueSeasonalTilt);
+    reduced.addEventListener('change', paintSeasonalTilt);
+    document.addEventListener('visibilitychange', paintSeasonalTilt);
+    new MutationObserver(paintSeasonalTilt).observe(document.body, {attributes:true,attributeFilter:['class']});
+  }
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(entries => entries.forEach(entry => {
       entry.target.classList.toggle('menu-in-view', entry.isIntersecting);

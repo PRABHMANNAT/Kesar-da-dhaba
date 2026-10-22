@@ -96,8 +96,7 @@ body:has(.menu-page) .mobile-actions>a:nth-child(2){background:var(--yellow);col
 .menu-seasonal h2 em{color:#ead18b}
 .menu-seasonal p{font-size:17px;line-height:1.8;color:#d9e0cf;margin:25px 0 18px}
 .menu-seasonal-art{position:relative;align-self:center;isolation:isolate}
-.menu-seasonal-art>img{width:100%;height:auto;position:relative;filter:drop-shadow(0 25px 18px #0004);transform:rotate(-7deg);transition:transform .7s}
-.menu-seasonal-art:hover>img{transform:rotate(-4deg) translateY(-8px)}
+.menu-seasonal-art>img{width:100%;height:auto;position:relative;filter:drop-shadow(0 25px 18px #0004);transform:perspective(900px) translateY(var(--seasonal-lift,0px)) rotateX(var(--seasonal-pitch,0deg)) rotate(var(--seasonal-tilt,-7deg));transform-origin:50% 55%}
 .menu-seasonal-orbit{position:absolute;inset:2% 5%;border:1px solid #ead18b55;border-radius:50%;rotate:-17deg;z-index:-1}
 .menu-seasonal-garnish{position:absolute;left:-3%;top:-6%;width:100px;rotate:9deg;z-index:2;filter:drop-shadow(0 12px 10px #0003);animation:menu-dish-drift 7s ease-in-out infinite paused}
 .menu-seasonal-garnish img{width:100%;height:auto}
