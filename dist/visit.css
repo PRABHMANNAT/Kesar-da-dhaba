@@ -138,7 +138,7 @@
 /* Hero information and contact cards. */
 .arrival-opening{margin-bottom:0}
 .arrival-opening-photo{background:#041e13}
-.arrival-opening-photo>video{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain}
+.arrival-opening-photo>video{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover}
 .arrival-opening-photo:after{display:none}
 .arrival-opening-photo .kesar-video-controls{bottom:18px;left:18px;right:18px}
 .arrival-call-link{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:14px 20px;border:1px solid #fff9e866;border-radius:40px;background:#fff9e80d;color:#fff9e8;transition:background .25s,transform .25s}
@@ -173,3 +173,39 @@
  .arrival-contact-value{font-size:11px}
  .arrival-location{margin-bottom:25px}
 }
+
+/* A single contact-and-map section, separated from the hero. */
+.arrival-location{position:relative;margin-top:42px;padding-top:38px;border-top:1px solid #c9bea0}
+.arrival-location:before{content:'';position:absolute;top:-2px;left:0;width:64px;height:3px;background:#b69b42}
+.arrival-find-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:36px;align-items:stretch}
+.arrival-find-grid .arrival-contact{display:flex;flex-direction:column;align-items:stretch;gap:0;padding:8px 0 0;margin:0;min-width:0}
+.arrival-contact-address{font-style:normal;font-size:17px;line-height:1.8;color:#68745f;margin:20px 0 25px}
+.arrival-find-grid .arrival-contact-links{grid-template-columns:1fr;gap:14px;margin-top:auto}
+.arrival-find-grid .arrival-map-card{display:flex;flex-direction:column;min-width:0}
+.arrival-find-grid .arrival-map-canvas{height:350px;flex:1;min-height:350px}
+.arrival-find-grid .arrival-map-bottom{gap:14px;padding:20px;flex-wrap:wrap}
+.arrival-find-grid .arrival-map-bottom strong{font-size:21px}
+.arrival-find-grid .arrival-map-bottom .arrival-button{min-height:48px;gap:14px;padding:6px 7px 6px 17px;font-size:12px}
+.arrival-find-grid .arrival-map-bottom .arrival-button>span{width:34px;height:34px}
+.arrival-contact.is-visible .arrival-contact-links>a{animation:arrival-contact-in .85s cubic-bezier(.2,.65,.3,1) both}
+.arrival-contact.is-visible .arrival-contact-links>a:nth-child(2){animation-delay:.18s}
+.arrival-contact.is-visible .arrival-contact-icon{animation:arrival-icon-in .9s .2s cubic-bezier(.2,.65,.3,1) both}
+.arrival-contact.is-visible a:nth-child(2) .arrival-contact-icon{animation-delay:.38s}
+.arrival-contact-links a:hover .arrival-contact-icon{rotate:-8deg}
+.arrival-contact-icon{transition:rotate .3s}
+@keyframes arrival-contact-in{from{opacity:0;transform:translateY(28px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes arrival-icon-in{from{opacity:0;rotate:-35deg;scale:.7}to{opacity:1;rotate:0deg;scale:1}}
+@media(max-width:850px){
+ .arrival-find-grid{grid-template-columns:1fr;gap:26px}
+ .arrival-find-grid .arrival-contact-links{grid-template-columns:1fr 1fr}
+ .arrival-find-grid .arrival-contact-links a{padding-left:70px;padding-right:35px}
+ .arrival-find-grid .arrival-map-canvas{min-height:350px}
+}
+@media(max-width:700px){
+ .arrival-location{margin-top:30px;padding-top:28px}
+ .arrival-find-grid .arrival-contact-links{grid-template-columns:1fr}
+ .arrival-contact-address{font-size:16px;margin:16px 0 22px}
+ .arrival-find-grid .arrival-contact h2{font-size:29px}
+ .arrival-find-grid .arrival-map-bottom .arrival-button{margin-top:8px}
+}
+@media(prefers-reduced-motion:reduce){.arrival-contact.is-visible .arrival-contact-links>a,.arrival-contact.is-visible .arrival-contact-icon{animation:none}.arrival-contact-links a:hover .arrival-contact-icon{rotate:none}}
