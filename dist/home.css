@@ -56,3 +56,5 @@
 .kh-heritage-divider img{mix-blend-mode:multiply}
 
 .kh-film-controls:has(>button:only-child){justify-content:flex-end}
+
+.kh-life-intro [data-kh-cycle]{display:block;min-height:2.1em}

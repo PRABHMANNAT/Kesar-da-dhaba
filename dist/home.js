@@ -163,5 +163,8 @@
  const top=root.querySelector('[data-kh-top]');let scrollFrame=0;
  addEventListener('scroll',()=>{if(!scrollFrame)scrollFrame=requestAnimationFrame(()=>{top.hidden=scrollY<650;scrollFrame=0})},{passive:true});
  top.addEventListener('click',()=>window.scrollTo({top:0,behavior:motion()?'smooth':'instant'}));top.hidden=scrollY<650;
+ // Changing kitchen copy; the full heading stays stable for screen readers.
+ const cycleText=root.querySelector('[data-kh-cycle]');let cycleIndex=0;
+ setInterval(()=>{if(!motion()||document.hidden)return;const r=cycleText.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;const words=cycleText.dataset.khCycle.split('|');cycleText.textContent=words[++cycleIndex%words.length]},4500);
  paintMotion();
 })();
