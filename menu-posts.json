@@ -2,7 +2,8 @@
   {
     "url": "https://www.instagram.com/reel/DehApdkAACP/",
     "image": "/assets/menu/instagram-01.webp",
-    "type": "Reel"
+    "type": "Reel",
+    "video": "/assets/menu/instagram-01.mp4"
   },
   {
     "url": "https://www.instagram.com/p/DeREeXblICm/",
@@ -12,7 +13,8 @@
   {
     "url": "https://www.instagram.com/reel/DeHTbKkDTqX/",
     "image": "/assets/menu/instagram-03.webp",
-    "type": "Reel"
+    "type": "Reel",
+    "video": "/assets/menu/instagram-03.mp4"
   },
   {
     "url": "https://www.instagram.com/p/DdJSnj-EyCg/",
@@ -32,7 +34,8 @@
   {
     "url": "https://www.instagram.com/reel/DcgYuX7jXt_/",
     "image": "/assets/menu/instagram-07.webp",
-    "type": "Reel"
+    "type": "Reel",
+    "video": "/assets/menu/instagram-07.mp4"
   },
   {
     "url": "https://www.instagram.com/p/DcSzU7rTUM0/",
@@ -52,7 +55,8 @@
   {
     "url": "https://www.instagram.com/reel/DbBKK-EAtWt/",
     "image": "/assets/menu/instagram-11.webp",
-    "type": "Reel"
+    "type": "Reel",
+    "video": "/assets/menu/instagram-11.mp4"
   },
   {
     "url": "https://www.instagram.com/p/DauwTajka2M/",

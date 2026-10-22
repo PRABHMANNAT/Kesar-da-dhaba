@@ -99,6 +99,58 @@
   if ('ResizeObserver' in window) new ResizeObserver(syncControls).observe(track);
   syncControls();
 
+  // Attach reel sources only when the card is visible, including horizontal clipping.
+  const reels = [...page.querySelectorAll('[data-menu-reel]')].map(video => ({
+    video, sound: video.closest('.menu-post-media').querySelector('.menu-reel-sound'), visible: false, pending: false
+  }));
+  const paintSound = state => {
+    state.sound.setAttribute('aria-pressed', String(!state.video.muted));
+    state.sound.setAttribute('aria-label', `${state.video.muted ? 'Unmute' : 'Mute'} Instagram reel ${state.sound.dataset.reelNumber}`);
+  };
+  const allowedReel = state => state.visible && !document.hidden && !document.querySelector('dialog[open]') && motion();
+  const startReel = async state => {
+    if (state.pending || !allowedReel(state)) return;
+    state.pending = true;
+    try {
+      if (!state.video.hasAttribute('src')) state.video.src = state.video.dataset.src;
+      await state.video.play();
+      if (!allowedReel(state)) state.video.pause();
+    } catch { /* Keep the original poster and Instagram link if autoplay is restricted. */ }
+    finally { state.pending = false; }
+  };
+  const syncReels = () => reels.forEach(state => {
+    if (allowedReel(state)) { if (state.video.paused) startReel(state); }
+    else { state.video.pause(); state.video.muted = true; }
+  });
+  reels.forEach(state => {
+    state.video.muted = true;
+    state.video.addEventListener('playing', () => state.video.classList.add('has-frame'));
+    state.video.addEventListener('volumechange', () => paintSound(state));
+    state.video.addEventListener('error', () => {state.video.classList.remove('has-frame');state.sound.hidden = true;});
+    state.sound.addEventListener('click', () => {
+      const unmute = state.video.muted;
+      reels.forEach(other => { if (other !== state) other.video.muted = true; });
+      state.video.muted = !unmute;
+      paintSound(state);
+      startReel(state);
+    });
+    paintSound(state);
+  });
+  if ('IntersectionObserver' in window) {
+    const reelObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const state = reels.find(item => item.video === entry.target);
+        state.visible = entry.isIntersecting && entry.intersectionRatio >= .2;
+      });
+      syncReels();
+    }, {threshold:[0,.2,.5]});
+    reels.forEach(state => reelObserver.observe(state.video));
+  }
+  document.addEventListener('visibilitychange', syncReels);
+  document.addEventListener('kesar:dialogchange', syncReels);
+  reduced.addEventListener('change', syncReels);
+  new MutationObserver(syncReels).observe(document.body, {attributes:true,attributeFilter:['class']});
+
   const dialog = page.querySelector('.menu-dish-dialog');
   const details = JSON.parse(page.querySelector('#menu-dish-details').textContent);
   let opener;

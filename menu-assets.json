@@ -162,5 +162,43 @@
       "height": 675,
       "bytes": 42512
     }
+  ],
+  "reels": [
+    {
+      "file": "/assets/menu/instagram-01.mp4",
+      "source": "08_Shared_Instagram_Feed/Reels/customer-reactions-and-dining-reel-33s.mp4",
+      "bytes": 2332396,
+      "width": 432,
+      "height": 768,
+      "audio": "AAC mono 64 kbps, muted by default",
+      "encoding": "H.264 CRF 29, 24 fps, faststart"
+    },
+    {
+      "file": "/assets/menu/instagram-03.mp4",
+      "source": "08_Shared_Instagram_Feed/Reels/dal-fry-food-review-and-kitchen-reel-45s.mp4",
+      "bytes": 3058777,
+      "width": 432,
+      "height": 768,
+      "audio": "AAC mono 64 kbps, muted by default",
+      "encoding": "H.264 CRF 29, 24 fps, faststart"
+    },
+    {
+      "file": "/assets/menu/instagram-07.mp4",
+      "source": "08_Shared_Instagram_Feed/Reels/restaurant-entrance-and-punjabi-meal-reel-19s.mp4",
+      "bytes": 1139565,
+      "width": 432,
+      "height": 768,
+      "audio": "AAC mono 64 kbps, muted by default",
+      "encoding": "H.264 CRF 29, 24 fps, faststart"
+    },
+    {
+      "file": "/assets/menu/instagram-11.mp4",
+      "source": "08_Shared_Instagram_Feed/Reels/slow-cooked-dal-preparation-reel-24s.mp4",
+      "bytes": 1821802,
+      "width": 432,
+      "height": 768,
+      "audio": "AAC mono 64 kbps, muted by default",
+      "encoding": "H.264 CRF 29, 24 fps, faststart"
+    }
   ]
 }
