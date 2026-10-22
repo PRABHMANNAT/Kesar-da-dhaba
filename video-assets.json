@@ -1,5 +1,31 @@
 {
   "sourcePage": "https://kesardadhaba.com/",
+  "homepageHero": {
+    "sourceAssetId": "U21",
+    "sourceFile": "08_Shared_Instagram_Feed/Reels/slow-cooked-dal-preparation-reel-24s.mp4",
+    "sourcePage": "https://kesardadhaba.com/",
+    "selection": "Cooking, ladling and finishing dal. A food-focused sequence without customer interviews or closing title graphics.",
+    "sourceTrimSeconds": [6, 18],
+    "durationSeconds": 12,
+    "fps": 24,
+    "audio": "Removed for the silent background presentation.",
+    "renditions": [
+      {
+        "file": "dist/assets/kesar-hero-desktop.mp4",
+        "width": 720,
+        "height": 450,
+        "crop": "720:450:0:420 from the portrait source",
+        "poster": "dist/assets/kesar-hero-desktop-poster.jpg"
+      },
+      {
+        "file": "dist/assets/kesar-hero-mobile.mp4",
+        "width": 720,
+        "height": 1280,
+        "crop": "Full original portrait composition",
+        "poster": "dist/assets/kesar-hero-mobile-poster.jpg"
+      }
+    ]
+  },
   "videos": [
     {
       "file": "dist/assets/kesar-heritage.mp4",
