@@ -103,19 +103,22 @@ body:has(.menu-page) .mobile-actions>a:nth-child(2){background:var(--yellow);col
 .menu-seasonal-garnish img{width:100%;height:auto}
 .menu-seasonal-note{display:block;font-family:var(--serif);color:#ead18b;text-align:center;font-size:23px;margin-top:15px}
 .menu-delivery{padding:64px var(--gutter);display:grid;grid-template-columns:1fr 1fr;gap:8%;max-width:1600px;margin:auto;align-items:center}
-.menu-delivery h2{font-size:clamp(44px,4.8vw,68px)}
+.menu-delivery h2{font-size:clamp(40px,4.4vw,62px)}
+.menu-delivery-intro>p{font-size:14px;line-height:1.7;margin-top:19px;max-width:320px;color:#59665b}
 .menu-delivery-options{display:flex;flex-direction:column;gap:14px}
-.menu-delivery-card{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:84px;padding:18px 20px 18px 30px;border-radius:100px;border:1px solid transparent;transition:transform .25s,box-shadow .25s}
-.menu-delivery-card:hover{transform:translateX(4px);box-shadow:0 7px 24px #062c1a0b}
-.menu-delivery-card:focus-visible{outline:2px solid var(--green);outline-offset:4px}
-.menu-zomato,.menu-swiggy{background:#f7f2e7;border-color:#ddd4bc;color:var(--green)}
-.menu-delivery-card:hover{background:#eee8d8;border-color:#bca674}
-.menu-platform-logo{font-family:Arial,sans-serif;font-weight:800;font-size:31px;letter-spacing:-1.5px;line-height:1}
-.menu-zomato .menu-platform-logo{color:var(--green);font-style:italic}
-.menu-swiggy .menu-platform-logo{color:var(--green)}
-.menu-platform-action{display:flex;align-items:center;gap:12px;font-size:12px;color:#59665b}
+.menu-delivery-card{--app-color:#062c1a;display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:84px;padding:18px 20px 18px 30px;border-radius:100px;border:1px solid #ddd4bc;background:#f7f2e7;color:var(--green);transition:transform .25s,box-shadow .25s,background .25s,border-color .25s}
+.menu-zomato{--app-color:#e23744}
+.menu-swiggy{--app-color:#ff5200}
+.menu-delivery-card:focus-visible{outline:2px solid var(--app-color);outline-offset:4px}
+.menu-platform-logo{font-family:Arial,sans-serif;font-weight:800;font-size:31px;letter-spacing:-1.5px;line-height:1;color:var(--green);transition:color .25s}
+.menu-zomato .menu-platform-logo{font-style:italic}
+.menu-platform-action{display:flex;align-items:center;gap:10px;min-height:42px;padding-left:12px;border-radius:100px;font-size:12px;color:#59665b;transition:background .25s,color .25s}
 .menu-platform-action>span{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--green);color:#efd78d;font-size:22px;transition:background .25s,color .25s,transform .25s}
-.menu-delivery-card:hover .menu-platform-action>span{background:#e9ce82;color:var(--green);transform:rotate(6deg)}
+.menu-delivery-card:is(:hover,:focus-visible,:active,.is-pressed){background:var(--app-color);border-color:var(--app-color);box-shadow:0 7px 24px #062c1a12}
+.menu-delivery-card:is(:hover,:focus-visible,:active,.is-pressed) .menu-platform-logo{color:#fff}
+.menu-delivery-card:is(:hover,:focus-visible,:active,.is-pressed) .menu-platform-action{background:#fff;color:#062c1a}
+.menu-delivery-card:is(:hover,:focus-visible,:active,.is-pressed) .menu-platform-action>span{background:#fff;color:#062c1a;transform:rotate(6deg)}
+@media(hover:hover){.menu-delivery-card:hover{transform:translateX(4px)}}
 .menu-social{background:#f5f0e4;border-top:1px solid var(--menu-rule);padding:75px var(--gutter) 60px;overflow:hidden}
 .menu-social-heading{display:flex;justify-content:space-between;align-items:center;gap:30px;margin-bottom:36px}
 .menu-social-heading h2{font-size:clamp(40px,4.5vw,64px)}
@@ -236,10 +239,10 @@ body:has(dialog[open]) .menu-back-top{display:none}
   .menu-seasonal-art{width:100%;max-width:400px}
   .menu-seasonal-note{font-size:22px;margin-top:8px}
   .menu-delivery{padding:48px 24px;gap:24px}
-  .menu-delivery h2{font-size:48px}
-  .menu-delivery h2 br{display:none}
+  .menu-delivery h2{font-size:42px}
+  .menu-delivery-intro>p{font-size:13px;margin-top:15px}
   .menu-delivery-options{gap:12px}
-  .menu-delivery-card{min-height:78px;padding:14px 17px 14px 25px}
+  .menu-delivery-card{min-height:78px;padding:14px 17px 14px 25px;gap:12px}
   .menu-platform-logo{font-size:29px}
   .menu-social{padding:48px 24px 38px}
   .menu-social-heading{display:block;margin-bottom:26px}
@@ -261,6 +264,6 @@ body:has(dialog[open]) .menu-back-top{display:none}
   .menu-dish-dialog>div{padding:25px 24px 35px}
   .menu-dish-dialog h2{font-size:42px}
 }
-@media(max-width:360px){.menu-page .cinema-hero{--cinema-height:410px}.menu-welcome h2{font-size:46px}.menu-catalogue-intro h2{font-size:38px}.menu-delivery h2{font-size:40px}.menu-dish h3{font-size:15px}.menu-tag{font-size:8px}.menu-post{flex-basis:91%}}
+@media(max-width:360px){.menu-page .cinema-hero{--cinema-height:410px}.menu-welcome h2{font-size:46px}.menu-catalogue-intro h2{font-size:38px}.menu-delivery h2{font-size:36px}.menu-dish h3{font-size:15px}.menu-tag{font-size:8px}.menu-post{flex-basis:91%}}
 @media(max-height:650px){.menu-page .cinema-hero{--cinema-height:420px;--cinema-travel:0px}}
-@media(prefers-reduced-motion:reduce){.menu-back-top,.menu-back-top-arrow{transition:none}.menu-back-top:hover .menu-back-top-arrow{translate:none}.menu-category-indicator{transition:none}:is(.menu-float,.menu-chapter-cutout,.menu-seasonal-garnish){animation:none!important}.menu-reveal-ready{opacity:1;transform:none}.menu-page *{scroll-behavior:auto!important}}
+@media(prefers-reduced-motion:reduce){.menu-delivery-card,.menu-platform-logo,.menu-platform-action,.menu-platform-action>span{transition:none}.menu-delivery-card:hover{transform:none}.menu-back-top,.menu-back-top-arrow{transition:none}.menu-back-top:hover .menu-back-top-arrow{translate:none}.menu-category-indicator{transition:none}:is(.menu-float,.menu-chapter-cutout,.menu-seasonal-garnish){animation:none!important}.menu-reveal-ready{opacity:1;transform:none}.menu-page *{scroll-behavior:auto!important}}
