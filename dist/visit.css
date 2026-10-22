@@ -242,3 +242,17 @@
  .arrival-opening .arrival-copy-address{padding-top:7px;min-height:30px}
 }
 .arrival-opening-photo .kesar-video-controls{justify-content:flex-end}
+
+
+/* A yellow arrival section with green contact actions. */
+.arrival-location.arrival-wrap{width:100%;padding:48px max(56px,calc((100% - 1240px)/2)) 52px;background:#ffde59;color:#062c1a;border-top:1px solid #d8bc4c;border-bottom:1px solid #d8bc4c}
+.arrival-location:before{display:none}
+.arrival-location .arrival-section-heading>span,.arrival-location .arrival-contact-address{color:#365139}
+.arrival-location .arrival-map-card{border-color:#bba444;box-shadow:0 12px 28px #69561012}
+.arrival-location .arrival-contact-links a[href^="mailto:"]{background:#062c1a;color:#fffdf6}
+.arrival-location .arrival-contact-links a[href^="mailto:"]:hover{background:#12452e}
+.arrival-location .arrival-contact-links a[href^="mailto:"] .arrival-contact-value{color:#e1e8d8}
+.arrival-location .arrival-contact-links a[href^="mailto:"] .arrival-contact-icon,.arrival-location .arrival-contact-links a[href^="mailto:"]>span:last-child{background:#ffde59;color:#062c1a}
+.arrival-location .arrival-contact-links a:focus-visible{outline:2px solid #062c1a;outline-offset:5px}
+@media(max-width:1000px){.arrival-location.arrival-wrap{padding:38px 32px 42px}}
+@media(max-width:700px){.arrival-location.arrival-wrap{padding:30px 20px 34px}}
