@@ -26,4 +26,15 @@
       nodes.forEach(node=>{const fragment=document.createDocumentFragment();for(const char of node.textContent){const span=document.createElement('span');span.className='journal-type-char';span.textContent=char;span.style.setProperty('--char-delay',(200+index++*58)+'ms');fragment.append(span);}node.replaceWith(fragment);});
     });
   }
+  const film=document.querySelector('[data-journal-film]'),filmButton=document.querySelector('[data-film-toggle]');
+  if(film){
+    let visible=false,userPaused=false;
+    const playback=()=>{const play=visible&&!document.hidden&&!userPaused&&!reduced.matches;if(play){if(!film.getAttribute('src'))film.src=film.dataset.src;film.play().catch(()=>{filmButton.textContent='Play film';});}else film.pause();};
+    new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;playback();},{threshold:.2}).observe(film);
+    film.addEventListener('playing',()=>{film.classList.add('is-playing');filmButton.textContent='Pause film';filmButton.setAttribute('aria-label','Pause kitchen film');filmButton.setAttribute('aria-pressed','true');});
+    film.addEventListener('pause',()=>{filmButton.textContent='Play film';filmButton.setAttribute('aria-label','Play kitchen film');filmButton.setAttribute('aria-pressed','false');});
+    film.addEventListener('error',()=>{film.classList.remove('is-playing');filmButton.hidden=true;});
+    filmButton.addEventListener('click',()=>{if(!film.paused){userPaused=true;film.pause();}else{userPaused=false;if(!film.getAttribute('src'))film.src=film.dataset.src;film.play().catch(()=>{});}});
+    document.addEventListener('visibilitychange',playback);reduced.addEventListener('change',playback);
+  }
 })();

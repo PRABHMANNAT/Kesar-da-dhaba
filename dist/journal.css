@@ -24,3 +24,5 @@
 .journal-hero h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(66px,7.3vw,108px);line-height:1.06;letter-spacing:-.065em}.journal-hero h1 em{font-style:italic;color:#788269}@media(max-width:1023px){.journal-hero h1{font-size:clamp(60px,7.8vw,80px)}}@media(max-width:600px){.journal-hero h1{font-size:clamp(53px,14.5vw,76px);letter-spacing:-.06em}}
 
 .journal-type-line{white-space:nowrap}.journal-type-char{animation:journal-type-in .01s var(--char-delay) both}@keyframes journal-type-in{from{opacity:0}to{opacity:1}}
+
+.journal-hero-film{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s}.journal-hero-film.is-playing{opacity:1}.journal-film-toggle{position:absolute;top:26px;left:50%;translate:-50% 0;z-index:3;border:1px solid #fff8;border-radius:40px;padding:10px 16px;background:#062c1abf;color:#fff8e6;font-size:11px!important;backdrop-filter:blur(10px)}.journal-film-toggle:hover{background:#062c1a}.journal-hero-photo:after{z-index:1}.journal-photo-note{z-index:2}
