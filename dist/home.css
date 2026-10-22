@@ -78,3 +78,5 @@
 .kh-instagram-follow{min-height:66px;font-size:15px;min-width:290px;white-space:normal}.kh-instagram-follow>span{width:46px;height:46px}.kh-instagram .kh-heading{flex-wrap:wrap}@media(max-width:500px){.kh-instagram-follow{width:100%;min-width:0;max-width:380px}}
 
 #kh-instagram-title [data-kh-cycle]{display:inline-block;min-width:5.5em;white-space:nowrap}#kh-instagram-title{font-size:clamp(40px,5.7vw,78px)}
+
+.kh-instagram .kh-rail-controls button{width:52px;height:52px;font-size:29px}.kh-instagram .kh-rail-controls{gap:12px}.kh-instagram .kh-rail-controls>span{font-size:12px;margin-right:8px}@media(max-width:500px){.kh-instagram .kh-rail-footer{flex-wrap:wrap}.kh-instagram .kh-rail-controls{margin-left:auto}}
