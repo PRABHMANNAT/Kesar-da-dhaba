@@ -7,7 +7,7 @@ export function cinematicHero() {
     <div class="cinema-stage">
       <div class="cinema-scene">
         <picture class="cinema-poster" aria-hidden="true"><source media="(max-width: 760px)" srcset="/assets/kesar-hero-mobile-poster.webp" width="576" height="1024"><img src="/assets/kesar-hero-desktop-poster.webp" alt="" width="720" height="450" fetchpriority="high" decoding="async"></picture>
-        <video class="cinema-video" data-hero-video muted loop playsinline preload="none" aria-label="Inside Kesar Da Dhaba’s kitchen: traditional dal, slow cooked and served with care">
+        <video class="cinema-video" data-hero-video autoplay muted loop playsinline preload="auto" disablepictureinpicture disableremoteplayback aria-hidden="true">
           <source media="(max-width: 760px)" src="/assets/kesar-hero-mobile.mp4" type="video/mp4">
           <source src="/assets/kesar-hero-desktop.mp4" type="video/mp4">
         </video>
@@ -16,8 +16,6 @@ export function cinematicHero() {
           <h1 id="cinema-title">Over 100 years of great taste</h1>
           <p>Since 1916</p>
         </div>
-        <button class="cinema-play" type="button" data-hero-play aria-label="Play film" aria-pressed="false" hidden><span class="cinema-play-icon" aria-hidden="true">▶</span><span class="sr-only" data-hero-play-label>Play film</span></button>
-        <p class="sr-only" data-hero-status role="status" aria-live="polite"></p>
       </div>
     </div>
   </section>`;

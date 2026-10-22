@@ -19,7 +19,9 @@
         "height": 450,
         "crop": "720:450:0:420 from the portrait source",
         "poster": "dist/assets/kesar-hero-desktop-poster.webp",
-        "bytes": 1107785
+        "bytes": 1107785,
+        "posterFrameSeconds": 0,
+        "posterBytes": 12242
       },
       {
         "file": "dist/assets/kesar-hero-mobile.mp4",
@@ -27,7 +29,9 @@
         "height": 1024,
         "crop": "Full original portrait composition",
         "poster": "dist/assets/kesar-hero-mobile-poster.webp",
-        "bytes": 1221208
+        "bytes": 1221208,
+        "posterFrameSeconds": 0,
+        "posterBytes": 18680
       }
     ],
     "encoding": "H.264, yuv420p, CRF 27 desktop / 28 mobile, fast-start metadata; original colours, no colour filter."
