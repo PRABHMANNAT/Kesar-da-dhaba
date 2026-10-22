@@ -44,7 +44,7 @@
     root.classList.toggle('cinema-motion-active',enabled&&visible&&!document.hidden);
     const headerHeight=header?.getBoundingClientRect().height||0;
     // Short screens keep normal document flow, with the same camera motion.
-    const distance=short.matches?stage.offsetHeight*.8:root.offsetHeight-stage.offsetHeight;
+    const distance=short.matches||root.classList.contains('cinema-flow')?stage.offsetHeight*.8:root.offsetHeight-stage.offsetHeight;
     const progress=enabled?Math.max(0,Math.min(1,(headerHeight-root.getBoundingClientRect().top)/Math.max(1,distance))):0;
     root.style.setProperty('--cinema-header',`${headerHeight}px`);
     const key=`${enabled}:${mobile.matches}:${progress.toFixed(4)}`;

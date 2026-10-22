@@ -18,7 +18,8 @@ For Vercel, import this repository with the repository root as the Root Director
 
 ## Editing
 
-- `build.mjs`: content, shared layout, menu and page generation.
+- `build.mjs`: content, shared layout and page generation. `/our-menu/` renders the responsive redesign in `menu.mjs`.
+- `menu.mjs`, `menu-data.mjs`, `menu-posts.json`, `dist/menu.css` and `dist/menu.js`: menu layout, complete dish list, original Instagram post links, responsive styling, search, category/Popular/Seasonal filters, photo details and gallery controls. All dishes are present and visible initially. `menu-assets.json` records optimized original imagery.
 - `experience.mjs`: signature-dish showcase, photo journal, visit drawer, homepage FAQ and footer composition.
 - `honours.mjs`, `honours-sections.mjs` and `honours-data.json`: homepage recognition-logo marquee and the Awards & Honours page, sourced from the official restaurant website. The page includes six recognitions, two published rating snapshots, five attributed press excerpts/summaries and five original Instagram photographs.
 - `dist/styles.css`: responsive design and typography.

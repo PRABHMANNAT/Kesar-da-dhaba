@@ -55,3 +55,12 @@ The follow-up removes the hero playback button and the load/idle delay, starts n
 A subsequent mobile Lighthouse 13.5.0 run using the same configuration scored **91 performance, 100 accessibility, 100 best practices and 100 SEO**. First Contentful Paint was 1.8 s; Largest Contentful Paint 3.2 s; Speed Index 3.4 s; Total Blocking Time 0 ms; Cumulative Layout Shift 0. The audit transferred 1,992,076 bytes. The desktop result above belongs to the prior commit and was not rerun for this follow-up.
 
 The follow-up report is available locally in `qa/lighthouse-immediate-autoplay.report.html` and `.json`.
+
+
+## Menu redesign — 22 October 2026
+
+The menu uses the existing ten-second silent kitchen reel with a mobile source and WebP poster. All 43 dishes are rendered in HTML and initially visible. Search, category and Popular/Seasonal filters run locally. The 12 Instagram cards use optimized local previews and retain the original post/reel URLs; no third-party embed script is loaded. The supplied thali image is available at 480px and 900px. New imagery totals about 1.02 MB across all 23 files; images below the hero load lazily. The page skips the unrelated honours stylesheet and script.
+
+Local Lighthouse 13.5 audit, throttled mobile: Performance 95, Accessibility 100, Best Practices 100, SEO 100; LCP 2.6 s, total blocking time 0 ms, CLS 0. Desktop: 100 in all four categories. Reports are saved locally in `qa/menu-lighthouse-mobile-final.report.html` and `qa/menu-lighthouse-desktop-final.report.html`. Scores describe this local audit and can vary by hosting, network and device.
+
+Manual browser checks covered 320px, 430px, tablet and desktop layouts, complete initial content, combined filters, empty results, reset, photo details, mobile navigation, gallery navigation and muted hero autoplay. Normal scrolling is preserved. Reduced motion and the shared pause control suppress animated movement.
