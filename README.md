@@ -86,3 +86,8 @@ The footer map frame uses the original Kesar yellow. Social links use custom SVG
 Blogs links to `/blogs/` in both the desktop navigation and the mobile page menu. The shared header uses a rounded Menu/Close control, an animated two-line icon, a cream navigation panel with numbered links, an active-page marker and a phone action. Hover, focus and touch presses use the brand yellow with SVG arrow movement. The desktop links use matching pill highlights and press feedback.
 
 The mobile panel is used below 1024px to leave room for the added desktop link. It closes with Escape, an outside click, focus leaving the menu, a page-link selection or resizing to desktop width. Opening uses a short entrance and staggered link motion; system reduced motion and the site's paused-motion setting suppress it. The original blog clone retains its captured header and drawer as the redesign baseline.
+
+
+### Redesigned journal
+
+`blogs.mjs`, `blog-posts.json`, `dist/journal.css` and `dist/journal.js` now render the journal listing and seven full local article routes under `/blogs/`. Original article text was retrieved from the public Kesar website and sanitized; source captures are in `original-blogs/articles/`. The earlier listing snapshot remains archived. The new journal uses the shared navigation and menu-style footer, preserving the original white wordmark, 100 Years Legacy artwork, and requested heritage description. Native CSS and IntersectionObserver provide responsive entrances, card interactions and image movement, respecting reduced motion. Article pages include a contents menu, sharing, reading progress and related stories. Run `node build.mjs` to regenerate all 14 pages and the sitemap.
