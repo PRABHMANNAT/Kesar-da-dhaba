@@ -66,7 +66,7 @@
   });
  }
  function paintMotion(){
-  root.classList.toggle('kh-motion-paused',!motion());motionButton.textContent=reduced.matches?'Reduced motion':motion()?'Pause motion':'Resume motion';motionButton.disabled=reduced.matches;motionButton.setAttribute('aria-pressed',String(!motion()));
+  root.classList.toggle('kh-motion-paused',!motion());if(motionButton){motionButton.textContent=reduced.matches?'Reduced motion':motion()?'Pause motion':'Resume motion';motionButton.disabled=reduced.matches;motionButton.setAttribute('aria-pressed',String(!motion()));}
   if(!motion()){
    animations.forEach(a=>{a.stop?.()});animations.clear();
    root.querySelectorAll('[data-kh-reveal],.kh-word').forEach(el=>{el.style.opacity='1';el.style.transform='none'});
@@ -75,7 +75,7 @@
   const awardControl=root.querySelector('[data-kh-awards-pause]');if(awardControl){awardControl.disabled=!motion();awardControl.textContent=!motion()?'Honours paused':root.classList.contains('kh-awards-paused')?'Resume honours':'Pause honours';}
   setupScroll();syncVideos();syncTyping();
  }
- motionButton.addEventListener('click',()=>{paused=!paused;try{localStorage.setItem('kesar-home-motion-paused',String(paused))}catch{}paintMotion()});
+ motionButton?.addEventListener('click',()=>{paused=!paused;try{localStorage.setItem('kesar-home-motion-paused',String(paused))}catch{}paintMotion()});
  reduced.addEventListener('change',()=>{paintMotion();layoutDeck(false)});
 
  // Word masks preserve the original headings and natural line breaks.

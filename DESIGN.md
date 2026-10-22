@@ -14,7 +14,7 @@ A cinematic opening followed by an editorial journey through Kesar. Use deep gre
 2. Menu welcome with thali film, View full menu action and PDF download. A green-and-gold emblem divider introduces the family story.
 3. Balanced legacy copy and film columns, with the Partition journey illustration and story link in a compact row underneath.
 4. Kitchen films in the Instagram-style video carousel, followed by guest reviews and celebrity visits.
-5. Framed, arched recognition cards in a marquee, then the green Pride of Punjab section. The archive footnote strip is removed; hover, focus and the page motion control pause the marquee.
+5. Framed, arched recognition cards in a marquee, then the green Pride of Punjab section. The archive footnote strip is removed; hover, focus and reduced-motion preferences pause the marquee.
 6. Shop postcards and Zomato/Swiggy links group the ways to bring Kesar home.
 7. Blog cards use each article's own local image with explicit dimensions and eager loading, followed by the Instagram feed. The journal action reads Explore all blogs.
 8. Original address, hours and visit actions beside Google Maps, a floating thali cutout and a subtle floral background. The dish responds to scrolling and respects reduced motion.
@@ -34,3 +34,7 @@ All photography, video, recognition details, dishes, posts and guest films come 
 Motion API references: https://motion.dev/docs/quick-start, https://motion.dev/docs/inview, https://motion.dev/docs/scroll.
 
 Implementation: home.mjs, dist/home.css and dist/home.js. The standard build.mjs still generates the homepage; this revision regenerated only dist/index.html to preserve all other pages.
+
+## Homepage interaction refinements
+
+The visit strip sits immediately after the hero. Legacy, kitchen, review and Instagram films use sound-only controls. Kitchen and Instagram headings type through short phrases while visible, with stable accessible labels and static reduced-motion text. The kitchen CTA opens the originating shop page. Review and Instagram arrows have larger touch targets; kitchen arrows also show Previous and Next reel labels. Blog cards match the journal page including categories, excerpts, dates, framed images, zoom and light-sweep effects. The back-to-top ring shows reading progress. Reels appear first in the Instagram feed; visible Instagram reels autoplay together, muted and looping, while offscreen and hidden-tab videos pause. The final visit layout pairs the supplied unedited prantha photograph with the original address, hours, actions and map. The endnote strip is removed.
