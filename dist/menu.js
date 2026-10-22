@@ -223,6 +223,30 @@
   reduced.addEventListener('change', syncReels);
   new MutationObserver(syncReels).observe(document.body, {attributes:true,attributeFilter:['class']});
 
+  const backTop = page.querySelector('.menu-back-top');
+  let backTopFrame = 0;
+  const updateBackTop = () => {
+    backTopFrame = 0;
+    const show = scrollY > Math.max(500, innerHeight * .75);
+    if (backTop.hidden === show) {
+      backTop.hidden = !show;
+      if (show && motion()) backTop.animate([{opacity:0,translate:'0 10px'},{opacity:1,translate:'0 0'}], {duration:220,easing:'ease-out'});
+    }
+    const distance = document.documentElement.scrollHeight - innerHeight;
+    const progress = distance > 0 ? Math.min(1, Math.max(0, scrollY / distance)) : 0;
+    backTop.style.setProperty('--back-top-offset', String(100 - progress * 100));
+  };
+  const queueBackTop = () => { if (!backTopFrame) backTopFrame = requestAnimationFrame(updateBackTop); };
+  addEventListener('scroll', queueBackTop, {passive:true});
+  addEventListener('resize', queueBackTop);
+  backTop.addEventListener('click', () => {
+    scrollTo({top:0,behavior:motion() ? 'smooth' : 'instant'});
+    const title = page.querySelector('h1');
+    title.setAttribute('tabindex', '-1');
+    title.focus({preventScroll:true});
+  });
+  updateBackTop();
+
   const dialog = page.querySelector('.menu-dish-dialog');
   const details = JSON.parse(page.querySelector('#menu-dish-details').textContent);
   let opener;
