@@ -188,6 +188,14 @@
       "width": 300,
       "height": 300,
       "bytes": 16788
+    },
+    {
+      "file": "/assets/menu/welcome-reel-poster.webp",
+      "source": "https://www.instagram.com/reel/DZaGqmegObG/",
+      "changes": "Frame at 1 second, resized and WebP compressed",
+      "width": 480,
+      "height": 854,
+      "bytes": 25596
     }
   ],
   "reels": [
@@ -226,6 +234,19 @@
       "height": 768,
       "audio": "AAC mono 64 kbps, muted by default",
       "encoding": "H.264 CRF 29, 24 fps, faststart"
+    },
+    {
+      "file": "/assets/menu/welcome-reel.mp4",
+      "source": "https://www.instagram.com/reel/DZaGqmegObG/",
+      "instagramShortcode": "DZaGqmegObG",
+      "uploader": "kesardadhaba",
+      "durationSeconds": 26.324,
+      "bytes": 1426398,
+      "width": 540,
+      "height": 960,
+      "audio": "Silent decorative copy; original audio available through the Instagram link",
+      "encoding": "H.264 CRF 28, 24 fps, faststart",
+      "loading": "Source attached at 20% visibility; paused offscreen, in hidden tabs, for open dialogs and reduced motion"
     }
   ]
 }

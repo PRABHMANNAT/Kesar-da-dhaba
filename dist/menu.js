@@ -76,7 +76,7 @@
       count += chapterCount;
     });
     const filtered = terms.length > 0 || category !== 'all' || preference !== 'all';
-    status.textContent = filtered ? `${count} ${count === 1 ? 'dish' : 'dishes'} found` : `All ${dishes.length} dishes · made with tradition`;
+    status.textContent = filtered ? `${count} ${count === 1 ? 'dish' : 'dishes'} found` : `All ${dishes.length} dishes Â· made with tradition`;
     clear.hidden = !filtered;
     page.querySelector('.menu-no-results').hidden = count > 0;
     if (wasPinned) scrollTo({top:Math.max(0,dockStart - headerHeight),behavior:'instant'});
@@ -202,10 +202,11 @@
   }
 
   // Attach reel sources only when the card is visible, including horizontal clipping.
-  const reels = [...page.querySelectorAll('[data-menu-reel]')].map(video => ({
-    video, sound: video.closest('.menu-post-media').querySelector('.menu-reel-sound'), visible: false, pending: false
+  const reels = [...page.querySelectorAll('[data-menu-reel],[data-menu-welcome-reel]')].map(video => ({
+    video, sound: video.closest('.menu-post-media')?.querySelector('.menu-reel-sound'), visible: false, pending: false
   }));
   const paintSound = state => {
+    if (!state.sound) return;
     state.sound.setAttribute('aria-pressed', String(!state.video.muted));
     state.sound.setAttribute('aria-label', `${state.video.muted ? 'Unmute' : 'Mute'} Instagram reel ${state.sound.dataset.reelNumber}`);
   };
@@ -228,8 +229,8 @@
     state.video.muted = true;
     state.video.addEventListener('playing', () => state.video.classList.add('has-frame'));
     state.video.addEventListener('volumechange', () => paintSound(state));
-    state.video.addEventListener('error', () => {state.video.classList.remove('has-frame');state.sound.hidden = true;});
-    state.sound.addEventListener('click', () => {
+    state.video.addEventListener('error', () => {state.video.classList.remove('has-frame');if (state.sound) state.sound.hidden = true;});
+    state.sound?.addEventListener('click', () => {
       const unmute = state.video.muted;
       reels.forEach(other => { if (other !== state) other.video.muted = true; });
       state.video.muted = !unmute;
