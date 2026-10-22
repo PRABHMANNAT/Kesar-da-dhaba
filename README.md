@@ -99,3 +99,9 @@ The journal hero now uses the user-selected reel https://www.instagram.com/reels
 All generated pages now use the same `siteFooter` from `footer.mjs` and responsive rules in `dist/footer.css`. Journal-specific footer markup and overrides have been removed. The shared footer preserves the original wordmark, heritage description, legacy sign, yellow large wordmark, and full page directory. Mobile layouts retain the left legacy sign/right visit action with accessible link spacing.
 
 Downloadable menu: `scripts/build-menu-pdf.py` reads `menu-data.mjs` and produces a four-page PDF in `output/pdf/`, copied to `dist/assets/kesar-da-dhaba-menu.pdf`. Run it with a Python environment containing reportlab and Pillow (Windows Georgia fonts), then run `node build.mjs`. The menu welcome section links directly to the local PDF using the download attribute. No prices are invented; the PDF directs guests to the dhaba for current prices.
+
+## Legacy redesign
+
+The `/our-legacy/` route is rendered by `legacy.mjs` with `dist/legacy.css` and `dist/legacy.js`. Historical text is preserved in `legacy-content.json`. Original clone snapshots remain in `original-legacy/` for reference.
+
+The four supplied screenshot artworks are in `dist/assets/legacy/`. Responsive CSS crops their frame edges without altering the source images. The two accompanying captions were transcribed into selectable text beneath the postcard images. Postcards open full-size in an accessible dialog; sharing uses the device share sheet or copies the page URL. Reduced-motion preferences disable decorative motion.
