@@ -33,7 +33,7 @@
   const track=row.querySelector('.celebs-film-track');
   const arrows=[...row.querySelectorAll('[data-film-step]')];
   const progress=row.querySelector('.celebs-row-progress>span');
-  function update(){row.style.setProperty('--film-arrow-y',`${track.querySelector('article>button').getBoundingClientRect().height/2}px`);const max=track.scrollWidth-track.clientWidth;arrows[0].disabled=track.scrollLeft<5;arrows[1].disabled=track.scrollLeft>=max-5;progress.style.width=`${max<=0?100:25+75*Math.min(1,track.scrollLeft/max)}%`;}
+  function update(){row.style.setProperty('--film-arrow-y',`${track.querySelector('.celebs-film-screen').getBoundingClientRect().height/2}px`);const max=track.scrollWidth-track.clientWidth;arrows[0].disabled=track.scrollLeft<5;arrows[1].disabled=track.scrollLeft>=max-5;progress.style.width=`${max<=0?100:25+75*Math.min(1,track.scrollLeft/max)}%`;}
   arrows.forEach(b=>b.addEventListener('click',()=>track.scrollBy({left:Number(b.dataset.filmStep)*(track.querySelector('article').getBoundingClientRect().width+parseFloat(getComputedStyle(track).gap)),behavior:reduced?'instant':'smooth'})));
   track.addEventListener('scroll',update,{passive:true});window.addEventListener('resize',update);update();
  });
@@ -50,7 +50,7 @@
    const slot=wrapFeatured(index-featuredIndex);
    card.dataset.stackSlot=String(slot);card.classList.remove('is-flying','is-dragging');
    ['--swipe-x','--swipe-y','--swipe-rotation'].forEach(prop=>card.style.removeProperty(prop));
-   card.inert=stacked&&slot!==0;
+   card.inert=stacked&&slot!==0;card.tabIndex=stacked&&slot===0?0:-1;
    if(stacked&&slot!==0)card.setAttribute('aria-hidden','true');else card.removeAttribute('aria-hidden');
   });
   featuredArrows.forEach(button=>{button.disabled=false;});
@@ -64,7 +64,7 @@
   leaving.classList.remove('is-dragging');leaving.classList.add('is-flying');
   leaving.style.setProperty('--swipe-x',`${direction*(featured.clientWidth+130)}px`);
   leaving.style.setProperty('--swipe-y','-30px');leaving.style.setProperty('--swipe-rotation',`${direction*24}deg`);
-  setTimeout(()=>{const hadFocus=leaving.contains(document.activeElement);featuredIndex=wrapFeatured(featuredIndex+step);featuredAnimating=false;featuredLayout();if(hadFocus)featuredCards[featuredIndex].querySelector('button').focus({preventScroll:true});},reduced?0:300);
+  setTimeout(()=>{const hadFocus=leaving.contains(document.activeElement);featuredIndex=wrapFeatured(featuredIndex+step);featuredAnimating=false;featuredLayout();if(hadFocus)featuredCards[featuredIndex].focus({preventScroll:true});},reduced?0:300);
  }
  featuredArrows.forEach(b=>b.addEventListener('click',()=>advanceFeatured(Number(b.dataset.featuredStep))));
  featured.addEventListener('click',e=>{if(performance.now()<suppressFeaturedClickUntil||featuredAnimating){e.preventDefault();e.stopImmediatePropagation();}},true);
@@ -103,10 +103,10 @@
  const previews=[...document.querySelectorAll('[data-preview-src]')];
  const visiblePreviews=new Set();let previewsPaused=reduced;
  const previewToggle=document.querySelector('.celebs-preview-toggle');
- function syncPreviews(){previews.forEach(video=>{if(visiblePreviews.has(video)&&(!mobileFeatured.matches||video.closest('.celebs-featured-card').dataset.stackSlot==='0')&&!previewsPaused&&!document.hidden&&!dialog.open){if(!video.hasAttribute('src'))video.src=video.dataset.previewSrc;video.muted=true;video.play().catch(()=>{});}else video.pause();});}
- function previewLabel(){previewToggle.textContent=previewsPaused?'Play previews':'Pause previews';previewToggle.setAttribute('aria-pressed',String(previewsPaused));}
+ function syncPreviews(){previews.forEach(video=>{const card=video.closest('.celebs-featured-card');const activeCard=!card||!mobileFeatured.matches||card.dataset.stackSlot==='0';if(visiblePreviews.has(video)&&activeCard&&!previewsPaused&&!document.hidden&&!dialog.open){if(!video.hasAttribute('src'))video.src=video.dataset.previewSrc;video.muted=true;video.play().catch(()=>{});}else video.pause();});}
+ function previewLabel(){previewToggle.textContent=previewsPaused?'Play videos':'Pause videos';previewToggle.setAttribute('aria-pressed',String(previewsPaused));}
  previewToggle.addEventListener('click',()=>{previewsPaused=!previewsPaused;previewLabel();syncPreviews();});previewLabel();
- if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)visiblePreviews.add(e.target);else visiblePreviews.delete(e.target);});syncPreviews();},{threshold:.55});previews.forEach(v=>observer.observe(v));}
+ if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)visiblePreviews.add(e.target);else visiblePreviews.delete(e.target);});syncPreviews();},{threshold:.2});previews.forEach(v=>observer.observe(v));}
  document.addEventListener('visibilitychange',syncPreviews);
  featuredLayout();
  const toTop=document.querySelector('.celebs-to-top');
