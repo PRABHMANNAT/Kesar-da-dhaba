@@ -284,4 +284,16 @@ body:has(dialog[open]) .menu-back-top{display:none}
 @media(max-height:650px){.menu-page .cinema-hero{--cinema-height:420px;--cinema-travel:0px}}
 @media(prefers-reduced-motion:reduce){.menu-delivery-card,.menu-platform-logo,.menu-platform-action,.menu-platform-action>span{transition:none}.menu-delivery-card:hover{transform:none}.menu-back-top,.menu-back-top-arrow{transition:none}.menu-back-top:hover .menu-back-top-arrow{translate:none}.menu-category-indicator{transition:none}:is(.menu-float,.menu-chapter-cutout,.menu-seasonal-garnish,.menu-delivery-mithai){animation:none!important}.menu-reveal-ready{opacity:1;transform:none}.menu-page *{scroll-behavior:auto!important}}
 
-.menu-welcome-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:26px}.menu-download{display:inline-flex;align-items:center;gap:12px;min-height:54px;padding:11px 20px;border:1px solid #062c1a;border-radius:100px;background:#062c1a;color:#fff8e6;font-size:13px;transition:background .2s,transform .2s}.menu-download svg{width:20px;height:20px;flex-shrink:0}.menu-download small{display:block;margin-top:3px;font-size:9px;color:#d4d9bd;letter-spacing:.06em}.menu-download:hover{background:#174a31;transform:translateY(-2px)}.menu-download:active{transform:scale(.98)}.menu-download:focus-visible{outline:2px solid #b38c42;outline-offset:5px}@media(max-width:600px){.menu-welcome-actions{gap:18px 24px}.menu-welcome-actions .menu-line-link{font-size:13px;gap:22px}.menu-download{padding:10px 17px}}@media(prefers-reduced-motion:reduce){.menu-download{transition:none}.menu-download:hover{transform:none}}
+/* Download action: warm brand yellow with a contrasting circular icon. */
+.menu-welcome-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:26px}
+.menu-download{display:inline-flex;justify-content:space-between;align-items:center;gap:18px;min-height:64px;padding:8px 8px 8px 22px;border:1px solid #e7c645;border-radius:18px;background:#ffde59;color:#062c1a;text-decoration:none;box-shadow:0 5px 0 #d5b43c,0 10px 22px #062c1a0c;font-size:14px;font-weight:600;transition:background .22s,box-shadow .22s,transform .22s}
+.menu-download-copy{line-height:1.3;white-space:nowrap}
+.menu-download small{display:block;margin-top:5px;color:#43552d;font-size:10px;font-weight:400;letter-spacing:.07em}
+.menu-download-icon{display:grid;place-items:center;flex:0 0 44px;width:44px;height:44px;border-radius:50%;background:#062c1a;color:#ffde59;transition:transform .22s}
+.menu-download svg{width:20px;height:20px}
+@media(hover:hover){.menu-download:hover{background:#ffe779;transform:translateY(-2px);box-shadow:0 7px 0 #d5b43c,0 13px 25px #062c1a12}.menu-download:hover .menu-download-icon{transform:translateY(2px)}}
+.menu-download:active{transform:translateY(3px);box-shadow:0 2px 0 #d5b43c}
+.menu-download:focus-visible{outline:2px solid #062c1a;outline-offset:6px}
+@media(max-width:600px){.menu-welcome-actions{gap:20px;align-items:center}.menu-welcome-actions .menu-line-link{font-size:13px;gap:18px}.menu-download{padding-left:16px;gap:12px;font-size:13px;min-height:60px}.menu-download-icon{width:40px;height:40px;flex-basis:40px}}
+@media(max-width:380px){.menu-welcome-actions{gap:18px}.menu-download{width:100%;max-width:270px}}
+@media(prefers-reduced-motion:reduce){.menu-download,.menu-download-icon{transition:none}.menu-download:hover,.menu-download:active,.menu-download:hover .menu-download-icon{transform:none}}
