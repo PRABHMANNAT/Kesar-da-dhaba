@@ -154,12 +154,13 @@
   {
     "id": "film-15",
     "source": "AQOmL8H-gPHnVmtWwHfqT-JXAO7V3HLgJ-QC_HIwh-mDwPthJBx1DQp2NTlcIaQzT7EkTPKYMDAmI5cvpdFLEjaQl1Wy-IjdkilgnmQ.mp4",
-    "video": "/assets/notable/film-15.mp4",
-    "poster": "/assets/notable/film-15.webp",
+    "video": "/assets/notable/film-15-cropped.mp4",
+    "poster": "/assets/notable/film-15-cropped.webp",
     "duration": 15,
     "width": 720,
-    "height": 1280,
-    "name": ""
+    "height": 686,
+    "name": "Abhishek Bachchan",
+    "nameSource": "Identified by the user in Comment 1 on 2026-10-22"
   },
   {
     "id": "film-16",
