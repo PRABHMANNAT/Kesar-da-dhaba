@@ -17,4 +17,13 @@
   document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const el=document.getElementById(a.hash.slice(1));if(el){e.preventDefault();el.scrollIntoView({behavior:reduced.matches?'instant':'smooth'});history.replaceState(null,'',a.hash);el.setAttribute('tabindex','-1');el.focus({preventScroll:true});}}));
   document.querySelector('[data-share]')?.addEventListener('click',async()=>{const status=document.querySelector('[data-share-status]');try{if(navigator.share)await navigator.share({title:document.title,url:location.href.split('#')[0]});else{await navigator.clipboard.writeText(location.href.split('#')[0]);status.textContent='Link copied';}}catch(e){if(e.name!=='AbortError')status.textContent='Copy the address from your browser to share.';}});
   if(innerWidth<1024){const details=document.querySelector('.journal-contents details');if(details)details.open=false;}
+  const title=document.querySelector('[data-type-heading]');
+  if(title&&!reduced.matches){
+    let index=0;
+    title.querySelectorAll('.journal-type-line').forEach(line=>{
+      const walker=document.createTreeWalker(line,NodeFilter.SHOW_TEXT),nodes=[];
+      while(walker.nextNode())nodes.push(walker.currentNode);
+      nodes.forEach(node=>{const fragment=document.createDocumentFragment();for(const char of node.textContent){const span=document.createElement('span');span.className='journal-type-char';span.textContent=char;span.style.setProperty('--char-delay',(200+index++*58)+'ms');fragment.append(span);}node.replaceWith(fragment);});
+    });
+  }
 })();
