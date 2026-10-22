@@ -112,9 +112,9 @@ body:has(.menu-page) .mobile-actions>a:nth-child(2){background:var(--yellow);col
 .menu-platform-action{display:flex;align-items:center;gap:12px;font-size:12px}
 .menu-platform-action>span{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#fffaf4;font-size:22px}
 .menu-social{background:#f5f0e4;border-top:1px solid var(--menu-rule);padding:75px var(--gutter) 60px;overflow:hidden}
-.menu-social-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:36px}
-.menu-social-heading p{font-size:16px;line-height:1.7}
-.menu-instagram-follow{display:inline-flex;align-items:center;gap:14px;min-height:50px;background:var(--green);color:var(--ivory);padding:12px 19px;font-size:13px;margin-top:23px;border:1px solid var(--green);transition:background .2s}
+.menu-social-heading{display:flex;justify-content:space-between;align-items:center;gap:30px;margin-bottom:36px}
+.menu-social-heading h2{font-size:clamp(40px,4.5vw,64px)}
+.menu-instagram-follow{display:inline-flex;align-items:center;gap:14px;min-height:50px;background:var(--green);color:var(--ivory);padding:12px 19px;font-size:13px;border-radius:100px;border:1px solid var(--green);transition:background .2s}
 .menu-instagram-follow:hover{background:#174a31}
 .menu-instagram-follow svg{width:20px;height:20px}
 .menu-instagram-follow>span:last-child{margin-left:16px;font-size:21px}
@@ -219,9 +219,7 @@ body:has(.menu-page) .mobile-actions>a:nth-child(2){background:var(--yellow);col
   .menu-platform-logo{font-size:29px}
   .menu-social{padding:48px 24px 38px}
   .menu-social-heading{display:block;margin-bottom:26px}
-  .menu-social-heading .menu-overline{font-size:8px;margin-bottom:18px}
-  .menu-social-heading h2{font-size:57px}
-  .menu-social-heading p{font-size:15px;margin-top:18px}
+  .menu-social-heading h2{font-size:42px;max-width:300px}
   .menu-instagram-follow{font-size:12px;gap:10px;padding-inline:16px;margin-top:18px}
   .menu-social-track{margin-inline:-24px;padding-inline:24px;scroll-padding-inline:24px;gap:15px}
   .menu-post{flex-basis:85%;max-width:345px}
