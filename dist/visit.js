@@ -15,7 +15,7 @@
    state.expanded=expanded;
    if(reduced.matches){details.open=expanded;details.style.overflow='';return;}
    details.open=true;
-   const end=expanded?details.getBoundingClientRect().height:summary.getBoundingClientRect().height+1;
+   const end=expanded?details.getBoundingClientRect().height:summary.getBoundingClientRect().height+2;
    details.style.overflow='hidden';
    const animation=details.animate({height:[`${start}px`,`${end}px`]},{duration:420,easing:'cubic-bezier(.2,.65,.3,1)'});
    state.animation=animation;

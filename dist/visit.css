@@ -73,8 +73,8 @@
 .arrival-faq-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:25px}
 .arrival-faq-heading h2{font-size:42px;margin:0}
 .arrival-faq-heading>span{font-size:10px;letter-spacing:.13em;color:#78836d}
-.arrival-questions{width:100%;border-top:1px solid #c9bea0}
-.arrival-question{border:0;border-bottom:1px solid #c9bea0;margin:0;background:#fffdf640;transition:background .4s,color .4s;border-radius:0;overflow-anchor:none}
+.arrival-questions{display:grid;gap:16px;width:100%}
+.arrival-question{border:1px solid #d7cfb5;margin:0;background:#fffdf6b8;transition:background .4s,color .4s;border-radius:12px;overflow-anchor:none}
 .arrival-question[open]{background:#062c1a;color:#fff9e8;border-bottom-color:#062c1a;border-radius:12px}
 .arrival-question summary{display:flex;align-items:center;gap:25px;padding:26px 30px;cursor:pointer;list-style:none;font-size:22px;line-height:1.4}
 .arrival-question summary::-webkit-details-marker{display:none}
@@ -134,3 +134,42 @@
  .arrival-last-word{display:block;padding-block:30px 45px}.arrival-last-word h2{font-size:36px;margin-bottom:24px}.arrival-top{width:50px;height:50px;right:18px;bottom:18px}
 }
 @media(prefers-reduced-motion:reduce){.arrival-reveal-ready{opacity:1;translate:none;transition:none}.arrival-location-dot:after{animation:none;opacity:.5}.arrival-page main *{scroll-behavior:auto!important;transition:none!important}.arrival-button:hover,.arrival-opening-photo:hover>img{transform:none}}
+
+/* Hero information and contact cards. */
+.arrival-opening{margin-bottom:0}
+.arrival-opening-photo{background:#041e13}
+.arrival-opening-photo>video{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain}
+.arrival-opening-photo:after{display:none}
+.arrival-opening-photo .kesar-video-controls{bottom:18px;left:18px;right:18px}
+.arrival-call-link{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:14px 20px;border:1px solid #fff9e866;border-radius:40px;background:#fff9e80d;color:#fff9e8;transition:background .25s,transform .25s}
+.arrival-call-link>svg{width:19px;height:19px;color:#ffde59}
+.arrival-call-link>span{margin-left:3px}
+.arrival-call-link:hover{background:#fff9e824;transform:translateY(-2px)}
+.arrival-opening .arrival-details{grid-column:1/-1;margin:0;padding:26px 32px;background:#fffdf6;color:#062c1a;border:0;border-top:3px solid #ffde59}
+.arrival-contact{padding-block:25px 45px;grid-template-columns:.65fr 1.35fr}
+.arrival-contact-links a{padding:23px 45px 23px 79px;min-height:112px;background:#ffde59;border:0}
+.arrival-contact-links a:nth-child(2){background:#062c1a;color:#fffdf6}
+.arrival-contact-links a:hover{background:#f3d049}
+.arrival-contact-links a:nth-child(2):hover{background:#12452e}
+.arrival-contact-icon{position:absolute;left:19px;top:26px;display:grid;place-items:center;width:43px;height:43px;background:#fffdf6;border-radius:50%;color:#062c1a}
+.arrival-contact-icon>svg{width:24px;height:24px}
+.arrival-contact-value{color:#284631;font-size:12px}
+.arrival-contact-links a:nth-child(2) .arrival-contact-value{color:#e1e8d8}
+.arrival-contact-links a>span:last-child{background:#062c1a;color:#ffde59}
+.arrival-contact-links a:nth-child(2)>span:last-child{background:#ffde59;color:#062c1a}
+.arrival-location{margin-bottom:38px}
+@media(max-width:1000px){.arrival-contact{grid-template-columns:1fr}.arrival-opening .arrival-details{padding:24px}.arrival-contact-links{grid-template-columns:1.2fr 1fr}}
+@media(max-width:700px){
+ .arrival-questions{gap:14px}
+ .arrival-call-link{min-height:54px;padding:12px 17px;gap:8px}
+ .arrival-hero-actions{gap:12px}
+ .arrival-opening-photo{min-height:0;aspect-ratio:9/16}
+ .arrival-opening .arrival-details{padding:0 22px}
+ .arrival-opening .arrival-detail:last-child{border-bottom:0}
+ .arrival-contact{padding-block:22px 35px;gap:16px}
+ .arrival-contact-links{grid-template-columns:1fr}
+ .arrival-contact-links a{padding:22px 43px 22px 76px;min-height:105px}
+ .arrival-contact-icon{left:18px;top:24px;width:40px;height:40px}
+ .arrival-contact-value{font-size:11px}
+ .arrival-location{margin-bottom:25px}
+}
