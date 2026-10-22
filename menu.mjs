@@ -17,8 +17,9 @@ const dishImages = {
   'Seasonal Special Thali': ['seasonal-photo.webp', 'Makki di roti and saag thali'],
   'Firni': ['firni-cutout.webp', 'Firni in an earthen dish']
 };
-const categoryCutouts = { 'raita-pulao': 'seasonal-cutout.webp', beverages: 'firni-cutout.webp' };
+const categoryCutouts = { 'raita-pulao': 'seasonal-cutout.webp' };
 const categoryArt = {
+  beverages: ['lassi-glass.webp', 'A tall glass of traditional lassi'],
   sabziyan: ['dal-thumb.webp', 'Dal being finished in the Kesar kitchen'],
   pranthas: ['pranthas-thumb.webp', 'Golden Punjabi pranthas'],
   thali: ['kesar-thali-portrait-small.webp', 'A generous Kesar thali'],

@@ -161,6 +161,17 @@
       "width": 540,
       "height": 675,
       "bytes": 42512
+    },
+    {
+      "file": "/assets/menu/lassi-glass.webp",
+      "source": "https://commons.wikimedia.org/wiki/File:Lassi.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/d/df/Lassi.jpg",
+      "creator": "Ranveig; white balance by Till.niermann",
+      "license": "Public domain (PD-self)",
+      "changes": "Portrait crop, resize and WebP compression",
+      "width": 240,
+      "height": 400,
+      "bytes": 5380
     }
   ],
   "reels": [
