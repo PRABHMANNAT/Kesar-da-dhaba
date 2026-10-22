@@ -1,0 +1,991 @@
+{
+  "sourcePage": "https://kesardadhaba.com/our-legacy/",
+  "capturedOn": "2026-10-22",
+  "assets": [
+    {
+      "source": "https://fonts.googleapis.com/css?family=Jost:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+      "file": "/assets/original-legacy/fc036f8f48-css.css",
+      "bytes": 3825,
+      "reused": false
+    },
+    {
+      "source": "https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+      "file": "/assets/original-legacy/ec7864c0ce-css.css",
+      "bytes": 2043,
+      "reused": false
+    },
+    {
+      "source": "https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap",
+      "file": "/assets/original-legacy/85c5c2b0d1-css.css",
+      "bytes": 4653,
+      "reused": false
+    },
+    {
+      "source": "https://fonts.googleapis.com/css?family=TASA+Orbiter%3A400%7CJost%3A500&display=swap&ver=2025120601",
+      "file": "/assets/original-legacy/f57b452bab-css.css",
+      "bytes": 441,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/advanced-product-fields-for-woocommerce/assets/css/frontend.min.css?ver=1.7.1",
+      "file": "/assets/original-legacy/10b0dbbe59-frontend.min.css",
+      "bytes": 1321,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/elementor/assets/css/conditionals/shapes.min.css?ver=4.3.2",
+      "file": "/assets/original-legacy/44224371c1-shapes.min.css",
+      "bytes": 645,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.7",
+      "file": "/assets/original-legacy/a6eb43d834-styles.css",
+      "bytes": 2979,
+      "reused": false
+    },
+    {
+      "source": "https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css?ver=1.13.1",
+      "file": "/assets/original-legacy/8c2db9826e-jquery-ui.css",
+      "bytes": 36295,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.3.2",
+      "file": "/assets/original-legacy/cde551a090-widget-image.min.css",
+      "bytes": 214,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=4.3.2",
+      "file": "/assets/original-legacy/1621813675-fadeInUp.min.css",
+      "bytes": 130,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.3.2",
+      "file": "/assets/original-legacy/bf72871d15-frontend.min.css",
+      "bytes": 54666,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5",
+      "file": "/assets/original-legacy/691a1ebaa3-swiper.min.css",
+      "bytes": 16471,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/hostinger-reach/frontend/dist/blocks/subscription.css?ver=1790602618",
+      "file": "/assets/original-legacy/be5c37092f-subscription.css",
+      "bytes": 12288,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/instagram-feed/assets/tokens/sb-tokens-local.css?ver=6.13.1",
+      "file": "/assets/original-legacy/b755f74695-sb-tokens-local.css",
+      "bytes": 2739,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/insta-gallery/assets/frontend/swiper/swiper.min.css?ver=5.0.8",
+      "file": "/assets/original-legacy/357a43233a-swiper.min.css",
+      "bytes": 16471,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/insta-gallery/build/frontend/css/style.css?ver=5.0.8",
+      "file": "/assets/original-legacy/1114b1406c-style.css",
+      "bytes": 59985,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/instagram-feed/vendor/smashballoon/framework/Packages/Blocks/css/sb-elementor.css?ver=1.0.0",
+      "file": "/assets/original-legacy/f065972895-sb-elementor.css",
+      "bytes": 17323,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.13.1",
+      "file": "/assets/original-legacy/de1c10486f-sbi-styles.min.css",
+      "bytes": 42313,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/marquee-addons-for-elementor/assets/css/plugins/common-styles.min.css?ver=3.9.88",
+      "file": "/assets/original-legacy/489dbf1758-common-styles.min.css",
+      "bytes": 2973,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/elegant-font/font.min.css?ver=7.1.3",
+      "file": "/assets/original-legacy/6f54568c17-font.min.css",
+      "bytes": 21917,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=11.2.1",
+      "file": "/assets/original-legacy/158279de2c-woocommerce-smallscreen.css",
+      "bytes": 8655,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=11.2.1",
+      "file": "/assets/original-legacy/05767331b7-woocommerce-layout.css",
+      "bytes": 20154,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome/css/all.min.css?ver=7.1.3",
+      "file": "/assets/original-legacy/ab6b4896f3-all.min.css",
+      "bytes": 59382,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=11.2.1",
+      "file": "/assets/original-legacy/2db3dbf205-woocommerce.css",
+      "bytes": 92951,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/2022/04/Untitled-design618.png",
+      "file": "/assets/original-legacy/e2a1567da8-Untitled-design618.png",
+      "bytes": 30302,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/2022/04/Untitled-design610.png",
+      "file": "/assets/original-legacy/7b865d597f-Untitled-design610.png",
+      "bytes": 32130,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/2022/04/a-house-of-traditional-food-3.png",
+      "file": "/assets/original-legacy/119d1c0eb2-a-house-of-traditional-food-3.png",
+      "bytes": 24757,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/libs/justified-gallery/justifiedGallery.min.css?ver=3.6.3",
+      "file": "/assets/original-legacy/2bfba8da13-justifiedGallery.min.css",
+      "bytes": 1800,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/libs/slick/slick.min.css?ver=1.6.01",
+      "file": "/assets/original-legacy/99829cea42-slick.min.css",
+      "bytes": 1293,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome6/css/all.min.css?ver=7.1.3",
+      "file": "/assets/original-legacy/87e27c943b-all.min.css",
+      "bytes": 97018,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/styles/front/main.min.css?ver=2025120601",
+      "file": "/assets/original-legacy/5899f6d9af-main.min.css",
+      "bytes": 214847,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/styles/front/shop.min.css?ver=2025120601",
+      "file": "/assets/original-legacy/3d9ac53d6c-shop.min.css",
+      "bytes": 76181,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/02/FuturaLT.woff",
+      "file": "/assets/original-legacy/a9b4dc080b-FuturaLT.woff",
+      "bytes": 12704,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/02/Maragsa-Display.woff",
+      "file": "/assets/original-legacy/7ca67bcdf2-Maragsa-Display.woff",
+      "bytes": 37028,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/06/Untitled-design-92.png",
+      "file": "/assets/original-legacy/311718ba2a-Untitled-design-92.png",
+      "bytes": 121102,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/2022/05/KESAR-DA-DHABA4.png",
+      "file": "/assets/original-legacy/f0d817e66e-KESAR-DA-DHABA4.png",
+      "bytes": 516590,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/02/BDSans-Black.woff",
+      "file": "/assets/original-legacy/0a477551a8-BDSans-Black.woff",
+      "bytes": 28916,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/06/Untitled-design-93.png",
+      "file": "/assets/original-legacy/b59f568509-Untitled-design-93.png",
+      "bytes": 124483,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/06/Untitled-design941.png",
+      "file": "/assets/original-legacy/66be13efb7-Untitled-design941.png",
+      "bytes": 151773,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/02/DSC00060-scaled.jpg",
+      "file": "/assets/original-legacy/2367c438ca-DSC00060-scaled.jpg",
+      "bytes": 828862,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/07/Copy-of-Untitled-Design.png",
+      "file": "/assets/original-legacy/7b6a629831-Copy-of-Untitled-Design.png",
+      "bytes": 64237,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/07/Untitled-design950.png",
+      "file": "/assets/original-legacy/77a8108c10-Untitled-design950.png",
+      "bytes": 88411,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/07/cropped-Untitled-design-97-32x32.png",
+      "file": "/assets/original-legacy/e3e09a2ae9-cropped-Untitled-design-97-32x32.png",
+      "bytes": 1465,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/07/cropped-Untitled-design-97-180x180.png",
+      "file": "/assets/original-legacy/e14fca4439-cropped-Untitled-design-97-180x180.png",
+      "bytes": 25281,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/07/Untitled-design-95.webp",
+      "file": "/assets/original-legacy/48ac3a8a1e-Untitled-design-95.webp",
+      "bytes": 209852,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/07/cropped-Untitled-design-97-192x192.png",
+      "file": "/assets/original-legacy/22a60c42bb-cropped-Untitled-design-97-192x192.png",
+      "bytes": 27762,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/elementor/css/post-12.css?ver=1791985523",
+      "file": "/assets/original-legacy/e519c87b66-post-12.css",
+      "bytes": 1268,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/elementor/css/post-368.css?ver=1791985524",
+      "file": "/assets/original-legacy/fbfd705afd-post-368.css",
+      "bytes": 13178,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/elementor/css/post-6795.css?ver=1791997088",
+      "file": "/assets/original-legacy/45e01dfaad-post-6795.css",
+      "bytes": 28532,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/elementor/css/post-443.css?ver=1791985524",
+      "file": "/assets/original-legacy/89dbca3fc9-post-443.css",
+      "bytes": 2001,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/elementor/css/post-6663.css?ver=1791985523",
+      "file": "/assets/original-legacy/5cc796c0dc-post-6663.css",
+      "bytes": 11299,
+      "reused": false
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-includes/css/dist/block-library/style.min.css?ver=7.1.3",
+      "file": "/assets/original-legacy/3973ae6f20-style.min.css",
+      "bytes": 140829,
+      "reused": false
+    },
+    {
+      "source": "https://scontent-bom2-3.cdninstagram.com/v/t39.30808-6/747236031_1506591878179111_735015374860531923_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ZwwG5_TdEoYQ7kNvwG_JbA0&_nc_oc=Adrh61XT2rRVjZYceBmcUadPonoXod4nDBKfdQKIR8sjJ3n1zijZg4YFSZxFxkFhWSK-kaSw2CjdCIZVYrxGA3DR&_nc_zt=23&_nc_ht=scontent-bom2-3.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=Fm4KoZEapev0vI2HBsOZkg&_nc_tpa=Q5bMBQKj-xgD-cKAB-6v85zkDyE1xHHAu8YHnCUZXhHwgGhrF6I_9Bv-ZpnAutrjbElKTka3bMUfpu_y&oh=00_AQNthKpeHOTW8sAc5tICtJQrJZVz4knY46tgNy8uxfNA2A&oe=6ADFD91D",
+      "file": "/assets/original-legacy/2ac7443090-747236031_1506591878179111_735015374860531923_n.jpg",
+      "bytes": 301635,
+      "reused": false
+    },
+    {
+      "source": "https://scontent-bom2-4.cdninstagram.com/v/t39.30808-6/803323196_1563664669138498_1822878582868677438_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=vSUKdpfuIg0Q7kNvwGYXl0X&_nc_oc=AdqlulPkZSsIQooJxbJ-bj0rDGmHJV9y8KLxQSi6gKKf6uUz1F_fHVdjYKzfHGLQ3Nt7JjCtd7EWekTvPvLQWi37&_nc_zt=23&_nc_ht=scontent-bom2-4.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=Fm4KoZEapev0vI2HBsOZkg&_nc_tpa=Q5bMBQLlXhMTqJzTO9sWrhXFdi5bupNEBYcdXUI1MvaukoExrllguqFgbt63rwHbpl5G8-9FPZwO9v0n&oh=00_AQNw_NSVYCRimOFhJ2Tk4P6ApBSwDjn78uqpyCarxOYMsA&oe=6ADFBF41",
+      "file": "/assets/original-legacy/9b00544740-803323196_1563664669138498_1822878582868677438_n.jpg",
+      "bytes": 439126,
+      "reused": false
+    },
+    {
+      "source": "https://scontent-bom5-1.cdninstagram.com/v/t39.30808-6/767455920_1531791875659111_7369542514714831090_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=XOsGMPxRyP8Q7kNvwGDJXUw&_nc_oc=Adq6sew7a3-kfbv5kg4h6xyXR9WjyoFA5FVP-DrwfUJjlF_H4Wz2SUQGWwEGdbDrWd5GAHJrUSU_wtIUIKKq3NUK&_nc_zt=23&_nc_ht=scontent-bom5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=Fm4KoZEapev0vI2HBsOZkg&_nc_tpa=Q5bMBQKYHewj5MW3Sf6ppkZmrm_Kjp7tTdtzRZJ7_YNqVeziq2H3uTx1AY-Qwzyd1RQ56WWtrD3gUd8w&oh=00_AQNcoeVT0IYsTRqYWZEOqWl_JVU_FY5MO5oP1xvrJdygpQ&oe=6ADFD129",
+      "file": "/assets/original-legacy/95edb5e5b9-767455920_1531791875659111_7369542514714831090_n.jpg",
+      "bytes": 389058,
+      "reused": false
+    },
+    {
+      "source": "https://scontent-bom2-4.cdninstagram.com/v/t51.82787-15/787831924_18337334542281549_7430298725444206120_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=w9imLdC-KK0Q7kNvwFYqcXl&_nc_oc=Adp7QWxzHn_daZLu2y6_ylpNA9cUYdqVjcsHnLzxwqtkCsyVu0r6Mx4cP4GTDSRgOYMCAbBRF38pKePhxWeGFVPl&_nc_zt=23&_nc_ht=scontent-bom2-4.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=Fm4KoZEapev0vI2HBsOZkg&_nc_tpa=Q5bMBQKHd8aauWUTcB8x9QQJNzCceiODILyH7SQxHfBkzZPdt_QWnE8I_u1BlHdwoQNIamkyz5NxZVib&oh=00_AQNNieuPeCK8e-st_lf_gfz1B6dvwy8fHhLCsPLkhmoK2w&oe=6ADFB332",
+      "file": "/assets/original-legacy/5279cb934e-787831924_18337334542281549_7430298725444206120_n.jpg",
+      "bytes": 563013,
+      "reused": false
+    },
+    {
+      "source": "https://scontent-bom5-1.cdninstagram.com/v/t39.30808-6/789424934_1553848720120093_5947384472796493352_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=N-bonLZN5mwQ7kNvwEGym8p&_nc_oc=AdoLGNENAB93uj-ld3TIzgJTqf2EHJHzf7Kzq6iJFKyRMYr6R8cckGlI1mSTcXLqA3GJKMNkqTUGSDuNMDhXbRt6&_nc_zt=23&_nc_ht=scontent-bom5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=Fm4KoZEapev0vI2HBsOZkg&_nc_tpa=Q5bMBQK6zBwUn1EDR8QgsJUkcvB86D1tQFDfrtq8C0qnJbjp_SOA_zh_LZjgOdshGRwLJnQKcUD1Issq&oh=00_AQPU3MKkoHhP_VRzYv6V9TTWJcVVsEyoluLLarR1VReHHQ&oe=6ADFD085",
+      "file": "/assets/original-legacy/719f628f58-789424934_1553848720120093_5947384472796493352_n.jpg",
+      "bytes": 372601,
+      "reused": false
+    },
+    {
+      "source": "https://scontent-bom5-2.cdninstagram.com/v/t39.30808-6/772966223_1535957058575926_2680215126794416974_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=kucO1hsjYKwQ7kNvwFFk7Qo&_nc_oc=Adqppoww9qR8mEbuJ1b8vD9uCDj_ncmPpEPJZkbKvcK8DyzEpvS8C_fSCB4ujWiQHrl79tVo22f8QZJa3uZoCla6&_nc_zt=23&_nc_ht=scontent-bom5-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=Fm4KoZEapev0vI2HBsOZkg&_nc_tpa=Q5bMBQJWt-v9v7FKGWxz-QtoQu5pPCUAuC7x5w4XRuWzXNrFudizUj_A4IfNkK416HWHudNQr7I_f7p1&oh=00_AQO7LgucQK8ZxO5jj7OvcSeCcHamROY2epsfIQr6hfUYkw&oe=6ADFBDF5",
+      "file": "/assets/original-legacy/7d7dee208e-772966223_1535957058575926_2680215126794416974_n.jpg",
+      "bytes": 302445,
+      "reused": false
+    },
+    {
+      "source": "https://scontent-bom5-2.cdninstagram.com/v/t51.82787-15/850243646_18345625042281549_2253017999833462250_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=dbQF5tKf8YUQ7kNvwFH8KM3&_nc_oc=AdoVioLpfnWDoVybEUexb90aF-oCLv_bs2zd4eu00ssV50_RACP1gUcVYRdWr-u36sSb7Drn6pWoyVoh_i_9tPSP&_nc_zt=23&_nc_ht=scontent-bom5-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=Fm4KoZEapev0vI2HBsOZkg&_nc_tpa=Q5bMBQKjXIK7SubkTHSg8j1pdXnpPLYx5QVdnYXZ70i5JnLSLdgdQ0gJldMlJ3ltcOsqy7W2PwCKtrZQ&oh=00_AQMhzTguBhCZOAeEVrmgrrmE2_WgZXIZufR2fupUHdhpeg&oe=6ADFCEEA",
+      "file": "/assets/original-legacy/ab8311dc1f-850243646_18345625042281549_2253017999833462250_n.jpg",
+      "bytes": 308943,
+      "reused": false
+    },
+    {
+      "source": "https://scontent-bom5-1.cdninstagram.com/v/t39.30808-6/799274704_1559649259540039_1102376461843034818_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=jMIbAMc7ZzcQ7kNvwEZhK_g&_nc_oc=AdrALHssCxeBW7jiu8FdtvYaQ1vjMsqTWIJ8kZEzZZdvvARUXU0v_PnoHu9dCFBcbv8z4vv2LXDE-HJ5RdXXn14_&_nc_zt=23&_nc_ht=scontent-bom5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=Fm4KoZEapev0vI2HBsOZkg&_nc_tpa=Q5bMBQLdoT4TZMFA7wtrvu40-MMcXRL4Zi_cES97mpD3KGqPMISE7Cl3NTRMDlA4sN8k_L1is9si_1E-&oh=00_AQMAJTh5fNqggplJeE0crkD7XEKl3N9wqHVQTWP6ZeUH7Q&oe=6ADFA5FF",
+      "file": "/assets/original-legacy/75c8697f59-799274704_1559649259540039_1102376461843034818_n.jpg",
+      "bytes": 296995,
+      "reused": false
+    },
+    {
+      "source": "https://scontent-bom5-2.cdninstagram.com/v/t39.30808-6/833325213_1592987829539515_2482657567152847751_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=UVjVSVFD0ckQ7kNvwEpmzsp&_nc_oc=AdpoDJo4PMiE-lTJjg-J8jubyqsz4lgStg6Uorjt4pV-ZpAhDP3HOS90n_qirnBzVYpiyKj0OXj1MwHvJEhKsPQk&_nc_zt=23&_nc_ht=scontent-bom5-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=Fm4KoZEapev0vI2HBsOZkg&_nc_tpa=Q5bMBQL0G6siMdvDM_bDDnCH2Emt8usJEwmd9eL5o2dBNjIkhTwbc3NbVgWrtslXA1776ahxyZ1Dx0iJ&oh=00_AQO9m5gHfOUvPUFLC7sOQbZSTnnz9_c9GLMZHuUb-Z0jUQ&oe=6ADFA8B6",
+      "file": "/assets/original-legacy/b759b91e3f-833325213_1592987829539515_2482657567152847751_n.jpg",
+      "bytes": 326740,
+      "reused": false
+    },
+    {
+      "source": "https://scontent-bom5-1.cdninstagram.com/v/t51.82787-15/745235900_18331291414281549_1081158265899948391_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Mv8-VYiviDoQ7kNvwGPWo3V&_nc_oc=Adqi1uAzEV1Ir24Jl-b_9XKxKtwPw2vJUd7IZ8vi2bwv164jsL9Dkyq5-9f0xd5RtDFnY-B76QMK05C-ujYByMWc&_nc_zt=23&_nc_ht=scontent-bom5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=Fm4KoZEapev0vI2HBsOZkg&_nc_tpa=Q5bMBQLvxMaZ5zNjhUOlPBj07a8njAQn6qyC_La1AJo8qU06wipCXAduSKGfN9ix94Q1lz4SN9UQadED&oh=00_AQMTttSAG2pK15r3yXCOo2qf-tM7ix1dQwBcihh1d-qB4w&oe=6ADFAC04",
+      "file": "/assets/original-legacy/b3aa477d5c-745235900_18331291414281549_1081158265899948391_n.jpg",
+      "bytes": 340952,
+      "reused": false
+    },
+    {
+      "source": "https://scontent-bom5-1.cdninstagram.com/v/t51.82787-15/782056450_18336507691281549_7160036475508575099_n.webp?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=YmRPzcBcOtcQ7kNvwEo60XQ&_nc_oc=AdqRLwwqHyMDNCeoCjHUpfsuBsfiWyYo3RDgyen9nDvwMTX6VLrAYoSejEBMmUpMNcD_9W7xLL52CbfqOzyLoBG7&_nc_zt=23&_nc_ht=scontent-bom5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=Fm4KoZEapev0vI2HBsOZkg&_nc_tpa=Q5bMBQLxdhSSjuec48_wxis9xVyth1eEUea47aDN7EkfShUTfY0rw-3yi5LM-eKCFtvMaoF29Wc2X4R5&oh=00_AQPaOt07aLMPH925LAD30wa4hZe_vorJzF9YimY3_ZsSUg&oe=6ADFD8E5",
+      "file": "/assets/original-legacy/07bcb4bd48-782056450_18336507691281549_7160036475508575099_n.webp",
+      "bytes": 288554,
+      "reused": false
+    },
+    {
+      "source": "https://scontent-bom5-2.cdninstagram.com/v/t51.82787-15/837737574_18343918843281549_8646377071054066307_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=EoovvPSj0v0Q7kNvwFsJaFB&_nc_oc=AdrzgOVlvgQ5l7hN2OPauyrRHbdZa9UUWMPGuhrn_vejhgn9m8Pgy0pk3xPPgT857qTs24Cp5Mpux4oruMpcvtgH&_nc_zt=23&_nc_ht=scontent-bom5-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=Fm4KoZEapev0vI2HBsOZkg&_nc_tpa=Q5bMBQI3AMWoQL8II2-gpJNshnOH-NBzHtBWG4SrwMX0YR9vUGdCY4Z5jxZi8eETePXTlLc92-x-DHYR&oh=00_AQPavAl70foF4dGVzYwI7739EnybzAILFhiEtaF8swT9sg&oe=6ADFD554",
+      "file": "/assets/original-legacy/1568ddd3de-837737574_18343918843281549_8646377071054066307_n.jpg",
+      "bytes": 419271,
+      "reused": false
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/jost/v20/92zJtBhPNqw73oHH7BbQp4-B6XlrZu0EBIokmw.ttf",
+      "file": "/assets/original-legacy/2a624b0bd2-92zJtBhPNqw73oHH7BbQp4-B6XlrZu0EBIokmw.ttf",
+      "bytes": 26952,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/jost/v20/92zJtBhPNqw73oHH7BbQp4-B6XlrZu0FBIokmw.ttf",
+      "file": "/assets/original-legacy/59415b0469-92zJtBhPNqw73oHH7BbQp4-B6XlrZu0FBIokmw.ttf",
+      "bytes": 27064,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/jost/v20/92zJtBhPNqw73oHH7BbQp4-B6XlrZm0FBIokmw.ttf",
+      "file": "/assets/original-legacy/32e5ed7593-92zJtBhPNqw73oHH7BbQp4-B6XlrZm0FBIokmw.ttf",
+      "bytes": 27104,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/jost/v20/92zJtBhPNqw73oHH7BbQp4-B6XlrZt8FBIokmw.ttf",
+      "file": "/assets/original-legacy/33f0086749-92zJtBhPNqw73oHH7BbQp4-B6XlrZt8FBIokmw.ttf",
+      "bytes": 27172,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/jost/v20/92zJtBhPNqw73oHH7BbQp4-B6XlrZrMFBIokmw.ttf",
+      "file": "/assets/original-legacy/bd6914750d-92zJtBhPNqw73oHH7BbQp4-B6XlrZrMFBIokmw.ttf",
+      "bytes": 27140,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/jost/v20/92zJtBhPNqw73oHH7BbQp4-B6XlrZjMCBIokmw.ttf",
+      "file": "/assets/original-legacy/dbf6893b2c-92zJtBhPNqw73oHH7BbQp4-B6XlrZjMCBIokmw.ttf",
+      "bytes": 27168,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/jost/v20/92zJtBhPNqw73oHH7BbQp4-B6XlrZgoCBIokmw.ttf",
+      "file": "/assets/original-legacy/20ea38b183-92zJtBhPNqw73oHH7BbQp4-B6XlrZgoCBIokmw.ttf",
+      "bytes": 27064,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/jost/v20/92zJtBhPNqw73oHH7BbQp4-B6XlrZm0CBIokmw.ttf",
+      "file": "/assets/original-legacy/f19b612bb4-92zJtBhPNqw73oHH7BbQp4-B6XlrZm0CBIokmw.ttf",
+      "bytes": 27164,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/jost/v20/92zJtBhPNqw73oHH7BbQp4-B6XlrZkQCBIokmw.ttf",
+      "file": "/assets/original-legacy/7dacb061b5-92zJtBhPNqw73oHH7BbQp4-B6XlrZkQCBIokmw.ttf",
+      "bytes": 27116,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/jost/v20/92zPtBhPNqw79Ij1E865zBUv7myjJDVBNI0.ttf",
+      "file": "/assets/original-legacy/05bfd383f1-92zPtBhPNqw79Ij1E865zBUv7myjJDVBNI0.ttf",
+      "bytes": 25540,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/jost/v20/92zPtBhPNqw79Ij1E865zBUv7mwjJTVBNI0.ttf",
+      "file": "/assets/original-legacy/71c94356d6-92zPtBhPNqw79Ij1E865zBUv7mwjJTVBNI0.ttf",
+      "bytes": 25616,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/jost/v20/92zPtBhPNqw79Ij1E865zBUv7myjJTVBNI0.ttf",
+      "file": "/assets/original-legacy/cd1c6bfe15-92zPtBhPNqw79Ij1E865zBUv7myjJTVBNI0.ttf",
+      "bytes": 25472,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/jost/v20/92zPtBhPNqw79Ij1E865zBUv7mz9JTVBNI0.ttf",
+      "file": "/assets/original-legacy/05dd24fe81-92zPtBhPNqw79Ij1E865zBUv7mz9JTVBNI0.ttf",
+      "bytes": 25556,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/jost/v20/92zPtBhPNqw79Ij1E865zBUv7myRJTVBNI0.ttf",
+      "file": "/assets/original-legacy/14b1f4da66-92zPtBhPNqw79Ij1E865zBUv7myRJTVBNI0.ttf",
+      "bytes": 25560,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/jost/v20/92zPtBhPNqw79Ij1E865zBUv7mx9IjVBNI0.ttf",
+      "file": "/assets/original-legacy/f6ea5e0525-92zPtBhPNqw79Ij1E865zBUv7mx9IjVBNI0.ttf",
+      "bytes": 25576,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/jost/v20/92zPtBhPNqw79Ij1E865zBUv7mxEIjVBNI0.ttf",
+      "file": "/assets/original-legacy/c84dc6724f-92zPtBhPNqw79Ij1E865zBUv7mxEIjVBNI0.ttf",
+      "bytes": 25516,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/jost/v20/92zPtBhPNqw79Ij1E865zBUv7mwKIjVBNI0.ttf",
+      "file": "/assets/original-legacy/872c7f40f0-92zPtBhPNqw79Ij1E865zBUv7mwKIjVBNI0.ttf",
+      "bytes": 25596,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf",
+      "file": "/assets/original-legacy/a42bc6f5ed-BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf",
+      "bytes": 27856,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/jost/v20/92zPtBhPNqw79Ij1E865zBUv7mwjIjVBNI0.ttf",
+      "file": "/assets/original-legacy/0073a841b1-92zPtBhPNqw79Ij1E865zBUv7mwjIjVBNI0.ttf",
+      "bytes": 25628,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojIWmb2Rm.ttf",
+      "file": "/assets/original-legacy/4a1624440f-BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojIWmb2Rm.ttf",
+      "bytes": 27732,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSmb2Rm.ttf",
+      "file": "/assets/original-legacy/9b18400df1-BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSmb2Rm.ttf",
+      "bytes": 27868,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDISmb2Rm.ttf",
+      "file": "/assets/original-legacy/acc4043d64-BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDISmb2Rm.ttf",
+      "bytes": 28036,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOmb2Rm.ttf",
+      "file": "/assets/original-legacy/2414543c4a-BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOmb2Rm.ttf",
+      "bytes": 27952,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmb2Rm.ttf",
+      "file": "/assets/original-legacy/925f8f7ed5-BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmb2Rm.ttf",
+      "bytes": 27992,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4Omb2Rm.ttf",
+      "file": "/assets/original-legacy/f141a75173-BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4Omb2Rm.ttf",
+      "bytes": 27872,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoJYOmb2Rm.ttf",
+      "file": "/assets/original-legacy/22cb7a5661-BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoJYOmb2Rm.ttf",
+      "bytes": 28000,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDIOmb2Rm.ttf",
+      "file": "/assets/original-legacy/2ac50ef6c2-BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDIOmb2Rm.ttf",
+      "bytes": 27980,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLt_QuAj-lg.ttf",
+      "file": "/assets/original-legacy/2c99102797-KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLt_QuAj-lg.ttf",
+      "bytes": 46220,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHRuAj-lg.ttf",
+      "file": "/assets/original-legacy/adb51bc73f-KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHRuAj-lg.ttf",
+      "bytes": 45952,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLgHQuAj-lg.ttf",
+      "file": "/assets/original-legacy/e88cdb0856-KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLgHQuAj-lg.ttf",
+      "bytes": 46164,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHQuAj-lg.ttf",
+      "file": "/assets/original-legacy/6de289c2d8-KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHQuAj-lg.ttf",
+      "bytes": 46152,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLrPQuAj-lg.ttf",
+      "file": "/assets/original-legacy/a23cdb37ae-KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLrPQuAj-lg.ttf",
+      "bytes": 46324,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLl_XuAj-lg.ttf",
+      "file": "/assets/original-legacy/5d56cc343e-KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLl_XuAj-lg.ttf",
+      "bytes": 46444,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLijXuAj-lg.ttf",
+      "file": "/assets/original-legacy/9128c2e247-KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLijXuAj-lg.ttf",
+      "bytes": 46556,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLgHXuAj-lg.ttf",
+      "file": "/assets/original-legacy/810fea6932-KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLgHXuAj-lg.ttf",
+      "bytes": 46516,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLmbXuAj-lg.ttf",
+      "file": "/assets/original-legacy/bc86816433-KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLmbXuAj-lg.ttf",
+      "bytes": 46392,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuaabVmUiA8.ttf",
+      "file": "/assets/original-legacy/426c272203-KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuaabVmUiA8.ttf",
+      "bytes": 44792,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbFmUiA8.ttf",
+      "file": "/assets/original-legacy/8437d2e7ec-KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbFmUiA8.ttf",
+      "bytes": 44744,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZEbVmUiA8.ttf",
+      "file": "/assets/original-legacy/85d033c96d-KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZEbVmUiA8.ttf",
+      "bytes": 44820,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiA8.ttf",
+      "file": "/assets/original-legacy/c29b10834c-KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiA8.ttf",
+      "bytes": 44724,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYaalmUiA8.ttf",
+      "file": "/assets/original-legacy/4507cf55b6-KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYaalmUiA8.ttf",
+      "bytes": 44900,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjalmUiA8.ttf",
+      "file": "/assets/original-legacy/0763584e25-KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjalmUiA8.ttf",
+      "bytes": 44864,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWub2bVmUiA8.ttf",
+      "file": "/assets/original-legacy/0753679b91-KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWub2bVmUiA8.ttf",
+      "bytes": 44796,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZEalmUiA8.ttf",
+      "file": "/assets/original-legacy/8ac1c1c9d3-KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZEalmUiA8.ttf",
+      "bytes": 44964,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZtalmUiA8.ttf",
+      "file": "/assets/original-legacy/f5356de1d7-KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZtalmUiA8.ttf",
+      "bytes": 44948,
+      "reused": true
+    },
+    {
+      "source": "https://fonts.gstatic.com/s/tasaorbiter/v2/3XF4Erw3860rsdSUVZx78hPcTvQoDGHxaFGfVH4Cwpu-8w.ttf",
+      "file": "/assets/original-legacy/8660cca9dc-3XF4Erw3860rsdSUVZx78hPcTvQoDGHxaFGfVH4Cwpu-8w.ttf",
+      "bytes": 48756,
+      "reused": true
+    },
+    {
+      "source": "https://code.jquery.com/ui/1.13.1/themes/base/images/ui-icons_444444_256x240.png",
+      "file": "/assets/original-legacy/90c8f2494e-ui-icons_444444_256x240.png",
+      "bytes": 7090,
+      "reused": true
+    },
+    {
+      "source": "https://code.jquery.com/ui/1.13.1/themes/base/images/ui-icons_555555_256x240.png",
+      "file": "/assets/original-legacy/f2b4253f10-ui-icons_555555_256x240.png",
+      "bytes": 7074,
+      "reused": true
+    },
+    {
+      "source": "https://code.jquery.com/ui/1.13.1/themes/base/images/ui-icons_777620_256x240.png",
+      "file": "/assets/original-legacy/7407213b2c-ui-icons_777620_256x240.png",
+      "bytes": 4618,
+      "reused": true
+    },
+    {
+      "source": "https://code.jquery.com/ui/1.13.1/themes/base/images/ui-icons_ffffff_256x240.png",
+      "file": "/assets/original-legacy/a2aabfeecf-ui-icons_ffffff_256x240.png",
+      "bytes": 6487,
+      "reused": true
+    },
+    {
+      "source": "https://code.jquery.com/ui/1.13.1/themes/base/images/ui-icons_cc0000_256x240.png",
+      "file": "/assets/original-legacy/d3162ceb5d-ui-icons_cc0000_256x240.png",
+      "bytes": 4618,
+      "reused": true
+    },
+    {
+      "source": "https://code.jquery.com/ui/1.13.1/themes/base/images/ui-icons_777777_256x240.png",
+      "file": "/assets/original-legacy/a101882889-ui-icons_777777_256x240.png",
+      "bytes": 7111,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/instagram-feed/img/sbi-sprite.png",
+      "file": "/assets/original-legacy/c2a52fa329-sbi-sprite.png",
+      "bytes": 3943,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/elegant-font/fonts/ElegantIcons.eot",
+      "file": "/assets/original-legacy/28e8144adf-ElegantIcons.eot",
+      "bytes": 59572,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/elegant-font/fonts/ElegantIcons.woff",
+      "file": "/assets/original-legacy/d4117cf9f9-ElegantIcons.woff",
+      "bytes": 63664,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/elegant-font/fonts/ElegantIcons.eot?",
+      "file": "/assets/original-legacy/a9f8fe20c5-ElegantIcons.eot",
+      "bytes": 59572,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/elegant-font/fonts/ElegantIcons.ttf",
+      "file": "/assets/original-legacy/08fc69ced8-ElegantIcons.ttf",
+      "bytes": 59388,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/elegant-font/fonts/ElegantIcons.svg",
+      "file": "/assets/original-legacy/55c9aed1c6-ElegantIcons.svg",
+      "bytes": 277297,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome/webfonts/fa-brands-400.eot?",
+      "file": "/assets/original-legacy/3acdaa869c-fa-brands-400.eot",
+      "bytes": 134622,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome/webfonts/fa-brands-400.eot",
+      "file": "/assets/original-legacy/519bdec9da-fa-brands-400.eot",
+      "bytes": 134622,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome/webfonts/fa-brands-400.woff2",
+      "file": "/assets/original-legacy/f4ceca888a-fa-brands-400.woff2",
+      "bytes": 77400,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome/webfonts/fa-brands-400.woff",
+      "file": "/assets/original-legacy/951b7dda2a-fa-brands-400.woff",
+      "bytes": 90672,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome/webfonts/fa-brands-400.ttf",
+      "file": "/assets/original-legacy/b424c769a0-fa-brands-400.ttf",
+      "bytes": 134316,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome/webfonts/fa-regular-400.eot",
+      "file": "/assets/original-legacy/8a5d444b37-fa-regular-400.eot",
+      "bytes": 34350,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome/webfonts/fa-regular-400.woff2",
+      "file": "/assets/original-legacy/1e1212273a-fa-regular-400.woff2",
+      "bytes": 13600,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome/webfonts/fa-regular-400.eot?",
+      "file": "/assets/original-legacy/d5fb1ca436-fa-regular-400.eot",
+      "bytes": 34350,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome/webfonts/fa-regular-400.woff",
+      "file": "/assets/original-legacy/f71005a71a-fa-regular-400.woff",
+      "bytes": 16780,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome/webfonts/fa-brands-400.svg",
+      "file": "/assets/original-legacy/6c8042372f-fa-brands-400.svg",
+      "bytes": 730302,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome/webfonts/fa-regular-400.ttf",
+      "file": "/assets/original-legacy/178c126fe4-fa-regular-400.ttf",
+      "bytes": 34052,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome/webfonts/fa-regular-400.svg",
+      "file": "/assets/original-legacy/d02a1badbb-fa-regular-400.svg",
+      "bytes": 144715,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome/webfonts/fa-solid-900.woff",
+      "file": "/assets/original-legacy/a73ee8f730-fa-solid-900.woff",
+      "bytes": 104004,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome/webfonts/fa-solid-900.eot",
+      "file": "/assets/original-legacy/05849f6a1c-fa-solid-900.eot",
+      "bytes": 204266,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome/webfonts/fa-solid-900.eot?",
+      "file": "/assets/original-legacy/ecbee1ea4d-fa-solid-900.eot",
+      "bytes": 204266,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome/webfonts/fa-solid-900.woff2",
+      "file": "/assets/original-legacy/fc73de8eb1-fa-solid-900.woff2",
+      "bytes": 80148,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome/webfonts/fa-solid-900.ttf",
+      "file": "/assets/original-legacy/89e132be28-fa-solid-900.ttf",
+      "bytes": 203980,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome/webfonts/fa-solid-900.svg",
+      "file": "/assets/original-legacy/30558c9b82-fa-solid-900.svg",
+      "bytes": 914125,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.woff2",
+      "file": "/assets/original-legacy/70fdd7c067-WooCommerce.woff2",
+      "bytes": 6488,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.woff",
+      "file": "/assets/original-legacy/f3d4dd70b3-WooCommerce.woff",
+      "bytes": 8084,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/images/icons/loader.svg",
+      "file": "/assets/original-legacy/85406ba9f4-loader.svg",
+      "bytes": 158,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.ttf",
+      "file": "/assets/original-legacy/6842bd9eb9-WooCommerce.ttf",
+      "bytes": 14748,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/mastercard.svg",
+      "file": "/assets/original-legacy/716284822d-mastercard.svg",
+      "bytes": 4634,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/laser.svg",
+      "file": "/assets/original-legacy/6a00807a0a-laser.svg",
+      "bytes": 3110,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/visa.svg",
+      "file": "/assets/original-legacy/9d9243bff9-visa.svg",
+      "bytes": 1359,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/discover.svg",
+      "file": "/assets/original-legacy/34a3b30069-discover.svg",
+      "bytes": 2185,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/diners.svg",
+      "file": "/assets/original-legacy/ff78fec0b0-diners.svg",
+      "bytes": 804,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/maestro.svg",
+      "file": "/assets/original-legacy/170a01488f-maestro.svg",
+      "bytes": 6797,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/jcb.svg",
+      "file": "/assets/original-legacy/bb879fb501-jcb.svg",
+      "bytes": 2800,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/amex.svg",
+      "file": "/assets/original-legacy/6a662e600c-amex.svg",
+      "bytes": 4662,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome6/webfonts/fa-regular-400.ttf",
+      "file": "/assets/original-legacy/88b8229f1f-fa-regular-400.ttf",
+      "bytes": 67976,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome6/webfonts/fa-brands-400.woff2",
+      "file": "/assets/original-legacy/6ac44e2266-fa-brands-400.woff2",
+      "bytes": 118072,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome6/webfonts/fa-brands-400.ttf",
+      "file": "/assets/original-legacy/d2e013ef69-fa-brands-400.ttf",
+      "bytes": 209376,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome6/webfonts/fa-regular-400.woff2",
+      "file": "/assets/original-legacy/d927dd9cae-fa-regular-400.woff2",
+      "bytes": 25464,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome6/webfonts/fa-solid-900.woff2",
+      "file": "/assets/original-legacy/ab4e7a3bf8-fa-solid-900.woff2",
+      "bytes": 157192,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome6/webfonts/fa-solid-900.ttf",
+      "file": "/assets/original-legacy/504bf50fa9-fa-solid-900.ttf",
+      "bytes": 423676,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome6/webfonts/fa-v4compatibility.woff2",
+      "file": "/assets/original-legacy/e80578ad3e-fa-v4compatibility.woff2",
+      "bytes": 4800,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome6/webfonts/fa-v4compatibility.ttf",
+      "file": "/assets/original-legacy/f038f9ec0d-fa-v4compatibility.ttf",
+      "bytes": 10836,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/themes/patiotime/assets/images/loftocean-white.svg",
+      "file": "/assets/original-legacy/553c3e34d7-loftocean-white.svg",
+      "bytes": 1112,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/02/DSC00185-scaled.jpg",
+      "file": "/assets/original-legacy/622575b7f7-DSC00185-scaled.jpg",
+      "bytes": 544767,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/03/KESAR-DA-DHABA7-scaled.png",
+      "file": "/assets/original-legacy/db902a9213-KESAR-DA-DHABA7-scaled.png",
+      "bytes": 303137,
+      "reused": true
+    },
+    {
+      "source": "https://kesardadhaba.com/wp-content/uploads/2026/03/KESAR-DA-DHABA6.png",
+      "file": "/assets/original-legacy/61b4b1486e-KESAR-DA-DHABA6.png",
+      "bytes": 442299,
+      "reused": false
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,20 @@
+/* Behaviour adapters only; the original page's design styles are mirrored locally. */
+.original-legacy-clone.legacy-menu-open{overflow:hidden}
+.original-legacy-clone .sidemenu[aria-hidden=true]{visibility:hidden;pointer-events:none}
+.original-legacy-clone .sidemenu .close-button{padding:0;border:0;background:transparent;color:inherit}
+.original-legacy-clone .posts-wrapper::after{content:'';display:block;clear:both}
+.original-legacy-clone #content .pt-parallax-on-scroll{background-image:var(--legacy-banner)!important}
+.original-legacy-clone #content .pt-parallax-on-scroll .parallax-img-container img{height:calc(100% + 180px)!important;margin-top:-180px!important;transform:translate3d(0,var(--legacy-parallax,0px),0)!important}
+.original-legacy-clone #legacy-title{scroll-margin-top:140px}
+@media(max-width:1024px){.original-legacy-clone #content .pt-parallax-on-scroll .parallax-img-container{display:none}}
+@media(prefers-reduced-motion:reduce){.original-legacy-clone *{scroll-behavior:auto!important;animation:none!important;transition:none!important}.original-legacy-clone #content .pt-parallax-on-scroll .parallax-img-container img{transform:none!important}}
+
+.original-legacy-clone #instagram-gallery-feed-0 .swiper-container{overflow:visible;position:relative}
+.original-legacy-clone #instagram-gallery-feed-0 .swiper-wrapper{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;transform:none!important}
+.original-legacy-clone #instagram-gallery-feed-0 .swiper-wrapper::-webkit-scrollbar{display:none}
+.original-legacy-clone #instagram-gallery-feed-0 .swiper-slide{flex:0 0 calc((100% - 40px)/5);width:auto!important;scroll-snap-align:start}
+.original-legacy-clone .legacy-gallery-nav{position:absolute;top:calc(50% - 45px);z-index:3;width:36px;height:48px;padding:0;border:0;background:transparent;color:#062c1a;font-size:38px;line-height:1;cursor:pointer}
+.original-legacy-clone .legacy-gallery-prev{left:4px}.original-legacy-clone .legacy-gallery-next{right:4px}
+@media(max-width:768px){.original-legacy-clone #instagram-gallery-feed-0 .swiper-wrapper{gap:8px}.original-legacy-clone #instagram-gallery-feed-0 .swiper-slide{flex-basis:calc((100% - 8px)/2)}}
+@media(max-width:480px){.original-legacy-clone #instagram-gallery-feed-0 .swiper-slide{flex-basis:100%}}
+.original-legacy-clone #instagram-gallery-feed-0 .swiper-slide{margin:0!important;box-sizing:border-box}

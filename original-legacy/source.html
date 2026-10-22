@@ -1,0 +1,1364 @@
+<!DOCTYPE html><html lang="en-US" class=" no-svg js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px; }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+:root { --primary-color: #ffde59; --primary-color-semi: rgba(255, 222, 89, 0.3); --secondary-color: #062c1a; --light-text-color: #062c1a; --light-content-color: #0a253e; --heading-font: "Maragsâ"; --hf-weight: 500; --subheading-font: "TASA Orbiter"; --body-font: "Futura"; --bt-text-transform: uppercase; --secondary-font: "Futura"; }
+
+.patiotime-enable-onepage-menu-check .current-menu-item > a::before { display: none !important; }
+
+.sidemenu .container { background-color: rgb(248, 252, 255); }
+
+.sidemenu .container { color: rgb(10, 37, 62); }
+
+.sidemenu.custom-width { max-width: 475px; }
+
+@font-face { font-family: Maragsâ; font-weight: 400; src: url("https://kesardadhaba.com/wp-content/uploads/2026/02/Maragsa-Display.woff") format("woff"); }
+
+@font-face { font-family: Futura; font-weight: 400; src: url("https://kesardadhaba.com/wp-content/uploads/2026/02/FuturaLT.woff") format("woff"); }
+
+@font-face { font-family: Beautiful; font-weight: 400; src: url("https://kesardadhaba.com/wp-content/uploads/2026/02/BDSans-Black.woff") format("woff"); }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+.wp-block-button__link { color: rgb(255, 255, 255); background-color: rgb(50, 55, 60); border-radius: 9999px; box-shadow: none; text-decoration: none; padding: calc(0.667em + 2px) calc(1.333em + 2px); font-size: 1.125em; }
+
+.wp-block-file__button { background: rgb(50, 55, 60); color: rgb(255, 255, 255); text-decoration: none; }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+:root { --wp--preset--aspect-ratio--square: 1; --wp--preset--aspect-ratio--4-3: 4/3; --wp--preset--aspect-ratio--3-4: 3/4; --wp--preset--aspect-ratio--3-2: 3/2; --wp--preset--aspect-ratio--2-3: 2/3; --wp--preset--aspect-ratio--16-9: 16/9; --wp--preset--aspect-ratio--9-16: 9/16; --wp--preset--color--black: #000000; --wp--preset--color--cyan-bluish-gray: #abb8c3; --wp--preset--color--white: #ffffff; --wp--preset--color--pale-pink: #f78da7; --wp--preset--color--vivid-red: #cf2e2e; --wp--preset--color--luminous-vivid-orange: #ff6900; --wp--preset--color--luminous-vivid-amber: #fcb900; --wp--preset--color--light-green-cyan: #7bdcb5; --wp--preset--color--vivid-green-cyan: #00d084; --wp--preset--color--pale-cyan-blue: #8ed1fc; --wp--preset--color--vivid-cyan-blue: #0693e3; --wp--preset--color--vivid-purple: #9b51e0; --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%); --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%); --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%); --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%); --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%); --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%); --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%); --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%); --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%); --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%); --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%); --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%); --wp--preset--font-size--small: 13px; --wp--preset--font-size--medium: 20px; --wp--preset--font-size--large: 36px; --wp--preset--font-size--x-large: 42px; --wp--preset--spacing--20: 0.44rem; --wp--preset--spacing--30: 0.67rem; --wp--preset--spacing--40: 1rem; --wp--preset--spacing--50: 1.5rem; --wp--preset--spacing--60: 2.25rem; --wp--preset--spacing--70: 3.38rem; --wp--preset--spacing--80: 5.06rem; --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2); --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4); --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2); --wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0); --wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0); }
+
+.wp-block-button { --wp--preset--dimension--25: 25%; --wp--preset--dimension--50: 50%; --wp--preset--dimension--75: 75%; --wp--preset--dimension--100: 100%; }
+
+:where(body) { margin: 0px; }
+
+:where(.is-layout-flex) { gap: 0.5em; }
+
+:where(.is-layout-grid) { gap: 0.5em; }
+
+body .is-layout-flex { display: flex; }
+
+.is-layout-flex { flex-wrap: wrap; align-items: center; }
+
+.is-layout-flex > :is(*, div) { margin: 0px; }
+
+body .is-layout-grid { display: grid; }
+
+.is-layout-grid > :is(*, div) { margin: 0px; }
+
+body { padding: 0px; }
+
+:root :where(.wp-element-button, .wp-block-button__link) { background-color: rgb(50, 55, 60); border-width: 0px; color: rgb(255, 255, 255); font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; letter-spacing: inherit; line-height: inherit; padding: calc(0.667em + 2px) calc(1.333em + 2px); text-decoration: none; text-transform: inherit; }
+
+.has-black-color { color: var(--wp--preset--color--black) !important; }
+
+.has-cyan-bluish-gray-color { color: var(--wp--preset--color--cyan-bluish-gray) !important; }
+
+.has-white-color { color: var(--wp--preset--color--white) !important; }
+
+.has-pale-pink-color { color: var(--wp--preset--color--pale-pink) !important; }
+
+.has-vivid-red-color { color: var(--wp--preset--color--vivid-red) !important; }
+
+.has-luminous-vivid-orange-color { color: var(--wp--preset--color--luminous-vivid-orange) !important; }
+
+.has-luminous-vivid-amber-color { color: var(--wp--preset--color--luminous-vivid-amber) !important; }
+
+.has-light-green-cyan-color { color: var(--wp--preset--color--light-green-cyan) !important; }
+
+.has-vivid-green-cyan-color { color: var(--wp--preset--color--vivid-green-cyan) !important; }
+
+.has-pale-cyan-blue-color { color: var(--wp--preset--color--pale-cyan-blue) !important; }
+
+.has-vivid-cyan-blue-color { color: var(--wp--preset--color--vivid-cyan-blue) !important; }
+
+.has-vivid-purple-color { color: var(--wp--preset--color--vivid-purple) !important; }
+
+.has-black-background-color { background-color: var(--wp--preset--color--black) !important; }
+
+.has-cyan-bluish-gray-background-color { background-color: var(--wp--preset--color--cyan-bluish-gray) !important; }
+
+.has-white-background-color { background-color: var(--wp--preset--color--white) !important; }
+
+.has-pale-pink-background-color { background-color: var(--wp--preset--color--pale-pink) !important; }
+
+.has-vivid-red-background-color { background-color: var(--wp--preset--color--vivid-red) !important; }
+
+.has-luminous-vivid-orange-background-color { background-color: var(--wp--preset--color--luminous-vivid-orange) !important; }
+
+.has-luminous-vivid-amber-background-color { background-color: var(--wp--preset--color--luminous-vivid-amber) !important; }
+
+.has-light-green-cyan-background-color { background-color: var(--wp--preset--color--light-green-cyan) !important; }
+
+.has-vivid-green-cyan-background-color { background-color: var(--wp--preset--color--vivid-green-cyan) !important; }
+
+.has-pale-cyan-blue-background-color { background-color: var(--wp--preset--color--pale-cyan-blue) !important; }
+
+.has-vivid-cyan-blue-background-color { background-color: var(--wp--preset--color--vivid-cyan-blue) !important; }
+
+.has-vivid-purple-background-color { background-color: var(--wp--preset--color--vivid-purple) !important; }
+
+.has-black-border-color { border-color: var(--wp--preset--color--black) !important; }
+
+.has-cyan-bluish-gray-border-color { border-color: var(--wp--preset--color--cyan-bluish-gray) !important; }
+
+.has-white-border-color { border-color: var(--wp--preset--color--white) !important; }
+
+.has-pale-pink-border-color { border-color: var(--wp--preset--color--pale-pink) !important; }
+
+.has-vivid-red-border-color { border-color: var(--wp--preset--color--vivid-red) !important; }
+
+.has-luminous-vivid-orange-border-color { border-color: var(--wp--preset--color--luminous-vivid-orange) !important; }
+
+.has-luminous-vivid-amber-border-color { border-color: var(--wp--preset--color--luminous-vivid-amber) !important; }
+
+.has-light-green-cyan-border-color { border-color: var(--wp--preset--color--light-green-cyan) !important; }
+
+.has-vivid-green-cyan-border-color { border-color: var(--wp--preset--color--vivid-green-cyan) !important; }
+
+.has-pale-cyan-blue-border-color { border-color: var(--wp--preset--color--pale-cyan-blue) !important; }
+
+.has-vivid-cyan-blue-border-color { border-color: var(--wp--preset--color--vivid-cyan-blue) !important; }
+
+.has-vivid-purple-border-color { border-color: var(--wp--preset--color--vivid-purple) !important; }
+
+.has-vivid-cyan-blue-to-vivid-purple-gradient-background { background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important; }
+
+.has-light-green-cyan-to-vivid-green-cyan-gradient-background { background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important; }
+
+.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background { background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important; }
+
+.has-luminous-vivid-orange-to-vivid-red-gradient-background { background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important; }
+
+.has-very-light-gray-to-cyan-bluish-gray-gradient-background { background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important; }
+
+.has-cool-to-warm-spectrum-gradient-background { background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important; }
+
+.has-blush-light-purple-gradient-background { background: var(--wp--preset--gradient--blush-light-purple) !important; }
+
+.has-blush-bordeaux-gradient-background { background: var(--wp--preset--gradient--blush-bordeaux) !important; }
+
+.has-luminous-dusk-gradient-background { background: var(--wp--preset--gradient--luminous-dusk) !important; }
+
+.has-pale-ocean-gradient-background { background: var(--wp--preset--gradient--pale-ocean) !important; }
+
+.has-electric-grass-gradient-background { background: var(--wp--preset--gradient--electric-grass) !important; }
+
+.has-midnight-gradient-background { background: var(--wp--preset--gradient--midnight) !important; }
+
+.has-small-font-size { font-size: var(--wp--preset--font-size--small) !important; }
+
+.has-medium-font-size { font-size: var(--wp--preset--font-size--medium) !important; }
+
+.has-large-font-size { font-size: var(--wp--preset--font-size--large) !important; }
+
+.has-x-large-font-size { font-size: var(--wp--preset--font-size--x-large) !important; }
+
+:root :where(.wp-block-icon svg) { width: 24px; }
+
+:where(.wp-block-gallery.is-layout-flex) { gap: var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) ); }
+
+:where(.wp-block-gallery.is-layout-grid) { gap: var( --wp--style--gallery-gap-default, var( --gallery-block--gutter-size, var( --wp--style--block-gap, 0.5em ) ) ); }
+
+:where(.wp-block-latest-posts.is-layout-flex) { gap: 1.25em; }
+
+:where(.wp-block-latest-posts.is-layout-grid) { gap: 1.25em; }
+
+:where(.wp-block-post-template.is-layout-flex) { gap: 1.25em; }
+
+:where(.wp-block-post-template.is-layout-grid) { gap: 1.25em; }
+
+:where(.wp-block-term-template.is-layout-flex) { gap: 1.25em; }
+
+:where(.wp-block-term-template.is-layout-grid) { gap: 1.25em; }
+
+:where(.wp-block-columns.is-layout-flex) { gap: 2em; }
+
+:where(.wp-block-columns.is-layout-grid) { gap: 2em; }
+
+:root :where(.wp-block-pullquote) { font-size: 1.5em; line-height: 1.6; }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+.woocommerce form .form-row .required { visibility: visible; }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload), .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * { background-image: none !important; }
+
+@media screen and (max-height: 1024px) {
+  .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload), .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * { background-image: none !important; }
+}
+
+@media screen and (max-height: 640px) {
+  .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload), .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * { background-image: none !important; }
+}</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+.pt-food-menu.food-menu-style-3 .pt-food-menu-item { margin: 0px 0px 12px; }
+
+pt-food-menu .pt-food-menu-title .menu-label { font-size: 0.6rem !important; padding: 2px !important; }
+
+.pt-testimonials.testimonial-style-1 .pt-testimonial { margin: 0px auto; max-width: 1000px; }
+
+.instagram-gallery__actions { text-align: center; margin: 50px 0px !important; }
+
+.page-title-section.page-title-large .entry-title { font-size: 2rem; letter-spacing: 1px; font-weight: 500; font-family: Jost; }</style>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+		<link rel="profile" href="https://gmpg.org/xfn/11">
+		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+	<!-- This site is optimized with the Yoast SEO plugin v28.5 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Our Legacy -</title>
+	<link rel="canonical" href="https://kesardadhaba.com/our-legacy/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Our Legacy -">
+	<meta property="og:description" content="OUR LEGACY SERVING SINCE 1916 History Kesar Da Dhaba was founded in 1916 in Sheikhupura (now in Pakistan), by Late Lala Kesar Mal ji and his wife, with a vision to serve authentic Punjabi food. What began as a small, humble kitchen soon became renowned for its rich flavours and traditional cooking.&nbsp; National leaders like ...">
+	<meta property="og:url" content="https://kesardadhaba.com/our-legacy/">
+	<meta property="article:publisher" content="https://www.facebook.com/kesardadhaba">
+	<meta property="article:modified_time" content="2026-07-03T10:35:06+00:00">
+	<meta property="og:image" content="https://kesardadhaba.com/wp-content/uploads/2026/07/Untitled-design950.png">
+	<meta property="og:image:width" content="750">
+	<meta property="og:image:height" content="80">
+	<meta property="og:image:type" content="image/png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Est. reading time">
+	<meta name="twitter:data1" content="3 minutes">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"https:\/\/kesardadhaba.com\/our-legacy\/","url":"https:\/\/kesardadhaba.com\/our-legacy\/","name":"Our Legacy -","isPartOf":{"@id":"https:\/\/kesardadhaba.com\/#website"},"primaryImageOfPage":{"@id":"https:\/\/kesardadhaba.com\/our-legacy\/#primaryimage"},"image":{"@id":"https:\/\/kesardadhaba.com\/our-legacy\/#primaryimage"},"thumbnailUrl":"https:\/\/kesardadhaba.com\/wp-content\/uploads\/2026\/07\/Untitled-design950.png","datePublished":"2022-04-05T13:54:29+00:00","dateModified":"2026-07-03T10:35:06+00:00","breadcrumb":{"@id":"https:\/\/kesardadhaba.com\/our-legacy\/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https:\/\/kesardadhaba.com\/our-legacy\/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/kesardadhaba.com\/our-legacy\/#primaryimage","url":"https:\/\/kesardadhaba.com\/wp-content\/uploads\/2026\/07\/Untitled-design950.png","contentUrl":"https:\/\/kesardadhaba.com\/wp-content\/uploads\/2026\/07\/Untitled-design950.png","width":750,"height":80},{"@type":"BreadcrumbList","@id":"https:\/\/kesardadhaba.com\/our-legacy\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/kesardadhaba.com\/"},{"@type":"ListItem","position":2,"name":"Our Legacy"}]},{"@type":"WebSite","@id":"https:\/\/kesardadhaba.com\/#website","url":"https:\/\/kesardadhaba.com\/","name":"","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/kesardadhaba.com\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="https://cdn-reach.hostinger.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="alternate" type="application/rss+xml" title=" » Feed" href="https://kesardadhaba.com/feed/">
+<link rel="alternate" type="application/rss+xml" title=" » Comments Feed" href="https://kesardadhaba.com/comments/feed/">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://kesardadhaba.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkesardadhaba.com%2Four-legacy%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://kesardadhaba.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkesardadhaba.com%2Four-legacy%2F&amp;format=xml">
+
+<link rel="stylesheet" id="patiotime-theme-google-fonts-css" href="https://fonts.googleapis.com/css?family=TASA+Orbiter%3A400%7CJost%3A500&amp;display=swap&amp;ver=2025120601" media="all">
+<link rel="stylesheet" id="slick-css" href="https://kesardadhaba.com/wp-content/themes/patiotime/assets/libs/slick/slick.min.css?ver=1.6.01" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome/css/all.min.css?ver=7.1.3" media="all">
+<link rel="stylesheet" id="font-awesome6-css" href="https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/font-awesome6/css/all.min.css?ver=7.1.3" media="all">
+<link rel="stylesheet" id="elegant-font-css" href="https://kesardadhaba.com/wp-content/themes/patiotime/assets/fonts/elegant-font/font.min.css?ver=7.1.3" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="https://kesardadhaba.com/wp-includes/css/dist/block-library/style.min.css?ver=7.1.3" media="all">
+<link rel="stylesheet" id="woocommerce-general-css" href="https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=11.2.1" media="all">
+<link rel="stylesheet" id="woocommerce-layout-css" href="https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=11.2.1" media="all">
+<link rel="stylesheet" id="woocommerce-smallscreen-css" href="https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=11.2.1" media="only screen and (max-width: 768px)">
+<link rel="stylesheet" id="patiotime-theme-style-css" href="https://kesardadhaba.com/wp-content/themes/patiotime/assets/styles/front/main.min.css?ver=2025120601" media="all">
+<link rel="stylesheet" id="sbi-tokens-local-css" href="https://kesardadhaba.com/wp-content/plugins/instagram-feed/assets/tokens/sb-tokens-local.css?ver=6.13.1" media="all">
+<link rel="stylesheet" id="sbi_styles-css" href="https://kesardadhaba.com/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.13.1" media="all">
+<link rel="stylesheet" id="sb-elementor-shared-style-css" href="https://kesardadhaba.com/wp-content/plugins/instagram-feed/vendor/smashballoon/framework/Packages/Blocks/css/sb-elementor.css?ver=1.0.0" media="all">
+<link rel="stylesheet" id="patiotime-woocommerce-css" href="https://kesardadhaba.com/wp-content/themes/patiotime/assets/styles/front/shop.min.css?ver=2025120601" media="all">
+
+
+<link rel="stylesheet" id="hostinger-reach-subscription-block-css" href="https://kesardadhaba.com/wp-content/plugins/hostinger-reach/frontend/dist/blocks/subscription.css?ver=1790602618" media="all">
+
+<link rel="stylesheet" id="wapf-frontend-css-css" href="https://kesardadhaba.com/wp-content/plugins/advanced-product-fields-for-woocommerce/assets/css/frontend.min.css?ver=1.7.1" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="https://kesardadhaba.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.7" media="all">
+
+<link rel="stylesheet" id="elementor-frontend-css" href="https://kesardadhaba.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.3.2" media="all">
+<link rel="stylesheet" id="elementor-post-12-css" href="https://kesardadhaba.com/wp-content/uploads/elementor/css/post-12.css?ver=1791985523" media="all">
+<link rel="stylesheet" id="deensimc-marquee-common-styles-css" href="https://kesardadhaba.com/wp-content/plugins/marquee-addons-for-elementor/assets/css/plugins/common-styles.min.css?ver=3.9.88" media="">
+<link rel="stylesheet" id="e-animation-fadeInUp-css" href="https://kesardadhaba.com/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=4.3.2" media="all">
+<link rel="stylesheet" id="widget-image-css" href="https://kesardadhaba.com/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.3.2" media="all">
+<link rel="stylesheet" id="elementor-post-6795-css" href="https://kesardadhaba.com/wp-content/uploads/elementor/css/post-6795.css?ver=1791997088" media="all">
+<link rel="stylesheet" id="elementor-gf-roboto-css" href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap" media="all">
+<link rel="stylesheet" id="elementor-gf-robotoslab-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap" media="all">
+<link rel="stylesheet" id="elementor-gf-jost-css" href="https://fonts.googleapis.com/css?family=Jost:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap" media="all">
+<script id="modernizr-js" src="https://kesardadhaba.com/wp-content/themes/patiotime/assets/scripts/libs/modernizr.min.js?ver=3.3.1"></script>
+<script id="jquery-core-js" src="https://kesardadhaba.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://kesardadhaba.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="deensimc-marquee-track-fill-js" src="https://kesardadhaba.com/wp-content/plugins/marquee-addons-for-elementor/assets/js/marquee-track-fill.min.js?ver=3.9.88"></script>
+<script id="deensimc-handle-animation-duration-js" src="https://kesardadhaba.com/wp-content/plugins/marquee-addons-for-elementor/assets/js/handle-animation-duration.min.js?ver=3.9.88"></script>
+<script id="deensimc-init-text-length-toggle-js" src="https://kesardadhaba.com/wp-content/plugins/marquee-addons-for-elementor/assets/js/initTextLengthToggle.min.js?ver=3.9.88"></script>
+<script data-wp-strategy="defer" defer="" id="wc-jquery-blockui-js" src="https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.11.2.1"></script>
+<script id="wc-add-to-cart-js-extra">
+var wc_add_to_cart_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url":"/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https://kesardadhaba.com","is_cart":"","cart_redirect_after_add":"no"};
+//# sourceURL=wc-add-to-cart-js-extra
+</script>
+<script data-wp-strategy="defer" defer="" id="wc-add-to-cart-js" src="https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=11.2.1"></script>
+<script data-wp-strategy="defer" defer="" id="wc-js-cookie-js" src="https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.11.2.1"></script>
+<script id="woocommerce-js-extra">
+var woocommerce_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url":"/?wc-ajax=%%endpoint%%","i18n_password_show":"Show password","i18n_password_hide":"Hide password"};
+//# sourceURL=woocommerce-js-extra
+</script>
+<script data-wp-strategy="defer" defer="" id="woocommerce-js" src="https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=11.2.1"></script>
+<link rel="https://api.w.org/" href="https://kesardadhaba.com/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://kesardadhaba.com/wp-json/wp/v2/pages/6795"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://kesardadhaba.com/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 7.1.3">
+<meta name="generator" content="WooCommerce 11.2.1">
+<link rel="shortlink" href="https://kesardadhaba.com/?p=6795">
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<meta name="generator" content="Elementor 4.3.2; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+			
+			<link rel="icon" href="https://kesardadhaba.com/wp-content/uploads/2026/07/cropped-Untitled-design-97-32x32.png" sizes="32x32">
+<link rel="icon" href="https://kesardadhaba.com/wp-content/uploads/2026/07/cropped-Untitled-design-97-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://kesardadhaba.com/wp-content/uploads/2026/07/cropped-Untitled-design-97-180x180.png">
+<meta name="msapplication-TileImage" content="https://kesardadhaba.com/wp-content/uploads/2026/07/cropped-Untitled-design-97-270x270.png">
+
+	<script src="https://kesardadhaba.com/wp-content/plugins/elementor/assets/js/chunks/section-stretched-section.min.js?ver=4.3.2" async=""></script><script src="https://kesardadhaba.com/wp-content/plugins/elementor/assets/js/chunks/background-slideshow.min.js?ver=4.3.2" async=""></script><script src="https://kesardadhaba.com/wp-content/plugins/elementor/assets/js/chunks/background-video.min.js?ver=4.3.2" async=""></script><script src="https://kesardadhaba.com/wp-content/plugins/elementor/assets/js/chunks/text-editor.min.js?ver=4.3.2" async=""></script></head>
+
+	<body class="wp-singular page-template page page-id-6795 wp-custom-logo wp-embed-responsive wp-theme-patiotime theme-patiotime woocommerce-js ally-default elementor-default elementor-kit-12 elementor-page elementor-page-6795 page-template-template-wide-content page-template-template-wide-content-php pt-template-wide light-color site-layout-fullwidth pt-form-underline e--ua-blink e--ua-chrome e--ua-webkit" data-elementor-device-mode="none">
+				<div id="page">
+										<header id="masthead" class="site-header overlap-header" data-sticky-status="always-enable">			<link rel="stylesheet" id="elementor-post-6663-css" href="https://kesardadhaba.com/wp-content/uploads/elementor/css/post-6663.css?ver=1791985523" type="text/css" media="all">		<div data-elementor-type="wp-post" data-elementor-id="6663" class="elementor elementor-6663">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-202b68a8 pt-section-content-fullwidth elementor-hidden-tablet elementor-hidden-mobile elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="202b68a8" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-76a9d5d5 dark-color" data-id="76a9d5d5" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3e35eb56 elementor-widget__width-auto elementor-widget elementor-widget-pt_info" data-id="3e35eb56" data-element_type="widget" data-e-type="widget" data-widget_type="pt_info.default">
+				<div class="elementor-widget-container">
+						            <div class="pt-info pt-address">
+	                <a href="https://www.google.com/maps/place/kesar+da+dhaba/data=!4m2!3m1!1s0x39197caa7727941f:0xfcde6f886bfa4e16?sa=X&amp;ved=1t:242&amp;ictx=111">	                    <i class="fas fa-map-marker-alt"></i> Chowk Passian, gali rajpura, near Telephone Exchange, Amritsar, Punjab 143006	                </a>	            </div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-4a00332b elementor-widget__width-auto elementor-widget elementor-widget-pt_info" data-id="4a00332b" data-element_type="widget" data-e-type="widget" data-widget_type="pt_info.default">
+				<div class="elementor-widget-container">
+						            <div class="pt-info pt-email">
+	                <a href="mailto:kesardadhabaamritsar@gmail.com">	                    <i class="far fa-envelope"></i> kesardadhabaamritsar@gmail.com	                </a>	            </div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-c3df314 dark-color" data-id="c3df314" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c97f978 elementor-widget__width-auto elementor-widget elementor-widget-pt_info" data-id="c97f978" data-element_type="widget" data-e-type="widget" data-widget_type="pt_info.default">
+				<div class="elementor-widget-container">
+						            <div class="pt-info pt-tel">
+	                <a href="tel:01832532227">	                    <i class="fas fa-phone"></i> 01832532227	                </a>	            </div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-c3ed222 elementor-widget__width-auto elementor-widget elementor-widget-pt_social" data-id="c3ed222" data-element_type="widget" data-e-type="widget" data-widget_type="pt_social.default">
+				<div class="elementor-widget-container">
+					<nav id="c3ed222-social-menu-container" class="social-navigation"><ul id="c3ed222-social-menu" class="social-nav menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24"><a href="https://www.facebook.com/kesardadhaba">Facebook</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6780"><a href="https://www.instagram.com/kesardadhaba">Instagram</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7605"><a href="https://www.youtube.com/@kesardadhaba.official">Youtube</a></li>
+</ul></nav>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-45697723 pt-section-content-fullwidth elementor-hidden-tablet elementor-hidden-mobile elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="45697723" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-3692b588 dark-color" data-id="3692b588" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-96281ba elementor-align-center elementor-widget elementor-widget-pt_logo" data-id="96281ba" data-element_type="widget" data-e-type="widget" data-widget_type="pt_logo.default">
+				<div class="elementor-widget-container">
+					                <a href="https://kesardadhaba.com/">                    <img width="2560" height="2123" src="https://kesardadhaba.com/wp-content/uploads/2026/02/cropped-Black-White-Simple-Coming-Soon-Instagram-Post-Square-scaled-2.png" class="attachment-full size-full wp-image-6925" alt="Kesar Da Dhaba">                </a>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-37eefb7e dark-color" data-id="37eefb7e" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6ba3fe57 elementor-widget elementor-widget-pt_menu" data-id="6ba3fe57" data-element_type="widget" data-e-type="widget" data-widget_type="pt_menu.default">
+				<div class="elementor-widget-container">
+					<nav class="pt-menu main-navigation not-mobile-menu dropdown-dark text-center"><ul id="menu-6ba3fe57" class="menu primary-menu"><li id="menu-item-6957" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6957"><a href="https://kesardadhaba.com/our-legacy/#"><span>About us</span></a></li>
+<li id="menu-item-6958" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6958"><a href="https://kesardadhaba.com/our-legacy/#"><span>Our Story</span></a></li>
+<li id="menu-item-6962" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6962"><a href="https://kesardadhaba.com/our-legacy/#"><span>Our Menu</span></a></li>
+<li id="menu-item-6963" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6963"><a href="https://kesardadhaba.com/our-legacy/#"><span>Contact us</span></a></li>
+</ul></nav>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-2f0fa39a dark-color" data-id="2f0fa39a" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-34a9542 elementor-align-right elementor-widget__width-auto elementor-widget elementor-widget-pt_button" data-id="34a9542" data-element_type="widget" data-e-type="widget" data-widget_type="pt_button.default">
+				<div class="elementor-widget-container">
+					        <a href="https://kesardadhaba.com/our-legacy/#" class="elementor-button-link button pt-btn-outline pt-btn-color-white" role="button">
+            <span class="pt-btn-text">Reservation</span>
+        </a>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-679a000 pt-section-content-fullwidth elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="679a000" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a1a0895 dark-color" data-id="a1a0895" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-97d917b elementor-widget__width-auto elementor-widget elementor-widget-pt_menu_toggle" data-id="97d917b" data-element_type="widget" data-e-type="widget" data-widget_type="pt_menu_toggle.default">
+				<div class="elementor-widget-container">
+					        <button class="menu-toggle elementor-widget-menu-toggle">
+			<span class="screen-reader-text">Menu</span>
+			<span class="menu-toggle-icon"></span>
+					</button>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-9de6815 dark-color" data-id="9de6815" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-15ac346 elementor-align-center elementor-mobile-align-left elementor-widget elementor-widget-pt_logo" data-id="15ac346" data-element_type="widget" data-e-type="widget" data-widget_type="pt_logo.default">
+				<div class="elementor-widget-container">
+					                <a href="https://kesardadhaba.com/">                    <img width="875" height="438" src="https://kesardadhaba.com/wp-content/uploads/2022/04/Untitled-design618.png" class="attachment-full size-full wp-image-7526" alt="">                </a>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-2b7a4a7 dark-color elementor-hidden-mobile" data-id="2b7a4a7" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-080233e elementor-widget__width-auto elementor-widget elementor-widget-pt_button" data-id="080233e" data-element_type="widget" data-e-type="widget" data-widget_type="pt_button.default">
+				<div class="elementor-widget-container">
+					        <a href="https://kesardadhaba.com/our-menu/" class="elementor-button-link button pt-btn-outline" role="button">
+            <span class="pt-btn-text">OUR MENU</span>
+        </a>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8393e48 pt-section-content-fullwidth elementor-hidden-tablet elementor-hidden-mobile elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8393e48" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c58f859 dark-color" data-id="c58f859" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-06fa378 elementor-align-center elementor-widget elementor-widget-pt_logo" data-id="06fa378" data-element_type="widget" data-e-type="widget" data-widget_type="pt_logo.default">
+				<div class="elementor-widget-container">
+					                <a href="https://kesardadhaba.com/">                    <img width="350" height="350" src="https://kesardadhaba.com/wp-content/uploads/2022/04/Untitled-design603.png" class="attachment-full size-full wp-image-6972" alt="">                </a>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8d676dd pt-section-content-fullwidth elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8d676dd" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-48a4c94 dark-color" data-id="48a4c94" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-08ecf79 elementor-widget elementor-widget-pt_logo" data-id="08ecf79" data-element_type="widget" data-e-type="widget" data-widget_type="pt_logo.default">
+				<div class="elementor-widget-container">
+					                <a href="https://kesardadhaba.com/">                    <img width="875" height="438" src="https://kesardadhaba.com/wp-content/uploads/2022/04/a-house-of-traditional-food-3.png" class="attachment-full size-full wp-image-7973" alt="">                </a>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-247875e dark-color" data-id="247875e" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e49f28c elementor-align-right elementor-widget__width-auto elementor-hidden-mobile elementor-widget elementor-widget-pt_button" data-id="e49f28c" data-element_type="widget" data-e-type="widget" data-widget_type="pt_button.default">
+				<div class="elementor-widget-container">
+					        <a href="https://kesardadhaba.com/our-legacy/#" class="elementor-button-link button pt-btn-outline pt-btn-small pt-btn-color-white" role="button">
+            <span class="pt-btn-text">Reservation</span>
+        </a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-10b9d7a elementor-widget__width-auto elementor-hidden-desktop elementor-widget elementor-widget-pt_menu_toggle" data-id="10b9d7a" data-element_type="widget" data-e-type="widget" data-widget_type="pt_menu_toggle.default">
+				<div class="elementor-widget-container">
+					        <button class="menu-toggle elementor-widget-menu-toggle">
+			<span class="screen-reader-text">Menu</span>
+			<span class="menu-toggle-icon"></span>
+					</button>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+						</header>				<header id="sticky-site-header" class="site-header custom-sticky-header hide overlap-header">			<link rel="stylesheet" id="elementor-post-6663-css" href="https://kesardadhaba.com/wp-content/uploads/elementor/css/post-6663.css?ver=1791985523" type="text/css" media="all">		<div data-elementor-type="wp-post" data-elementor-id="6663" class="elementor elementor-6663">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-202b68a8 pt-section-content-fullwidth elementor-hidden-tablet elementor-hidden-mobile elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="202b68a8" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-76a9d5d5 dark-color" data-id="76a9d5d5" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3e35eb56 elementor-widget__width-auto elementor-widget elementor-widget-pt_info" data-id="3e35eb56" data-element_type="widget" data-e-type="widget" data-widget_type="pt_info.default">
+				<div class="elementor-widget-container">
+						            <div class="pt-info pt-address">
+	                <a href="https://www.google.com/maps/place/kesar+da+dhaba/data=!4m2!3m1!1s0x39197caa7727941f:0xfcde6f886bfa4e16?sa=X&amp;ved=1t:242&amp;ictx=111">	                    <i class="fas fa-map-marker-alt"></i> Chowk Passian, gali rajpura, near Telephone Exchange, Amritsar, Punjab 143006	                </a>	            </div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-4a00332b elementor-widget__width-auto elementor-widget elementor-widget-pt_info" data-id="4a00332b" data-element_type="widget" data-e-type="widget" data-widget_type="pt_info.default">
+				<div class="elementor-widget-container">
+						            <div class="pt-info pt-email">
+	                <a href="mailto:kesardadhabaamritsar@gmail.com">	                    <i class="far fa-envelope"></i> kesardadhabaamritsar@gmail.com	                </a>	            </div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-c3df314 dark-color" data-id="c3df314" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c97f978 elementor-widget__width-auto elementor-widget elementor-widget-pt_info" data-id="c97f978" data-element_type="widget" data-e-type="widget" data-widget_type="pt_info.default">
+				<div class="elementor-widget-container">
+						            <div class="pt-info pt-tel">
+	                <a href="tel:01832532227">	                    <i class="fas fa-phone"></i> 01832532227	                </a>	            </div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-c3ed222 elementor-widget__width-auto elementor-widget elementor-widget-pt_social" data-id="c3ed222" data-element_type="widget" data-e-type="widget" data-widget_type="pt_social.default">
+				<div class="elementor-widget-container">
+					<nav id="c3ed222-social-menu-container" class="social-navigation"><ul id="c3ed222-social-menu" class="social-nav menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24"><a href="https://www.facebook.com/kesardadhaba">Facebook</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6780"><a href="https://www.instagram.com/kesardadhaba">Instagram</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7605"><a href="https://www.youtube.com/@kesardadhaba.official">Youtube</a></li>
+</ul></nav>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-45697723 pt-section-content-fullwidth elementor-hidden-tablet elementor-hidden-mobile elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="45697723" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-3692b588 dark-color" data-id="3692b588" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-96281ba elementor-align-center elementor-widget elementor-widget-pt_logo" data-id="96281ba" data-element_type="widget" data-e-type="widget" data-widget_type="pt_logo.default">
+				<div class="elementor-widget-container">
+					                <a href="https://kesardadhaba.com/">                    <img width="2560" height="2123" src="https://kesardadhaba.com/wp-content/uploads/2026/02/cropped-Black-White-Simple-Coming-Soon-Instagram-Post-Square-scaled-2.png" class="attachment-full size-full wp-image-6925" alt="Kesar Da Dhaba">                </a>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-37eefb7e dark-color" data-id="37eefb7e" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6ba3fe57 elementor-widget elementor-widget-pt_menu" data-id="6ba3fe57" data-element_type="widget" data-e-type="widget" data-widget_type="pt_menu.default">
+				<div class="elementor-widget-container">
+					<nav class="pt-menu main-navigation not-mobile-menu dropdown-dark text-center"><ul id="menu-6ba3fe57" class="menu primary-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6957"><a href="https://kesardadhaba.com/our-legacy/#"><span>About us</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6958"><a href="https://kesardadhaba.com/our-legacy/#"><span>Our Story</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6962"><a href="https://kesardadhaba.com/our-legacy/#"><span>Our Menu</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6963"><a href="https://kesardadhaba.com/our-legacy/#"><span>Contact us</span></a></li>
+</ul></nav>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-2f0fa39a dark-color" data-id="2f0fa39a" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-34a9542 elementor-align-right elementor-widget__width-auto elementor-widget elementor-widget-pt_button" data-id="34a9542" data-element_type="widget" data-e-type="widget" data-widget_type="pt_button.default">
+				<div class="elementor-widget-container">
+					        <a href="https://kesardadhaba.com/our-legacy/#" class="elementor-button-link button pt-btn-outline pt-btn-color-white" role="button">
+            <span class="pt-btn-text">Reservation</span>
+        </a>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-679a000 pt-section-content-fullwidth elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="679a000" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a1a0895 dark-color" data-id="a1a0895" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-97d917b elementor-widget__width-auto elementor-widget elementor-widget-pt_menu_toggle" data-id="97d917b" data-element_type="widget" data-e-type="widget" data-widget_type="pt_menu_toggle.default">
+				<div class="elementor-widget-container">
+					        <button class="menu-toggle elementor-widget-menu-toggle">
+			<span class="screen-reader-text">Menu</span>
+			<span class="menu-toggle-icon"></span>
+					</button>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-9de6815 dark-color" data-id="9de6815" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-15ac346 elementor-align-center elementor-mobile-align-left elementor-widget elementor-widget-pt_logo" data-id="15ac346" data-element_type="widget" data-e-type="widget" data-widget_type="pt_logo.default">
+				<div class="elementor-widget-container">
+					                <a href="https://kesardadhaba.com/">                    <img width="875" height="438" src="https://kesardadhaba.com/wp-content/uploads/2022/04/Untitled-design618.png" class="attachment-full size-full wp-image-7526" alt="">                </a>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-2b7a4a7 dark-color elementor-hidden-mobile" data-id="2b7a4a7" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-080233e elementor-widget__width-auto elementor-widget elementor-widget-pt_button" data-id="080233e" data-element_type="widget" data-e-type="widget" data-widget_type="pt_button.default">
+				<div class="elementor-widget-container">
+					        <a href="https://kesardadhaba.com/our-menu/" class="elementor-button-link button pt-btn-outline" role="button">
+            <span class="pt-btn-text">OUR MENU</span>
+        </a>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8393e48 pt-section-content-fullwidth elementor-hidden-tablet elementor-hidden-mobile elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8393e48" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c58f859 dark-color" data-id="c58f859" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-06fa378 elementor-align-center elementor-widget elementor-widget-pt_logo" data-id="06fa378" data-element_type="widget" data-e-type="widget" data-widget_type="pt_logo.default">
+				<div class="elementor-widget-container">
+					                <a href="https://kesardadhaba.com/">                    <img width="350" height="350" src="https://kesardadhaba.com/wp-content/uploads/2022/04/Untitled-design603.png" class="attachment-full size-full wp-image-6972" alt="">                </a>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8d676dd pt-section-content-fullwidth elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8d676dd" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-48a4c94 dark-color" data-id="48a4c94" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-08ecf79 elementor-widget elementor-widget-pt_logo" data-id="08ecf79" data-element_type="widget" data-e-type="widget" data-widget_type="pt_logo.default">
+				<div class="elementor-widget-container">
+					                <a href="https://kesardadhaba.com/">                    <img width="875" height="438" src="https://kesardadhaba.com/wp-content/uploads/2022/04/a-house-of-traditional-food-3.png" class="attachment-full size-full wp-image-7973" alt="">                </a>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-247875e dark-color" data-id="247875e" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-e49f28c elementor-align-right elementor-widget__width-auto elementor-hidden-mobile elementor-widget elementor-widget-pt_button" data-id="e49f28c" data-element_type="widget" data-e-type="widget" data-widget_type="pt_button.default">
+				<div class="elementor-widget-container">
+					        <a href="https://kesardadhaba.com/our-legacy/#" class="elementor-button-link button pt-btn-outline pt-btn-small pt-btn-color-white" role="button">
+            <span class="pt-btn-text">Reservation</span>
+        </a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-10b9d7a elementor-widget__width-auto elementor-hidden-desktop elementor-widget elementor-widget-pt_menu_toggle" data-id="10b9d7a" data-element_type="widget" data-e-type="widget" data-widget_type="pt_menu_toggle.default">
+				<div class="elementor-widget-container">
+					        <button class="menu-toggle elementor-widget-menu-toggle">
+			<span class="screen-reader-text">Menu</span>
+			<span class="menu-toggle-icon"></span>
+					</button>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+						</header>			<div id="content" class="site-content">
+				
+<div class="main">
+	<div class="container">
+		<div id="primary" class="primary content-area">
+                                            <article class="post-6795 page type-page status-publish hentry">
+    <div class="entry-content">		<div data-elementor-type="wp-page" data-elementor-id="6795" class="elementor elementor-6795">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-45fed3cf pt-section-content-fullwidth pt_scroll_y_180 pt-parallax-on-scroll elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="45fed3cf" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-pt-parallax-y="180" style="background-image: none;" data-pt-background-image="https://kesardadhaba.com/wp-content/uploads/2026/02/DSC00060-scaled.jpg"><div class="parallax-img-container"><img src="https://kesardadhaba.com/wp-content/uploads/2026/02/DSC00060-scaled.jpg" style="height: 238px; margin-top: -180px;"></div>
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-534bfec1 dark-color" data-id="534bfec1" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-27d2ccb pt-animation-medium-offset elementor-invisible elementor-widget elementor-widget-pt_title" data-id="27d2ccb" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="pt_title.default">
+				<div class="elementor-widget-container">
+					
+        <div class="pt-title-wrap text-center">	            <h3 class="pt-title">
+	                OUR LEGACY	            </h3>        </div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+		<div class="elementor-element elementor-element-1414f19 e-con-full elementor-hidden-desktop elementor-hidden-tablet e-flex e-con e-parent" data-id="1414f19" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-55051c9 elementor-widget elementor-widget-image" data-id="55051c9" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img fetchpriority="high" decoding="async" width="750" height="80" src="https://kesardadhaba.com/wp-content/uploads/2026/07/Untitled-design950.png" class="attachment-large size-large wp-image-8485" alt="">															</div>
+				</div>
+		<div class="elementor-element elementor-element-269fca9 e-flex e-con-boxed e-con e-parent" data-id="269fca9" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-52b61a1 e-con-full elementor-hidden-mobile e-flex e-con e-parent" data-id="52b61a1" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-a49971c elementor-widget elementor-widget-image" data-id="a49971c" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img decoding="async" width="1600" height="70" src="https://kesardadhaba.com/wp-content/uploads/2026/06/Untitled-design941.png" class="attachment-full size-full wp-image-7889" alt="">															</div>
+				</div>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-228c9559 pt-animation-medium-offset elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="228c9559" data-element_type="section" data-e-type="section" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:300}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-3a6cccba" data-id="3a6cccba" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-276e6ea8 elementor-tablet-align-center elementor-widget elementor-widget-pt_rounded_image" data-id="276e6ea8" data-element_type="widget" data-e-type="widget" data-widget_type="pt_rounded_image.default">
+				<div class="elementor-widget-container">
+									<div class="pt-rounded-image" style="border-radius: var(--rounded) var(--rounded) 0 0;">
+										<img decoding="async" width="1707" height="2560" src="https://kesardadhaba.com/wp-content/uploads/2026/07/Untitled-design-95.webp" class="attachment-full size-full wp-image-8123" alt="">									</div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-3610bf36 elementor-hidden-tablet elementor-hidden-mobile" data-id="3610bf36" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2a1641bf full-height elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-pt_vertical_divider" data-id="2a1641bf" data-element_type="widget" data-e-type="widget" data-widget_type="pt_vertical_divider.default">
+				<div class="elementor-widget-container">
+					
+        <div class="pt-vertical-divider divider-grass">                <div class="pt-vd-icon icon-start">                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.06 29.67">
+                        <path d="M36.53,21.85,31.78,18s-7.5.83-9.68,16.39C22.1,34.34,25.7,21.66,36.53,21.85Z" transform="translate(-5.47 -4.66)"></path>
+                        <path class="cls-1" d="M5.47,21.85,10.22,18s7.5.83,9.68,16.39C19.9,34.34,16.3,21.66,5.47,21.85Z" transform="translate(-5.47 -4.66)"></path>
+                        <polygon class="cls-1" points="15.53 0 18.66 6.56 15.53 22.16 12.39 6.56 15.53 0"></polygon>
+                    </svg>                </div>            <div class="pt-vd-line"></div>                <div class="pt-vd-icon icon-end">                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.06 29.67">
+                        <path d="M36.53,21.85,31.78,18s-7.5.83-9.68,16.39C22.1,34.34,25.7,21.66,36.53,21.85Z" transform="translate(-5.47 -4.66)"></path>
+                        <path class="cls-1" d="M5.47,21.85,10.22,18s7.5.83,9.68,16.39C19.9,34.34,16.3,21.66,5.47,21.85Z" transform="translate(-5.47 -4.66)"></path>
+                        <polygon class="cls-1" points="15.53 0 18.66 6.56 15.53 22.16 12.39 6.56 15.53 0"></polygon>
+                    </svg>                </div>        </div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-781998d5" data-id="781998d5" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7defe9da pt-animation-medium-offset elementor-invisible elementor-widget elementor-widget-pt_title" data-id="7defe9da" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="pt_title.default">
+				<div class="elementor-widget-container">
+					
+        <div class="pt-title-wrap text-left">	            <div class="pt-subtitle-wrap"><span class="pt-subtitle">SERVING SINCE 1916</span></div>	            <h3 class="pt-title">
+	                <small>History</small>	            </h3>	            <div class="pt-title-text">
+	                <p><span style="font-weight: 400;">Kesar Da Dhaba was founded in 1916 in Sheikhupura (now in Pakistan), by Late Lala Kesar Mal ji and his wife, with a vision to serve authentic Punjabi food. What began as a small, humble kitchen soon became renowned for its rich flavours and traditional cooking.&nbsp;</span></p><p><span style="font-weight: 400;">National leaders like Lala Lajpat Rai, Jawaharlal Nehru, and Indira Gandhi are known to have enjoyed food from the Dhaba, adding to its early reputation for trust and good taste.</span></p><p><span style="font-weight: 400;">During the partition of India, the family relocated to Amritsar, where Kesar Da Dhaba found a new home in the historic old city. Over the decades, the Dhaba evolved, but its soul never changed. The same traditional recipes, pure desi ghee and slow-cooked methods were carefully preserved and passed down through generations.</span></p><p><span style="font-weight: 400;">Today, Kesar da Dhaba stands as a symbol of Amritsar‘s food heritage, not just a restaurant but a place where history, culture and timeless Punjabi flavours come together.</span></p>	            </div>                <div class="pt-title-btn">
+                    <a class="button elementor-button-link pt-btn-color-secondary pt-btn-outline" role="button" href="https://kesardadhaba.com/our-menu/">
+                        <span class="pt-btn-text">View Menus</span>
+                    </a>
+                </div>
+                    </div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+		<div class="elementor-element elementor-element-12cd232 e-con-full e-flex e-con e-parent" data-id="12cd232" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-6d5fe38 pt-animation-medium-offset elementor-invisible elementor-widget elementor-widget-pt_title" data-id="6d5fe38" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="pt_title.default">
+				<div class="elementor-widget-container">
+					
+        <div class="pt-title-wrap text-center">	            <h3 class="pt-title">
+	                A Legacy Passed Down Through Generations	            </h3>        </div>				</div>
+				</div>
+		<div class="elementor-element elementor-element-e1aa627 e-grid e-con-boxed e-con e-child" data-id="e1aa627" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-57a6636 elementor-widget elementor-widget-image" data-id="57a6636" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="300" height="300" src="https://kesardadhaba.com/wp-content/uploads/2026/06/Untitled-design-92.png" class="attachment-large size-large wp-image-7851" alt="">															</div>
+				<div class="elementor-element elementor-element-4adc774 pt-animation-medium-offset elementor-invisible elementor-widget elementor-widget-pt_title" data-id="4adc774" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="pt_title.default">
+				<div class="elementor-widget-container">
+					
+        <div class="pt-title-wrap text-left text-center-mobile">	            <div class="pt-title-text">
+	                <div class="qMYqUG_convSearchResultHighlightRoot"><div class="" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-is-intersecting="true"><section class="text-token-text-primary w-full focus:outline-none has-data-writing-block:pointer-events-none [&amp;:has([data-writing-block])>*]:pointer-events-auto R6Vx5W_threadScrollVars scroll-mb-[calc(var(--scroll-root-safe-area-inset-bottom,0px)+var(--thread-response-height))] scroll-mt-[calc(var(--header-height)+min(200px,max(70px,20svh)))]" dir="auto" data-turn-id="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-testid="conversation-turn-2" data-turn="assistant"><div class="text-base my-auto mx-auto pb-10 [--thread-content-margin:var(--thread-content-margin-xs,calc(var(--spacing)*4))] @w-sm/main:[--thread-content-margin:var(--thread-content-margin-sm,calc(var(--spacing)*6))] @w-lg/main:[--thread-content-margin:var(--thread-content-margin-lg,calc(var(--spacing)*16))] px-(--thread-content-margin)"><div class="[--thread-content-max-width:40rem] @w-lg/main:[--thread-content-max-width:48rem] mx-auto max-w-(--thread-content-max-width) flex-1 group/turn-messages focus-visible:outline-hidden relative flex w-full min-w-0 flex-col agent-turn" data-conversation-screenshot-content=""><div class="flex max-w-full flex-col gap-4 grow"><div class="min-h-8 text-message relative flex w-full flex-col items-end gap-2 text-start break-words whitespace-normal outline-none keyboard-focused:focus-ring [.text-message+&amp;]:mt-1" dir="auto" tabindex="0" data-message-author-role="assistant" data-message-id="50a75407-0e23-40b8-a600-d09f951c36ee" data-message-model-slug="gpt-5-5" data-turn-start-message="true"><div class="flex w-full flex-col gap-1 empty:hidden"><div class="markdown prose dark:prose-invert wrap-break-word w-full light markdown-new-styling"><p data-start="0" data-end="202" data-is-last-node="" data-is-only-node=""><strong>Late Lala Kesar Mal Ji</strong>, the visionary founder of Kesar Da Dhaba in 1916, established a legacy of authentic Punjabi cuisine. His dedication to quality and rich flavors made the dhaba a culinary landmark.</p></div></div></div></div></div></div></section></div></div>	            </div>        </div>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-82be780 e-grid elementor-hidden-mobile e-con-boxed e-con e-child" data-id="82be780" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-f24292e pt-animation-medium-offset elementor-invisible elementor-widget elementor-widget-pt_title" data-id="f24292e" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="pt_title.default">
+				<div class="elementor-widget-container">
+					
+        <div class="pt-title-wrap text-left">	            <div class="pt-title-text">
+	                <div class="qMYqUG_convSearchResultHighlightRoot"><div class="" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-is-intersecting="true"><section class="text-token-text-primary w-full focus:outline-none has-data-writing-block:pointer-events-none [&amp;:has([data-writing-block])>*]:pointer-events-auto R6Vx5W_threadScrollVars scroll-mb-[calc(var(--scroll-root-safe-area-inset-bottom,0px)+var(--thread-response-height))] scroll-mt-[calc(var(--header-height)+min(200px,max(70px,20svh)))]" dir="auto" data-turn-id="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-testid="conversation-turn-2" data-turn="assistant"><div class="text-base my-auto mx-auto pb-10 [--thread-content-margin:var(--thread-content-margin-xs,calc(var(--spacing)*4))] @w-sm/main:[--thread-content-margin:var(--thread-content-margin-sm,calc(var(--spacing)*6))] @w-lg/main:[--thread-content-margin:var(--thread-content-margin-lg,calc(var(--spacing)*16))] px-(--thread-content-margin)"><div class="[--thread-content-max-width:40rem] @w-lg/main:[--thread-content-max-width:48rem] mx-auto max-w-(--thread-content-max-width) flex-1 group/turn-messages focus-visible:outline-hidden relative flex w-full min-w-0 flex-col agent-turn" data-conversation-screenshot-content=""><div class="flex max-w-full flex-col gap-4 grow"><div class="min-h-8 text-message relative flex w-full flex-col items-end gap-2 text-start break-words whitespace-normal outline-none keyboard-focused:focus-ring [.text-message+&amp;]:mt-1" dir="auto" tabindex="0" data-message-author-role="assistant" data-message-id="50a75407-0e23-40b8-a600-d09f951c36ee" data-message-model-slug="gpt-5-5" data-turn-start-message="true"><div class="flex w-full flex-col gap-1 empty:hidden"><div class="markdown prose dark:prose-invert wrap-break-word w-full light markdown-new-styling"><div class="qMYqUG_convSearchResultHighlightRoot"><div class="" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-1" data-is-intersecting="true"><section class="text-token-text-primary w-full focus:outline-none has-data-writing-block:pointer-events-none [&amp;:has([data-writing-block])>*]:pointer-events-auto R6Vx5W_threadScrollVars scroll-mb-[calc(var(--scroll-root-safe-area-inset-bottom,0px)+var(--thread-response-height))] scroll-mt-[calc(var(--header-height)+min(200px,max(70px,20svh)))]" dir="auto" data-turn-id="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-1" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-1" data-testid="conversation-turn-4" data-turn="assistant"><div class="text-base my-auto mx-auto pb-10 [--thread-content-margin:var(--thread-content-margin-xs,calc(var(--spacing)*4))] @w-sm/main:[--thread-content-margin:var(--thread-content-margin-sm,calc(var(--spacing)*6))] @w-lg/main:[--thread-content-margin:var(--thread-content-margin-lg,calc(var(--spacing)*16))] px-(--thread-content-margin)"><div class="[--thread-content-max-width:40rem] @w-lg/main:[--thread-content-max-width:48rem] mx-auto max-w-(--thread-content-max-width) flex-1 group/turn-messages focus-visible:outline-hidden relative flex w-full min-w-0 flex-col agent-turn" data-conversation-screenshot-content=""><div class="flex max-w-full flex-col gap-4 grow"><div class="min-h-8 text-message relative flex w-full flex-col items-end gap-2 text-start break-words whitespace-normal outline-none keyboard-focused:focus-ring [.text-message+&amp;]:mt-1" dir="auto" tabindex="0" data-message-author-role="assistant" data-message-id="bc974eeb-5b40-4f57-87b2-9356c86173a5" data-message-model-slug="gpt-5-5" data-turn-start-message="true"><div class="flex w-full flex-col gap-1 empty:hidden"><div class="markdown prose dark:prose-invert wrap-break-word w-full light markdown-new-styling"><p data-start="0" data-end="224" data-is-last-node="" data-is-only-node=""><strong>Late Lala Shori Mal Ji, S/o Lala Kesar Mal Ji</strong>, carried forward the legacy of Kesar Da Dhaba, founded in 1916. With dedication and passion, he upheld its rich culinary traditions, making it a renowned name in Punjabi cuisine.</p></div></div></div></div></div></div></section></div></div></div></div></div></div></div></div></section></div></div>	            </div>        </div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-bead93d elementor-widget elementor-widget-image" data-id="bead93d" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="300" height="300" src="https://kesardadhaba.com/wp-content/uploads/2026/06/Untitled-design-93.png" class="attachment-large size-large wp-image-7852" alt="">															</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-6d93147 e-grid elementor-hidden-desktop elementor-hidden-tablet e-con-boxed e-con e-child" data-id="6d93147" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-9ef789c elementor-widget elementor-widget-image" data-id="9ef789c" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="300" height="300" src="https://kesardadhaba.com/wp-content/uploads/2026/06/Untitled-design-93.png" class="attachment-large size-large wp-image-7852" alt="">															</div>
+				<div class="elementor-element elementor-element-5bc9426 pt-animation-medium-offset elementor-invisible elementor-widget elementor-widget-pt_title" data-id="5bc9426" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="pt_title.default">
+				<div class="elementor-widget-container">
+					
+        <div class="pt-title-wrap text-left text-center-mobile">	            <div class="pt-title-text">
+	                <div class="qMYqUG_convSearchResultHighlightRoot"><div class="" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-is-intersecting="true"><section class="text-token-text-primary w-full focus:outline-none has-data-writing-block:pointer-events-none [&amp;:has([data-writing-block])>*]:pointer-events-auto R6Vx5W_threadScrollVars scroll-mb-[calc(var(--scroll-root-safe-area-inset-bottom,0px)+var(--thread-response-height))] scroll-mt-[calc(var(--header-height)+min(200px,max(70px,20svh)))]" dir="auto" data-turn-id="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-testid="conversation-turn-2" data-turn="assistant"><div class="text-base my-auto mx-auto pb-10 [--thread-content-margin:var(--thread-content-margin-xs,calc(var(--spacing)*4))] @w-sm/main:[--thread-content-margin:var(--thread-content-margin-sm,calc(var(--spacing)*6))] @w-lg/main:[--thread-content-margin:var(--thread-content-margin-lg,calc(var(--spacing)*16))] px-(--thread-content-margin)"><div class="[--thread-content-max-width:40rem] @w-lg/main:[--thread-content-max-width:48rem] mx-auto max-w-(--thread-content-max-width) flex-1 group/turn-messages focus-visible:outline-hidden relative flex w-full min-w-0 flex-col agent-turn" data-conversation-screenshot-content=""><div class="flex max-w-full flex-col gap-4 grow"><div class="min-h-8 text-message relative flex w-full flex-col items-end gap-2 text-start break-words whitespace-normal outline-none keyboard-focused:focus-ring [.text-message+&amp;]:mt-1" dir="auto" tabindex="0" data-message-author-role="assistant" data-message-id="50a75407-0e23-40b8-a600-d09f951c36ee" data-message-model-slug="gpt-5-5" data-turn-start-message="true"><div class="flex w-full flex-col gap-1 empty:hidden"><div class="markdown prose dark:prose-invert wrap-break-word w-full light markdown-new-styling"><div class="qMYqUG_convSearchResultHighlightRoot"><div class="" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-1" data-is-intersecting="true"><section class="text-token-text-primary w-full focus:outline-none has-data-writing-block:pointer-events-none [&amp;:has([data-writing-block])>*]:pointer-events-auto R6Vx5W_threadScrollVars scroll-mb-[calc(var(--scroll-root-safe-area-inset-bottom,0px)+var(--thread-response-height))] scroll-mt-[calc(var(--header-height)+min(200px,max(70px,20svh)))]" dir="auto" data-turn-id="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-1" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-1" data-testid="conversation-turn-4" data-turn="assistant"><div class="text-base my-auto mx-auto pb-10 [--thread-content-margin:var(--thread-content-margin-xs,calc(var(--spacing)*4))] @w-sm/main:[--thread-content-margin:var(--thread-content-margin-sm,calc(var(--spacing)*6))] @w-lg/main:[--thread-content-margin:var(--thread-content-margin-lg,calc(var(--spacing)*16))] px-(--thread-content-margin)"><div class="[--thread-content-max-width:40rem] @w-lg/main:[--thread-content-max-width:48rem] mx-auto max-w-(--thread-content-max-width) flex-1 group/turn-messages focus-visible:outline-hidden relative flex w-full min-w-0 flex-col agent-turn" data-conversation-screenshot-content=""><div class="flex max-w-full flex-col gap-4 grow"><div class="min-h-8 text-message relative flex w-full flex-col items-end gap-2 text-start break-words whitespace-normal outline-none keyboard-focused:focus-ring [.text-message+&amp;]:mt-1" dir="auto" tabindex="0" data-message-author-role="assistant" data-message-id="bc974eeb-5b40-4f57-87b2-9356c86173a5" data-message-model-slug="gpt-5-5" data-turn-start-message="true"><div class="flex w-full flex-col gap-1 empty:hidden"><div class="markdown prose dark:prose-invert wrap-break-word w-full light markdown-new-styling"><p data-start="0" data-end="224" data-is-last-node="" data-is-only-node=""><strong>Late Lala Shori Mal Ji, S/o Lala Kesar Mal Ji</strong>, carried forward the legacy of Kesar Da Dhaba, founded in 1916. With dedication and passion, he upheld its rich culinary traditions, making it a renowned name in Punjabi cuisine.</p></div></div></div></div></div></div></section></div></div></div></div></div></div></div></div></section></div></div>	            </div>        </div>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-d39d59f e-grid e-con-boxed e-con e-child" data-id="d39d59f" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-1e34f1b elementor-widget elementor-widget-image" data-id="1e34f1b" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="300" height="300" src="https://kesardadhaba.com/wp-content/uploads/2026/07/Copy-of-Untitled-Design.png" class="attachment-large size-large wp-image-8134" alt="">															</div>
+				<div class="elementor-element elementor-element-07b05ad pt-animation-medium-offset elementor-invisible elementor-widget elementor-widget-pt_title" data-id="07b05ad" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="pt_title.default">
+				<div class="elementor-widget-container">
+					
+        <div class="pt-title-wrap text-left text-center-mobile">	            <div class="pt-title-text">
+	                <div class="qMYqUG_convSearchResultHighlightRoot"><div class="" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-is-intersecting="true"><section class="text-token-text-primary w-full focus:outline-none has-data-writing-block:pointer-events-none [&amp;:has([data-writing-block])>*]:pointer-events-auto R6Vx5W_threadScrollVars scroll-mb-[calc(var(--scroll-root-safe-area-inset-bottom,0px)+var(--thread-response-height))] scroll-mt-[calc(var(--header-height)+min(200px,max(70px,20svh)))]" dir="auto" data-turn-id="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-testid="conversation-turn-2" data-turn="assistant"><div class="text-base my-auto mx-auto pb-10 [--thread-content-margin:var(--thread-content-margin-xs,calc(var(--spacing)*4))] @w-sm/main:[--thread-content-margin:var(--thread-content-margin-sm,calc(var(--spacing)*6))] @w-lg/main:[--thread-content-margin:var(--thread-content-margin-lg,calc(var(--spacing)*16))] px-(--thread-content-margin)"><div class="[--thread-content-max-width:40rem] @w-lg/main:[--thread-content-max-width:48rem] mx-auto max-w-(--thread-content-max-width) flex-1 group/turn-messages focus-visible:outline-hidden relative flex w-full min-w-0 flex-col agent-turn" data-conversation-screenshot-content=""><div class="flex max-w-full flex-col gap-4 grow"><div class="min-h-8 text-message relative flex w-full flex-col items-end gap-2 text-start break-words whitespace-normal outline-none keyboard-focused:focus-ring [.text-message+&amp;]:mt-1" dir="auto" tabindex="0" data-message-author-role="assistant" data-message-id="50a75407-0e23-40b8-a600-d09f951c36ee" data-message-model-slug="gpt-5-5" data-turn-start-message="true"><div class="flex w-full flex-col gap-1 empty:hidden"><div class="markdown prose dark:prose-invert wrap-break-word w-full light markdown-new-styling"><p data-start="0" data-end="202" data-is-last-node="" data-is-only-node=""><strong>Late Shri Vijay Kumar Ji S/o Late Lala Shori Mal Ji</strong>, took the helm and further elevated the name of Kesar Da Dhaba. With an unwavering commitment to quality and authenticity, he introduced thoughtful refinements while preserving the soulful essence of traditional Punjabi flavors.</p></div></div></div></div></div></div></section></div></div>	            </div>        </div>				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-fdf5926 e-con-full elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile e-flex e-con e-parent" data-id="fdf5926" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-e4a2823 e-con-full e-flex e-con e-child" data-id="e4a2823" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-b12fb0f elementor-widget elementor-widget-image" data-id="b12fb0f" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="300" height="300" src="https://kesardadhaba.com/wp-content/uploads/2026/06/Untitled-design-92.png" class="attachment-large size-large wp-image-7851" alt="">															</div>
+				</div>
+		<div class="elementor-element elementor-element-1267521 e-con-full e-flex e-con e-child" data-id="1267521" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-a476b31 pt-animation-medium-offset elementor-invisible elementor-widget elementor-widget-pt_title" data-id="a476b31" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="pt_title.default">
+				<div class="elementor-widget-container">
+					
+        <div class="pt-title-wrap text-left">	            <div class="pt-title-text">
+	                <div class="qMYqUG_convSearchResultHighlightRoot">
+<div class="" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-is-intersecting="true">
+<section class="text-token-text-primary w-full focus:outline-none has-data-writing-block:pointer-events-none [&amp;:has([data-writing-block])>*]:pointer-events-auto R6Vx5W_threadScrollVars scroll-mb-[calc(var(--scroll-root-safe-area-inset-bottom,0px)+var(--thread-response-height))] scroll-mt-[calc(var(--header-height)+min(200px,max(70px,20svh)))]" dir="auto" data-turn-id="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-testid="conversation-turn-2" data-turn="assistant">
+<div class="text-base my-auto mx-auto pb-10 [--thread-content-margin:var(--thread-content-margin-xs,calc(var(--spacing)*4))] @w-sm/main:[--thread-content-margin:var(--thread-content-margin-sm,calc(var(--spacing)*6))] @w-lg/main:[--thread-content-margin:var(--thread-content-margin-lg,calc(var(--spacing)*16))] px-(--thread-content-margin)">
+<div class="[--thread-content-max-width:40rem] @w-lg/main:[--thread-content-max-width:48rem] mx-auto max-w-(--thread-content-max-width) flex-1 group/turn-messages focus-visible:outline-hidden relative flex w-full min-w-0 flex-col agent-turn" data-conversation-screenshot-content="">
+<div class="flex max-w-full flex-col gap-4 grow">
+<div class="min-h-8 text-message relative flex w-full flex-col items-end gap-2 text-start break-words whitespace-normal outline-none keyboard-focused:focus-ring [.text-message+&amp;]:mt-1" dir="auto" tabindex="0" data-message-author-role="assistant" data-message-id="50a75407-0e23-40b8-a600-d09f951c36ee" data-message-model-slug="gpt-5-5" data-turn-start-message="true">
+<div class="flex w-full flex-col gap-1 empty:hidden">
+<div class="markdown prose dark:prose-invert wrap-break-word w-full light markdown-new-styling">
+<p data-start="0" data-end="202" data-is-last-node="" data-is-only-node=""><strong>Late Lala Kesar Mal Ji</strong>, the visionary founder of Kesar Da Dhaba in 1916, established a legacy of authentic Punjabi cuisine. His dedication to quality and rich flavors made the dhaba a culinary landmark.</p></div></div></div></div></div></div></section></div></div>	            </div>        </div>				</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-77c818c elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile e-flex e-con-boxed e-con e-parent" data-id="77c818c" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-a6d818e e-con-full e-flex e-con e-child" data-id="a6d818e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-dd6ee2f pt-animation-medium-offset elementor-invisible elementor-widget elementor-widget-pt_title" data-id="dd6ee2f" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="pt_title.default">
+				<div class="elementor-widget-container">
+					
+        <div class="pt-title-wrap text-left">	            <div class="pt-title-text">
+	                <div class="qMYqUG_convSearchResultHighlightRoot"><div class="" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-is-intersecting="true"><section class="text-token-text-primary w-full focus:outline-none has-data-writing-block:pointer-events-none [&amp;:has([data-writing-block])>*]:pointer-events-auto R6Vx5W_threadScrollVars scroll-mb-[calc(var(--scroll-root-safe-area-inset-bottom,0px)+var(--thread-response-height))] scroll-mt-[calc(var(--header-height)+min(200px,max(70px,20svh)))]" dir="auto" data-turn-id="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-testid="conversation-turn-2" data-turn="assistant"><div class="text-base my-auto mx-auto pb-10 [--thread-content-margin:var(--thread-content-margin-xs,calc(var(--spacing)*4))] @w-sm/main:[--thread-content-margin:var(--thread-content-margin-sm,calc(var(--spacing)*6))] @w-lg/main:[--thread-content-margin:var(--thread-content-margin-lg,calc(var(--spacing)*16))] px-(--thread-content-margin)"><div class="[--thread-content-max-width:40rem] @w-lg/main:[--thread-content-max-width:48rem] mx-auto max-w-(--thread-content-max-width) flex-1 group/turn-messages focus-visible:outline-hidden relative flex w-full min-w-0 flex-col agent-turn" data-conversation-screenshot-content=""><div class="flex max-w-full flex-col gap-4 grow"><div class="min-h-8 text-message relative flex w-full flex-col items-end gap-2 text-start break-words whitespace-normal outline-none keyboard-focused:focus-ring [.text-message+&amp;]:mt-1" dir="auto" tabindex="0" data-message-author-role="assistant" data-message-id="50a75407-0e23-40b8-a600-d09f951c36ee" data-message-model-slug="gpt-5-5" data-turn-start-message="true"><div class="flex w-full flex-col gap-1 empty:hidden"><div class="markdown prose dark:prose-invert wrap-break-word w-full light markdown-new-styling"><div class="qMYqUG_convSearchResultHighlightRoot"><div class="" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-1" data-is-intersecting="true"><section class="text-token-text-primary w-full focus:outline-none has-data-writing-block:pointer-events-none [&amp;:has([data-writing-block])>*]:pointer-events-auto R6Vx5W_threadScrollVars scroll-mb-[calc(var(--scroll-root-safe-area-inset-bottom,0px)+var(--thread-response-height))] scroll-mt-[calc(var(--header-height)+min(200px,max(70px,20svh)))]" dir="auto" data-turn-id="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-1" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-1" data-testid="conversation-turn-4" data-turn="assistant"><div class="text-base my-auto mx-auto pb-10 [--thread-content-margin:var(--thread-content-margin-xs,calc(var(--spacing)*4))] @w-sm/main:[--thread-content-margin:var(--thread-content-margin-sm,calc(var(--spacing)*6))] @w-lg/main:[--thread-content-margin:var(--thread-content-margin-lg,calc(var(--spacing)*16))] px-(--thread-content-margin)"><div class="[--thread-content-max-width:40rem] @w-lg/main:[--thread-content-max-width:48rem] mx-auto max-w-(--thread-content-max-width) flex-1 group/turn-messages focus-visible:outline-hidden relative flex w-full min-w-0 flex-col agent-turn" data-conversation-screenshot-content=""><div class="flex max-w-full flex-col gap-4 grow"><div class="min-h-8 text-message relative flex w-full flex-col items-end gap-2 text-start break-words whitespace-normal outline-none keyboard-focused:focus-ring [.text-message+&amp;]:mt-1" dir="auto" tabindex="0" data-message-author-role="assistant" data-message-id="bc974eeb-5b40-4f57-87b2-9356c86173a5" data-message-model-slug="gpt-5-5" data-turn-start-message="true"><div class="flex w-full flex-col gap-1 empty:hidden"><div class="markdown prose dark:prose-invert wrap-break-word w-full light markdown-new-styling"><p data-start="0" data-end="224" data-is-last-node="" data-is-only-node=""><strong>Late Lala Shori Mal Ji, S/o Lala Kesar Mal Ji</strong>, carried forward the legacy of Kesar Da Dhaba, founded in 1916. With dedication and passion, he upheld its rich culinary traditions, making it a renowned name in Punjabi cuisine.</p></div></div></div></div></div></div></section></div></div></div></div></div></div></div></div></section></div></div>	            </div>        </div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-e5dac5c e-con-full e-flex e-con e-child" data-id="e5dac5c" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-9fdd26c elementor-widget elementor-widget-image" data-id="9fdd26c" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="300" height="300" src="https://kesardadhaba.com/wp-content/uploads/2026/06/Untitled-design-93.png" class="attachment-large size-large wp-image-7852" alt="">															</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-349e751 elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile e-flex e-con-boxed e-con e-parent" data-id="349e751" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-6e4442f e-con-full e-flex e-con e-child" data-id="6e4442f" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-47b9f82 elementor-widget elementor-widget-image" data-id="47b9f82" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img loading="lazy" decoding="async" width="300" height="300" src="https://kesardadhaba.com/wp-content/uploads/2026/06/Untitled-design-92.png" class="attachment-large size-large wp-image-7851" alt="">															</div>
+				</div>
+		<div class="elementor-element elementor-element-d0ac877 e-con-full e-flex e-con e-child" data-id="d0ac877" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-1c06f6d pt-animation-medium-offset elementor-invisible elementor-widget elementor-widget-pt_title" data-id="1c06f6d" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="pt_title.default">
+				<div class="elementor-widget-container">
+					
+        <div class="pt-title-wrap text-left">	            <div class="pt-title-text">
+	                <div class="qMYqUG_convSearchResultHighlightRoot">
+<div class="" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-is-intersecting="true">
+<section class="text-token-text-primary w-full focus:outline-none has-data-writing-block:pointer-events-none [&amp;:has([data-writing-block])>*]:pointer-events-auto R6Vx5W_threadScrollVars scroll-mb-[calc(var(--scroll-root-safe-area-inset-bottom,0px)+var(--thread-response-height))] scroll-mt-[calc(var(--header-height)+min(200px,max(70px,20svh)))]" dir="auto" data-turn-id="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-testid="conversation-turn-2" data-turn="assistant">
+<div class="text-base my-auto mx-auto pb-10 [--thread-content-margin:var(--thread-content-margin-xs,calc(var(--spacing)*4))] @w-sm/main:[--thread-content-margin:var(--thread-content-margin-sm,calc(var(--spacing)*6))] @w-lg/main:[--thread-content-margin:var(--thread-content-margin-lg,calc(var(--spacing)*16))] px-(--thread-content-margin)">
+<div class="[--thread-content-max-width:40rem] @w-lg/main:[--thread-content-max-width:48rem] mx-auto max-w-(--thread-content-max-width) flex-1 group/turn-messages focus-visible:outline-hidden relative flex w-full min-w-0 flex-col agent-turn" data-conversation-screenshot-content="">
+<div class="flex max-w-full flex-col gap-4 grow">
+<div class="min-h-8 text-message relative flex w-full flex-col items-end gap-2 text-start break-words whitespace-normal outline-none keyboard-focused:focus-ring [.text-message+&amp;]:mt-1" dir="auto" tabindex="0" data-message-author-role="assistant" data-message-id="50a75407-0e23-40b8-a600-d09f951c36ee" data-message-model-slug="gpt-5-5" data-turn-start-message="true">
+<div class="flex w-full flex-col gap-1 empty:hidden">
+<div class="markdown prose dark:prose-invert wrap-break-word w-full light markdown-new-styling">
+<p data-start="0" data-end="202" data-is-last-node="" data-is-only-node=""><strong>Late Lala Kesar Mal Ji</strong>, the visionary founder of Kesar Da Dhaba in 1916, established a legacy of authentic Punjabi cuisine. His dedication to quality and rich flavors made the dhaba a culinary landmark.</p></div></div></div></div></div></div></section></div></div>	            </div>        </div>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-181ff22 e-con-full e-flex e-con e-parent" data-id="181ff22" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-2fc6e99 pt-animation-medium-offset elementor-widget__width-inherit elementor-invisible elementor-widget elementor-widget-pt_title" data-id="2fc6e99" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="pt_title.default">
+				<div class="elementor-widget-container">
+					
+        <div class="pt-title-wrap text-center">	            <div class="pt-title-text">
+	                <div class="qMYqUG_convSearchResultHighlightRoot"><div class="" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-is-intersecting="true"><section class="text-token-text-primary w-full focus:outline-none has-data-writing-block:pointer-events-none [&amp;:has([data-writing-block])>*]:pointer-events-auto R6Vx5W_threadScrollVars scroll-mb-[calc(var(--scroll-root-safe-area-inset-bottom,0px)+var(--thread-response-height))] scroll-mt-[calc(var(--header-height)+min(200px,max(70px,20svh)))]" dir="auto" data-turn-id="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-turn-id-container="request-WEB:d3a2d725-8f3d-4e70-9cc3-44dc21332cbf-0" data-testid="conversation-turn-2" data-turn="assistant"><div class="text-base my-auto mx-auto pb-10 [--thread-content-margin:var(--thread-content-margin-xs,calc(var(--spacing)*4))] @w-sm/main:[--thread-content-margin:var(--thread-content-margin-sm,calc(var(--spacing)*6))] @w-lg/main:[--thread-content-margin:var(--thread-content-margin-lg,calc(var(--spacing)*16))] px-(--thread-content-margin)"><div class="[--thread-content-max-width:40rem] @w-lg/main:[--thread-content-max-width:48rem] mx-auto max-w-(--thread-content-max-width) flex-1 group/turn-messages focus-visible:outline-hidden relative flex w-full min-w-0 flex-col agent-turn" data-conversation-screenshot-content=""><div class="flex max-w-full flex-col gap-4 grow"><div class="min-h-8 text-message relative flex w-full flex-col items-end gap-2 text-start break-words whitespace-normal outline-none keyboard-focused:focus-ring [.text-message+&amp;]:mt-1" dir="auto" tabindex="0" data-message-author-role="assistant" data-message-id="50a75407-0e23-40b8-a600-d09f951c36ee" data-message-model-slug="gpt-5-5" data-turn-start-message="true"><div class="flex w-full flex-col gap-1 empty:hidden"><div class="markdown prose dark:prose-invert wrap-break-word w-full light markdown-new-styling"><p data-start="0" data-end="202" data-is-last-node="" data-is-only-node="">For generations, <strong>Kesar Da Dhaba</strong> has carried forward the commitment to authentic flavours and warm hospitality. Today, the legacy continues under the guidance of <span style="color: #ffde59;"><strong>Ramesh Kumar Mehra</strong></span>, with <span style="color: #ffde59;"><strong>Krishnam Mehra</strong></span> and <span style="color: #ffde59;"><strong>Krishanu Mehra</strong></span> carrying it forward. Together, they continue to preserve the values, recipes, and hospitality that have made Kesar Da Dhaba a trusted name for generations.</p></div></div></div></div></div></div></section></div></div>	            </div>        </div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-19a4c90 e-con-full e-flex e-con e-parent" data-id="19a4c90" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-2c34db6 pt-animation-medium-offset elementor-invisible elementor-widget elementor-widget-pt_title" data-id="2c34db6" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="pt_title.default">
+				<div class="elementor-widget-container">
+					
+        <div class="pt-title-wrap text-center">	            <h3 class="pt-title">
+	                Follow us on Instagram	            </h3>        </div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-73fc12b elementor-widget elementor-widget-shortcode" data-id="73fc12b" data-element_type="widget" data-e-type="widget" data-widget_type="shortcode.default">
+							<div class="elementor-shortcode">		<div id="instagram-gallery-feed-0" class="instagram-gallery-feed" data-feed="{&quot;id&quot;:0,&quot;account_id&quot;:&quot;27174152145598972&quot;,&quot;source&quot;:&quot;username&quot;,&quot;tag&quot;:&quot;wordpress&quot;,&quot;order_by&quot;:&quot;top_media&quot;,&quot;layout&quot;:&quot;carousel&quot;,&quot;limit&quot;:12,&quot;columns&quot;:3,&quot;spacing&quot;:10,&quot;lazy&quot;:false,&quot;responsive&quot;:{&quot;desktop&quot;:{&quot;columns&quot;:5,&quot;spacing&quot;:10},&quot;tablet&quot;:{&quot;columns&quot;:2,&quot;spacing&quot;:8},&quot;mobile&quot;:{&quot;columns&quot;:1,&quot;spacing&quot;:6},&quot;breakpoints&quot;:{&quot;tablet&quot;:768,&quot;mobile&quot;:480}},&quot;aspect_ratio&quot;:{&quot;width&quot;:1,&quot;height&quot;:1},&quot;highlight&quot;:{&quot;tag&quot;:&quot;&quot;,&quot;id&quot;:&quot;&quot;,&quot;position&quot;:&quot;1,3,5&quot;},&quot;reel&quot;:{&quot;hide&quot;:false},&quot;copyright&quot;:{&quot;hide&quot;:false,&quot;placeholder&quot;:&quot;&quot;},&quot;profile&quot;:{&quot;display&quot;:false,&quot;username&quot;:&quot;&quot;,&quot;nickname&quot;:&quot;&quot;,&quot;website&quot;:&quot;&quot;,&quot;biography&quot;:&quot;&quot;,&quot;link_text&quot;:&quot;Follow&quot;,&quot;website_text&quot;:&quot;Website&quot;,&quot;avatar&quot;:&quot;&quot;},&quot;box&quot;:{&quot;display&quot;:false,&quot;padding&quot;:1,&quot;radius&quot;:0,&quot;background&quot;:&quot;#fefefe&quot;,&quot;profile&quot;:false,&quot;desc&quot;:&quot;&quot;,&quot;text_color&quot;:&quot;#000000&quot;},&quot;mask&quot;:{&quot;display&quot;:true,&quot;background&quot;:&quot;#000000&quot;,&quot;icon_color&quot;:&quot;#ffffff&quot;,&quot;likes_count&quot;:true,&quot;comments_count&quot;:true},&quot;card&quot;:{&quot;display&quot;:false,&quot;radius&quot;:1,&quot;font_size&quot;:12,&quot;background&quot;:&quot;#ffffff&quot;,&quot;background_hover&quot;:&quot;&quot;,&quot;text_color&quot;:&quot;#000000&quot;,&quot;padding&quot;:5,&quot;likes_count&quot;:false,&quot;text_length&quot;:10,&quot;comments_count&quot;:false,&quot;text_align&quot;:&quot;left&quot;},&quot;carousel&quot;:{&quot;centered_slides&quot;:false,&quot;autoplay&quot;:false,&quot;autoplay_interval&quot;:3000,&quot;navarrows&quot;:true,&quot;navarrows_color&quot;:&quot;&quot;,&quot;pagination&quot;:true,&quot;pagination_color&quot;:&quot;&quot;},&quot;modal&quot;:{&quot;display&quot;:true,&quot;profile&quot;:true,&quot;media_description&quot;:true,&quot;likes_count&quot;:true,&quot;comments_count&quot;:true,&quot;comments_list&quot;:false,&quot;text_align&quot;:&quot;left&quot;,&quot;modal_align&quot;:&quot;right&quot;,&quot;text_length&quot;:10000,&quot;font_size&quot;:12},&quot;button&quot;:{&quot;display&quot;:true,&quot;text&quot;:&quot;View on Instagram&quot;,&quot;text_color&quot;:&quot;#ffff&quot;,&quot;background&quot;:&quot;&quot;,&quot;background_hover&quot;:&quot;&quot;},&quot;button_load&quot;:{&quot;display&quot;:false,&quot;text&quot;:&quot;Load more...&quot;,&quot;text_color&quot;:&quot;#ffff&quot;,&quot;background&quot;:&quot;&quot;,&quot;background_hover&quot;:&quot;&quot;}}">
+		<!-- <FeedContainer/> -->
+		<div class="instagram-gallery-feed"><div class="instagram-gallery__spinner"></div></div></div>
+		</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-59a1ec6 e-con-full elementor-hidden-mobile e-flex e-con e-parent" data-id="59a1ec6" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-d1090c5 elementor-widget elementor-widget-image" data-id="d1090c5" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img decoding="async" width="1600" height="70" src="https://kesardadhaba.com/wp-content/uploads/2026/06/Untitled-design941.png" class="attachment-full size-full wp-image-7889" alt="">															</div>
+				</div>
+		<div class="elementor-element elementor-element-61936fa e-con-full elementor-hidden-desktop elementor-hidden-tablet e-flex e-con e-parent" data-id="61936fa" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-ef5b932 elementor-widget elementor-widget-image" data-id="ef5b932" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+															<img fetchpriority="high" decoding="async" width="750" height="80" src="https://kesardadhaba.com/wp-content/uploads/2026/07/Untitled-design950.png" class="attachment-large size-large wp-image-8485" alt="">															</div>
+				</div>
+				</div>
+		    </div><!-- .post-entry -->
+</article>                    </div>
+			</div>
+</div>
+
+                            </div> <!-- end of #content -->
+                <footer id="colophon" class="site-footer">
+        					<div class="site-footer-main">
+						<div class="container">			<link rel="stylesheet" id="elementor-post-368-css" href="https://kesardadhaba.com/wp-content/uploads/elementor/css/post-368.css?ver=1791985524" type="text/css" media="all">		<div data-elementor-type="wp-post" data-elementor-id="368" class="elementor elementor-368">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-d9a32dc pt-section-content-fullwidth elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d9a32dc" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-c36674f" data-id="c36674f" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-65f8e29 elementor-widget elementor-widget-pt_title" data-id="65f8e29" data-element_type="widget" data-e-type="widget" data-widget_type="pt_title.default">
+				<div class="elementor-widget-container">
+					
+        <div class="pt-title-wrap">	            <h6 class="pt-title">
+	                Sign Up to Our Newsletter	            </h6>	            <div class="pt-title-text">
+	                <p>Sign up to be the first to receive special news and event updates from us.</p>	            </div>        </div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-80d9993" data-id="80d9993" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-dd40045 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="dd40045" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-91486f4 dark-color" data-id="91486f4" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-0985ce8 pt-section-content-fullwidth elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0985ce8" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-3d109b4" data-id="3d109b4" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-47f1c8e elementor-widget__width-initial elementor-widget elementor-widget-pt_logo" data-id="47f1c8e" data-element_type="widget" data-e-type="widget" data-widget_type="pt_logo.default">
+				<div class="elementor-widget-container">
+					                <a href="https://kesardadhaba.com/">                    <img width="875" height="438" src="https://kesardadhaba.com/wp-content/uploads/2022/04/a-house-of-traditional-food-3.png" class="attachment-full size-full wp-image-7973" alt="">                </a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-a0017ed elementor-widget elementor-widget-pt_title" data-id="a0017ed" data-element_type="widget" data-e-type="widget" data-widget_type="pt_title.default">
+				<div class="elementor-widget-container">
+					
+        <div class="pt-title-wrap">	            <div class="pt-title-text">
+	                <p><span style="font-weight: 400;">A historic Punjabi restaurant in Amritsar known for authentic food and rich heritage since 1916</span></p>	            </div>        </div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-20c2fb2 elementor-align-left elementor-widget__width-initial elementor-widget elementor-widget-pt_logo" data-id="20c2fb2" data-element_type="widget" data-e-type="widget" data-widget_type="pt_logo.default">
+				<div class="elementor-widget-container">
+					                <a href="https://kesardadhaba.com/">                    <img width="500" height="260" src="https://kesardadhaba.com/wp-content/uploads/2022/04/Untitled-design610.png" class="attachment-full size-full wp-image-7093" alt="">                </a>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-5cbc9de" data-id="5cbc9de" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f748c05 elementor-widget elementor-widget-pt_title" data-id="f748c05" data-element_type="widget" data-e-type="widget" data-widget_type="pt_title.default">
+				<div class="elementor-widget-container">
+					
+        <div class="pt-title-wrap">	            <div class="pt-subtitle-wrap"><span class="pt-subtitle color-white">Location</span></div>	            <div class="pt-title-text">
+	                <p>Chowk Passian, Gali Rajpura<br>Near Telephone Exchange, <br>Amritsar – Punjab 143001</p>	            </div>                <div class="pt-title-btn">
+                    <a class="button elementor-button-link pt-btn-underline" role="button" href="https://www.google.com/maps/place/Kesar+Da+Dhaba/@31.6242351,74.8729981,17z/data=!3m1!4b1!4m6!3m5!1s0x39197caa7727941f:0xfcde6f886bfa4e16!8m2!3d31.6242351!4d74.8729981!16s%2Fg%2F1q62fn9t0?entry=ttu&amp;g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                        <span class="pt-btn-text">View On Map</span>
+                    </a>
+                </div>
+                    </div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-6a324de" data-id="6a324de" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b19d0e3 elementor-widget elementor-widget-pt_title" data-id="b19d0e3" data-element_type="widget" data-e-type="widget" data-widget_type="pt_title.default">
+				<div class="elementor-widget-container">
+					
+        <div class="pt-title-wrap">	            <div class="pt-subtitle-wrap"><span class="pt-subtitle color-white">Opening Hours</span></div>	            <div class="pt-title-text">
+	                <p>Monday – Sunday<br><span style="font-size: 18px;">12 noon to 11:00 pm</span><br><strong>( Last Monday Off )</strong></p>	            </div>        </div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-46cc8f3" data-id="46cc8f3" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c36a4e6 elementor-widget elementor-widget-pt_title" data-id="c36a4e6" data-element_type="widget" data-e-type="widget" data-widget_type="pt_title.default">
+				<div class="elementor-widget-container">
+					
+        <div class="pt-title-wrap">	            <div class="pt-subtitle-wrap"><span class="pt-subtitle color-white">CONTACT US</span></div>        </div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-79b833f elementor-align-justify elementor-widget elementor-widget-pt_button" data-id="79b833f" data-element_type="widget" data-e-type="widget" data-widget_type="pt_button.default">
+				<div class="elementor-widget-container">
+					        <a href="mailto:kesardadhabaamritsar@gmail.com" class="elementor-button-link button pt-btn-outline" role="button">
+            <span class="pt-btn-text">EMAIL US</span>
+        </a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5e145bc elementor-align-justify elementor-widget elementor-widget-pt_button" data-id="5e145bc" data-element_type="widget" data-e-type="widget" data-widget_type="pt_button.default">
+				<div class="elementor-widget-container">
+					        <a href="tel:01832532227" class="elementor-button-link button pt-btn-outline" role="button">
+            <span class="pt-btn-text">CALL US</span>
+        </a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-d1c847e elementor-align-justify elementor-widget elementor-widget-pt_button" data-id="d1c847e" data-element_type="widget" data-e-type="widget" data-widget_type="pt_button.default">
+				<div class="elementor-widget-container">
+					        <a href="https://www.instagram.com/kesardadhaba/" class="elementor-button-link button" role="button">
+            <span class="pt-btn-text">follow ON INSTAGRAM</span>
+        </a>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-74cdabf pt-section-content-fullwidth elementor-reverse-tablet elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="74cdabf" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f2eea6a" data-id="f2eea6a" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5a766fb elementor-widget elementor-widget-text-editor" data-id="5a766fb" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<p>© Copyright –&nbsp; Kesar Da Dhaba | <a href="https://www.instagram.com/greyscalesocials.in/?hl=en"><span style="color: #999999;">Powered by Greyscale Studios</span></a></p>								</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b3653a3" data-id="b3653a3" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c7718a5 elementor-widget elementor-widget-pt_menu" data-id="c7718a5" data-element_type="widget" data-e-type="widget" data-widget_type="pt_menu.default">
+				<div class="elementor-widget-container">
+					<nav class="pt-menu footer-menu not-mobile-menu text-right text-center-tablet"><ul id="menu-c7718a5" class="menu"><li id="menu-item-6802" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6795 current_page_item menu-item-6802"><a href="https://kesardadhaba.com/our-legacy/" aria-current="page"><span>Our Legacy</span></a></li>
+<li id="menu-item-7326" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7326"><a href="https://kesardadhaba.com/our-menu/"><span>Our Menu</span></a></li>
+<li id="menu-item-7447" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7447"><a href="https://kesardadhaba.com/our-shop/"><span>Our Shop</span></a></li>
+<li id="menu-item-6806" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6806"><a href="https://kesardadhaba.com/blogs/"><span>Blogs</span></a></li>
+<li id="menu-item-7499" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7499"><a href="https://kesardadhaba.com/honors-recognitions/"><span>Honors &amp; Recognition</span></a></li>
+<li id="menu-item-8300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8300"><a href="https://kesardadhaba.com/notable-visitors/"><span>Notable Visitors</span></a></li>
+<li id="menu-item-7348" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7348"><a href="https://kesardadhaba.com/contact-us/"><span>Contact us</span></a></li>
+</ul></nav>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4e1bfd9 elementor-section-full_width elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-section-height-default elementor-section-height-default" data-id="4e1bfd9" data-element_type="section" data-e-type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1c2c90b dark-color" data-id="1c2c90b" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-94cd038 pt-section-content-fullwidth elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="94cd038" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-1e58294" data-id="1e58294" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f2742ed elementor-widget elementor-widget-pt_logo" data-id="f2742ed" data-element_type="widget" data-e-type="widget" data-widget_type="pt_logo.default">
+				<div class="elementor-widget-container">
+					                <a href="https://kesardadhaba.com/">                    <img width="255" height="128" src="https://kesardadhaba.com/wp-content/uploads/2022/04/KESAR-DA-DHABA4-255x128.png" class="attachment-patiotime_255x9999 size-patiotime_255x9999 wp-image-7016" alt="">                </a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2df0ab1 elementor-align-center elementor-widget elementor-widget-pt_logo" data-id="2df0ab1" data-element_type="widget" data-e-type="widget" data-widget_type="pt_logo.default">
+				<div class="elementor-widget-container">
+					                <a href="https://kesardadhaba.com/">                    <img width="500" height="260" src="https://kesardadhaba.com/wp-content/uploads/2022/04/Untitled-design610.png" class="attachment-full size-full wp-image-7093" alt="">                </a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-0f04ac2 elementor-widget elementor-widget-pt_social" data-id="0f04ac2" data-element_type="widget" data-e-type="widget" data-widget_type="pt_social.default">
+				<div class="elementor-widget-container">
+					<nav id="0f04ac2-social-menu-container" class="social-navigation"><ul id="0f04ac2-social-menu" class="social-nav menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24"><a href="https://www.facebook.com/kesardadhaba">Facebook</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6780"><a href="https://www.instagram.com/kesardadhaba">Instagram</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7605"><a href="https://www.youtube.com/@kesardadhaba.official">Youtube</a></li>
+</ul></nav>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-6de71b2" data-id="6de71b2" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-cece3ae elementor-widget elementor-widget-pt_title" data-id="cece3ae" data-element_type="widget" data-e-type="widget" data-widget_type="pt_title.default">
+				<div class="elementor-widget-container">
+					
+        <div class="pt-title-wrap">	            <div class="pt-subtitle-wrap"><span class="pt-subtitle color-white">Location</span></div>	            <div class="pt-title-text">
+	                <p>Upper Level,<br>Shop 15, 5 Macquarie Street<br>East Circular Quay,<br>Sydney NSW 2000<br>Phone:&nbsp;<a href="tel:0255601200">02 5560 1200</a></p>	            </div>                <div class="pt-title-btn">
+                    <a class="button elementor-button-link pt-btn-underline" role="button" href="https://www.google.com/maps/place/Barbican+Centre/@51.5205487,-0.0936463,18z/data=!4m13!1m7!3m6!1s0x48761ca98744377d:0x9e296ec2b218ce78!2sSilk+St,+London,+UK!3b1!8m2!3d51.5198778!4d-0.0916239!3m4!1s0x48761b56fb64b275:0xc756e26675d21f40!8m2!3d51.5202077!4d-0.0937864" target="_blank">
+                        <span class="pt-btn-text">View On Map</span>
+                    </a>
+                </div>
+                    </div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-7db0a43" data-id="7db0a43" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-52ef20b elementor-widget elementor-widget-pt_title" data-id="52ef20b" data-element_type="widget" data-e-type="widget" data-widget_type="pt_title.default">
+				<div class="elementor-widget-container">
+					
+        <div class="pt-title-wrap">	            <div class="pt-subtitle-wrap"><span class="pt-subtitle color-white">Opening Hours</span></div>	            <div class="pt-title-text">
+	                <p>LUNCH<br>Saturday and Sunday<br>Reservations from 12pm to 1:30pm</p><p>DINNER<br>Thursday to Sunday<br>Reservations from 6pm to 9pm</p>	            </div>        </div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-84ad516" data-id="84ad516" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4e6b29b elementor-widget elementor-widget-pt_title" data-id="4e6b29b" data-element_type="widget" data-e-type="widget" data-widget_type="pt_title.default">
+				<div class="elementor-widget-container">
+					
+        <div class="pt-title-wrap">	            <div class="pt-subtitle-wrap"><span class="pt-subtitle color-white">Contact</span></div>        </div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e32bc80 elementor-align-justify elementor-widget elementor-widget-pt_button" data-id="e32bc80" data-element_type="widget" data-e-type="widget" data-widget_type="pt_button.default">
+				<div class="elementor-widget-container">
+					        <a href="mailto:booking@patiotime.com" class="elementor-button-link button pt-btn-outline" role="button">
+            <span class="pt-btn-text">Email Us</span>
+        </a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e1f794d elementor-align-justify elementor-widget elementor-widget-pt_button" data-id="e1f794d" data-element_type="widget" data-e-type="widget" data-widget_type="pt_button.default">
+				<div class="elementor-widget-container">
+					        <a href="tel:+02-055-123456" class="elementor-button-link button pt-btn-outline" role="button">
+            <span class="pt-btn-text">Phone: (02) 5560 1200</span>
+        </a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-c6a1bbf elementor-align-justify elementor-widget elementor-widget-pt_button" data-id="c6a1bbf" data-element_type="widget" data-e-type="widget" data-widget_type="pt_button.default">
+				<div class="elementor-widget-container">
+					        <a href="https://patiotime.loftocean.com/demo4/reservation/" class="elementor-button-link button" role="button">
+            <span class="pt-btn-text">Make a Reservation</span>
+        </a>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-0fe7575 pt-section-content-fullwidth elementor-reverse-tablet elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0fe7575" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1f03cdd" data-id="1f03cdd" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-38d792a elementor-widget elementor-widget-text-editor" data-id="38d792a" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									<p>© Copyright PatioTime WordPress Theme for Restaurant &amp; Cafe.</p>								</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-89a8051" data-id="89a8051" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-13ac7c9 elementor-widget elementor-widget-pt_menu" data-id="13ac7c9" data-element_type="widget" data-e-type="widget" data-widget_type="pt_menu.default">
+				<div class="elementor-widget-container">
+					<nav class="pt-menu footer-menu not-mobile-menu text-right text-center-tablet"><ul id="menu-13ac7c9" class="menu"><li id="menu-item-6138" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6138"><a href="https://kesardadhaba.com/our-legacy/#"><span>Privacy</span></a></li>
+<li id="menu-item-6214" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6214"><a href="https://kesardadhaba.com/our-legacy/#"><span>Term of Use</span></a></li>
+<li id="menu-item-6139" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6139"><a href="https://kesardadhaba.com/our-legacy/#"><span>Policy</span></a></li>
+<li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32"><a href="https://kesardadhaba.com/our-legacy/#"><span>Privacy</span></a></li>
+<li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a href="https://kesardadhaba.com/our-legacy/#"><span>Policy</span></a></li>
+</ul></nav>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		</div>
+					</div>                    </footer>                    </div> <!-- end of #page -->
+        				<div class="sidemenu sidemenu-custom slide-from-left custom-width">					<div class="container">						<div class="sidemenu-header">
+			                <span class="close-button">Close</span>
+			            </div>
+						<div class="sidemenu-content">			<link rel="stylesheet" id="elementor-post-443-css" href="https://kesardadhaba.com/wp-content/uploads/elementor/css/post-443.css?ver=1791985524" type="text/css" media="all">		<div data-elementor-type="wp-post" data-elementor-id="443" class="elementor elementor-443">
+				<div class="elementor-element elementor-element-8361ae6 e-flex e-con-boxed e-con e-parent" data-id="8361ae6" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+					</div>
+				</div>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7bd1de9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7bd1de9" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9411d0e" data-id="9411d0e" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-09c699f elementor-widget elementor-widget-image" data-id="09c699f" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+																<a href="https://kesardadhaba.com/">
+							<img width="508" height="254" src="https://kesardadhaba.com/wp-content/uploads/2022/05/KESAR-DA-DHABA4.png" class="attachment-large size-large wp-image-7330" alt="">								</a>
+															</div>
+				<div class="elementor-element elementor-element-0b8941c elementor-widget elementor-widget-pt_menu" data-id="0b8941c" data-element_type="widget" data-e-type="widget" data-widget_type="pt_menu.default">
+				<div class="elementor-widget-container">
+					<nav class="pt-menu pt-menu-mobile"><ul id="menu-0b8941c" class="menu mobile-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6795 current_page_item menu-item-6802"><a href="https://kesardadhaba.com/our-legacy/" aria-current="page"><span>Our Legacy</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7326"><a href="https://kesardadhaba.com/our-menu/"><span>Our Menu</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7447"><a href="https://kesardadhaba.com/our-shop/"><span>Our Shop</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6806"><a href="https://kesardadhaba.com/blogs/"><span>Blogs</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7499"><a href="https://kesardadhaba.com/honors-recognitions/"><span>Honors &amp; Recognition</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8300"><a href="https://kesardadhaba.com/notable-visitors/"><span>Notable Visitors</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7348"><a href="https://kesardadhaba.com/contact-us/"><span>Contact us</span></a></li>
+</ul></nav>				</div>
+				</div>
+				<div class="elementor-element elementor-element-266e264 elementor-widget elementor-widget-pt_social" data-id="266e264" data-element_type="widget" data-e-type="widget" data-widget_type="pt_social.default">
+				<div class="elementor-widget-container">
+					<nav id="266e264-social-menu-container" class="social-navigation"><ul id="266e264-social-menu" class="social-nav menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24"><a href="https://www.facebook.com/kesardadhaba">Facebook</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6780"><a href="https://www.instagram.com/kesardadhaba">Instagram</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7605"><a href="https://www.youtube.com/@kesardadhaba.official">Youtube</a></li>
+</ul></nav>				</div>
+				</div>
+				<div class="elementor-element elementor-element-382a5c1 elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-pt_button" data-id="382a5c1" data-element_type="widget" data-e-type="widget" data-widget_type="pt_button.default">
+				<div class="elementor-widget-container">
+					        <a href="https://www.instagram.com/kesardadhaba/" target="_blank" class="elementor-button-link button pt-btn-outline" role="button">
+            <span class="pt-btn-text">Follow on instagram</span>
+        </a>				</div>
+				</div>
+				<div class="elementor-element elementor-element-7c82a4f elementor-widget elementor-widget-pt_info" data-id="7c82a4f" data-element_type="widget" data-e-type="widget" data-widget_type="pt_info.default">
+				<div class="elementor-widget-container">
+						            <div class="pt-info pt-address">
+	                <a href="https://www.google.com/maps/place/kesar+da+dhaba/data=!4m2!3m1!1s0x39197caa7727941f:0xfcde6f886bfa4e16?sa=X&amp;ved=1t:242&amp;ictx=111">	                    <i class="fas fa-map-marker-alt"></i> Chowk Passian, gali rajpura, near Telephone Exchange, Amritsar, Punjab 143006	                </a>	            </div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-b30384a elementor-widget elementor-widget-pt_info" data-id="b30384a" data-element_type="widget" data-e-type="widget" data-widget_type="pt_info.default">
+				<div class="elementor-widget-container">
+						            <div class="pt-info pt-email">
+	                <a href="mailto:kesardadhabaamritsar@gmail.com">	                    <i class="far fa-envelope"></i> kesardadhabaamritsar@gmail.com	                </a>	            </div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-c92bbc0 elementor-widget elementor-widget-pt_info" data-id="c92bbc0" data-element_type="widget" data-e-type="widget" data-widget_type="pt_info.default">
+				<div class="elementor-widget-container">
+						            <div class="pt-info pt-tel">
+	                <a href="tel:01832532227">	                    <i class="fas fa-phone"></i> 01832532227	                </a>	            </div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1c25d86 elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-pt_social" data-id="1c25d86" data-element_type="widget" data-e-type="widget" data-widget_type="pt_social.default">
+				<div class="elementor-widget-container">
+					<nav id="1c25d86-social-menu-container" class="social-navigation"><ul id="1c25d86-social-menu" class="social-nav menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24"><a href="https://www.facebook.com/kesardadhaba">Facebook</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6780"><a href="https://www.instagram.com/kesardadhaba">Instagram</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7605"><a href="https://www.youtube.com/@kesardadhaba.official">Youtube</a></li>
+</ul></nav>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6f779e5 elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6f779e5" data-element_type="section" data-e-type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c90d99b" data-id="c90d99b" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3c27757 elementor-widget elementor-widget-pt_info" data-id="3c27757" data-element_type="widget" data-e-type="widget" data-widget_type="pt_info.default">
+				<div class="elementor-widget-container">
+						            <div class="pt-info pt-address">
+	                <a href="https://www.google.com/maps/place/kesar+da+dhaba/data=!4m2!3m1!1s0x39197caa7727941f:0xfcde6f886bfa4e16?sa=X&amp;ved=1t:242&amp;ictx=111">	                    <i class="fas fa-map-marker-alt"></i> Chowk Passian, gali rajpura, near Telephone Exchange, Amritsar, Punjab 143006	                </a>	            </div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-49cb830 elementor-widget elementor-widget-pt_info" data-id="49cb830" data-element_type="widget" data-e-type="widget" data-widget_type="pt_info.default">
+				<div class="elementor-widget-container">
+						            <div class="pt-info pt-tel">
+	                <a href="tel:01832532227">	                    <i class="fas fa-phone"></i> 01832532227	                </a>	            </div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-731bd9a elementor-widget elementor-widget-pt_info" data-id="731bd9a" data-element_type="widget" data-e-type="widget" data-widget_type="pt_info.default">
+				<div class="elementor-widget-container">
+						            <div class="pt-info pt-email">
+	                <a href="mailto:kesardadhabaamritsar@gmail.com">	                    <i class="far fa-envelope"></i> kesardadhabaamritsar@gmail.com	                </a>	            </div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		</div>
+					</div>
+				</div>    <a href="https://kesardadhaba.com/our-legacy/#" class="to-top"></a><div class="search-screen">
+	<div class="container">
+		<span class="close-button">Close</span>
+		<div class="search-wrapper">
+			<div class="search">
+    <form class="search-form" role="search" method="get" action="https://kesardadhaba.com/">
+        <label>
+            <span class="screen-reader-text">Search for:</span>
+            <input type="search" class="search-field" placeholder="Enter a keyword to search" autocomplete="off" name="s">
+        </label>
+        <button type="submit" class="search-submit"><span class="screen-reader-text">Search</span></button>
+    </form>
+</div>
+		</div>
+	</div>
+</div>
+        <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/patiotime/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+			<script>
+				const registerAllyAction = () => {
+					if ( ! window?.ElementorProFrontendConfig || ! window?.elementorFrontend?.utils?.urlActions ) {
+						return;
+					}
+
+					elementorFrontend.utils.urlActions.addAction( 'allyWidget:open', () => {
+						if (window?.ea11yWidget?.widget?.open) {
+							return window.ea11yWidget.widget.isOpen()
+								? window.ea11yWidget.widget.close()
+								: window.ea11yWidget.widget.open();
+						}
+					} );
+				};
+
+				const waitingLimit = 30;
+				let retryCounter = 0;
+
+				const waitForElementorPro = () => {
+					return new Promise( ( resolve ) => {
+						const intervalId = setInterval( () => {
+							if ( retryCounter === waitingLimit ) {
+								resolve( null );
+							}
+
+							retryCounter++;
+
+							if ( window.elementorFrontend && window?.elementorFrontend?.utils?.urlActions ) {
+								clearInterval( intervalId );
+								resolve( window.elementorFrontend );
+							}
+								}, 100 ); // Check every 100 milliseconds for availability of elementorFrontend
+					});
+				};
+
+				waitForElementorPro().then( () => { registerAllyAction(); });
+			</script>
+			<!-- Instagram Feed JS -->
+<script type="text/javascript">
+var sbiajaxurl = "https://kesardadhaba.com/wp-admin/admin-ajax.php";
+</script>
+			<script>
+				( () => {
+					const lazyloadRunObserver = () => {
+						const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+						const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+							entries.forEach( ( entry ) => {
+								if ( entry.isIntersecting ) {
+									let lazyloadBackground = entry.target;
+									if( lazyloadBackground ) {
+										lazyloadBackground.classList.add( 'e-lazyloaded' );
+									}
+									lazyloadBackgroundObserver.unobserve( entry.target );
+								}
+							});
+						}, { rootMargin: '200px 0px 200px 0px' } );
+						lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+							lazyloadBackgroundObserver.observe( lazyloadBackground );
+						} );
+					};
+					const events = [
+						'DOMContentLoaded',
+						'elementor/lazyload/observe',
+					];
+					events.forEach( ( event ) => {
+						document.addEventListener( event, lazyloadRunObserver );
+					} );
+				} )();
+			</script>
+				<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link rel="stylesheet" id="qligg-swiper-css" href="https://kesardadhaba.com/wp-content/plugins/insta-gallery/assets/frontend/swiper/swiper.min.css?ver=5.0.8" media="all">
+<link rel="stylesheet" id="qligg-frontend-css" href="https://kesardadhaba.com/wp-content/plugins/insta-gallery/build/frontend/css/style.css?ver=5.0.8" media="all">
+<link rel="stylesheet" id="justified-gallery-css" href="https://kesardadhaba.com/wp-content/themes/patiotime/assets/libs/justified-gallery/justifiedGallery.min.css?ver=3.6.3" media="all">
+<link rel="stylesheet" id="swiper-css" href="https://kesardadhaba.com/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5" media="all">
+<link rel="stylesheet" id="jquery-ui-css" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css?ver=1.13.1" media="all">
+<link rel="stylesheet" id="e-shapes-css" href="https://kesardadhaba.com/wp-content/plugins/elementor/assets/css/conditionals/shapes.min.css?ver=4.3.2" media="all">
+<script id="patiotime-helper-js-extra">
+var patiotimeHelper = {"siteURL":"https://kesardadhaba.com/"};
+//# sourceURL=patiotime-helper-js-extra
+</script>
+<script id="patiotime-helper-js" src="https://kesardadhaba.com/wp-content/themes/patiotime/assets/scripts/front/helper.min.js?ver=2025120601"></script>
+<script id="slick-js" src="https://kesardadhaba.com/wp-content/themes/patiotime/assets/libs/slick/slick.min.js?ver=1.6.1"></script>
+<script id="patiotime-animations-js" src="https://kesardadhaba.com/wp-content/themes/patiotime/assets/scripts/front/animations.min.js?ver=2025120601"></script>
+<script id="loftocean-video-player-js-extra">
+var loftoceanFullscreenVideos = {"videos":[],"wrapClass":"loftocean-media-wrapper loftocean-media-fullscreen-playing"};
+//# sourceURL=loftocean-video-player-js-extra
+</script>
+<script id="loftocean-video-player-js" src="https://kesardadhaba.com/wp-content/plugins/patiotime-core/assets/scripts/front/video-player.min.js?ver=2025120601"></script>
+<script id="patiotime-sticky-site-header-js" src="https://kesardadhaba.com/wp-content/themes/patiotime/assets/scripts/front/sticky-site-header.min.js?ver=2025120601"></script>
+<script id="justified-gallery-js" src="https://kesardadhaba.com/wp-content/themes/patiotime/assets/libs/justified-gallery/jquery.justifiedGallery.min.js?ver=3.6.5"></script>
+<script id="jquery-fitvids-js" src="https://kesardadhaba.com/wp-content/themes/patiotime/assets/scripts/libs/jquery.fitvids.min.js?ver=1.1"></script>
+<script id="patiotime-theme-script-js-extra">
+var patiotime = {"errorText":{"noMediaFound":"No image found"},"woocommerceProductFilterAjaxEnabled":"","onepagemenus":""};
+//# sourceURL=patiotime-theme-script-js-extra
+</script>
+<script id="patiotime-theme-script-js" src="https://kesardadhaba.com/wp-content/themes/patiotime/assets/scripts/front/main.min.js?ver=2025120601"></script>
+<script id="wp-api-request-js-extra">
+var wpApiSettings = {"root":"https://kesardadhaba.com/wp-json/","nonce":"9203acdf4a","versionString":"wp/v2/"};
+//# sourceURL=wp-api-request-js-extra
+</script>
+<script id="wp-api-request-js" src="https://kesardadhaba.com/wp-includes/js/api-request.min.js?ver=7.1.3"></script>
+<script id="patiotime-ajax-navigation-js-extra">
+var patiotimeAjaxNavigation = {"noMoreText":"No More Posts","data":{"query":{"page":"","pagename":"our-legacy","paged":2,"ignore_sticky_posts":true,"post_status":"publish"},"settings":{"archive_page":"","page_layout":"","layout":"list","columns":false,"post_meta":["excerpt","read_more_btn","author","date"]},"nonce":"fe2caa02f1"}};
+//# sourceURL=patiotime-ajax-navigation-js-extra
+</script>
+<script id="patiotime-ajax-navigation-js" src="https://kesardadhaba.com/wp-content/themes/patiotime/assets/scripts/front/ajax-navigation.min.js?ver=2025120601"></script>
+<script id="wapf-frontend-js-js-extra">
+var wapf_config = {"page_type":"other"};
+//# sourceURL=wapf-frontend-js-js-extra
+</script>
+<script id="wapf-frontend-js-js" src="https://kesardadhaba.com/wp-content/plugins/advanced-product-fields-for-woocommerce/assets/js/frontend.min.js?ver=1.7.1"></script>
+<script id="wp-hooks-js" src="https://kesardadhaba.com/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
+<script id="wp-i18n-js" src="https://kesardadhaba.com/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="swv-js" src="https://kesardadhaba.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.7"></script>
+<script id="contact-form-7-js-before">
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/kesardadhaba.com\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    }
+};
+//# sourceURL=contact-form-7-js-before
+</script>
+<script id="contact-form-7-js" src="https://kesardadhaba.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.7"></script>
+<script data-wp-strategy="defer" defer="" id="hostinger-reach-embed-js" src="https://cdn-reach.hostinger.com/js/embed.js"></script>
+<script id="loftocean-front-media-js-extra">
+var loftoceanImageLoad = {"lazyLoadEnabled":""};
+//# sourceURL=loftocean-front-media-js-extra
+</script>
+<script id="loftocean-front-media-js" src="https://kesardadhaba.com/wp-content/plugins/patiotime-core/assets/scripts/front/front-media.min.js?ver=2025120601"></script>
+<script id="underscore-js" src="https://kesardadhaba.com/wp-includes/js/underscore.min.js?ver=1.13.8"></script>
+<script id="backbone-js" src="https://kesardadhaba.com/wp-includes/js/backbone.min.js?ver=1.6.1"></script>
+<script id="wp-api-js" src="https://kesardadhaba.com/wp-includes/js/wp-api.min.js?ver=7.1.3"></script>
+<script id="loftocean-post-metas-js-extra">
+var loftoceanSocialAjax = {"url":"https://kesardadhaba.com/wp-admin/admin-ajax.php","like":{"action":"loftocean_post_like"},"social":{"action":"loftocean_social_counter"},"loadPostMetasDynamically":"","currentPostID":""};
+//# sourceURL=loftocean-post-metas-js-extra
+</script>
+<script id="loftocean-post-metas-js" src="https://kesardadhaba.com/wp-content/plugins/patiotime-core/assets/scripts/front/post-metas.min.js?ver=2025120601"></script>
+<script id="elementor-webpack-runtime-js" src="https://kesardadhaba.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.3.2"></script>
+<script id="elementor-frontend-modules-js" src="https://kesardadhaba.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.3.2"></script>
+<script id="jquery-ui-core-js-before">
+jQuery.uiBackCompat = true;
+//# sourceURL=jquery-ui-core-js-before
+</script>
+<script id="jquery-ui-core-js" src="https://kesardadhaba.com/wp-includes/js/jquery/ui/core.min.js?ver=1.14.2"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnX":"Share on X","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.3.2","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"nested-elements":true,"import-export-customization":true},"urls":{"assets":"https:\/\/kesardadhaba.com\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/kesardadhaba.com\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/kesardadhaba.com\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"ff60d9d791","atomicFormsSendForm":"e1833aac36"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":6795,"title":"Our%20Legacy%20-","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before
+</script>
+<script id="elementor-frontend-js" src="https://kesardadhaba.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.3.2"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
+<script id="loftocean-facebook-js" src="https://kesardadhaba.com/wp-content/plugins/patiotime-core/assets/scripts/front/facebook-jssdk.min.js?ver=2025120601"></script>
+<script id="sourcebuster-js-js" src="https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=11.2.1"></script>
+<script id="wc-order-attribution-js-extra">
+var wc_order_attribution = {"params":{"lifetime":1.0e-5,"session":30,"base64":false,"ajaxurl":"https://kesardadhaba.com/wp-admin/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+//# sourceURL=wc-order-attribution-js-extra
+</script>
+<script id="wc-order-attribution-js" src="https://kesardadhaba.com/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=11.2.1"></script>
+<script id="qligg-swiper-js" src="https://kesardadhaba.com/wp-content/plugins/insta-gallery/assets/frontend/swiper/swiper.min.js?ver=5.0.8"></script>
+<script id="react-js" src="https://kesardadhaba.com/wp-includes/js/dist/vendor/react.min.js?ver=18.3.1.1"></script>
+<script id="qligg-frontend-js-extra">
+var qligg_frontend = {"QLIGG_DEVELOPER":"","restRoutePaths":{"username":"https://kesardadhaba.com/wp-json/quadlayers/instagram/frontend/user-media","tag":"https://kesardadhaba.com/wp-json/quadlayers/instagram/frontend/hashtag-media","tagged":"https://kesardadhaba.com/wp-json/quadlayers/instagram/frontend/tagged-media","stories":"https://kesardadhaba.com/wp-json/quadlayers/instagram/frontend/user-stories","comments":"https://kesardadhaba.com/wp-json/quadlayers/instagram/frontend/media-comments","userprofile":"https://kesardadhaba.com/wp-json/quadlayers/instagram/frontend/user-profile"}};
+//# sourceURL=qligg-frontend-js-extra
+</script>
+<script id="qligg-frontend-js" src="https://kesardadhaba.com/wp-content/plugins/insta-gallery/build/frontend/js/index.js?ver=afd21fc3cb730c2a9dd7"></script>
+<script id="loftocean-parallax-bundle-js" src="https://kesardadhaba.com/wp-content/plugins/patiotime-core/assets/scripts/front/parallax-bundle.min.js?ver=2025120601"></script>
+<script id="jquery-ui-datepicker-js" src="https://kesardadhaba.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.14.2"></script>
+<script id="loftocean-jquery-ui-i18n-js" src="https://kesardadhaba.com/wp-content/plugins/patiotime-core/assets/scripts/jquery-ui/jquery-ui-i18n.min.js?ver=2025120601"></script>
+<script id="loftocean-elementor-frontend-js-extra">
+var loftoceanElementorFront = {"countDown":{"days":"Days","hours":"Hours","min":"Minutes","sec":"Seconds"}};
+//# sourceURL=loftocean-elementor-frontend-js-extra
+</script>
+<script id="loftocean-elementor-frontend-js" src="https://kesardadhaba.com/wp-content/plugins/patiotime-core/assets/scripts/front/elementor.min.js?ver=2025120601"></script>
+<script id="swiper-js" src="https://kesardadhaba.com/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js?ver=8.4.5"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://kesardadhaba.com/wp-includes/js/wp-emoji-release.min.js?ver=7.1.3"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://kesardadhaba.com/wp-includes/js/wp-emoji-loader.min.js
+</script>
+    
+
+<div class="widget_shopping_cart_live_region screen-reader-text" role="status"></div></body></html>

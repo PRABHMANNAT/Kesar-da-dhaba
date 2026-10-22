@@ -38,6 +38,8 @@ fs.writeFileSync(path.join(dist,'404.html'),`<!doctype html><html lang="en"><hea
 // Journal listing and full, locally rendered articles.
 fs.mkdirSync(path.join(dist,'blogs'),{recursive:true});
 fs.writeFileSync(path.join(dist,'blogs','index.html'),blogsDocument(origin));
+// Preserve the original legacy design as the baseline for its upcoming redesign.
+fs.writeFileSync(path.join(dist,'our-legacy','index.html'),fs.readFileSync('original-legacy/page.html','utf8').replaceAll('__BLOG_ORIGIN__',origin));
 for(const route of blogRoutes){const dir=path.join(dist,route);fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(path.join(dir,'index.html'),blogArticleDocument(origin,route.split('/')[1]));}
 fs.writeFileSync(path.join(dist,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${origin}/sitemap.xml\n`);
 fs.writeFileSync(path.join(dist,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[...pages,['blogs'],...blogRoutes.map(route=>[route])].map(([s])=>`<url><loc>${origin}/${s?s+'/':''}</loc></url>`).join('')}</urlset>`);

@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url('/assets/original-legacy/4a1624440f-BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojIWmb2Rm.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('/assets/original-legacy/acc4043d64-BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDISmb2Rm.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/assets/original-legacy/925f8f7ed5-BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmb2Rm.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/original-legacy/a42bc6f5ed-BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/assets/original-legacy/9b18400df1-BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSmb2Rm.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/assets/original-legacy/2414543c4a-BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOmb2Rm.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/original-legacy/f141a75173-BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4Omb2Rm.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/assets/original-legacy/2ac50ef6c2-BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDIOmb2Rm.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('/assets/original-legacy/22cb7a5661-BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoJYOmb2Rm.ttf') format('truetype');
+}

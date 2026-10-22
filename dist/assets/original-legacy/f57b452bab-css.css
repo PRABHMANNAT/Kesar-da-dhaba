@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/assets/original-legacy/14b1f4da66-92zPtBhPNqw79Ij1E865zBUv7myRJTVBNI0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TASA Orbiter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/original-legacy/8660cca9dc-3XF4Erw3860rsdSUVZx78hPcTvQoDGHxaFGfVH4Cwpu-8w.ttf') format('truetype');
+}
