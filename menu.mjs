@@ -20,7 +20,7 @@ const dishImages = {
 const categoryCutouts = { 'raita-pulao': 'seasonal-cutout.webp' };
 const categoryArt = {
   beverages: ['lassi-glass.webp', 'A tall glass of traditional lassi'],
-  sabziyan: ['dal-thumb.webp', 'Dal being finished in the Kesar kitchen'],
+  sabziyan: ['sabziyan-dal.webp', 'Kesar dal fry served in a copper bowl'],
   pranthas: ['pranthas-thumb.webp', 'Golden Punjabi pranthas'],
   thali: ['kesar-thali-portrait-small.webp', 'A generous Kesar thali'],
   rotiyan: ['rotiyan-breads.webp', 'Golden Punjabi breads stacked fresh from the griddle'],

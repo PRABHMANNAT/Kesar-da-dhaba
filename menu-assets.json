@@ -180,6 +180,14 @@
       "width": 300,
       "height": 300,
       "bytes": 21786
+    },
+    {
+      "file": "/assets/menu/sabziyan-dal.webp",
+      "source": "Local original: 08_Shared_Instagram_Feed/Images/dal-fry-bowl-overhead-instagram-post.jpg",
+      "changes": "Plated-dal square crop, resize and WebP compression",
+      "width": 300,
+      "height": 300,
+      "bytes": 16788
     }
   ],
   "reels": [
