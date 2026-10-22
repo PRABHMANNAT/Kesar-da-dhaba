@@ -108,13 +108,14 @@ body:has(.menu-page) .mobile-actions>a:nth-child(2){background:var(--yellow);col
 .menu-delivery-card{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:84px;padding:18px 20px 18px 30px;border-radius:100px;border:1px solid transparent;transition:transform .25s,box-shadow .25s}
 .menu-delivery-card:hover{transform:translateX(4px);box-shadow:0 7px 24px #062c1a0b}
 .menu-delivery-card:focus-visible{outline:2px solid var(--green);outline-offset:4px}
-.menu-zomato{background:#fff0f2;border-color:#f4d7dd}
-.menu-swiggy{background:#fff2e5;border-color:#f0dfca}
+.menu-zomato,.menu-swiggy{background:#f7f2e7;border-color:#ddd4bc;color:var(--green)}
+.menu-delivery-card:hover{background:#eee8d8;border-color:#bca674}
 .menu-platform-logo{font-family:Arial,sans-serif;font-weight:800;font-size:31px;letter-spacing:-1.5px;line-height:1}
-.menu-zomato .menu-platform-logo{color:#d51d43;font-style:italic}
-.menu-swiggy .menu-platform-logo{color:#ba4700}
-.menu-platform-action{display:flex;align-items:center;gap:12px;font-size:12px}
-.menu-platform-action>span{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#fffaf4;font-size:22px}
+.menu-zomato .menu-platform-logo{color:var(--green);font-style:italic}
+.menu-swiggy .menu-platform-logo{color:var(--green)}
+.menu-platform-action{display:flex;align-items:center;gap:12px;font-size:12px;color:#59665b}
+.menu-platform-action>span{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--green);color:#efd78d;font-size:22px;transition:background .25s,color .25s,transform .25s}
+.menu-delivery-card:hover .menu-platform-action>span{background:#e9ce82;color:var(--green);transform:rotate(6deg)}
 .menu-social{background:#f5f0e4;border-top:1px solid var(--menu-rule);padding:75px var(--gutter) 60px;overflow:hidden}
 .menu-social-heading{display:flex;justify-content:space-between;align-items:center;gap:30px;margin-bottom:36px}
 .menu-social-heading h2{font-size:clamp(40px,4.5vw,64px)}
