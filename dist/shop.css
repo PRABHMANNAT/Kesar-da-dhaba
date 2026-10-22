@@ -7,3 +7,6 @@
 .pantry-opening-art img,.pantry-product-photo img{height:auto}
 
 #house-favourites,#pantry-social-title{scroll-margin-top:130px}
+
+/* Carry the journal botanical motif through the entire green film section. */
+.pantry-social-backdrop::before{content:"";position:absolute;inset:0;z-index:1;background:url("/assets/journal-botanical.svg") center top/520px 620px repeat;opacity:.52;pointer-events:none}
