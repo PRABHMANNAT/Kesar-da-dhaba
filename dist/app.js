@@ -1,8 +1,3 @@
-const toggle=document.querySelector('.menu-toggle');
-const mobileNav=document.querySelector('#mobile-nav');
-toggle?.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!open));mobileNav.hidden=open;});
-document.addEventListener('keydown',event=>{if(event.key==='Escape'&&toggle?.getAttribute('aria-expanded')==='true'){toggle.setAttribute('aria-expanded','false');mobileNav.hidden=true;toggle.focus();}});
-document.addEventListener('click',event=>{if(mobileNav&&!mobileNav.hidden&&!event.target.closest('.site-header')){mobileNav.hidden=true;toggle.setAttribute('aria-expanded','false');}});
 const search=document.querySelector('#dish-search');
 let activeCategory='all';
 const filterMenu=()=>{

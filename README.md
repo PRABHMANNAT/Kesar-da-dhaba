@@ -24,7 +24,8 @@ For Vercel, import this repository with the repository root as the Root Director
 - `experience.mjs`: signature-dish showcase, photo journal, visit drawer and homepage FAQ.
 - `honours.mjs`, `honours-sections.mjs` and `honours-data.json`: homepage recognition-logo marquee and the Awards & Honours page, sourced from the official restaurant website. The page includes six recognitions, two published rating snapshots, five attributed press excerpts/summaries and five original Instagram photographs.
 - `dist/styles.css`: responsive design and typography.
-- `dist/app.js`: menu filtering, mobile navigation and photo viewer.
+- `dist/app.js`: legacy menu filtering.
+- `navigation.mjs`, `dist/navigation.css` and `dist/navigation.js`: shared navigation markup, rounded mobile menu and desktop/touch/keyboard interaction feedback.
 - `dist/motion.css` and `dist/motion.js`: headline entrances, scroll reveals, image movement, reading progress and video playback controls.
 - `dist/experience.css` and `dist/experience.js`: accessible dish tabs, six-image gallery navigation, visit planner and address copy.
 - `dist/honours.css` and `dist/honours.js`: recognition marquee, animated award filters, culinary illustrations, manual press-review navigation and the Instagram gallery. Reviews support previous/next, publication selectors, arrow keys, Home/End and touch swipes; the Instagram strip uses native horizontal scrolling and scroll snapping on mobile. Native Web Animations provide entrances and transitions without a React dependency. The system reduced-motion preference suppresses animation. Reviews remain readable as a full list without JavaScript.
@@ -38,7 +39,13 @@ Build generation preserves CSS, JavaScript and image assets in `dist`.
 
 ## Content
 
-Content and assets were collected from https://kesardadhaba.com/ and its official menu, legacy, shop, honours and contact pages. Restaurant menu prices were not provided on the source page and are intentionally omitted. Shop prices reflect the source and ask customers to confirm availability with the team. Shop enquiries use the existing WhatsApp link; there is no checkout or reservation backend. Awards & Honours is a local page; footer links for notable visitors and journal lead to the existing website. Award wording is attributed to the restaurant’s published recognition archive; community ratings are identified as website snapshots rather than live platform scores. Logo provenance is recorded in `honours-assets.json`.
+### Original blog listing clone
+
+`/blogs/` is a separate faithful baseline of [the original blog listing](https://kesardadhaba.com/blogs/), ready for the next redesign. It preserves the original header, banner, seven post previews, typography, responsive masonry and footer. `blogs.mjs` reads the editable `original-blogs/page.html` snapshot; `node build.mjs` generates the route alongside the existing pages. The shared footer’s Journal link now opens this local route.
+
+The clone uses 132 locally mirrored CSS, font and image resources (about 9.57 MB total on disk), recorded in `original-blogs/assets.json`. It has its own `dist/blogs-clone.css` and `dist/blogs-clone.js` behaviour adapters rather than the redesigned pages’ visual styles. Article/category links still open the original website. See `original-blogs/DESIGN.md` for observed styling, capture context and scope. Re-mirroring the source is optional maintenance; normal builds require only Node and the saved snapshot.
+
+Content and assets were collected from https://kesardadhaba.com/ and its official menu, legacy, shop, honours and contact pages. Restaurant menu prices were not provided on the source page and are intentionally omitted. Shop prices reflect the source and ask customers to confirm availability with the team. Shop enquiries use the existing WhatsApp link; there is no checkout or reservation backend. Awards & Honours is a local page; the notable visitors footer link leads to the existing website, while Journal opens the local blog clone. Award wording is attributed to the restaurant’s published recognition archive; community ratings are identified as website snapshots rather than live platform scores. Logo provenance is recorded in `honours-assets.json`.
 
 Confirm business hours, contact details, product prices and asset/font usage with the restaurant before replacing its main website. Update the canonical base URL in `build.mjs` when moving to the final domain.
 
@@ -72,3 +79,10 @@ The intro heading is “A taste of Amritsar.” Its portrait film is the exact o
 The seasonal thali’s rotation, pitch and lift follow scroll position through one requested animation frame per scroll update while visible. The same local firni cutout floats in the seasonal and food-app sections. Sabziyan and Rotiyan use separate crops of local food photography; Beverages uses an optimized public-domain lassi glass photograph by Ranveig, sourced from Wikimedia Commons. Source, licence, processing details and output sizes are recorded in `menu-assets.json`.
 
 The footer map frame uses the original Kesar yellow. Social links use custom SVG arrows with hover and keyboard-focus motion. Layout review included 320px and 430px mobile previews and a 1280px laptop preview. The original font, yellow Popular tags and initial complete menu are retained.
+
+
+## Shared navigation
+
+Blogs links to `/blogs/` in both the desktop navigation and the mobile page menu. The shared header uses a rounded Menu/Close control, an animated two-line icon, a cream navigation panel with numbered links, an active-page marker and a phone action. Hover, focus and touch presses use the brand yellow with SVG arrow movement. The desktop links use matching pill highlights and press feedback.
+
+The mobile panel is used below 1024px to leave room for the added desktop link. It closes with Escape, an outside click, focus leaving the menu, a page-link selection or resizing to desktop width. Opening uses a short entrance and staggered link motion; system reduced motion and the site's paused-motion setting suppress it. The original blog clone retains its captured header and drawer as the redesign baseline.
