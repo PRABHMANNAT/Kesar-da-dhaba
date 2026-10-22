@@ -14,3 +14,15 @@
  dialog.addEventListener('close',()=>opener?.focus({preventScroll:true}));
  document.querySelectorAll('[data-share-post]').forEach(button=>button.addEventListener('click',async()=>{const status=document.querySelector('.legacy-share-status');try{const url=location.origin+'/our-legacy/#postcards-title';if(navigator.share)await navigator.share({title:'Postcards from our past — Kesar Da Dhaba',url});else{await navigator.clipboard.writeText(url);status.textContent='Link copied. Share a little Kesar.';}}catch(error){if(error.name!=='AbortError')status.textContent='Copy this page’s address to share the postcards.';}}));
 })();
+// Touch feedback for the history photograph without intercepting page scrolling.
+(() => {
+ const photo=document.querySelector('.legacy-sign-photo');
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ let timer;
+ photo?.addEventListener('pointerdown',event=>{
+  if(event.pointerType==='mouse'||reduced.matches)return;
+  clearTimeout(timer);photo.classList.add('is-photo-touched');
+  timer=setTimeout(()=>photo.classList.remove('is-photo-touched'),1300);
+ },{passive:true});
+ photo?.addEventListener('pointercancel',()=>{clearTimeout(timer);photo.classList.remove('is-photo-touched');},{passive:true});
+})();

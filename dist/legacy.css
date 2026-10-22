@@ -32,3 +32,25 @@
 @media(min-width:701px) and (max-width:1050px){.legacy-people{gap:18px}.legacy-person{padding:10px 10px 22px}.legacy-person-copy{padding:0 6px;font-size:14px}.legacy-person-top{padding-inline:4px;gap:9px}.legacy-person-top>span:last-child{font-size:8px}}
 @media(max-width:700px){.legacy-history{padding-block:48px 30px}.legacy-history-aside{float:none;width:100%;margin:0 0 30px}.legacy-history .legacy-sign-photo{max-width:330px;margin-inline:auto}.legacy-history-text{padding:0;font-size:16px}.legacy-history-text p:first-child{font-size:19px}.legacy-people{gap:24px}.legacy-person{padding:14px 14px 25px}.legacy-person figure{max-width:310px;margin:18px auto 22px}.legacy-person-copy{font-size:16px;padding-inline:8px}.legacy-person-top{padding-inline:8px}.legacy-person-top>span:last-child{font-size:10px}}
 .legacy-history-text p:last-of-type{clear:both;padding-top:16px}@media(max-width:700px){.legacy-history-text p:last-of-type{padding-top:0}}
+/* Three short, useful chapter links in the Kesar palette. */
+.legacy-chapter-bar{justify-content:center;gap:0;padding:10px var(--gutter);background:#062c1a;border-block:1px solid #c8b46a;color:#fff6dc;letter-spacing:0}
+.legacy-chapter-bar>a{display:flex;align-items:center;justify-content:space-between;gap:30px;width:100%;max-width:300px;min-height:52px;margin:0 8px;padding:10px 22px;border-radius:100px;font:17px/1.3 var(--sans);transition:background .22s,color .22s,transform .22s}
+.legacy-chapter-bar>a>span{display:grid;place-items:center;flex:none;width:29px;height:29px;border:1px solid #e1c76e55;border-radius:50%;color:#ffde59;font:19px/1 Arial;transition:transform .22s,background .22s,color .22s}
+.legacy-chapter-bar>a:hover,.legacy-chapter-bar>a:focus-visible{background:#ffde59;color:#062c1a}
+.legacy-chapter-bar>a:hover>span,.legacy-chapter-bar>a:focus-visible>span{background:#062c1a;color:#ffde59;transform:rotate(45deg)}
+.legacy-chapter-bar>a:active{transform:scale(.97)}
+.legacy-chapter-bar>a:focus-visible{outline:2px solid #fff4c8;outline-offset:3px}
+/* A photographic light sweep plays on arrival and again on hover or touch. */
+.legacy-history .legacy-sign-photo{transition:transform .55s cubic-bezier(.2,.8,.2,1),box-shadow .55s;will-change:auto}
+.legacy-sign-photo .legacy-photo-crop{position:relative;isolation:isolate}
+.legacy-sign-photo .legacy-photo-crop::after{content:'';position:absolute;inset:-30%;pointer-events:none;background:linear-gradient(115deg,transparent 35%,#fff5d633 46%,#ffffff55 50%,transparent 62%);transform:translateX(-115%);opacity:0;z-index:1}
+.legacy-sign-photo .legacy-photo-crop img{transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.legacy-history-aside.is-visible .legacy-photo-crop::after{animation:legacy-photo-light 1.5s .25s both}
+.legacy-history .legacy-sign-photo.is-photo-touched{transform:rotate(0) translateY(-5px);box-shadow:0 22px 40px #062c1a21}
+.legacy-sign-photo.is-photo-touched .legacy-photo-crop::after{animation:legacy-photo-light 1.2s both}
+@media(hover:hover){.legacy-history .legacy-sign-photo:hover{transform:rotate(0) translateY(-6px);box-shadow:0 22px 45px #062c1a22}.legacy-sign-photo:hover .legacy-photo-crop img{transform:scale(1.15)}.legacy-history-aside.is-visible .legacy-sign-photo:hover .legacy-photo-crop::after{animation:legacy-photo-hover 1.2s both}}
+@keyframes legacy-photo-light{0%{transform:translateX(-115%);opacity:0}20%{opacity:1}80%{opacity:1}100%{transform:translateX(115%);opacity:0}}
+@keyframes legacy-photo-hover{0%{transform:translateX(-115%);opacity:0}20%{opacity:1}80%{opacity:1}100%{transform:translateX(115%);opacity:0}}
+@media(max-width:700px){.legacy-chapter-bar{padding:8px 12px}.legacy-chapter-bar>a{font-size:13px;min-height:46px;padding:8px 10px;margin:0 2px;gap:8px}.legacy-chapter-bar>a>span{width:23px;height:23px;font-size:15px}}
+@media(max-width:360px){.legacy-chapter-bar>a{padding-inline:7px;font-size:12px;gap:5px}}
+@media(prefers-reduced-motion:reduce){.legacy-chapter-bar>a,.legacy-chapter-bar>a>span,.legacy-history .legacy-sign-photo,.legacy-sign-photo .legacy-photo-crop img{transition:none}.legacy-sign-photo .legacy-photo-crop::after{display:none}.legacy-history .legacy-sign-photo:hover,.legacy-history .legacy-sign-photo.is-photo-touched{transform:rotate(-2deg)}.legacy-sign-photo:hover .legacy-photo-crop img{transform:scale(1.1)}.legacy-chapter-bar>a:hover>span,.legacy-chapter-bar>a:active{transform:none}}
