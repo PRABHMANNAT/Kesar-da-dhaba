@@ -161,7 +161,9 @@
  reelStage.addEventListener('pointerup',event=>{if(!reelDrag)return;const dx=event.clientX-reelDrag.x,change=reelDrag.moved&&Math.abs(dx)>55;reelDrag=null;if(reelStage.hasPointerCapture(event.pointerId))reelStage.releasePointerCapture(event.pointerId);if(change)showReel(reelIndex+(dx<0?1:-1),dx<0?1:-1)});
  reelStage.addEventListener('pointercancel',()=>{reelDrag=null});reelStage.addEventListener('dragstart',event=>event.preventDefault());
  const top=root.querySelector('[data-kh-top]');let scrollFrame=0;
- addEventListener('scroll',()=>{if(!scrollFrame)scrollFrame=requestAnimationFrame(()=>{top.hidden=scrollY<650;scrollFrame=0})},{passive:true});
+ const updateProgress=()=>{scrollFrame=0;top.hidden=scrollY<650;const distance=document.documentElement.scrollHeight-innerHeight;const progress=distance>0?Math.max(0,Math.min(1,scrollY/distance)):0;top.style.setProperty('--kh-top-offset',String(100-progress*100))};
+ const queueProgress=()=>{if(!scrollFrame)scrollFrame=requestAnimationFrame(updateProgress)};
+ addEventListener('scroll',queueProgress,{passive:true});addEventListener('resize',queueProgress);new ResizeObserver(queueProgress).observe(document.body);updateProgress();
  top.addEventListener('click',()=>window.scrollTo({top:0,behavior:motion()?'smooth':'instant'}));top.hidden=scrollY<650;
  // Type only while a heading is visible. Accessible labels remain complete.
  const typewriters=[...root.querySelectorAll('[data-kh-cycle]')].map(el=>({el,phrases:el.dataset.khCycle.split('|'),index:0,chars:el.textContent.length,deleting:true,timer:0,visible:false}));
