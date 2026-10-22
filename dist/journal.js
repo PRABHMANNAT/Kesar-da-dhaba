@@ -28,13 +28,16 @@
   }
   const film=document.querySelector('[data-journal-film]'),filmButton=document.querySelector('[data-film-toggle]');
   if(film){
-    let visible=false,userPaused=false;
-    const playback=()=>{const play=visible&&!document.hidden&&!userPaused&&!reduced.matches;if(play){if(!film.getAttribute('src'))film.src=film.dataset.src;film.play().catch(()=>{filmButton.textContent='Play film';});}else film.pause();};
+    film.muted=true;
+    let visible=false;
+    const playback=()=>{if(visible&&!document.hidden){if(!film.getAttribute('src'))film.src=film.dataset.src;film.play().catch(()=>{});}else film.pause();};
+    const paintSound=()=>{const muted=film.muted;filmButton.setAttribute('aria-label',muted?'Unmute film':'Mute film');filmButton.setAttribute('aria-pressed',String(!muted));filmButton.querySelector('[data-sound-label]').textContent=muted?'Sound off':'Sound on';filmButton.querySelector('[data-sound-off]').style.display=muted?'':'none';filmButton.querySelector('[data-sound-on]').style.display=muted?'none':'';};
+    filmButton.querySelector('[data-sound-on]').removeAttribute('hidden');
     new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;playback();},{threshold:.2}).observe(film);
-    film.addEventListener('playing',()=>{film.classList.add('is-playing');filmButton.textContent='Pause film';filmButton.setAttribute('aria-label','Pause kitchen film');filmButton.setAttribute('aria-pressed','true');});
-    film.addEventListener('pause',()=>{filmButton.textContent='Play film';filmButton.setAttribute('aria-label','Play kitchen film');filmButton.setAttribute('aria-pressed','false');});
+    film.addEventListener('playing',()=>film.classList.add('is-playing'));
     film.addEventListener('error',()=>{film.classList.remove('is-playing');filmButton.hidden=true;});
-    filmButton.addEventListener('click',()=>{if(!film.paused){userPaused=true;film.pause();}else{userPaused=false;if(!film.getAttribute('src'))film.src=film.dataset.src;film.play().catch(()=>{});}});
-    document.addEventListener('visibilitychange',playback);reduced.addEventListener('change',playback);
+    film.addEventListener('volumechange',paintSound);
+    filmButton.addEventListener('click',()=>{film.muted=!film.muted;paintSound();if(film.paused)film.play().catch(()=>{});});
+    document.addEventListener('visibilitychange',playback);paintSound();
   }
 })();
