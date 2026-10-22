@@ -56,9 +56,12 @@ body:has(.menu-page) .mobile-actions>a:nth-child(2){background:var(--yellow);col
 .menu-preference button span{font-size:9px;opacity:.7;margin-left:5px}
 .menu-preference button[aria-pressed=true]{background:var(--green);border-color:var(--green);color:var(--ivory)}
 .menu-preference button:hover:not([aria-pressed=true]){background:#f6f0de}
-.menu-category-rail{display:flex;gap:clamp(18px,2.6vw,38px);overflow-x:auto;scrollbar-width:thin;scrollbar-color:#c7ba96 transparent;overscroll-behavior-inline:contain}
+.menu-category-rail{position:relative;display:flex;gap:clamp(18px,2.6vw,38px);overflow-x:auto;scrollbar-width:none;overscroll-behavior-inline:contain}
 .menu-category-rail button{flex-shrink:0;border:0;border-bottom:2px solid transparent;background:none;min-height:61px;font-size:13px;line-height:1.2;padding:16px 0 12px;transition:border-color .2s;white-space:nowrap}
-.menu-category-rail button[aria-pressed=true]{border-color:var(--menu-gold);color:var(--green)}
+.menu-category-rail button[aria-pressed=true]{color:var(--green)}
+.menu-category-rail button[aria-current=location]{color:var(--green)}
+.menu-category-rail::-webkit-scrollbar{display:none}
+.menu-category-indicator{position:absolute;bottom:0;left:0;width:var(--category-width,70px);height:2px;background:var(--menu-gold);translate:var(--category-left,0px) 0;pointer-events:none;transition:translate .32s cubic-bezier(.2,.7,.2,1),width .32s cubic-bezier(.2,.7,.2,1)}
 .menu-category-rail button:hover{border-color:#c9bc99}
 .menu-results-line{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:19px;min-height:51px}
 .menu-results-line p{font-size:11px;color:#6e7569}
@@ -250,4 +253,4 @@ body:has(.menu-page) .mobile-actions>a:nth-child(2){background:var(--yellow);col
 }
 @media(max-width:360px){.menu-page .cinema-hero{--cinema-height:410px}.menu-welcome h2{font-size:46px}.menu-catalogue-intro h2{font-size:38px}.menu-delivery h2{font-size:40px}.menu-dish h3{font-size:15px}.menu-tag{font-size:8px}.menu-post{flex-basis:91%}}
 @media(max-height:650px){.menu-page .cinema-hero{--cinema-height:420px;--cinema-travel:0px}}
-@media(prefers-reduced-motion:reduce){.menu-float{animation:none!important}.menu-reveal-ready{opacity:1;transform:none}.menu-page *{scroll-behavior:auto!important}}
+@media(prefers-reduced-motion:reduce){.menu-category-indicator{transition:none}.menu-float{animation:none!important}.menu-reveal-ready{opacity:1;transform:none}.menu-page *{scroll-behavior:auto!important}}

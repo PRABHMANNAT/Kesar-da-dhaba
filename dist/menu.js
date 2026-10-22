@@ -14,10 +14,51 @@
   let category = 'all';
   let preference = 'all';
   let filterAnimation;
+  const categoryRail = page.querySelector('.menu-category-rail');
+  const categoryIndicator = page.querySelector('.menu-category-indicator');
+  const filterDock = page.querySelector('.menu-filter-dock');
+  let currentChapter = '';
+  let categoryFrame = 0;
+  const updateCategoryProgress = () => {
+    categoryFrame = 0;
+    const visibleChapters = chapters.filter(chapter => !chapter.hidden);
+    const probe = filterDock.getBoundingClientRect().bottom + Math.min(100, innerHeight * .12);
+    let active = category;
+    if (category === 'all') {
+      for (const chapter of visibleChapters) {
+        if (chapter.getBoundingClientRect().top <= probe) active = chapter.dataset.menuChapter;
+        else break;
+      }
+    }
+    const button = categoryButtons.find(item => item.dataset.menuCategoryFilter === active) || categoryButtons[0];
+    categoryIndicator.style.setProperty('--category-left', `${button.offsetLeft}px`);
+    categoryIndicator.style.setProperty('--category-width', `${button.offsetWidth}px`);
+    if (currentChapter !== active) {
+      currentChapter = active;
+      categoryButtons.forEach(item => {
+        if (item === button) item.setAttribute('aria-current', 'location');
+        else item.removeAttribute('aria-current');
+      });
+      // Follow the chapter on narrow screens without changing the dish filter.
+      if (button.offsetLeft < categoryRail.scrollLeft + 8 || button.offsetLeft + button.offsetWidth > categoryRail.scrollLeft + categoryRail.clientWidth - 8) {
+        categoryRail.scrollTo({left:Math.max(0,button.offsetLeft - (categoryRail.clientWidth - button.offsetWidth) / 2),behavior:motion() ? 'smooth' : 'instant'});
+      }
+    }
+  };
+  const queueCategoryProgress = () => { if (!categoryFrame) categoryFrame = requestAnimationFrame(updateCategoryProgress); };
+  addEventListener('scroll', queueCategoryProgress, {passive:true});
+  addEventListener('resize', queueCategoryProgress);
+  if ('ResizeObserver' in window) {
+    const categorySize = new ResizeObserver(queueCategoryProgress);
+    categorySize.observe(categoryRail);
+    categorySize.observe(page.querySelector('#menu-chapters'));
+  }
+  document.fonts?.ready.then(queueCategoryProgress);
+
   const apply = (animate = false) => {
     const dock = page.querySelector('.menu-filter-dock');
     const headerHeight = document.querySelector('.site-header')?.getBoundingClientRect().height || 82;
-    const wasPinned = dock.getBoundingClientRect().top <= headerHeight + 2;
+    const wasPinned = Math.abs(dock.getBoundingClientRect().top - headerHeight) <= 2;
     const intro = page.querySelector('.menu-catalogue-intro');
     const dockStart = intro.getBoundingClientRect().bottom + scrollY + parseFloat(getComputedStyle(intro).marginBottom);
     const terms = normalize(search.value).split(/\s+/).filter(Boolean);
@@ -41,6 +82,7 @@
     if (wasPinned) scrollTo({top:Math.max(0,dockStart - headerHeight),behavior:'instant'});
     categoryButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.menuCategoryFilter === category)));
     preferenceButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.menuFilter === preference)));
+    queueCategoryProgress();
     filterAnimation?.cancel();
     if (animate && motion()) filterAnimation = page.querySelector('#menu-chapters').animate([{opacity:.55,transform:'translateY(7px)'},{opacity:1,transform:'none'}],{duration:240,easing:'ease-out'});
   };
@@ -51,7 +93,7 @@
     category = button.dataset.menuCategoryFilter;
     apply(true);
     const rail = button.parentElement;
-    rail.scrollTo({left:button.offsetLeft - rail.offsetLeft - 18,behavior:motion() ? 'smooth' : 'instant'});
+    rail.scrollTo({left:button.offsetLeft - 18,behavior:motion() ? 'smooth' : 'instant'});
   }));
   preferenceButtons.forEach(button => button.addEventListener('click', () => {preference = button.dataset.menuFilter; apply(true);}));
   clear.addEventListener('click', () => {reset();search.focus({preventScroll:true});});
