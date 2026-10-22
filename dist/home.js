@@ -15,7 +15,7 @@
  const videoAllowed=video=>{if(video.closest('[data-kh-reel]')?.hidden)return false;return !mobile.matches||!video.closest('.kh-deck-card')||video.closest('.kh-deck-card').classList.contains('is-active')};
  const auto=()=>motion()&&!navigator.connection?.saveData&&read('kesar-autoplay')!=='false';
  const syncVideos=()=>videos.forEach(video=>{
-  if(visible.has(video)&&videoAllowed(video)&&!document.hidden&&!document.querySelector('dialog[open]')&&!userPaused.has(video)&&((auto()&&ready.has(video))||manual.has(video))){load(video);if(video.paused)video.play().catch(()=>{});}
+  if(visible.has(video)&&videoAllowed(video)&&!document.hidden&&!document.querySelector('dialog[open]')&&!userPaused.has(video)&&(((auto()||(video.dataset.khAutoplay==='true'&&motion()&&!navigator.connection?.saveData))&&ready.has(video))||manual.has(video))){load(video);if(video.paused)video.play().catch(()=>{});}
   else if(!video.paused)video.pause();
  });
  const videoObserver=new IntersectionObserver(entries=>{
