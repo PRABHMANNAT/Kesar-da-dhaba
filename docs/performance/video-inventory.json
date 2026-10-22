@@ -1,0 +1,985 @@
+[
+  {
+    "url": "/assets/journal-hero-reel.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "67.400734",
+          "bit_rate": "1781521"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "67.436000",
+          "bit_rate": "96051"
+        }
+      ],
+      "format": {
+        "duration": "67.436000",
+        "size": "15867129"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/social/DP6WtjoktVL.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "26.400000",
+          "bit_rate": "1131856"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "26.515782",
+          "bit_rate": "48851"
+        }
+      ],
+      "format": {
+        "duration": "26.515782",
+        "size": "3915253"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/social/DJwTtNGysiC.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "33.000000",
+          "bit_rate": "1521790"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "33.085578",
+          "bit_rate": "58952"
+        }
+      ],
+      "format": {
+        "duration": "33.085578",
+        "size": "6548237"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/kesar-hero-mobile.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 576,
+          "height": 1024,
+          "duration": "10.000000",
+          "bit_rate": "973971"
+        }
+      ],
+      "format": {
+        "duration": "10.000000",
+        "size": "1221208"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/kesar-hero-desktop.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 450,
+          "duration": "10.000000",
+          "bit_rate": "883245"
+        }
+      ],
+      "format": {
+        "duration": "10.000000",
+        "size": "1107785"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/menu/welcome-reel.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 540,
+          "height": 960,
+          "duration": "26.333333",
+          "bit_rate": "430770"
+        }
+      ],
+      "format": {
+        "duration": "26.333333",
+        "size": "1426398"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/menu/instagram-01.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 432,
+          "height": 768,
+          "duration": "32.916667",
+          "bit_rate": "496526"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "32.918000",
+          "bit_rate": "64414"
+        }
+      ],
+      "format": {
+        "duration": "32.918000",
+        "size": "2332396"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/social/DOgTqrWEl-9.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "10.800000",
+          "bit_rate": "1383585"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "10.935193",
+          "bit_rate": "66006"
+        }
+      ],
+      "format": {
+        "duration": "10.935193",
+        "size": "1966258"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/menu/instagram-03.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 432,
+          "height": 768,
+          "duration": "44.916667",
+          "bit_rate": "474248"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "44.950000",
+          "bit_rate": "64670"
+        }
+      ],
+      "format": {
+        "duration": "44.950000",
+        "size": "3058777"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/menu/instagram-07.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 432,
+          "height": 768,
+          "duration": "18.500000",
+          "bit_rate": "422044"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "18.540000",
+          "bit_rate": "64368"
+        }
+      ],
+      "format": {
+        "duration": "18.540000",
+        "size": "1139565"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/menu/instagram-11.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 432,
+          "height": 768,
+          "duration": "23.958333",
+          "bit_rate": "537980"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "24.001000",
+          "bit_rate": "64139"
+        }
+      ],
+      "format": {
+        "duration": "24.001000",
+        "size": "1821802"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/social/DMkueViSriL.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "29.160000",
+          "bit_rate": "1193984"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "29.325397",
+          "bit_rate": "43270"
+        }
+      ],
+      "format": {
+        "duration": "29.325397",
+        "size": "4530664"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/social/DQzHLF2jnwj.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "49.680000",
+          "bit_rate": "1444067"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "49.789375",
+          "bit_rate": "45933"
+        }
+      ],
+      "format": {
+        "duration": "49.789375",
+        "size": "9285561"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/reviews/guest-01.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "39.833333",
+          "bit_rate": "1362681"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "39.870000",
+          "bit_rate": "95952"
+        }
+      ],
+      "format": {
+        "duration": "39.870000",
+        "size": "7308185"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/reviews/guest-02.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "10.466667",
+          "bit_rate": "1333920"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "10.472993",
+          "bit_rate": "96126"
+        }
+      ],
+      "format": {
+        "duration": "10.472993",
+        "size": "1884148"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/reviews/guest-03.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "24.066667",
+          "bit_rate": "1015463"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "24.080000",
+          "bit_rate": "96043"
+        }
+      ],
+      "format": {
+        "duration": "24.080000",
+        "size": "3371775"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/reviews/guest-04.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 360,
+          "height": 640,
+          "duration": "13.045074",
+          "bit_rate": "400296"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "13.073991",
+          "bit_rate": "96584"
+        }
+      ],
+      "format": {
+        "duration": "13.073991",
+        "size": "826475"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/reviews/guest-05.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "20.312959",
+          "bit_rate": "1210753"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "20.319002",
+          "bit_rate": "95974"
+        }
+      ],
+      "format": {
+        "duration": "20.319002",
+        "size": "3341872"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/reviews/guest-06.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "17.701770",
+          "bit_rate": "2252292"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "17.718005",
+          "bit_rate": "96642"
+        }
+      ],
+      "format": {
+        "duration": "17.718005",
+        "size": "5218653"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/reviews/guest-07.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "24.282045",
+          "bit_rate": "909236"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "24.311995",
+          "bit_rate": "95867"
+        }
+      ],
+      "format": {
+        "duration": "24.311995",
+        "size": "3079184"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/reviews/guest-08.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "23.300000",
+          "bit_rate": "1190568"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "23.290998",
+          "bit_rate": "95977"
+        }
+      ],
+      "format": {
+        "duration": "23.300000",
+        "size": "3773969"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/reviews/guest-09.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "36.167872",
+          "bit_rate": "1750566"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "36.155011",
+          "bit_rate": "96442"
+        }
+      ],
+      "format": {
+        "duration": "36.167872",
+        "size": "8391113"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/reviews/guest-10.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "55.466667",
+          "bit_rate": "1321677"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "55.473991",
+          "bit_rate": "96057"
+        }
+      ],
+      "format": {
+        "duration": "55.473991",
+        "size": "9891644"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/reviews/guest-11.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "34.666667",
+          "bit_rate": "1463876"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "34.669002",
+          "bit_rate": "96915"
+        }
+      ],
+      "format": {
+        "duration": "34.669002",
+        "size": "6802780"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/reviews/guest-12.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "11.233333",
+          "bit_rate": "1117786"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "11.216009",
+          "bit_rate": "96132"
+        }
+      ],
+      "format": {
+        "duration": "11.233333",
+        "size": "1718259"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/reviews/guest-13.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "8.333333",
+          "bit_rate": "1715739",
+          "side_data_list": [
+            {}
+          ]
+        },
+        {
+          "codec_name": "aac",
+          "duration": "8.337007",
+          "bit_rate": "96079"
+        }
+      ],
+      "format": {
+        "duration": "8.337007",
+        "size": "1898139"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/reviews/guest-14.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "42.533333",
+          "bit_rate": "1532793"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "42.562993",
+          "bit_rate": "95997"
+        }
+      ],
+      "format": {
+        "duration": "42.562993",
+        "size": "8707997"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/reviews/guest-15.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "30.866667",
+          "bit_rate": "1048386"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "30.907007",
+          "bit_rate": "95793"
+        }
+      ],
+      "format": {
+        "duration": "30.907007",
+        "size": "4450338"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/reviews/guest-16.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "17.033333",
+          "bit_rate": "839153"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "17.068005",
+          "bit_rate": "96019"
+        }
+      ],
+      "format": {
+        "duration": "17.068005",
+        "size": "2011767"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/reviews/guest-17.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "27.666667",
+          "bit_rate": "1220030",
+          "side_data_list": [
+            {}
+          ]
+        },
+        {
+          "codec_name": "aac",
+          "duration": "27.702993",
+          "bit_rate": "96153"
+        }
+      ],
+      "format": {
+        "duration": "27.702993",
+        "size": "4583999"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "url": "/assets/reviews/guest-18.mp4",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 720,
+          "height": 1280,
+          "duration": "22.633333",
+          "bit_rate": "841134"
+        },
+        {
+          "codec_name": "aac",
+          "duration": "22.640998",
+          "bit_rate": "95861"
+        }
+      ],
+      "format": {
+        "duration": "22.640998",
+        "size": "2677293"
+      }
+    },
+    "fastStart": true,
+    "atoms": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  }
+]

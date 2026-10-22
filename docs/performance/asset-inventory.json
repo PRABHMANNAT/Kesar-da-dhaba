@@ -1,0 +1,1686 @@
+{
+  "/assets/monogram-compact.webp": {
+    "bytes": 22802,
+    "routes": [
+      "/404.html",
+      "/",
+      "/blogs/",
+      "/celebrities/",
+      "/contact-us/",
+      "/honors-recognitions/",
+      "/our-legacy/",
+      "/our-menu/",
+      "/our-shop/",
+      "/reviews/",
+      "/blogs/10-famous-foods-in-amritsar-blog/",
+      "/blogs/best-dhaba-in-amritsar-why-kesar-da-dhaba-tops-every-list-2/",
+      "/blogs/best-dishes-to-try-at-kesar-da-dhaba/",
+      "/blogs/best-restaurant-near-golden-temple/",
+      "/blogs/complete-amritsar-travel-guide-golden-temple-heritage-culinary-treasures/",
+      "/blogs/kesar-da-dhaba-famous-punjabi-restaurant-in-amritsar/",
+      "/blogs/kesar-da-dhabas-dal-fry-why-this-110-year-old-recipe-is-still-amritsars-best/"
+    ],
+    "dimensions": [
+      208,
+      208
+    ]
+  },
+  "/assets/original-blogs/119d1c0eb2-a-house-of-traditional-food-3.png": {
+    "bytes": 24757,
+    "routes": [
+      "/404.html",
+      "/",
+      "/blogs/",
+      "/celebrities/",
+      "/contact-us/",
+      "/honors-recognitions/",
+      "/our-legacy/",
+      "/our-menu/",
+      "/our-shop/",
+      "/reviews/",
+      "/blogs/10-famous-foods-in-amritsar-blog/",
+      "/blogs/best-dhaba-in-amritsar-why-kesar-da-dhaba-tops-every-list-2/",
+      "/blogs/best-dishes-to-try-at-kesar-da-dhaba/",
+      "/blogs/best-restaurant-near-golden-temple/",
+      "/blogs/complete-amritsar-travel-guide-golden-temple-heritage-culinary-treasures/",
+      "/blogs/kesar-da-dhaba-famous-punjabi-restaurant-in-amritsar/",
+      "/blogs/kesar-da-dhabas-dal-fry-why-this-110-year-old-recipe-is-still-amritsars-best/"
+    ],
+    "dimensions": [
+      875,
+      438
+    ]
+  },
+  "/assets/original-blogs/7b865d597f-Untitled-design610.png": {
+    "bytes": 32130,
+    "routes": [
+      "/404.html",
+      "/",
+      "/blogs/",
+      "/celebrities/",
+      "/contact-us/",
+      "/honors-recognitions/",
+      "/our-legacy/",
+      "/our-menu/",
+      "/our-shop/",
+      "/reviews/",
+      "/blogs/10-famous-foods-in-amritsar-blog/",
+      "/blogs/best-dhaba-in-amritsar-why-kesar-da-dhaba-tops-every-list-2/",
+      "/blogs/best-dishes-to-try-at-kesar-da-dhaba/",
+      "/blogs/best-restaurant-near-golden-temple/",
+      "/blogs/complete-amritsar-travel-guide-golden-temple-heritage-culinary-treasures/",
+      "/blogs/kesar-da-dhaba-famous-punjabi-restaurant-in-amritsar/",
+      "/blogs/kesar-da-dhabas-dal-fry-why-this-110-year-old-recipe-is-still-amritsars-best/"
+    ],
+    "dimensions": [
+      500,
+      260
+    ]
+  },
+  "/assets/storefront.webp": {
+    "bytes": 209852,
+    "routes": [
+      "/404.html",
+      "/",
+      "/blogs/",
+      "/honors-recognitions/",
+      "/our-menu/",
+      "/blogs/10-famous-foods-in-amritsar-blog/",
+      "/blogs/best-dhaba-in-amritsar-why-kesar-da-dhaba-tops-every-list-2/",
+      "/blogs/best-dishes-to-try-at-kesar-da-dhaba/",
+      "/blogs/best-restaurant-near-golden-temple/",
+      "/blogs/complete-amritsar-travel-guide-golden-temple-heritage-culinary-treasures/",
+      "/blogs/kesar-da-dhaba-famous-punjabi-restaurant-in-amritsar/",
+      "/blogs/kesar-da-dhabas-dal-fry-why-this-110-year-old-recipe-is-still-amritsars-best/"
+    ],
+    "dimensions": [
+      1707,
+      2560
+    ]
+  },
+  "/assets/home/motion-12.23.24.js": {
+    "bytes": 81378,
+    "routes": [
+      "/"
+    ]
+  },
+  "/assets/kesar-hero-desktop-poster.webp": {
+    "bytes": 12242,
+    "routes": [
+      "/",
+      "/our-menu/"
+    ],
+    "dimensions": [
+      720,
+      450
+    ]
+  },
+  "/assets/menu/welcome-reel-poster.webp": {
+    "bytes": 25596,
+    "routes": [
+      "/",
+      "/our-menu/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/menu/seasonal-cutout.webp": {
+    "bytes": 20538,
+    "routes": [
+      "/",
+      "/our-menu/"
+    ],
+    "dimensions": [
+      480,
+      320
+    ]
+  },
+  "/assets/social/DJwTtNGysiC.webp": {
+    "bytes": 59228,
+    "routes": [
+      "/",
+      "/our-legacy/"
+    ],
+    "dimensions": [
+      640,
+      1138
+    ]
+  },
+  "/assets/legacy/partition-train-illustration.png": {
+    "bytes": 2957961,
+    "routes": [
+      "/",
+      "/our-legacy/"
+    ],
+    "dimensions": [
+      2172,
+      724
+    ]
+  },
+  "/assets/social/DMkueViSriL.webp": {
+    "bytes": 44904,
+    "routes": [
+      "/",
+      "/our-shop/"
+    ],
+    "dimensions": [
+      640,
+      1138
+    ]
+  },
+  "/assets/instagram-profile.jpg": {
+    "bytes": 73664,
+    "routes": [
+      "/",
+      "/our-legacy/",
+      "/our-menu/",
+      "/our-shop/"
+    ],
+    "dimensions": [
+      1080,
+      1080
+    ]
+  },
+  "/assets/social/DP6WtjoktVL.webp": {
+    "bytes": 38918,
+    "routes": [
+      "/",
+      "/contact-us/",
+      "/our-shop/"
+    ],
+    "dimensions": [
+      640,
+      1138
+    ]
+  },
+  "/assets/social/DQzHLF2jnwj.webp": {
+    "bytes": 46494,
+    "routes": [
+      "/",
+      "/our-shop/"
+    ],
+    "dimensions": [
+      640,
+      1138
+    ]
+  },
+  "/assets/reviews/guest-01.webp": {
+    "bytes": 26078,
+    "routes": [
+      "/",
+      "/reviews/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/reviews/guest-02.webp": {
+    "bytes": 42806,
+    "routes": [
+      "/",
+      "/reviews/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/reviews/guest-03.webp": {
+    "bytes": 29102,
+    "routes": [
+      "/",
+      "/reviews/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/reviews/guest-04.webp": {
+    "bytes": 32250,
+    "routes": [
+      "/",
+      "/reviews/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/reviews/guest-05.webp": {
+    "bytes": 35874,
+    "routes": [
+      "/",
+      "/reviews/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/reviews/guest-06.webp": {
+    "bytes": 55824,
+    "routes": [
+      "/",
+      "/reviews/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/reviews/guest-07.webp": {
+    "bytes": 42630,
+    "routes": [
+      "/",
+      "/reviews/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/reviews/guest-08.webp": {
+    "bytes": 23312,
+    "routes": [
+      "/",
+      "/reviews/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/reviews/guest-09.webp": {
+    "bytes": 57724,
+    "routes": [
+      "/",
+      "/reviews/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/reviews/guest-10.webp": {
+    "bytes": 60068,
+    "routes": [
+      "/",
+      "/reviews/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/reviews/guest-11.webp": {
+    "bytes": 35148,
+    "routes": [
+      "/",
+      "/reviews/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/reviews/guest-12.webp": {
+    "bytes": 37816,
+    "routes": [
+      "/",
+      "/reviews/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/reviews/guest-13.webp": {
+    "bytes": 39478,
+    "routes": [
+      "/",
+      "/reviews/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/reviews/guest-14.webp": {
+    "bytes": 54172,
+    "routes": [
+      "/",
+      "/reviews/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/reviews/guest-15.webp": {
+    "bytes": 51080,
+    "routes": [
+      "/",
+      "/reviews/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/reviews/guest-16.webp": {
+    "bytes": 42580,
+    "routes": [
+      "/",
+      "/reviews/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/reviews/guest-17.webp": {
+    "bytes": 41932,
+    "routes": [
+      "/",
+      "/reviews/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/reviews/guest-18.webp": {
+    "bytes": 32862,
+    "routes": [
+      "/",
+      "/reviews/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/notable/film-15-cropped.webp": {
+    "bytes": 9048,
+    "routes": [
+      "/",
+      "/celebrities/",
+      "/honors-recognitions/"
+    ],
+    "dimensions": [
+      480,
+      458
+    ]
+  },
+  "/assets/notable/film-19.webp": {
+    "bytes": 60380,
+    "routes": [
+      "/",
+      "/celebrities/",
+      "/honors-recognitions/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/notable/film-22.webp": {
+    "bytes": 29824,
+    "routes": [
+      "/",
+      "/celebrities/",
+      "/honors-recognitions/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/notable/visit-01.webp": {
+    "bytes": 224780,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      900,
+      1600
+    ]
+  },
+  "/assets/notable/visit-02.webp": {
+    "bytes": 72690,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      576,
+      637
+    ]
+  },
+  "/assets/notable/visit-03.webp": {
+    "bytes": 55488,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      879,
+      567
+    ]
+  },
+  "/assets/notable/visit-04.webp": {
+    "bytes": 73292,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      880,
+      761
+    ]
+  },
+  "/assets/notable/visit-05.webp": {
+    "bytes": 239938,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      1546,
+      1600
+    ]
+  },
+  "/assets/notable/visit-06.webp": {
+    "bytes": 175728,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      1080,
+      1029
+    ]
+  },
+  "/assets/notable/visit-07.webp": {
+    "bytes": 151576,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      1600,
+      1492
+    ]
+  },
+  "/assets/notable/visit-08.webp": {
+    "bytes": 115410,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      960,
+      1280
+    ]
+  },
+  "/assets/notable/visit-09.webp": {
+    "bytes": 152992,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      1080,
+      1419
+    ]
+  },
+  "/assets/notable/visit-10.webp": {
+    "bytes": 72452,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      1027,
+      819
+    ]
+  },
+  "/assets/notable/visit-11.webp": {
+    "bytes": 107370,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      1120,
+      840
+    ]
+  },
+  "/assets/notable/visit-12.webp": {
+    "bytes": 54868,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      812,
+      537
+    ]
+  },
+  "/assets/notable/visit-13.webp": {
+    "bytes": 139720,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      720,
+      1280
+    ]
+  },
+  "/assets/notable/visit-14.webp": {
+    "bytes": 164320,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      1181,
+      1600
+    ]
+  },
+  "/assets/notable/visit-15.webp": {
+    "bytes": 259554,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      900,
+      1600
+    ]
+  },
+  "/assets/notable/visit-16.webp": {
+    "bytes": 86404,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      1080,
+      913
+    ]
+  },
+  "/assets/notable/visit-17.webp": {
+    "bytes": 159878,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      1076,
+      1280
+    ]
+  },
+  "/assets/notable/visit-18.webp": {
+    "bytes": 294282,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      900,
+      1600
+    ]
+  },
+  "/assets/notable/visit-19.webp": {
+    "bytes": 217228,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      1200,
+      1600
+    ]
+  },
+  "/assets/notable/visit-20.webp": {
+    "bytes": 303922,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      989,
+      1600
+    ]
+  },
+  "/assets/notable/visit-21.webp": {
+    "bytes": 262274,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      1200,
+      1600
+    ]
+  },
+  "/assets/notable/visit-22.webp": {
+    "bytes": 278060,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      1200,
+      1600
+    ]
+  },
+  "/assets/notable/visit-23.webp": {
+    "bytes": 148306,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      1457,
+      838
+    ]
+  },
+  "/assets/notable/visit-24.webp": {
+    "bytes": 178110,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      1200,
+      1600
+    ]
+  },
+  "/assets/notable/visit-25.webp": {
+    "bytes": 138310,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      1200,
+      1600
+    ]
+  },
+  "/assets/notable/visit-26.webp": {
+    "bytes": 432214,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      1482,
+      1356
+    ]
+  },
+  "/assets/notable/visit-27.webp": {
+    "bytes": 20932,
+    "routes": [
+      "/",
+      "/celebrities/"
+    ],
+    "dimensions": [
+      500,
+      500
+    ]
+  },
+  "/assets/honours/award-1.png": {
+    "bytes": 31677,
+    "routes": [
+      "/",
+      "/honors-recognitions/"
+    ],
+    "dimensions": [
+      375,
+      188
+    ]
+  },
+  "/assets/honours/award-612.png": {
+    "bytes": 8825,
+    "routes": [
+      "/",
+      "/honors-recognitions/"
+    ],
+    "dimensions": [
+      469,
+      250
+    ]
+  },
+  "/assets/honours/award-933.png": {
+    "bytes": 16253,
+    "routes": [
+      "/",
+      "/honors-recognitions/"
+    ],
+    "dimensions": [
+      375,
+      188
+    ]
+  },
+  "/assets/honours/golden-star-complete.png": {
+    "bytes": 730427,
+    "routes": [
+      "/",
+      "/honors-recognitions/"
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/assets/honours/merit-complete.png": {
+    "bytes": 540367,
+    "routes": [
+      "/",
+      "/honors-recognitions/"
+    ],
+    "dimensions": [
+      1774,
+      887
+    ]
+  },
+  "/assets/honours/ipsa-complete.png": {
+    "bytes": 381758,
+    "routes": [
+      "/",
+      "/honors-recognitions/"
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/assets/honours/pride-of-punjab.jpg": {
+    "bytes": 726594,
+    "routes": [
+      "/",
+      "/honors-recognitions/"
+    ],
+    "dimensions": [
+      1620,
+      2025
+    ]
+  },
+  "/assets/achaar.webp": {
+    "bytes": 38116,
+    "routes": [
+      "/",
+      "/our-shop/"
+    ],
+    "dimensions": [
+      500,
+      500
+    ]
+  },
+  "/assets/mukhwas.webp": {
+    "bytes": 46438,
+    "routes": [
+      "/",
+      "/our-shop/"
+    ],
+    "dimensions": [
+      500,
+      500
+    ]
+  },
+  "/assets/menu/firni-cutout.webp": {
+    "bytes": 11034,
+    "routes": [
+      "/",
+      "/our-menu/"
+    ],
+    "dimensions": [
+      480,
+      320
+    ]
+  },
+  "/assets/paranthas.webp": {
+    "bytes": 148126,
+    "routes": [
+      "/",
+      "/blogs/",
+      "/blogs/10-famous-foods-in-amritsar-blog/"
+    ],
+    "dimensions": [
+      1920,
+      1080
+    ]
+  },
+  "/assets/kitchen-cooks.webp": {
+    "bytes": 135692,
+    "routes": [
+      "/",
+      "/blogs/",
+      "/blogs/10-famous-foods-in-amritsar-blog/",
+      "/blogs/best-dhaba-in-amritsar-why-kesar-da-dhaba-tops-every-list-2/",
+      "/blogs/best-dishes-to-try-at-kesar-da-dhaba/",
+      "/blogs/best-restaurant-near-golden-temple/",
+      "/blogs/complete-amritsar-travel-guide-golden-temple-heritage-culinary-treasures/",
+      "/blogs/kesar-da-dhaba-famous-punjabi-restaurant-in-amritsar/",
+      "/blogs/kesar-da-dhabas-dal-fry-why-this-110-year-old-recipe-is-still-amritsars-best/"
+    ],
+    "dimensions": [
+      1920,
+      1080
+    ]
+  },
+  "/assets/restaurant-entrance.webp": {
+    "bytes": 130872,
+    "routes": [
+      "/",
+      "/blogs/",
+      "/blogs/10-famous-foods-in-amritsar-blog/",
+      "/blogs/best-dhaba-in-amritsar-why-kesar-da-dhaba-tops-every-list-2/",
+      "/blogs/best-dishes-to-try-at-kesar-da-dhaba/",
+      "/blogs/best-restaurant-near-golden-temple/",
+      "/blogs/complete-amritsar-travel-guide-golden-temple-heritage-culinary-treasures/",
+      "/blogs/kesar-da-dhaba-famous-punjabi-restaurant-in-amritsar/",
+      "/blogs/kesar-da-dhabas-dal-fry-why-this-110-year-old-recipe-is-still-amritsars-best/"
+    ],
+    "dimensions": [
+      1920,
+      1080
+    ]
+  },
+  "/assets/menu/instagram-01.webp": {
+    "bytes": 30150,
+    "routes": [
+      "/",
+      "/our-menu/"
+    ],
+    "dimensions": [
+      540,
+      960
+    ]
+  },
+  "/assets/social/DOgTqrWEl-9.webp": {
+    "bytes": 61506,
+    "routes": [
+      "/",
+      "/our-menu/"
+    ],
+    "dimensions": [
+      640,
+      1138
+    ]
+  },
+  "/assets/menu/instagram-03.webp": {
+    "bytes": 55238,
+    "routes": [
+      "/",
+      "/our-menu/"
+    ],
+    "dimensions": [
+      540,
+      960
+    ]
+  },
+  "/assets/menu/instagram-07.webp": {
+    "bytes": 78394,
+    "routes": [
+      "/",
+      "/our-menu/"
+    ],
+    "dimensions": [
+      540,
+      960
+    ]
+  },
+  "/assets/menu/instagram-11.webp": {
+    "bytes": 31212,
+    "routes": [
+      "/",
+      "/our-menu/"
+    ],
+    "dimensions": [
+      540,
+      960
+    ]
+  },
+  "/assets/menu/instagram-02.webp": {
+    "bytes": 50266,
+    "routes": [
+      "/",
+      "/our-menu/",
+      "/our-shop/"
+    ],
+    "dimensions": [
+      540,
+      675
+    ]
+  },
+  "/assets/menu/instagram-04.webp": {
+    "bytes": 66952,
+    "routes": [
+      "/",
+      "/our-menu/",
+      "/our-shop/"
+    ],
+    "dimensions": [
+      540,
+      675
+    ]
+  },
+  "/assets/menu/instagram-05.webp": {
+    "bytes": 40650,
+    "routes": [
+      "/",
+      "/our-menu/",
+      "/our-shop/"
+    ],
+    "dimensions": [
+      540,
+      675
+    ]
+  },
+  "/assets/menu/instagram-06.webp": {
+    "bytes": 54210,
+    "routes": [
+      "/",
+      "/our-menu/",
+      "/our-shop/"
+    ],
+    "dimensions": [
+      540,
+      675
+    ]
+  },
+  "/assets/menu/instagram-08.webp": {
+    "bytes": 59914,
+    "routes": [
+      "/",
+      "/our-menu/",
+      "/our-shop/"
+    ],
+    "dimensions": [
+      540,
+      675
+    ]
+  },
+  "/assets/menu/instagram-09.webp": {
+    "bytes": 60150,
+    "routes": [
+      "/",
+      "/our-menu/"
+    ],
+    "dimensions": [
+      540,
+      675
+    ]
+  },
+  "/assets/menu/instagram-10.webp": {
+    "bytes": 56950,
+    "routes": [
+      "/",
+      "/our-menu/"
+    ],
+    "dimensions": [
+      540,
+      675
+    ]
+  },
+  "/assets/menu/instagram-12.webp": {
+    "bytes": 42512,
+    "routes": [
+      "/",
+      "/our-menu/"
+    ],
+    "dimensions": [
+      540,
+      675
+    ]
+  },
+  "/assets/home/prantha-preparation.jpg": {
+    "bytes": 308986,
+    "routes": [
+      "/"
+    ],
+    "dimensions": [
+      1080,
+      1350
+    ]
+  },
+  "/assets/journal-hero-poster.webp": {
+    "bytes": 22210,
+    "routes": [
+      "/blogs/"
+    ],
+    "dimensions": [
+      720,
+      1280
+    ]
+  },
+  "/assets/journal-hero-reel.mp4": {
+    "bytes": 15867129,
+    "routes": [
+      "/blogs/"
+    ]
+  },
+  "/assets/menu/sabziyan-dal.webp": {
+    "bytes": 16788,
+    "routes": [
+      "/blogs/",
+      "/our-menu/",
+      "/blogs/best-dhaba-in-amritsar-why-kesar-da-dhaba-tops-every-list-2/",
+      "/blogs/best-restaurant-near-golden-temple/",
+      "/blogs/complete-amritsar-travel-guide-golden-temple-heritage-culinary-treasures/",
+      "/blogs/kesar-da-dhabas-dal-fry-why-this-110-year-old-recipe-is-still-amritsars-best/"
+    ],
+    "dimensions": [
+      300,
+      300
+    ]
+  },
+  "/assets/hero-thali.jpg": {
+    "bytes": 828862,
+    "routes": [
+      "/blogs/",
+      "/blogs/best-dishes-to-try-at-kesar-da-dhaba/"
+    ],
+    "dimensions": [
+      2560,
+      1707
+    ]
+  },
+  "/assets/thali-preparation.webp": {
+    "bytes": 254866,
+    "routes": [
+      "/blogs/",
+      "/blogs/kesar-da-dhaba-famous-punjabi-restaurant-in-amritsar/"
+    ],
+    "dimensions": [
+      1920,
+      1080
+    ]
+  },
+  "/assets/notable/film-01.webp": {
+    "bytes": 43398,
+    "routes": [
+      "/celebrities/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/notable/film-02.webp": {
+    "bytes": 44870,
+    "routes": [
+      "/celebrities/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/notable/film-03.webp": {
+    "bytes": 38166,
+    "routes": [
+      "/celebrities/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/notable/film-04.webp": {
+    "bytes": 33324,
+    "routes": [
+      "/celebrities/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/notable/film-05.webp": {
+    "bytes": 30662,
+    "routes": [
+      "/celebrities/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/notable/film-06.webp": {
+    "bytes": 26738,
+    "routes": [
+      "/celebrities/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/notable/film-07.webp": {
+    "bytes": 29650,
+    "routes": [
+      "/celebrities/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/notable/film-08.webp": {
+    "bytes": 63816,
+    "routes": [
+      "/celebrities/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/notable/film-09.webp": {
+    "bytes": 39518,
+    "routes": [
+      "/celebrities/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/notable/film-10.webp": {
+    "bytes": 33908,
+    "routes": [
+      "/celebrities/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/notable/film-11.webp": {
+    "bytes": 55690,
+    "routes": [
+      "/celebrities/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/notable/film-12.webp": {
+    "bytes": 37714,
+    "routes": [
+      "/celebrities/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/notable/film-13.webp": {
+    "bytes": 61770,
+    "routes": [
+      "/celebrities/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/notable/film-14.webp": {
+    "bytes": 30650,
+    "routes": [
+      "/celebrities/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/notable/film-16.webp": {
+    "bytes": 48736,
+    "routes": [
+      "/celebrities/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/notable/film-17.webp": {
+    "bytes": 65304,
+    "routes": [
+      "/celebrities/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/notable/film-18.webp": {
+    "bytes": 44962,
+    "routes": [
+      "/celebrities/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/notable/film-20.webp": {
+    "bytes": 76950,
+    "routes": [
+      "/celebrities/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/notable/film-21.webp": {
+    "bytes": 44970,
+    "routes": [
+      "/celebrities/"
+    ],
+    "dimensions": [
+      480,
+      854
+    ]
+  },
+  "/assets/social/DP6WtjoktVL.mp4": {
+    "bytes": 3915253,
+    "routes": [
+      "/contact-us/",
+      "/our-shop/"
+    ]
+  },
+  "/assets/social/DZKpm2iFU-B.webp": {
+    "bytes": 64312,
+    "routes": [
+      "/honors-recognitions/"
+    ],
+    "dimensions": [
+      720,
+      1280
+    ]
+  },
+  "/assets/monogram.png": {
+    "bytes": 1320714,
+    "routes": [
+      "/honors-recognitions/"
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/assets/instagram/prantha-thali-with-dal-and-raita-instagram-post.jpg": {
+    "bytes": 326740,
+    "routes": [
+      "/honors-recognitions/"
+    ],
+    "dimensions": [
+      1080,
+      1350
+    ]
+  },
+  "/assets/honours/mark-4.png": {
+    "bytes": 36330,
+    "routes": [
+      "/honors-recognitions/"
+    ],
+    "dimensions": [
+      375,
+      188
+    ]
+  },
+  "/assets/honours/mark-5.png": {
+    "bytes": 29045,
+    "routes": [
+      "/honors-recognitions/"
+    ],
+    "dimensions": [
+      375,
+      188
+    ]
+  },
+  "/assets/honours/mark-621.png": {
+    "bytes": 14999,
+    "routes": [
+      "/honors-recognitions/"
+    ],
+    "dimensions": [
+      375,
+      188
+    ]
+  },
+  "/assets/honours/secret-sauce-cover.jpg": {
+    "bytes": 16123,
+    "routes": [
+      "/honors-recognitions/"
+    ],
+    "dimensions": [
+      275,
+      405
+    ]
+  },
+  "/assets/honours/slurrp-logo.svg": {
+    "bytes": 16010,
+    "routes": [
+      "/honors-recognitions/"
+    ]
+  },
+  "/assets/honours/mark-622.png": {
+    "bytes": 12052,
+    "routes": [
+      "/honors-recognitions/"
+    ],
+    "dimensions": [
+      375,
+      188
+    ]
+  },
+  "/assets/honours/mark-3.png": {
+    "bytes": 26078,
+    "routes": [
+      "/honors-recognitions/"
+    ],
+    "dimensions": [
+      375,
+      188
+    ]
+  },
+  "/assets/phirni.png": {
+    "bytes": 99299,
+    "routes": [
+      "/honors-recognitions/"
+    ],
+    "dimensions": [
+      480,
+      320
+    ]
+  },
+  "/assets/social/DJwTtNGysiC.mp4": {
+    "bytes": 6548237,
+    "routes": [
+      "/our-legacy/"
+    ]
+  },
+  "/assets/legacy/kesar-sign.png": {
+    "bytes": 1011971,
+    "routes": [
+      "/our-legacy/"
+    ],
+    "dimensions": [
+      752,
+      938
+    ]
+  },
+  "/assets/original-legacy/311718ba2a-Untitled-design-92.png": {
+    "bytes": 121102,
+    "routes": [
+      "/our-legacy/"
+    ],
+    "dimensions": [
+      300,
+      300
+    ]
+  },
+  "/assets/original-legacy/b59f568509-Untitled-design-93.png": {
+    "bytes": 124483,
+    "routes": [
+      "/our-legacy/"
+    ],
+    "dimensions": [
+      300,
+      300
+    ]
+  },
+  "/assets/original-legacy/7b6a629831-Copy-of-Untitled-Design.png": {
+    "bytes": 64237,
+    "routes": [
+      "/our-legacy/"
+    ],
+    "dimensions": [
+      300,
+      300
+    ]
+  },
+  "/assets/legacy/postcard-amritsar.png": {
+    "bytes": 824309,
+    "routes": [
+      "/our-legacy/"
+    ],
+    "dimensions": [
+      767,
+      948
+    ]
+  },
+  "/assets/legacy/postcard-sheikhupura.png": {
+    "bytes": 986611,
+    "routes": [
+      "/our-legacy/"
+    ],
+    "dimensions": [
+      768,
+      971
+    ]
+  },
+  "/assets/kesar-hero-mobile.mp4": {
+    "bytes": 1221208,
+    "routes": [
+      "/our-menu/"
+    ]
+  },
+  "/assets/kesar-hero-desktop.mp4": {
+    "bytes": 1107785,
+    "routes": [
+      "/our-menu/"
+    ]
+  },
+  "/assets/menu/welcome-reel.mp4": {
+    "bytes": 1426398,
+    "routes": [
+      "/our-menu/"
+    ]
+  },
+  "/assets/menu/pranthas-thumb.webp": {
+    "bytes": 8448,
+    "routes": [
+      "/our-menu/"
+    ],
+    "dimensions": [
+      240,
+      135
+    ]
+  },
+  "/assets/menu/kesar-thali-portrait-small.webp": {
+    "bytes": 50156,
+    "routes": [
+      "/our-menu/"
+    ],
+    "dimensions": [
+      480,
+      600
+    ]
+  },
+  "/assets/menu/rotiyan-breads.webp": {
+    "bytes": 21786,
+    "routes": [
+      "/our-menu/"
+    ],
+    "dimensions": [
+      300,
+      300
+    ]
+  },
+  "/assets/menu/lassi-glass.webp": {
+    "bytes": 5380,
+    "routes": [
+      "/our-menu/"
+    ],
+    "dimensions": [
+      240,
+      400
+    ]
+  },
+  "/assets/menu/instagram-01.mp4": {
+    "bytes": 2332396,
+    "routes": [
+      "/our-menu/"
+    ]
+  },
+  "/assets/social/DOgTqrWEl-9.mp4": {
+    "bytes": 1966258,
+    "routes": [
+      "/our-menu/"
+    ]
+  },
+  "/assets/menu/instagram-03.mp4": {
+    "bytes": 3058777,
+    "routes": [
+      "/our-menu/"
+    ]
+  },
+  "/assets/menu/instagram-07.mp4": {
+    "bytes": 1139565,
+    "routes": [
+      "/our-menu/"
+    ]
+  },
+  "/assets/menu/instagram-11.mp4": {
+    "bytes": 1821802,
+    "routes": [
+      "/our-menu/"
+    ]
+  },
+  "/assets/social/DMkueViSriL.mp4": {
+    "bytes": 4530664,
+    "routes": [
+      "/our-shop/"
+    ]
+  },
+  "/assets/social/DQzHLF2jnwj.mp4": {
+    "bytes": 9285561,
+    "routes": [
+      "/our-shop/"
+    ]
+  },
+  "/assets/reviews/guest-01.mp4": {
+    "bytes": 7308185,
+    "routes": [
+      "/reviews/"
+    ]
+  },
+  "/assets/reviews/guest-02.mp4": {
+    "bytes": 1884148,
+    "routes": [
+      "/reviews/"
+    ]
+  },
+  "/assets/reviews/guest-03.mp4": {
+    "bytes": 3371775,
+    "routes": [
+      "/reviews/"
+    ]
+  },
+  "/assets/reviews/guest-04.mp4": {
+    "bytes": 826475,
+    "routes": [
+      "/reviews/"
+    ]
+  },
+  "/assets/reviews/guest-05.mp4": {
+    "bytes": 3341872,
+    "routes": [
+      "/reviews/"
+    ]
+  },
+  "/assets/reviews/guest-06.mp4": {
+    "bytes": 5218653,
+    "routes": [
+      "/reviews/"
+    ]
+  },
+  "/assets/reviews/guest-07.mp4": {
+    "bytes": 3079184,
+    "routes": [
+      "/reviews/"
+    ]
+  },
+  "/assets/reviews/guest-08.mp4": {
+    "bytes": 3773969,
+    "routes": [
+      "/reviews/"
+    ]
+  },
+  "/assets/reviews/guest-09.mp4": {
+    "bytes": 8391113,
+    "routes": [
+      "/reviews/"
+    ]
+  },
+  "/assets/reviews/guest-10.mp4": {
+    "bytes": 9891644,
+    "routes": [
+      "/reviews/"
+    ]
+  },
+  "/assets/reviews/guest-11.mp4": {
+    "bytes": 6802780,
+    "routes": [
+      "/reviews/"
+    ]
+  },
+  "/assets/reviews/guest-12.mp4": {
+    "bytes": 1718259,
+    "routes": [
+      "/reviews/"
+    ]
+  },
+  "/assets/reviews/guest-13.mp4": {
+    "bytes": 1898139,
+    "routes": [
+      "/reviews/"
+    ]
+  },
+  "/assets/reviews/guest-14.mp4": {
+    "bytes": 8707997,
+    "routes": [
+      "/reviews/"
+    ]
+  },
+  "/assets/reviews/guest-15.mp4": {
+    "bytes": 4450338,
+    "routes": [
+      "/reviews/"
+    ]
+  },
+  "/assets/reviews/guest-16.mp4": {
+    "bytes": 2011767,
+    "routes": [
+      "/reviews/"
+    ]
+  },
+  "/assets/reviews/guest-17.mp4": {
+    "bytes": 4583999,
+    "routes": [
+      "/reviews/"
+    ]
+  },
+  "/assets/reviews/guest-18.mp4": {
+    "bytes": 2677293,
+    "routes": [
+      "/reviews/"
+    ]
+  }
+}
