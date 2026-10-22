@@ -129,7 +129,7 @@
   const track = page.querySelector('.menu-social-track');
   const controls = [...page.querySelectorAll('[data-post-direction]')];
   const syncControls = () => {
-    controls[0].disabled = track.scrollLeft <= 2;
+    controls[0].disabled = track.scrollLeft <= 8;
     controls[1].disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
   };
   controls.forEach(button => button.addEventListener('click', () => {
@@ -150,7 +150,7 @@
     track.classList.remove('menu-gallery-hint');
   };
   ['pointerdown','touchstart','wheel','keydown','focusin'].forEach(type => track.addEventListener(type, stopHint, {passive:true}));
-  controls.forEach(button => button.addEventListener('pointerdown', stopHint));
+  controls.forEach(button => ['pointerdown','focus','click'].forEach(type => button.addEventListener(type, stopHint)));
   if ('IntersectionObserver' in window) {
     const hintObserver = new IntersectionObserver(entries => {
       if (!entries[0].isIntersecting) { if (hintFrame) stopHint(); return; }

@@ -22,11 +22,8 @@ body:has(.menu-page) .mobile-actions>a:nth-child(2){background:var(--yellow);col
 .menu-line-link{display:inline-flex;align-items:center;justify-content:space-between;gap:36px;border-bottom:1px solid var(--menu-gold);padding:12px 0;font-size:14px;min-height:46px}
 .menu-line-link span{font-size:22px;transition:transform .25s}
 .menu-line-link:hover span{transform:translate(3px,-3px)}
-.menu-welcome{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center;max-width:1600px;margin:auto;padding:105px max(var(--gutter),calc((100vw - 1450px)/2)) 110px}
-.menu-welcome-copy>p{font-size:17px;line-height:1.8;margin:24px 0 20px}
-.menu-welcome-signature{border-top:1px solid var(--menu-rule);margin-top:42px;padding-top:25px;display:flex;align-items:center;gap:25px;max-width:350px}
-.menu-welcome-signature>span{font-family:var(--serif);font-size:50px;line-height:1}
-.menu-welcome-signature small{font-size:9px;letter-spacing:.1em;line-height:1.8}
+.menu-welcome{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center;max-width:1600px;margin:auto;padding:75px max(var(--gutter),calc((100vw - 1450px)/2)) 80px}
+.menu-welcome-copy>.menu-line-link{margin-top:24px}
 .menu-welcome-art{position:relative;max-width:470px;justify-self:center;width:100%;padding:10px 35px 24px}
 .menu-thali-photo{margin:0;position:relative;rotate:3deg;background:white;border:1px solid var(--menu-rule);padding:9px;box-shadow:0 18px 42px #34231415}
 .menu-thali-photo picture{display:block;overflow:hidden;aspect-ratio:4/5}
@@ -168,7 +165,7 @@ body:has(.menu-page) .mobile-actions>a:nth-child(2){background:var(--yellow);col
 .motion-off .menu-float{animation:none}
 @media(min-width:1600px){.menu-seasonal,.menu-social{padding-inline:max(var(--gutter),calc((100vw - 1424px)/2))}}
 @media(max-width:1100px){.menu-welcome{gap:5%;padding-block:75px}.menu-welcome-art{padding-inline:35px 20px}.menu-float-thali{left:-14%}.menu-float-firni{right:-6%}.menu-delivery{gap:5%}.menu-post{flex-basis:calc((100% - 24px)/2)}.menu-post-foot>span{font-size:15px}}
-@media(max-width:800px){.menu-page{--menu-header:82px}.menu-page .cinema-hero{--cinema-height:clamp(430px,62svh,610px);--cinema-travel:12svh}.menu-page .cinema-content h1{font-size:clamp(70px,13vw,105px)}.menu-welcome{gap:3%;padding-inline:28px}.menu-welcome h2{font-size:48px}.menu-welcome-copy>p{font-size:14px}.menu-welcome-signature{margin-top:26px}.menu-welcome-art{padding-left:25px}.menu-thali-photo figcaption{font-size:15px}.menu-art-seal{width:65px;height:65px;font-size:6px}.menu-art-seal b{font-size:26px}.menu-delivery{grid-template-columns:1fr;gap:30px;padding-block:65px}.menu-delivery-options{max-width:650px}.menu-platform-meta{font-size:10px}.menu-platform-action{font-size:14px}.menu-seasonal{padding-block:60px}.menu-seasonal h2{font-size:48px}.menu-seasonal p{font-size:15px}.menu-seasonal-note{font-size:20px}}
+@media(max-width:800px){.menu-page{--menu-header:82px}.menu-page .cinema-hero{--cinema-height:clamp(430px,62svh,610px);--cinema-travel:12svh}.menu-page .cinema-content h1{font-size:clamp(70px,13vw,105px)}.menu-welcome{gap:3%;padding-inline:28px}.menu-welcome h2{font-size:48px}.menu-welcome-art{padding-left:25px}.menu-thali-photo figcaption{font-size:15px}.menu-art-seal{width:65px;height:65px;font-size:6px}.menu-art-seal b{font-size:26px}.menu-delivery{grid-template-columns:1fr;gap:30px;padding-block:65px}.menu-delivery-options{max-width:650px}.menu-platform-meta{font-size:10px}.menu-platform-action{font-size:14px}.menu-seasonal{padding-block:60px}.menu-seasonal h2{font-size:48px}.menu-seasonal p{font-size:15px}.menu-seasonal-note{font-size:20px}}
 @media(max-width:600px){
   .menu-page .cinema-hero{--cinema-height:460px;--cinema-travel:10svh}
   .menu-page .cinema-content{padding:30px 22px 55px}
@@ -178,9 +175,6 @@ body:has(.menu-page) .mobile-actions>a:nth-child(2){background:var(--yellow);col
   .menu-welcome{display:flex;flex-direction:column;padding:53px 24px 60px;gap:38px}
   .menu-welcome-copy{align-self:stretch}
   .menu-welcome h2{font-size:53px}
-  .menu-welcome .menu-overline{font-size:9px;margin-bottom:18px}
-  .menu-welcome-copy>p{font-size:15px;line-height:1.7;margin-top:18px}
-  .menu-welcome-signature{display:none}
   .menu-welcome-art{max-width:360px;width:88%;padding:8px 20px 30px}
   .menu-thali-photo{padding:7px}
   .menu-thali-photo figcaption{font-size:19px;padding-block:13px 7px}
