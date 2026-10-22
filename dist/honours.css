@@ -1,3 +1,77 @@
+/* A featured acknowledgement, with the original ceremony photograph in full. */
+.pride-feature{position:relative;isolation:isolate;padding:18px var(--gutter) 29px;background:#103b2a;color:#faf5e8;scroll-margin-top:24px}
+.pride-feature::before{content:'';position:absolute;inset:0;z-index:-1;background:url('/assets/honours/floral-buta.svg') repeat;opacity:.14;pointer-events:none}
+.pride-layout,.pride-footnote{max-width:1280px;margin-inline:auto}
+.pride-layout{display:grid;grid-template-columns:1fr 1.05fr;grid-template-areas:'photo heading' 'photo message';grid-template-rows:auto 1fr;column-gap:clamp(32px,6vw,90px);padding-block:54px}
+.pride-heading{grid-area:heading;align-self:end;padding-top:14px}
+.pride-heading .eyebrow{font-size:9px;letter-spacing:.16em;color:#dfca94;margin-bottom:23px}
+.pride-heading h2{font-size:clamp(58px,6.4vw,91px);line-height:1;letter-spacing:-.035em;color:#fff8e8}
+.pride-heading h2 em{color:#e8cc87}
+.pride-heading-rule{display:flex;align-items:center;gap:13px;width:125px;font-size:12px;color:#d8bb72;margin-block:26px}
+.pride-heading-rule>span{height:1px;flex:1;background:#d8bb7280}
+.pride-photo{grid-area:photo;align-self:center;min-width:0;margin:0;padding:15px;background:#f7f2e7;border:1px solid #e6d5ac;border-radius:3px;box-shadow:0 24px 60px #001c1455;position:relative;translate:0 var(--pride-scroll-y,0px)}
+.pride-photo.is-scroll-active{will-change:translate}
+.pride-photo::before{content:'';position:absolute;inset:-8px;border:1px solid #d7bd7c45;border-radius:4px;pointer-events:none}
+.pride-post-header{display:flex;align-items:center;gap:11px;padding:1px 1px 15px;color:var(--green)}
+.pride-post-header>img{width:44px;height:44px;object-fit:contain;mix-blend-mode:normal;filter:url('/assets/monogram-ink.svg#ink')}
+.pride-post-header>div{min-width:0;flex:1}
+.pride-post-header strong{display:block;font-family:var(--serif);font-size:21px;font-weight:400;line-height:1.1;letter-spacing:-.02em}
+.pride-post-header>div>span{display:block;margin-top:5px;font-size:9px;line-height:1.4;color:#66745c}
+.pride-post-header>a{display:grid;place-items:center;width:44px;height:44px;flex-shrink:0;border:1px solid #c9c9b3;border-radius:50%;transition:background .25s}
+.pride-post-header>a:hover{background:#e9dfc6}
+.pride-post-header>a>svg{width:19px;height:19px}
+.pride-photo-button{display:block;position:relative;width:100%;padding:0;border:0;background:#24232d;line-height:1;overflow:hidden}
+.pride-photo-button>img{width:100%;height:auto;aspect-ratio:4/5;object-fit:contain;background:#24232d}
+.pride-photo-button:focus-visible{outline:2px solid #e8cc87;outline-offset:6px}
+.pride-message{grid-area:message;min-width:0;max-width:530px}
+.pride-message>p{font-size:15px;line-height:1.85;color:#d6dfcf;text-wrap:pretty}
+.pride-message>p+p{margin-top:18px}
+.pride-message .pride-lead{font-size:18px;line-height:1.7;color:#fff6e1}
+.pride-lead strong{font-weight:400;color:#ebd295}
+.pride-instagram-link{display:inline-flex;align-items:center;gap:13px;min-height:51px;padding:13px 19px;margin-top:25px;background:#e8cc87;color:#103b2a;border:1px solid #e8cc87;border-radius:2px;font-size:13px;line-height:1.5;transition:background .25s,box-shadow .25s}
+.pride-instagram-link>svg{width:20px;height:20px;flex-shrink:0}
+.pride-instagram-link>span:last-child{font:21px/1 Arial,sans-serif;margin-left:15px}
+.pride-instagram-link:hover{background:#f6dfaa;box-shadow:0 7px 20px #00190b26}
+.pride-instagram-link:focus-visible{outline:2px solid #fff5d8;outline-offset:5px}
+.pride-signature{display:flex;align-items:center;gap:17px;margin-top:30px;padding-top:23px;border-top:1px solid #d9c58d40}
+.pride-signature>img{width:45px;height:45px;object-fit:contain;background:#f7f2e7;border-radius:50%;padding:7px}
+.pride-signature>span{font-size:7px;letter-spacing:.15em;color:#c9cfb7;line-height:1.6}
+.pride-signature strong{display:block;font-family:var(--serif);font-size:25px;font-weight:400;letter-spacing:-.01em;color:#ead39a;margin-top:5px}
+.pride-footnote{display:flex;justify-content:space-between;align-items:center;gap:25px;border-top:1px solid #d9c58d55;padding-top:18px;font-size:8px;letter-spacing:.1em;line-height:1.7;color:#d1c79f}
+.pride-footnote>a{display:inline-flex;align-items:center;gap:25px;min-height:44px;font-size:12px;letter-spacing:0;color:#f3e2b4}
+.pride-footnote>a>span{font:20px/1 Arial,sans-serif}
+.pride-footnote>a:focus-visible{outline-color:#e8cc87}
+body:has(.pride-feature) .journal-viewer .viewer-controls{display:none}
+@media(min-width:761px) and (max-width:1000px){.pride-layout{column-gap:32px}.pride-heading .eyebrow{font-size:8px}.pride-message .pride-lead{font-size:17px}.pride-message>p{font-size:14px}.pride-heading-rule{margin-block:22px}}
+@media(max-width:760px){
+  .pride-feature{padding:23px 24px 20px}
+  .pride-layout{grid-template-columns:minmax(0,1fr);grid-template-areas:'heading' 'photo' 'message';grid-template-rows:auto;gap:0;padding-block:33px 30px}
+  .pride-heading{padding-top:0}
+  .pride-heading .eyebrow{font-size:8px;line-height:1.6;margin-bottom:20px}
+  .pride-heading h2{font-size:clamp(54px,15vw,76px)}
+  .pride-heading-rule{width:103px;margin-block:24px 29px}
+  .pride-photo{width:100%;max-width:440px;margin-inline:auto;padding:11px}
+  .pride-post-header{gap:9px;padding-bottom:12px}
+  .pride-post-header strong{font-size:20px}
+  .pride-post-header>img{width:40px;height:40px}
+  .pride-post-header>div>span{font-size:8px}
+  .pride-post-header>a{width:40px;height:44px;border:0}
+  .pride-instagram-link{display:flex;width:100%;justify-content:space-between;margin-top:24px;font-size:13px;padding-inline:16px;gap:11px}
+  .pride-instagram-link>span:nth-child(2){margin-right:auto}
+  .pride-instagram-link>span:last-child{margin-left:0}
+  .pride-message{max-width:none;margin-top:27px}
+  .pride-message .pride-lead{font-size:18px;line-height:1.75}
+  .pride-message>p{font-size:15px;line-height:1.85}
+  .pride-message>p+p{margin-top:19px}
+  .pride-signature{margin-top:26px;padding-top:22px}
+  .pride-footnote{align-items:flex-start;flex-direction:column;gap:7px;padding-top:22px;font-size:7px;letter-spacing:.08em}
+  .pride-footnote>a{font-size:13px;gap:24px}
+}
+@media(max-width:360px){.pride-heading .eyebrow{font-size:7px}.pride-message .pride-lead{font-size:17px}}
+@media(prefers-reduced-motion:reduce){.pride-feature *{transition:none!important}.pride-photo{translate:none!important;will-change:auto}}
+.motion-off .pride-feature *{transition:none!important}
+.motion-off .pride-photo{translate:none!important;will-change:auto}
+
 .recognition-marquee{padding:45px 0 27px;background:#efecdf;border-bottom:1px solid var(--line);overflow:hidden}
 .recognition-heading,.recognition-foot{display:flex;align-items:center;justify-content:space-between;gap:25px;padding-inline:var(--gutter);max-width:1600px;margin:auto}
 .recognition-heading .eyebrow{font-size:8px;margin-bottom:13px;letter-spacing:.17em;color:#68745d}

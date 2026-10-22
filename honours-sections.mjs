@@ -1,6 +1,33 @@
 const arrow = '<span aria-hidden="true">↗</span>';
 const instagramIcon = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>';
 
+export function prideOfPunjab() {
+  const postUrl = 'https://www.instagram.com/p/DStz_aSk64l/?img_index=1';
+  return `<section class="pride-feature" id="pride-of-punjab" aria-labelledby="pride-title">
+    <div class="pride-layout">
+      <header class="pride-heading">
+        <span class="eyebrow">AN HONOUR WE SHARE WITH YOU</span>
+        <h2 id="pride-title">Pride of<br><em>Punjab.</em></h2>
+        <div class="pride-heading-rule" aria-hidden="true"><span></span>✦<span></span></div>
+      </header>
+      <figure class="pride-photo" data-honour-reveal>
+        <div class="pride-post-header"><img src="/assets/monogram.png" alt="" width="40" height="40" loading="lazy"><div><strong>Kesar Da Dhaba</strong><span>@kesardadhaba · Amritsar</span></div><a href="${postUrl}" target="_blank" rel="noopener noreferrer" aria-label="View the original Pride of Punjab Instagram post (opens in a new tab)">${instagramIcon}</a></div>
+        <button type="button" class="pride-photo-button" data-photo="/assets/honours/pride-of-punjab.jpg" data-caption="A cherished moment receiving the Pride of Punjab honour. With heartfelt thanks to Punjab Tourism, the esteemed jury and our patrons." aria-label="Enlarge the Pride of Punjab award ceremony photograph">
+          <img src="/assets/honours/pride-of-punjab.jpg" alt="The Pride of Punjab award presentation, with the Kesar Da Dhaba team and guests gathered around the trophy" width="1620" height="2025" loading="lazy" decoding="async">
+        </button>
+      </figure>
+      <div class="pride-message">
+        <p class="pride-lead">With heartfelt gratitude to the esteemed jury and our cherished patrons for honouring us with the <strong>Pride of Punjab.</strong></p>
+        <p>This recognition reflects generations of trust, love, and support for our authentic Punjabi flavours.</p>
+        <p>We also sincerely thank Punjab Tourism for this honour, which inspires us to proudly uphold our legacy and continue serving the true taste and spirit of Punjab with passion and dedication.</p>
+        <a class="pride-instagram-link" href="${postUrl}" target="_blank" rel="noopener noreferrer" aria-label="View the original Pride of Punjab post on Instagram (opens in a new tab)">${instagramIcon}<span>View original post</span><span aria-hidden="true">↗</span></a>
+        <div class="pride-signature"><img src="/assets/monogram.png" width="48" height="48" alt="" loading="lazy"><span>WITH LOVE & GRATITUDE<strong>The Kesar family</strong></span></div>
+      </div>
+    </div>
+    <div class="pride-footnote"><span>WITH SINCERE THANKS TO PUNJAB TOURISM</span><a href="#recognition-archive">Discover our honours <span aria-hidden="true">↓</span></a></div>
+  </section>`;
+}
+
 export function pressReviews(data) {
   return `<section class="honours-reviews" id="press-reviews" aria-labelledby="press-title">
     <div class="section-heading">

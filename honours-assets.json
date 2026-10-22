@@ -6,6 +6,11 @@
   "notes": "Original PNG logo assets reused unchanged. Award years and descriptions are attributed to the official recognition page. Community ratings are historical website snapshots, not live scores.",
   "assets": [
     {
+      "file": "dist/assets/honours/pride-of-punjab.jpg",
+      "source": "https://www.instagram.com/p/DStz_aSk64l/?img_index=1",
+      "notes": "Original photograph retained without cropping. Pride of Punjab acknowledgement supplied by the user."
+    },
+    {
       "file": "dist/assets/honours/award-1.png",
       "source": "https://kesardadhaba.com/wp-content/uploads/2026/03/1.png"
     },

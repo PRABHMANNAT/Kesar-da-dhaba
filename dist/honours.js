@@ -171,6 +171,43 @@
     }
   }
 
+  // Move the whole mounted photograph gently with the scroll, preserving its full frame.
+  const pridePhoto=document.querySelector('.pride-photo');
+  const prideFeature=document.querySelector('.pride-feature');
+  if(pridePhoto&&prideFeature){
+    let visible=!('IntersectionObserver' in window);
+    let scheduled=false;
+    const paintPhotoScroll=()=>{
+      scheduled=false;
+      const allowed=motionAllowed()&&!document.hidden;
+      pridePhoto.classList.toggle('is-scroll-active',visible&&allowed);
+      if(!allowed){pridePhoto.style.setProperty('--pride-scroll-y','0px');return;}
+      if(!visible||document.querySelector('dialog[open]'))return;
+      const center=prideFeature.getBoundingClientRect().top+pridePhoto.offsetTop+pridePhoto.offsetHeight/2;
+      const progress=Math.max(-1,Math.min(1,(innerHeight/2-center)/((innerHeight+pridePhoto.offsetHeight)/2)));
+      const distance=matchMedia('(max-width:760px)').matches?10:20;
+      pridePhoto.style.setProperty('--pride-scroll-y',`${(-progress*distance).toFixed(2)}px`);
+    };
+    const schedulePhotoScroll=()=>{
+      if(!scheduled){scheduled=true;requestAnimationFrame(paintPhotoScroll);}
+    };
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(entries=>{
+        visible=entries[0].isIntersecting;
+        schedulePhotoScroll();
+      },{rootMargin:'30px'}).observe(pridePhoto);
+    }
+    addEventListener('scroll',()=>{if(visible)schedulePhotoScroll();},{passive:true});
+    addEventListener('resize',schedulePhotoScroll);
+    document.addEventListener('visibilitychange',schedulePhotoScroll);
+    document.addEventListener('kesar:dialogchange',schedulePhotoScroll);
+    reduced.addEventListener('change',schedulePhotoScroll);
+    new MutationObserver(schedulePhotoScroll).observe(document.body,{attributes:true,attributeFilter:['class']});
+    if('ResizeObserver' in window)new ResizeObserver(schedulePhotoScroll).observe(pridePhoto);
+    document.fonts?.ready.then(schedulePhotoScroll);
+    schedulePhotoScroll();
+  }
+
   const dialog=document.querySelector('.honour-dialog');
   if(dialog){
     let trigger=null;
