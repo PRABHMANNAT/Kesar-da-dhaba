@@ -53,12 +53,12 @@ body:has(.menu-page) .mobile-actions>a:nth-child(2){background:var(--yellow);col
 .menu-catalogue-intro h2{font-size:clamp(43px,4.3vw,66px)}
 .menu-filter-dock{position:sticky;top:var(--menu-header);z-index:9;background:#fffdf8fa;border-top:1px solid var(--menu-rule);border-bottom:1px solid var(--menu-rule);padding-top:18px;box-shadow:0 7px 12px -10px #062c1a40}
 .menu-filter-top{display:flex;align-items:center;justify-content:space-between;gap:20px}
-.menu-find{display:flex;align-items:center;gap:12px;border:1px solid #c9c6b7;padding:0 14px;width:min(420px,45%);min-height:48px;background:white;border-radius:2px}
+.menu-find{display:flex;align-items:center;gap:12px;border:1px solid #c9c6b7;padding:0 18px;width:min(420px,45%);min-height:48px;background:white;border-radius:100px}
 .menu-find svg{width:20px;height:20px;flex-shrink:0}
 .menu-find input{border:0;background:none;outline-offset:3px;font-size:15px;color:var(--green);min-width:0;width:100%;padding-block:10px}
 .menu-find:focus-within{border-color:var(--green);box-shadow:0 0 0 1px var(--green)}
 .menu-preference{display:flex;gap:7px}
-.menu-preference button{padding:9px 16px;min-height:44px;border:1px solid var(--menu-rule);background:transparent;font-size:12px;border-radius:2px;white-space:nowrap;transition:background .2s,color .2s}
+.menu-preference button{padding:9px 16px;min-height:44px;border:1px solid var(--menu-rule);background:transparent;font-size:12px;border-radius:100px;white-space:nowrap;transition:background .2s,color .2s}
 .menu-preference button span{font-size:9px;opacity:.7;margin-left:5px}
 .menu-preference button[aria-pressed=true]{background:var(--green);border-color:var(--green);color:var(--ivory)}
 .menu-preference button:hover:not([aria-pressed=true]){background:#f6f0de}
