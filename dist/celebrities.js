@@ -101,11 +101,8 @@
  featured.addEventListener('keydown',e=>{if(mobileFeatured.matches&&(e.key==='ArrowLeft'||e.key==='ArrowRight')){e.preventDefault();advanceFeatured(e.key==='ArrowRight'?1:-1);}});
  mobileFeatured.addEventListener('change',()=>{swiping=null;featuredLayout();});
  const previews=[...document.querySelectorAll('[data-preview-src]')];
- const visiblePreviews=new Set();let previewsPaused=reduced;
- const previewToggle=document.querySelector('.celebs-preview-toggle');
+ const visiblePreviews=new Set();const previewsPaused=reduced;
  function syncPreviews(){previews.forEach(video=>{const card=video.closest('.celebs-featured-card');const activeCard=!card||!mobileFeatured.matches||card.dataset.stackSlot==='0';if(visiblePreviews.has(video)&&activeCard&&!previewsPaused&&!document.hidden&&!dialog.open){if(!video.hasAttribute('src'))video.src=video.dataset.previewSrc;video.muted=true;video.play().catch(()=>{});}else video.pause();});}
- function previewLabel(){previewToggle.textContent=previewsPaused?'Play videos':'Pause videos';previewToggle.setAttribute('aria-pressed',String(previewsPaused));}
- previewToggle.addEventListener('click',()=>{previewsPaused=!previewsPaused;previewLabel();syncPreviews();});previewLabel();
  if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)visiblePreviews.add(e.target);else visiblePreviews.delete(e.target);});syncPreviews();},{threshold:.2});previews.forEach(v=>observer.observe(v));}
  document.addEventListener('visibilitychange',syncPreviews);
  featuredLayout();
