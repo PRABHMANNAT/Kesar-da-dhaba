@@ -73,7 +73,7 @@
    videos.forEach(v=>{v.muted=true;manual.delete(v)});
   }
   const awardControl=root.querySelector('[data-kh-awards-pause]');if(awardControl){awardControl.disabled=!motion();awardControl.textContent=!motion()?'Honours paused':root.classList.contains('kh-awards-paused')?'Resume honours':'Pause honours';}
-  setupScroll();syncVideos();
+  setupScroll();syncVideos();syncTyping();
  }
  motionButton.addEventListener('click',()=>{paused=!paused;try{localStorage.setItem('kesar-home-motion-paused',String(paused))}catch{}paintMotion()});
  reduced.addEventListener('change',()=>{paintMotion();layoutDeck(false)});
@@ -163,8 +163,20 @@
  const top=root.querySelector('[data-kh-top]');let scrollFrame=0;
  addEventListener('scroll',()=>{if(!scrollFrame)scrollFrame=requestAnimationFrame(()=>{top.hidden=scrollY<650;scrollFrame=0})},{passive:true});
  top.addEventListener('click',()=>window.scrollTo({top:0,behavior:motion()?'smooth':'instant'}));top.hidden=scrollY<650;
- // Changing kitchen copy; the full heading stays stable for screen readers.
- const cycleText=root.querySelector('[data-kh-cycle]');let cycleIndex=0;
- setInterval(()=>{if(!motion()||document.hidden)return;const r=cycleText.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;const words=cycleText.dataset.khCycle.split('|');cycleText.textContent=words[++cycleIndex%words.length]},4500);
+ // Type only while a heading is visible. Accessible labels remain complete.
+ const typewriters=[...root.querySelectorAll('[data-kh-cycle]')].map(el=>({el,phrases:el.dataset.khCycle.split('|'),index:0,chars:el.textContent.length,deleting:true,timer:0,visible:false}));
+ function stopTyping(item){clearTimeout(item.timer);item.timer=0;item.el.classList.remove('is-typing')}
+ function tickTyping(item){
+  stopTyping(item);if(!motion()||document.hidden||!item.visible)return;
+  const phrase=item.phrases[item.index];item.el.classList.add('is-typing');
+  item.chars+=item.deleting?-1:1;item.el.textContent=phrase.slice(0,Math.max(0,item.chars));
+  let delay=item.deleting?35:75;
+  if(item.chars<=0){item.index=(item.index+1)%item.phrases.length;item.deleting=false;delay=260}
+  else if(item.chars>=phrase.length){item.deleting=true;delay=3200;item.el.classList.remove('is-typing')}
+  item.timer=setTimeout(()=>tickTyping(item),delay);
+ }
+ function syncTyping(){typewriters.forEach(item=>{stopTyping(item);if(!motion()){item.el.textContent=item.phrases[0];item.index=0;item.chars=item.phrases[0].length;item.deleting=true}else if(item.visible&&!document.hidden)item.timer=setTimeout(()=>tickTyping(item),2200)})}
+ const typeObserver=new IntersectionObserver(entries=>{entries.forEach(e=>{const item=typewriters.find(i=>i.el===e.target);item.visible=e.isIntersecting});syncTyping()},{threshold:.1});
+ typewriters.forEach(item=>typeObserver.observe(item.el));document.addEventListener('visibilitychange',syncTyping);
  paintMotion();
 })();
