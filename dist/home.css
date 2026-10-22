@@ -54,3 +54,5 @@
 .kh-motion-paused .kh-visit-dish img{animation:none}@media(prefers-reduced-motion:reduce){.kh-visit-dish img{animation:none}.kh-story-image img{transition:none}}
 .kh-legacy-bottom .kh-journey{width:100%;max-width:none}
 .kh-heritage-divider img{mix-blend-mode:multiply}
+
+.kh-film-controls:has(>button:only-child){justify-content:flex-end}
