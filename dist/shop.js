@@ -38,3 +38,25 @@
  addEventListener('scroll',()=>{if(!queued){queued=true;requestAnimationFrame(paint);}},{passive:true});addEventListener('resize',paint);paint();
  top.addEventListener('click',()=>scrollTo({top:0,behavior:reduced.matches?'instant':'smooth'}));
 })();
+
+// Replay the product photograph reveal when it re-enters the viewport.
+(() => {
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ const photos=[...document.querySelectorAll('.pantry-product-photo')];
+ const visible=new WeakMap();
+ const reveal=async photo=>{
+  if(reduced.matches||photo.classList.contains('is-photo-revealing'))return;
+  const image=photo.querySelector('img');
+  try{await image.decode();}catch{return;}
+  if(visible.get(photo)&&!reduced.matches)photo.classList.add('is-photo-revealing');
+ };
+ const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
+  if(!entry.isIntersecting){visible.set(entry.target,false);entry.target.classList.remove('is-photo-revealing');}
+  else if(entry.intersectionRatio>=.2){visible.set(entry.target,true);reveal(entry.target);}
+ }),{threshold:[0,.2],rootMargin:'-90px 0px -8% 0px'});
+ photos.forEach(photo=>observer.observe(photo));
+ reduced.addEventListener('change',()=>photos.forEach(photo=>{
+  if(reduced.matches)photo.classList.remove('is-photo-revealing');
+  else if(visible.get(photo))reveal(photo);
+ }));
+})();
