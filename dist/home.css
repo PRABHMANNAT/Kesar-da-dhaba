@@ -58,3 +58,5 @@
 .kh-film-controls:has(>button:only-child){justify-content:flex-end}
 
 .kh-life-intro [data-kh-cycle]{display:block;min-height:2.1em}
+
+.kh-reel-arrow{width:76px;height:64px;border-radius:16px;display:flex;flex-direction:column;gap:3px;align-items:center;justify-content:center;background:#ffde59;color:#062c1a;border:1px solid #b59e39;box-shadow:0 4px 0 #ad953a80}.kh-reel-arrow span{font:28px/1 Georgia,serif}.kh-reel-arrow small{font:10px/1.2 var(--sans)}.kh-reel-prev{left:10px}.kh-reel-next{right:10px}@media(max-width:380px){.kh-reel-arrow{width:66px;height:60px}}
