@@ -1,0 +1,27 @@
+{
+  "golden-star": {
+    "image": "golden-star-complete.png",
+    "width": 1254,
+    "height": 1254,
+    "method": "AI-assisted restoration from the existing archive logo",
+    "reference": "award-935.png",
+    "source": "https://kesardadhaba.com/honors-recognitions/"
+  },
+  "merit": {
+    "image": "merit-complete.png",
+    "width": 1774,
+    "height": 887,
+    "method": "AI-assisted restoration from the existing archive logo",
+    "reference": "award-936.png",
+    "source": "https://kesardadhaba.com/honors-recognitions/",
+    "additionalReference": "https://meritzawards.com/wp-content/uploads/2023/04/maxresdefault-1-1.jpg"
+  },
+  "hospitality": {
+    "image": "ipsa-complete.png",
+    "width": 1254,
+    "height": 1254,
+    "method": "AI-assisted restoration from the existing archive logo",
+    "reference": "award-937.png",
+    "source": "https://kesardadhaba.com/honors-recognitions/"
+  }
+}

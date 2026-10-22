@@ -27,3 +27,7 @@
 }
 @media(prefers-reduced-motion:reduce){.hnr-page *,.hnr-page *::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.hnr-pride-photo{transform:none!important;will-change:auto}}
 .hnr-review-stage .hnr-quote{color:#fff9e6;line-height:1.25}.hnr-publications button>.hnr-press-mark{display:flex;margin:0;color:#062c1a}.hnr-press-mark{overflow:hidden}.hnr-press-mark img[src$=".png"]{transform:scale(1.45)}.hnr-review-brand .hnr-press-mark img[src$=".png"]{transform:scale(1.8)}.hnr-rating-logo{transform:scale(1.35);transform-origin:left center}.motion-off .hnr-page *::after{animation:none!important}.motion-off .hnr-pride-photo{transform:none;will-change:auto}
+
+/* Full restored award marks: preserve all edges and transparent backgrounds. */
+.hnr-award-grid img.hnr-award-restored{height:190px;max-width:340px;object-fit:contain;object-position:center}
+@media(max-width:760px){.hnr-award-grid img.hnr-award-restored{height:135px}}
