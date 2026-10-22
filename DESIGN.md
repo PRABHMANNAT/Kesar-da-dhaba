@@ -10,7 +10,7 @@ A cinematic opening followed by an editorial journey through Kesar. Use deep gre
 
 ## Visitor journey
 
-1. Cooking-video hero and a natural-language ribbon: traditional Punjabi cooking, pure desi ghee, the family tradition since 1916, and the heart of Amritsar.
+1. Cooking-video hero and a natural-language ribbon: a taste of Amritsar, serving since 1916, dal, pranthas and phirni, and the Chowk Passian address.
 2. Menu welcome with thali film, View full menu action and PDF download. A green-and-gold emblem divider introduces the family story.
 3. Balanced legacy copy and film columns, with the Partition journey illustration and story link in a compact row underneath.
 4. Kitchen films in the Instagram-style video carousel, followed by guest reviews and celebrity visits.
