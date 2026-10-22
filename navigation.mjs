@@ -1,7 +1,7 @@
 const pages = [
   ['Home','/'], ['Our menu','/our-menu/'], ['Our legacy','/our-legacy/'],
   ['The shop','/our-shop/'], ['Blogs','/blogs/'],
-  ['Honours','/honors-recognitions/'], ['Reviews','/reviews/'], ['Celebrities','/celebrities/'], ['Visit us','/contact-us/']
+  ['Recognition','/honors-recognitions/'], ['Reviews','/reviews/'], ['Celebrities','/celebrities/'], ['Visit us','/contact-us/']
 ];
 const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg>';
 const phone = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 3 3 5-2 2a14 14 0 0 0 6 6l2-2 5 3v3a1 1 0 0 1-1 1C10 21 3 14 3 4a1 1 0 0 1 1-1Z"/></svg>';
