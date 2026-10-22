@@ -60,3 +60,22 @@
   else if(visible.get(photo))reveal(photo);
  }));
 })();
+// Native swipe scrolling with explicit mobile reel navigation.
+(() => {
+ const track=document.querySelector('.pantry-films');
+ const cards=[...track.querySelectorAll('.pantry-film')];
+ const buttons=[...document.querySelectorAll('[data-film-step]')];
+ const count=document.querySelector('[data-film-count]');
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ const step=()=>cards[0].getBoundingClientRect().width+parseFloat(getComputedStyle(track).gap);
+ const paint=()=>{
+  const max=track.scrollWidth-track.clientWidth;
+  const index=max>0?Math.min(cards.length-1,Math.round(track.scrollLeft/step())):0;
+  count.textContent=`${String(index+1).padStart(2,'0')} / ${String(cards.length).padStart(2,'0')}`;
+  buttons[0].disabled=track.scrollLeft<=2;
+  buttons[1].disabled=track.scrollLeft>=max-2;
+ };
+ buttons.forEach(button=>button.addEventListener('click',()=>track.scrollBy({left:Number(button.dataset.filmStep)*step(),behavior:reduced.matches?'instant':'smooth'})));
+ track.addEventListener('scroll',paint,{passive:true});
+ addEventListener('resize',paint);paint();
+})();

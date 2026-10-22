@@ -26,3 +26,14 @@
  },{passive:true});
  photo?.addEventListener('pointercancel',()=>{clearTimeout(timer);photo.classList.remove('is-photo-touched');},{passive:true});
 })();
+// Replay postcard image motion when the photographs enter the viewport.
+(() => {
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+ const images=[...document.querySelectorAll('.legacy-post-image')];
+ const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
+  if(!entry.isIntersecting)entry.target.classList.remove('is-image-revealing');
+  else if(entry.intersectionRatio>=.18&&!reduced.matches)entry.target.classList.add('is-image-revealing');
+ }),{threshold:[0,.18],rootMargin:'-85px 0px -5% 0px'});
+ images.forEach(image=>observer.observe(image));
+ reduced.addEventListener('change',()=>{if(reduced.matches)images.forEach(image=>image.classList.remove('is-image-revealing'));});
+})();
