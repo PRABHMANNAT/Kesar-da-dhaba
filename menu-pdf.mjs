@@ -22,7 +22,7 @@ export function menuPreviewPage() {
   const pages = pageDescriptions.map((description, index) => ({
     number: index + 1,
     description,
-    image: `/assets/menu-preview/page-${String(index + 1).padStart(2, '0')}.webp`
+    image: `/assets/menu-preview/page-${String(index + 1).padStart(2, '0')}`
   }));
   return `<div class="menu-preview">
     <header class="menu-preview-header">
@@ -30,8 +30,9 @@ export function menuPreviewPage() {
       <h1>Kesar Da Dhaba Menu</h1>
       <div class="menu-preview-actions">
         <a class="button button-yellow" href="${menuPdfHref}" download="Kesar-Da-Dhaba-Menu.pdf">Download PDF <span aria-hidden="true">↓</span></a>
+        <a href="${menuPdfHref}">Open PDF</a>
         <span>${menuPdfPageCount} pages · 7.2 MB</span>
-        <a class="menu-preview-original" href="${originalMenuPdfHref}">Original PDF (139 MB)</a>
+        <a href="${originalMenuPdfHref}">Original PDF (139 MB)</a>
       </div>
     </header>
     <nav class="menu-preview-index" aria-label="Menu pages">
@@ -41,9 +42,9 @@ export function menuPreviewPage() {
     ${pages.map(({ number, description, image }) => `<section class="menu-preview-page" id="page-${number}" aria-labelledby="page-title-${number}">
       <div class="menu-preview-page-header">
         <h2 id="page-title-${number}">Page ${number} of ${menuPdfPageCount}</h2>
-        <a href="${image}" aria-label="Open page ${number} at full size">Open full size</a>
+        <a href="${image}.webp" aria-label="Open page ${number} at full size">Open full size</a>
       </div>
-      <img src="${image}" alt="${description}" width="1600" height="2263" loading="${number === 1 ? 'eager' : 'lazy'}" decoding="async">
+      <img src="${image}.webp" srcset="${image}-800.webp 800w, ${image}.webp 1600w" sizes="(max-width: 812px) calc(100vw - 32px), 780px" alt="${description}" width="1600" height="2263" ${number === 1 ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">
     </section>`).join('')}
   </div>`;
 }
