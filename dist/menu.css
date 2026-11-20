@@ -7,11 +7,11 @@ html:has(.menu-page){scroll-padding-top:0}
 .menu-page .cinema-flow{height:var(--cinema-height)}
 .menu-page .cinema-flow .cinema-stage{position:relative;top:0}
 .menu-page .cinema-content{padding:35px 24px 60px}
-.menu-page .cinema-content h1{font-size:clamp(78px,8.8vw,142px);line-height:.98;text-transform:none;white-space:normal;letter-spacing:-.045em}
+.menu-page .cinema-content h1{font-size:clamp(78px,8.8vw,142px);line-height:.98;white-space:normal;letter-spacing:-.045em}
 .menu-page .cinema-content>p{margin-top:28px;font-size:12px;letter-spacing:.24em}
 .menu-page .cinema-shade{background:linear-gradient(90deg,#0005,#0002 50%,#0004)}
 .menu-heritage-seam{height:15px;background:var(--green) url('/assets/menu/heritage-border.webp') center/auto 32px;position:relative;z-index:1}
-body:has(.menu-page) .heritage-border{background-image:url('/assets/menu/heritage-border.webp')}
+
 body:has(.menu-page) .brand img{filter:url('/assets/monogram-ink.svg#ink');mix-blend-mode:normal}
 body:has(.menu-page) .mobile-actions>a:nth-child(2){background:var(--yellow);color:var(--green)}
 .menu-overline{display:block;font-size:10px;letter-spacing:.19em;line-height:1.5;color:#857039;margin-bottom:20px}
@@ -90,7 +90,7 @@ body:has(.menu-page) .mobile-actions>a:nth-child(2){background:var(--yellow);col
 .menu-dish-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:8%}
 .menu-dish{padding:15px 0;border-bottom:1px solid #e8e2d5;min-width:0;transition:background .2s;align-content:center}
 .menu-dish-title{display:flex;align-items:center;gap:12px;min-height:32px;flex-wrap:wrap}
-.menu-dish h3{font-family:var(--sans);font-size:18px;line-height:1.35;text-transform:uppercase;letter-spacing:0}
+.menu-dish h3{font-family:var(--sans);font-size:18px;line-height:1.35;letter-spacing:0}
 .menu-tag{background:var(--yellow);color:var(--green);font-family:var(--sans);font-size:10px;line-height:1.4;padding:4px 6px;border-radius:2px;display:inline-block;letter-spacing:.035em;white-space:nowrap}
 .menu-dish>p{font-size:13px;line-height:1.6;max-width:440px;margin-top:5px}
 .menu-look{margin-left:auto;flex-shrink:0;border:1px solid var(--menu-rule);background:transparent;width:36px;height:36px;border-radius:50%;font-size:19px;display:grid;place-items:center;transition:background .2s}

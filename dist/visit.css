@@ -52,7 +52,7 @@
 .arrival-detail{min-width:0;padding-inline:28px;border-left:1px solid #d7cfb5}
 .arrival-detail:first-child{padding-left:0;border-left:0}
 .arrival-detail:last-child{padding-right:0}
-.arrival-detail h3{display:flex;align-items:center;gap:9px;font:11px/1.4 var(--sans)!important;letter-spacing:.08em!important;text-transform:uppercase;margin:0 0 17px;color:#778368}
+.arrival-detail h3{display:flex;align-items:center;gap:9px;font:11px/1.4 var(--sans)!important;letter-spacing:.08em!important;margin:0 0 17px;color:#778368}
 .arrival-detail h3 svg{width:17px;height:17px;flex-shrink:0}
 .arrival-detail address{font-size:14px;line-height:1.65;font-style:normal}
 .arrival-detail-value{display:block;font:25px/1.25 Georgia,serif;letter-spacing:-.025em;margin:0;text-decoration:none}

@@ -9,8 +9,8 @@
 .cinema-ready.has-video-frame .cinema-video{opacity:1}
 .cinema-shade{pointer-events:none;background:linear-gradient(180deg,#0000000a,#00000038 52%,#0000000a)}
 .cinema-content{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 5vw 60px;text-align:center;color:#fff9ed;translate:0 var(--cinema-copy-y);opacity:var(--cinema-title-opacity,1);pointer-events:none;text-shadow:0 2px 22px #0009}
-.cinema-content h1{font-size:clamp(34px,5.1vw,104px);line-height:1.12;letter-spacing:-.035em;text-transform:uppercase;color:inherit;white-space:nowrap}
-.cinema-content>p{font-size:clamp(11px,1.1vw,16px);line-height:1.5;letter-spacing:.25em;text-transform:uppercase;color:inherit;margin-top:22px}
+.cinema-content h1{font-size:clamp(34px,5.1vw,104px);line-height:1.12;letter-spacing:-.035em;color:inherit;white-space:nowrap}
+.cinema-content>p{font-size:clamp(11px,1.1vw,16px);line-height:1.5;letter-spacing:.25em;color:inherit;margin-top:22px}
 .cinema-motion-active :is(.cinema-video,.cinema-poster>img){will-change:transform}
 .cinema-motion-active .cinema-content{will-change:translate,opacity}
 @media(max-width:800px){.cinema-hero{--cinema-header:82px}}
