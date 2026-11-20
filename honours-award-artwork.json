@@ -1,4 +1,22 @@
 {
+  "pride-of-punjab": {
+    "image": "award-punjab-tourism.webp",
+    "width": 720,
+    "height": 561,
+    "source": "Client-supplied Award Logos.png"
+  },
+  "best-restaurant-of-punjab": {
+    "image": "award-food-connoisseurs.webp",
+    "width": 720,
+    "height": 530,
+    "source": "Client-supplied Award Logos.png"
+  },
+  "ultimate-star": {
+    "image": "award-culinary-culture.webp",
+    "width": 640,
+    "height": 635,
+    "source": "Client-supplied Award Logos.png"
+  },
   "golden-star": {
     "image": "golden-star-complete.png",
     "width": 1254,

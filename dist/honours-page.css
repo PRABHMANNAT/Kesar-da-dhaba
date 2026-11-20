@@ -31,3 +31,46 @@
 /* Full restored award marks: preserve all edges and transparent backgrounds. */
 .hnr-award-grid img.hnr-award-restored{height:190px;max-width:340px;object-fit:contain;object-position:center}
 @media(max-width:760px){.hnr-award-grid img.hnr-award-restored{height:135px}}
+
+.hnr-award-grid .hnr-award-paired {
+  display: grid;
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: clamp(12px, 1.5vw, 22px);
+  min-height: 160px;
+  padding: clamp(14px, 2vw, 22px);
+  border: 1px solid #ded7c1;
+  border-radius: 16px;
+  background: #fffdf6;
+  text-align: left;
+}
+.hnr-award-grid .hnr-award-paired img { height: auto; max-width: 170px; margin: 0 auto; }
+.hnr-award-paired .hnr-award-copy { min-width: 0; }
+.hnr-award-grid .hnr-award-paired .hnr-kicker {
+  margin-bottom: 6px;
+  color: #4f604f;
+  font: 12px/1.4 var(--sans);
+}
+.hnr-award-grid .hnr-award-paired h3 { margin: 0; font-size: clamp(19px, 1.7vw, 24px); }
+.hnr-award-grid .hnr-award-paired p { margin-top: 8px; font-size: 13px; }
+
+.hnr-mention {
+  display: grid;
+  grid-template-columns: clamp(70px, 18vw, 150px) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(12px, 3vw, 30px);
+  width: min(100%, 780px);
+  margin: clamp(28px, 5vw, 54px) auto;
+  padding: clamp(16px, 3vw, 26px);
+  border: 1px solid #ded7c1;
+  border-radius: 16px;
+  background: #fffdf8;
+}
+.hnr-mention img { display: block; width: 100%; height: auto; }
+.hnr-mention h3 { margin: 0 0 7px; font: 400 clamp(22px, 3vw, 31px)/1.15 var(--serif); }
+.hnr-mention p { margin: 0; color: #4f604f; font-size: 15px; line-height: 1.5; }
+
+@media (max-width: 1100px) {
+  .hnr-award-grid .hnr-award-paired { grid-column: 1 / -1; width: 100%; max-width: 580px; justify-self: center; }
+  .hnr-mention { max-width: 580px; }
+}

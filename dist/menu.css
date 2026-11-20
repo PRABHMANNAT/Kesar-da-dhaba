@@ -118,19 +118,17 @@ body:has(.menu-page) .mobile-actions>a:nth-child(2){background:var(--yellow);col
 .menu-delivery-mithai.menu-in-view{animation-play-state:running}
 .menu-delivery-intro>p{font-size:14px;line-height:1.7;margin-top:19px;max-width:320px;color:#59665b}
 .menu-delivery-options{display:flex;flex-direction:column;gap:14px}
-.menu-delivery-card{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:84px;padding:14px 18px;border:1px solid #ddd4bc;border-radius:100px;background:#f7f2e7;color:var(--green);text-decoration:none;transition:transform .2s,box-shadow .2s}
-.menu-zomato{--app-color:#b71b3d;--app-edge:#9e1532}
-.menu-swiggy{--app-color:#b74009;--app-edge:#993203}
+.menu-delivery-card{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:84px;padding:14px 18px;border:1px solid var(--app-base);border-radius:100px;background:var(--app-base);color:#fff;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.menu-zomato{--app-base:#ff003c;--app-color:#df003c;--app-edge:#cc0035}
+.menu-swiggy{--app-base:#fe4f06;--app-color:#e64404;--app-edge:#d23c02}
 .menu-delivery-card:focus-visible{outline:2px solid var(--app-color);outline-offset:4px}
 .menu-platform-brand{display:flex;align-items:center;gap:14px}
 .menu-platform-icon{display:block;flex:none;width:48px;height:48px;border:2px solid #fff;border-radius:50%;box-shadow:0 0 0 1px #062c1a14}
-.menu-platform-name{font:600 clamp(22px,3vw,28px)/1.15 var(--sans)}
-.menu-platform-action{display:flex;align-items:center;gap:9px;flex:none;color:#59665b;font-size:14px}
-.menu-platform-bag{display:grid;place-items:center;width:40px;height:40px;border:1px solid transparent;border-radius:50%;background:var(--green);color:#efd78d}
+.menu-platform-name{font:700 clamp(22px,3vw,28px)/1.15 var(--sans)}
+.menu-platform-action{display:flex;align-items:center;gap:9px;flex:none;padding:2px 2px 2px 11px;border-radius:100px;background:var(--green);color:#fff;font-size:14px}
+.menu-platform-bag{display:grid;place-items:center;width:40px;height:40px;border:1px solid #fff5;border-radius:50%;background:#fff2}
 .menu-platform-bag svg{display:block;width:20px;height:20px}
-.menu-delivery-card:is(:hover,:focus-visible,:active,.is-pressed){border-color:var(--app-edge);background:linear-gradient(110deg,var(--app-color),var(--app-edge));color:#fff}
-.menu-delivery-card:is(:hover,:focus-visible,:active,.is-pressed) .menu-platform-action{color:#fff}
-.menu-delivery-card:is(:hover,:focus-visible,:active,.is-pressed) .menu-platform-bag{border-color:#fff5;background:#fff2;color:#fff}
+.menu-delivery-card:is(:hover,:focus-visible,:active,.is-pressed){border-color:var(--app-edge);background:linear-gradient(110deg,var(--app-color),var(--app-edge))}
 .menu-delivery-card:is(:active,.is-pressed){transform:scale(.99);box-shadow:0 2px 6px #062c1a1a}
 @media(hover:hover){.menu-delivery-card:hover:not(:active,.is-pressed){transform:translateY(-2px);box-shadow:0 8px 18px #062c1a24}}
 .menu-social{background:#f5f0e4;border-top:1px solid var(--menu-rule);padding:75px var(--gutter) 60px;overflow:hidden}
@@ -260,7 +258,7 @@ body:has(dialog[open]) .menu-back-top{display:none}
   .menu-delivery-card{min-height:72px;padding:12px;gap:10px}
   .menu-platform-brand{gap:11px}
   .menu-platform-icon{width:42px;height:42px}
-  .menu-platform-action{gap:7px;font-size:13px}
+  .menu-platform-action{gap:7px;padding-left:9px;font-size:13px}
   .menu-platform-bag{width:36px;height:36px}
   .menu-social{padding:48px 24px 38px}
   .menu-social-heading{display:block;margin-bottom:26px}

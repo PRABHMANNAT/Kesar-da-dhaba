@@ -2,6 +2,9 @@
   "source": "https://kesardadhaba.com/honors-recognitions/",
   "marqueeSource": "https://kesardadhaba.com/",
   "recognitions": [
+    {"id":"pride-of-punjab","issuer":"Punjab Tourism","kind":"honours","title":"Pride of Punjab","years":"2025","image":"award-punjab-tourism.webp","clientSupplied":true},
+    {"id":"best-restaurant-of-punjab","issuer":"Food Connoisseurs India Convention","kind":"honours","title":"Best Restaurant of Punjab","years":"2026","image":"award-food-connoisseurs.webp","clientSupplied":true},
+    {"id":"ultimate-star","issuer":"Culinary Culture Co.","kind":"honours","title":"3 Ultimate Star Restaurant","image":"award-culinary-culture.webp","clientSupplied":true},
     {"id":"zomato","issuer":"Zomato","kind":"honours","label":"Restaurant recognition","title":"Best North Indian Restaurant in Amritsar","years":"2023 · 2024 · 2025","image":"award-1.png"},
     {"id":"tasteatlas","issuer":"TasteAtlas","kind":"guides","label":"Food guide recognition","title":"Best North Indian Restaurant in Amritsar","years":"2024 · 2025","image":"award-612.png"},
     {"id":"redfoodie","issuer":"Redfoodie","kind":"honours","label":"Restaurant recognition","title":"Amritsar’s Best Restaurant","image":"award-933.png"},
@@ -9,6 +12,11 @@
     {"id":"merit","issuer":"Merit Awards & Market Research","kind":"honours","label":"Punjabi flavours","title":"Best Traditional Punjabi Flavour Restaurant in Amritsar","years":"2017","image":"award-936.png"},
     {"id":"hospitality","issuer":"IPSA","kind":"honours","label":"Hospitality & trust","title":"The Most Trusted Hospitality Brand for North Indian Cuisines","region":"Punjab","image":"award-937.png"}
   ],
+  "featuredMention": {
+    "issuer": "FICCI FLO",
+    "image": "mark-96.png",
+    "text": "Mentioned Kesar Da Dhaba as Best North Indian Restaurant in 2025."
+  },
   "ratings":[
     {"issuer":"Tripadvisor","rating":"4.2","image":"award-934.png","label":"User rating shown by Kesar Da Dhaba"},
     {"issuer":"Justdial","rating":"4.3","image":"award-939.png","label":"User’s Choice rating shown by Kesar Da Dhaba"}
