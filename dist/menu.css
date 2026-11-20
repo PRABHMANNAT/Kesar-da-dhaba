@@ -39,15 +39,12 @@ body:has(.menu-page) .mobile-actions>a:nth-child(2){background:var(--yellow);col
 .menu-welcome-film figcaption a{display:flex;align-items:center;justify-content:space-between;min-height:28px;gap:12px}
 .menu-welcome-film figcaption a:focus-visible{outline:2px solid var(--green);outline-offset:3px}
 .menu-welcome-art:has(.menu-welcome-film) .menu-float-thali{bottom:13%}
-.menu-welcome-art:has(.menu-welcome-film) .menu-art-seal{bottom:12%}
 .menu-thali-photo figcaption{font-family:var(--serif);font-size:21px;text-align:center;padding:15px 8px 10px}
 .menu-float{position:absolute;pointer-events:none;filter:drop-shadow(0 16px 12px #38271925);animation:menu-float 7s ease-in-out infinite;animation-play-state:paused;z-index:2}
 .menu-float img{width:100%;height:auto;object-fit:contain}
 .menu-float-thali{width:54%;left:-22%;bottom:4%;rotate:-12deg}
 .menu-float-firni{width:43%;right:-13%;top:-2%;rotate:12deg;animation-delay:-3.5s}
 .menu-in-view .menu-float{animation-play-state:running}
-.menu-art-seal{position:absolute;right:0;bottom:7%;width:84px;height:84px;border:1px solid var(--menu-gold);background:var(--green);color:var(--ivory);border-radius:50%;font-size:7px;letter-spacing:.11em;text-align:center;display:flex;flex-direction:column;justify-content:center;line-height:1.4;rotate:12deg;z-index:2}
-.menu-art-seal b{font-family:var(--serif);font-size:35px;font-weight:400;line-height:1.1}
 @keyframes menu-float{0%,100%{translate:0 0}50%{translate:0 -12px}}
 .menu-catalogue{padding:65px var(--gutter) 75px;max-width:1600px;margin:auto;border-top:1px solid var(--menu-rule);scroll-margin-top:calc(var(--menu-header) + 12px)}
 .menu-catalogue-intro{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:38px}
@@ -197,7 +194,7 @@ body:has(dialog[open]) .menu-back-top{display:none}
 .motion-off :is(.menu-float,.menu-chapter-cutout,.menu-seasonal-garnish,.menu-delivery-mithai){animation:none}
 @media(min-width:1600px){.menu-seasonal,.menu-social{padding-inline:max(var(--gutter),calc((100vw - 1424px)/2))}}
 @media(max-width:1100px){.menu-welcome{gap:5%;padding-block:75px}.menu-welcome-art{padding-inline:35px 20px}.menu-float-thali{left:-14%}.menu-float-firni{right:-6%}.menu-delivery{gap:5%}.menu-post{flex-basis:calc((100% - 24px)/2)}.menu-post-foot>span{font-size:15px}}
-@media(max-width:800px){.menu-page{--menu-header:82px}.menu-page .cinema-hero{--cinema-height:clamp(430px,62svh,610px);--cinema-travel:12svh}.menu-page .cinema-content h1{font-size:clamp(70px,13vw,105px)}.menu-welcome{gap:3%;padding-inline:28px}.menu-welcome h2{font-size:48px}.menu-welcome-art{padding-left:25px}.menu-thali-photo figcaption{font-size:15px}.menu-art-seal{width:65px;height:65px;font-size:6px}.menu-art-seal b{font-size:26px}.menu-delivery{grid-template-columns:1fr;gap:30px;padding-block:65px}.menu-delivery-options{max-width:650px}.menu-platform-meta{font-size:10px}.menu-platform-action{font-size:14px}.menu-seasonal{padding-block:60px}.menu-seasonal h2{font-size:48px}.menu-seasonal p{font-size:15px}.menu-seasonal-note{font-size:20px}}
+@media(max-width:800px){.menu-page{--menu-header:82px}.menu-page .cinema-hero{--cinema-height:clamp(430px,62svh,610px);--cinema-travel:12svh}.menu-page .cinema-content h1{font-size:clamp(70px,13vw,105px)}.menu-welcome{gap:3%;padding-inline:28px}.menu-welcome h2{font-size:48px}.menu-welcome-art{padding-left:25px}.menu-thali-photo figcaption{font-size:15px}.menu-delivery{grid-template-columns:1fr;gap:30px;padding-block:65px}.menu-delivery-options{max-width:650px}.menu-platform-meta{font-size:10px}.menu-platform-action{font-size:14px}.menu-seasonal{padding-block:60px}.menu-seasonal h2{font-size:48px}.menu-seasonal p{font-size:15px}.menu-seasonal-note{font-size:20px}}
 @media(max-width:600px){
   .menu-page .cinema-hero{--cinema-height:460px;--cinema-travel:10svh}
   .menu-page .cinema-content{padding:30px 22px 55px}
@@ -212,7 +209,6 @@ body:has(dialog[open]) .menu-back-top{display:none}
   .menu-thali-photo figcaption{font-size:19px;padding-block:13px 7px}
   .menu-float-thali{width:49%;left:-12%;bottom:4%}
   .menu-float-firni{width:42%;right:-13%;top:-2%}
-  .menu-art-seal{right:-3%;bottom:8%;width:68px;height:68px}
   .menu-catalogue{padding:42px 22px 45px;scroll-margin-top:90px}
   .menu-catalogue-intro{display:block;margin-bottom:25px}
   .menu-catalogue-intro h2{font-size:43px}
