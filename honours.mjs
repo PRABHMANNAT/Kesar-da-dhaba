@@ -22,9 +22,9 @@ const awardCard = award => {
       <div class="hnr-award-art">${logo}</div>
       <div class="hnr-award-copy">
         <h3>${esc(award.title)}</h3>
-        <p class="hnr-award-issuer">${esc(award.issuer)}</p>${award.years ? `
-        <time class="hnr-award-year" datetime="${esc(award.years)}">${esc(award.years)}</time>` : ''}
-      </div>
+        <p>${esc(award.issuer)}</p>
+      </div>${award.years ? `
+      <time class="hnr-award-year" datetime="${esc(award.years)}">${esc(award.years)}</time>` : ''}
     </article>`;
   }
   return `<article data-hnr-reveal>
@@ -48,11 +48,13 @@ export function honoursPage(){return `<div class="hnr-page">
 </section>
 <section class="hnr-awards hnr-wrap" id="recognition-archive" aria-labelledby="hnr-awards-title">
   <header class="hnr-heading"><div><h2 id="hnr-awards-title">Honours along <em>the way.</em></h2></div><p>For the food, the hospitality,<br>and the traditions we keep.</p></header>
-  <div class="hnr-award-grid hnr-new-awards">${recentAwards.map(awardCard).join('')}</div>
-  <section class="hnr-mention" aria-labelledby="hnr-mention-title">
-    <div class="hnr-mention-mark"><img src="${assets+data.featuredMention.image}" alt="" width="375" height="188" loading="lazy" decoding="async"></div>
-    <div><h3 id="hnr-mention-title">${esc(data.featuredMention.issuer)}</h3><p>${esc(data.featuredMention.text)}</p></div>
-  </section>
+  <div class="hnr-archive-list">
+    <div>${recentAwards.map(awardCard).join('')}</div>
+    <section class="hnr-mention" aria-labelledby="hnr-mention-title">
+      <div class="hnr-mention-mark"><img src="${assets+data.featuredMention.image}" alt="" width="375" height="188" loading="lazy" decoding="async"></div>
+      <div class="hnr-award-copy"><h3 id="hnr-mention-title">${esc(data.featuredMention.issuer)}</h3><p>${esc(data.featuredMention.text)}</p></div>
+    </section>
+  </div>
   <div class="hnr-award-grid">${earlierAwards.map(awardCard).join('')}</div>
   <p class="hnr-source">Earlier listings from <a href="${data.source}" target="_blank" rel="noopener noreferrer">our published recognition archive ↗</a></p>
 </section>
