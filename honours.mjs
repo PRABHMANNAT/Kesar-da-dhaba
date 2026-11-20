@@ -16,8 +16,19 @@ const awardCard = award => {
   const artwork = awardArtwork[award.id];
   const imageClass = artwork && !award.clientSupplied ? ' class="hnr-award-restored"' : '';
   const details = [award.years, award.region].filter(Boolean).join(' · ') || award.label;
-  return `<article${award.clientSupplied ? ' class="hnr-award-paired"' : ''} data-hnr-reveal>
-    <img${imageClass} src="${assets+(artwork?.image||award.image)}" alt="${esc(award.issuer)}" width="${artwork?.width||375}" height="${artwork?.height||175}" loading="lazy" decoding="async">
+  const logo = `<img${imageClass} src="${assets+(artwork?.image||award.image)}" alt="${award.clientSupplied ? '' : esc(award.issuer)}" width="${artwork?.width||375}" height="${artwork?.height||175}" loading="lazy" decoding="async">`;
+  if (award.clientSupplied) {
+    return `<article class="hnr-award-paired" data-hnr-reveal>
+      <div class="hnr-award-art">${logo}</div>
+      <div class="hnr-award-copy">
+        <h3>${esc(award.title)}</h3>
+        <p class="hnr-award-issuer">${esc(award.issuer)}</p>${award.years ? `
+        <time class="hnr-award-year" datetime="${esc(award.years)}">${esc(award.years)}</time>` : ''}
+      </div>
+    </article>`;
+  }
+  return `<article data-hnr-reveal>
+    ${logo}
     <div class="hnr-award-copy"><span class="hnr-kicker">${esc(award.issuer)}</span><h3>${esc(award.title)}</h3>${details ? `<p>${esc(details)}</p>` : ''}</div>
   </article>`;
 };
@@ -37,9 +48,9 @@ export function honoursPage(){return `<div class="hnr-page">
 </section>
 <section class="hnr-awards hnr-wrap" id="recognition-archive" aria-labelledby="hnr-awards-title">
   <header class="hnr-heading"><div><h2 id="hnr-awards-title">Honours along <em>the way.</em></h2></div><p>For the food, the hospitality,<br>and the traditions we keep.</p></header>
-  <div class="hnr-award-grid">${recentAwards.map(awardCard).join('')}</div>
+  <div class="hnr-award-grid hnr-new-awards">${recentAwards.map(awardCard).join('')}</div>
   <section class="hnr-mention" aria-labelledby="hnr-mention-title">
-    <img src="${assets+data.featuredMention.image}" alt="" width="375" height="188" loading="lazy" decoding="async">
+    <div class="hnr-mention-mark"><img src="${assets+data.featuredMention.image}" alt="" width="375" height="188" loading="lazy" decoding="async"></div>
     <div><h3 id="hnr-mention-title">${esc(data.featuredMention.issuer)}</h3><p>${esc(data.featuredMention.text)}</p></div>
   </section>
   <div class="hnr-award-grid">${earlierAwards.map(awardCard).join('')}</div>

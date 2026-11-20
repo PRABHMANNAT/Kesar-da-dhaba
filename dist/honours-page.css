@@ -32,45 +32,98 @@
 .hnr-award-grid img.hnr-award-restored{height:190px;max-width:340px;object-fit:contain;object-position:center}
 @media(max-width:760px){.hnr-award-grid img.hnr-award-restored{height:135px}}
 
-.hnr-award-grid .hnr-award-paired {
+.hnr-new-awards {
+  gap: clamp(14px, 2vw, 24px);
+}
+.hnr-new-awards .hnr-award-paired {
   display: grid;
-  grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
-  align-items: center;
-  gap: clamp(12px, 1.5vw, 22px);
-  min-height: 160px;
-  padding: clamp(14px, 2vw, 22px);
-  border: 1px solid #ded7c1;
-  border-radius: 16px;
-  background: #fffdf6;
+  grid-template-columns: minmax(86px, .39fr) minmax(0, .61fr);
+  min-height: 174px;
+  overflow: hidden;
+  border: 1px solid #dcd5bf;
+  border-radius: 18px;
+  background: #fffefa;
+  box-shadow: 0 6px 18px #062c1a0b;
   text-align: left;
 }
-.hnr-award-grid .hnr-award-paired img { height: auto; max-width: 170px; margin: 0 auto; }
-.hnr-award-paired .hnr-award-copy { min-width: 0; }
-.hnr-award-grid .hnr-award-paired .hnr-kicker {
-  margin-bottom: 6px;
-  color: #4f604f;
-  font: 12px/1.4 var(--sans);
+.hnr-award-art {
+  display: grid;
+  place-items: center;
+  padding: clamp(10px, 1.25vw, 18px);
+  border-inline-end: 1px solid #e9e1cb;
+  background: #f5f1e5;
 }
-.hnr-award-grid .hnr-award-paired h3 { margin: 0; font-size: clamp(19px, 1.7vw, 24px); }
-.hnr-award-grid .hnr-award-paired p { margin-top: 8px; font-size: 13px; }
+.hnr-award-grid .hnr-award-art img {
+  height: auto;
+  max-width: 155px;
+  max-height: 118px;
+  margin: 0;
+  object-fit: contain;
+}
+.hnr-award-paired .hnr-award-copy {
+  display: grid;
+  align-content: center;
+  gap: 8px;
+  min-width: 0;
+  padding: clamp(14px, 1.8vw, 24px);
+}
+.hnr-new-awards .hnr-award-paired h3 {
+  margin: 0;
+  color: var(--green);
+  font: 400 clamp(20px, 1.85vw, 27px)/1.13 Georgia, serif;
+  letter-spacing: -.025em;
+  text-wrap: balance;
+}
+.hnr-new-awards .hnr-award-issuer {
+  margin: 0;
+  color: #4f604f;
+  font: 14px/1.4 var(--sans);
+}
+.hnr-award-year {
+  justify-self: start;
+  padding: 3px 9px;
+  border-radius: 6px;
+  background: #f4ebd2;
+  color: #574419;
+  font: 12px/1.35 var(--sans);
+}
 
 .hnr-mention {
   display: grid;
-  grid-template-columns: clamp(70px, 18vw, 150px) minmax(0, 1fr);
+  grid-template-columns: clamp(74px, 12vw, 130px) minmax(0, 1fr);
   align-items: center;
-  gap: clamp(12px, 3vw, 30px);
-  width: min(100%, 780px);
-  margin: clamp(28px, 5vw, 54px) auto;
-  padding: clamp(16px, 3vw, 26px);
-  border: 1px solid #ded7c1;
-  border-radius: 16px;
-  background: #fffdf8;
+  gap: clamp(14px, 2.5vw, 28px);
+  width: 100%;
+  margin: clamp(16px, 2vw, 24px) auto clamp(36px, 5vw, 60px);
+  padding: clamp(14px, 2vw, 22px);
+  border: 1px solid #d9decf;
+  border-inline-start: 3px solid #a68b48;
+  border-radius: 14px;
+  background: #edf0e5;
 }
-.hnr-mention img { display: block; width: 100%; height: auto; }
-.hnr-mention h3 { margin: 0 0 7px; font: 400 clamp(22px, 3vw, 31px)/1.15 var(--serif); }
+.hnr-mention-mark {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  min-height: 68px;
+  padding: 7px;
+  border: 1px solid #e7e2d2;
+  border-radius: 10px;
+  background: #fffefa;
+}
+.hnr-mention-mark img { display: block; width: 100%; height: auto; scale: 1.45; }
+.hnr-mention h3 { margin: 0 0 5px; color: var(--green); font: 400 clamp(21px, 2vw, 27px)/1.15 Georgia, serif; }
 .hnr-mention p { margin: 0; color: #4f604f; font-size: 15px; line-height: 1.5; }
 
 @media (max-width: 1100px) {
-  .hnr-award-grid .hnr-award-paired { grid-column: 1 / -1; width: 100%; max-width: 580px; justify-self: center; }
-  .hnr-mention { max-width: 580px; }
+  .hnr-new-awards { grid-template-columns: minmax(0, 1fr); }
+  .hnr-new-awards, .hnr-mention { max-width: 620px; margin-inline: auto; }
+  .hnr-new-awards .hnr-award-paired {
+    grid-template-columns: clamp(86px, 21vw, 146px) minmax(0, 1fr);
+    min-height: 126px;
+  }
+}
+@media (max-width: 400px) {
+  .hnr-award-paired .hnr-award-copy { gap: 5px; }
+  .hnr-new-awards .hnr-award-issuer, .hnr-mention p { font-size: 13px; }
 }
