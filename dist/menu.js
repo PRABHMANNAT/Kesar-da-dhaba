@@ -254,7 +254,7 @@
   reduced.addEventListener('change', syncReels);
   new MutationObserver(syncReels).observe(document.body, {attributes:true,attributeFilter:['class']});
 
-  // Preserve the same app-colour feedback on touch and keyboard activation.
+  // Show press feedback for touch and keyboard activation.
   page.querySelectorAll('.menu-delivery-card').forEach(link => {
     let release;
     const resetPress = () => {clearTimeout(release);link.classList.remove('is-pressed');};

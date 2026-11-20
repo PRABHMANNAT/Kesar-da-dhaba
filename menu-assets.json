@@ -2,6 +2,20 @@
   "note": "Original Kesar imagery resized and WebP-compressed; user-supplied thali image matches Instagram post DeREeXblICm. No generated food photographs.",
   "assets": [
     {
+      "file": "/assets/menu/zomato-app.webp",
+      "source": "https://apps.apple.com/in/app/zomato-food-delivery-dining/id434613896",
+      "width": 100,
+      "height": 100,
+      "bytes": 7376
+    },
+    {
+      "file": "/assets/menu/swiggy-app.webp",
+      "source": "https://apps.apple.com/in/app/swiggy-food-instamart-dineout/id989540920",
+      "width": 100,
+      "height": 100,
+      "bytes": 5362
+    },
+    {
       "file": "/assets/menu/kesar-thali-portrait.webp",
       "source": "User-supplied: 833325213_1592987829539515_2482657567152847751_n.jpg",
       "width": 900,
