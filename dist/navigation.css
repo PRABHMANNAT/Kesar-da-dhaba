@@ -1,10 +1,10 @@
 /* One shared masthead for every Kesar page. */
 .site-header.site-header-navigation{height:88px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 clamp(24px,4vw,64px);position:sticky;top:0;z-index:80;background:#faf7ef;border-bottom:1px solid #dcd9c9;box-shadow:0 3px 18px #062c1a06}
 .site-header.site-header-navigation.is-scrolled{background:#faf7ef;box-shadow:0 5px 22px #062c1a10}
-.site-header-navigation .brand{display:flex;align-items:center;gap:11px;flex:0 0 auto;color:#062c1a;text-decoration:none}
-.site-header-navigation .brand>img{width:44px;height:44px;object-fit:contain;filter:url('/assets/monogram-ink.svg#ink');mix-blend-mode:normal}
-.site-header-navigation .brand>span{font-family:var(--serif);font-size:23px;line-height:1;letter-spacing:-.035em}
-.site-header-navigation .brand small{display:block;margin-top:8px;font:7px/1.3 var(--sans);letter-spacing:.15em}
+.site-header-navigation .brand{display:flex;align-items:center;gap:clamp(7px,.8vw,10px);flex:0 1 320px;min-width:0;min-height:44px;text-decoration:none}
+.site-header.site-header-navigation .brand>img{display:block;height:auto;filter:none;mix-blend-mode:normal}
+.site-header-navigation .brand>.brand-monogram{flex:none;width:clamp(27px,3vw,38px)}
+.site-header-navigation .brand>.brand-wordmark{flex:0 1 272px;min-width:0;width:100%}
 .site-header-navigation .desktop-nav{display:flex;align-items:center;gap:3px;margin-left:auto;padding:5px;border:1px solid #dfdece;border-radius:100px;background:#f0eee3;font:13px/1.3 var(--sans)}
 .site-header-navigation .desktop-nav>a{position:relative;display:flex;align-items:center;justify-content:center;gap:7px;min-height:42px;padding:10px 12px;border-radius:100px;white-space:nowrap;color:#254633;text-decoration:none;transition:background .2s,color .2s,box-shadow .2s,transform .2s}
 .site-header-navigation .desktop-nav>a::before,.site-header-navigation .desktop-nav>a::after{content:none}
@@ -31,24 +31,15 @@
 .site-header-navigation .mobile-nav[hidden]{display:none!important}
 @media(min-width:1024px) and (max-width:1200px){
  .site-header.site-header-navigation{height:84px;padding-inline:24px;gap:18px}
- .site-header-navigation .brand>span{font-size:21px}
- .site-header-navigation .brand>img{width:40px;height:40px}
- .site-header-navigation .brand small{font-size:6.5px;letter-spacing:.12em}
  .site-header-navigation .desktop-nav{gap:1px;font-size:12px;padding:4px}
  .site-header-navigation .desktop-nav>a{padding-inline:9px;min-height:40px}
  .site-header-navigation .desktop-nav>a.nav-menu-link{padding-inline:12px 9px;gap:6px}
 }
 @media(max-width:1023px){
  .site-header.site-header-navigation{height:82px;padding-inline:24px;gap:16px}
- .site-header-navigation .brand>span{font-size:22px}
- .site-header-navigation .brand>img{width:43px;height:43px}
 }
 @media(max-width:600px){
  .site-header.site-header-navigation{height:78px;padding-inline:20px;gap:12px}
- .site-header-navigation .brand{gap:9px}
- .site-header-navigation .brand>span{font-size:20px}
- .site-header-navigation .brand>img{width:38px;height:38px}
- .site-header-navigation .brand small{font-size:6px;letter-spacing:.1em}
 }
 
 @media(max-width:1023px){
@@ -78,7 +69,7 @@
   .mobile-nav-call:is(:hover,:focus-visible)>svg{transform:translate(2px,-2px)}
 }
 @media(max-height:700px) and (max-width:1023px){.mobile-nav-links>a{min-height:49px}.mobile-nav-links .nav-link-label{font-size:23px}.site-header-navigation .mobile-nav{max-height:calc(100dvh - 125px)}}
-@media(max-width:380px){.site-header-navigation{gap:10px}.site-header-navigation .menu-toggle{width:44px;min-height:44px;padding:4px;gap:0;justify-content:center}.menu-toggle [data-menu-label]{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.site-header-navigation .brand{gap:7px}.site-header-navigation .brand img{width:32px;height:32px}.site-header-navigation .brand>span{font-size:18px}.site-header-navigation .mobile-nav{left:9px;right:9px;padding-inline:12px}.mobile-nav-links>a{grid-template-columns:20px minmax(0,1fr) 32px;gap:7px}}
+@media(max-width:380px){.site-header.site-header-navigation{padding-inline:16px;gap:10px}.site-header-navigation .menu-toggle{width:44px;min-height:44px;padding:4px;gap:0;justify-content:center}.menu-toggle [data-menu-label]{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.site-header-navigation .mobile-nav{left:9px;right:9px;padding-inline:12px}.mobile-nav-links>a{grid-template-columns:20px minmax(0,1fr) 32px;gap:7px}}
 @media(prefers-reduced-motion:reduce){.site-header-navigation *,.site-header-navigation *::before,.site-header-navigation *::after{transition:none!important}}
 .motion-off .site-header-navigation *,.motion-off .site-header-navigation *::before,.motion-off .site-header-navigation *::after{transition:none!important}
 
