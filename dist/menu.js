@@ -254,20 +254,6 @@
   reduced.addEventListener('change', syncReels);
   new MutationObserver(syncReels).observe(document.body, {attributes:true,attributeFilter:['class']});
 
-  // Show press feedback for touch and keyboard activation.
-  page.querySelectorAll('.menu-delivery-card').forEach(link => {
-    let release;
-    const resetPress = () => {clearTimeout(release);link.classList.remove('is-pressed');};
-    const showPress = () => {clearTimeout(release);link.classList.add('is-pressed');};
-    const releasePress = () => {release = setTimeout(resetPress, 350);};
-    link.addEventListener('pointerdown', showPress, {passive:true});
-    link.addEventListener('pointerup', releasePress, {passive:true});
-    link.addEventListener('pointercancel', resetPress, {passive:true});
-    link.addEventListener('blur', resetPress);
-    link.addEventListener('click', () => {showPress();releasePress();});
-    document.addEventListener('visibilitychange', () => {if (document.hidden) resetPress();});
-  });
-
   const backTop = page.querySelector('.menu-back-top');
   let backTopFrame = 0;
   const updateBackTop = () => {
