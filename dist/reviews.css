@@ -18,7 +18,6 @@
 .review-screen{position:relative;flex:1;min-height:0;overflow:hidden;background:#062c1a;touch-action:pan-y}
 .review-screen video{width:100%;height:100%;display:block;object-fit:cover;pointer-events:none}
 .review-screen:after{content:'';position:absolute;inset:65% 0 0;background:linear-gradient(transparent,#031b13a6);pointer-events:none}
-.review-number{position:absolute;left:16px;top:16px;display:grid;place-items:center;width:34px;height:34px;border:1px solid #fff6;border-radius:50%;background:#062c1a88;color:#fffdf6;font-size:10px;backdrop-filter:blur(7px)}
 .review-video-actions{position:absolute;bottom:16px;left:14px;right:14px;display:flex;justify-content:space-between;align-items:center;gap:8px;z-index:2}
 .review-video-actions button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:42px;padding:9px 13px;border:1px solid #fff7;border-radius:30px;background:#062c1ae8;color:#fffdf6;cursor:pointer;font:11px var(--sans)}
 .review-video-actions .review-listen{background:#ffde59;border-color:#ffde59;color:#062c1a}

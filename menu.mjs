@@ -43,10 +43,10 @@ export function menuHead() {
   return `${heroHead()}<link rel="stylesheet" href="/menu.css"><script src="/menu.js" defer></script>`;
 }
 
-function category(c, index) {
+function category(c) {
   const art = categoryArt[c.id];
   return `<section class="menu-chapter" id="${c.id}" data-menu-chapter="${c.id}">
-    <div class="menu-chapter-heading"><div><span class="menu-overline">${String(index + 1).padStart(2, '0')} / FROM OUR KITCHEN</span><h2>${c.name}</h2><p>${c.intro}</p></div>${art ? img(...art, 'menu-chapter-art', 160, 160) : `<span class="menu-chapter-cutout" data-menu-float aria-hidden="true">${img(categoryCutouts[c.id] || 'seasonal-cutout.webp', '', '', 480, 320)}</span>`}</div>
+    <div class="menu-chapter-heading"><div><h2>${c.name}</h2><p>${c.intro}</p></div>${art ? img(...art, 'menu-chapter-art', 160, 160) : `<span class="menu-chapter-cutout" data-menu-float aria-hidden="true">${img(categoryCutouts[c.id] || 'seasonal-cutout.webp', '', '', 480, 320)}</span>`}</div>
     <div class="menu-dish-grid">${c.items.map(([name, description, badge]) => `<article class="menu-dish" data-dish-name="${name.toLowerCase()}" data-dish-badge="${badge?.toLowerCase() || ''}">
       <div class="menu-dish-title"><h3>${name}</h3>${badge ? `<span class="menu-tag">${badge.toUpperCase()}</span>` : ''}${dishImages[name] ? `<button class="menu-look" data-menu-look="${name}" aria-label="See ${name}" aria-haspopup="dialog">${arrow}</button>` : ''}</div>
       ${description ? `<p>${description}</p>` : ''}

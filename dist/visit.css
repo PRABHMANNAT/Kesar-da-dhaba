@@ -78,10 +78,10 @@
 .arrival-question[open]{background:#062c1a;color:#fff9e8;border-bottom-color:#062c1a;border-radius:12px}
 .arrival-question summary{display:flex;align-items:center;gap:25px;padding:26px 30px;cursor:pointer;list-style:none;font-size:22px;line-height:1.4}
 .arrival-question summary::-webkit-details-marker{display:none}
-.arrival-question-number{color:#9c8c4f;font:italic 23px Georgia,serif;flex-shrink:0;min-width:30px}
-.arrival-question summary>span:nth-child(2){flex:1}
+
+.arrival-question summary>span:first-child{flex:1}
 .arrival-question-toggle{width:37px;height:37px;flex-shrink:0;display:grid;place-items:center;border:1px solid #cbbd8e;border-radius:50%;font:26px/1 Georgia,serif;transition:transform .35s,background .35s}
-.arrival-question[open] .arrival-question-number{color:#e5cf82}
+
 .arrival-question[open] .arrival-question-toggle{transform:rotate(45deg);background:#ffde59;border-color:#ffde59;color:#062c1a}
 .arrival-answer{padding:0 95px 29px 85px}
 .arrival-answer p{max-width:850px;font-size:17px;line-height:1.8;color:#d9deca;margin:0}
@@ -130,7 +130,7 @@
  .arrival-detail h3{font-size:10px!important;margin-bottom:10px;gap:8px}.arrival-detail address{font-size:14px}.arrival-detail-value{font-size:24px}.arrival-detail-note{max-width:none;font-size:12px;margin-top:7px}
  .arrival-contact{padding-block:32px;gap:20px}.arrival-contact h2{font-size:32px}.arrival-contact-links{grid-template-columns:1fr;gap:10px}.arrival-contact-links a{padding:20px 46px 20px 20px}.arrival-contact-label{font-size:23px;margin-bottom:6px}.arrival-contact-value{font-size:12px}
  .arrival-faq{padding-block:10px 35px;scroll-margin-top:105px}.arrival-faq-heading{display:block;margin-bottom:21px}.arrival-faq-heading h2{font-size:36px}.arrival-faq-heading>span{display:block;font-size:9px;margin-top:10px}
- .arrival-question summary{padding:22px 14px;gap:12px;font-size:17px}.arrival-question-number{font-size:18px;min-width:22px}.arrival-question-toggle{width:30px;height:30px;font-size:22px}.arrival-answer{padding:0 22px 25px 48px}.arrival-answer p{font-size:15px;line-height:1.75}
+ .arrival-question summary{padding:22px 14px;gap:12px;font-size:17px}.arrival-question-toggle{width:30px;height:30px;font-size:22px}.arrival-answer{padding:0 22px 25px 48px}.arrival-answer p{font-size:15px;line-height:1.75}
  .arrival-last-word{display:block;padding-block:30px 45px}.arrival-last-word h2{font-size:36px;margin-bottom:24px}.arrival-top{width:50px;height:50px;right:18px;bottom:18px}
 }
 @media(prefers-reduced-motion:reduce){.arrival-reveal-ready{opacity:1;translate:none;transition:none}.arrival-location-dot:after{animation:none;opacity:.5}.arrival-page main *{scroll-behavior:auto!important;transition:none!important}.arrival-button:hover,.arrival-opening-photo:hover>img{transform:none}}

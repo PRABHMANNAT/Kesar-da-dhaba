@@ -48,15 +48,13 @@
   .site-header-navigation .mobile-nav{display:block;position:absolute;top:calc(100% + 10px);left:14px;right:14px;padding:18px 16px 14px;background:#fffdf8;border:1px solid #d8d2bf;border-radius:24px;box-shadow:0 22px 55px #062c1a24;max-height:calc(100dvh - 155px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#b8bba7 transparent}
   .mobile-nav-intro{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:0 10px 12px;font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:#6e7b65;border-bottom:1px solid var(--line)}
   .mobile-nav-links{display:grid;gap:3px;padding-top:8px}
-  .mobile-nav-links>a{position:relative;isolation:isolate;display:grid;grid-template-columns:24px minmax(0,1fr) 34px;align-items:center;gap:10px;min-height:58px;padding:6px 10px;border-radius:14px;color:var(--green);transition:background .2s,transform .2s}
-  .nav-link-index{font:9px/1 var(--sans);color:#7a856d;transition:color .2s}
+  .mobile-nav-links>a{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,1fr) 34px;align-items:center;gap:10px;min-height:58px;padding:6px 10px;border-radius:14px;color:var(--green);transition:background .2s,transform .2s}
   .mobile-nav-links .nav-link-label{font:26px/1.25 var(--serif);letter-spacing:-.025em;transition:transform .25s}
   .nav-link-arrow{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;border:1px solid #062c1a24;transition:background .2s,border-color .2s}
   .nav-link-arrow svg{width:17px;height:17px;transition:transform .25s}
   .mobile-nav-links>a[aria-current=page]{background:#ebefdf}
   .mobile-nav-links>a[aria-current=page] .nav-link-arrow{background:var(--green);border-color:var(--green);color:var(--yellow)}
   .mobile-nav-links>a:is(:hover,:focus-visible,.is-pressed){background:var(--yellow)}
-  .mobile-nav-links>a:is(:hover,:focus-visible,.is-pressed) .nav-link-index{color:var(--green)}
   .mobile-nav-links>a:is(:hover,:focus-visible,.is-pressed) .nav-link-label{transform:translateX(3px)}
   .mobile-nav-links>a:is(:hover,:focus-visible,.is-pressed) .nav-link-arrow{background:var(--green);border-color:var(--green);color:var(--yellow)}
   .mobile-nav-links>a:is(:hover,:focus-visible,.is-pressed) .nav-link-arrow svg{transform:translate(1px,-1px)}
@@ -69,7 +67,7 @@
   .mobile-nav-call:is(:hover,:focus-visible)>svg{transform:translate(2px,-2px)}
 }
 @media(max-height:700px) and (max-width:1023px){.mobile-nav-links>a{min-height:49px}.mobile-nav-links .nav-link-label{font-size:23px}.site-header-navigation .mobile-nav{max-height:calc(100dvh - 125px)}}
-@media(max-width:380px){.site-header.site-header-navigation{padding-inline:16px;gap:10px}.site-header-navigation .menu-toggle{width:44px;min-height:44px;padding:4px;gap:0;justify-content:center}.menu-toggle [data-menu-label]{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.site-header-navigation .mobile-nav{left:9px;right:9px;padding-inline:12px}.mobile-nav-links>a{grid-template-columns:20px minmax(0,1fr) 32px;gap:7px}}
+@media(max-width:380px){.site-header.site-header-navigation{padding-inline:16px;gap:10px}.site-header-navigation .menu-toggle{width:44px;min-height:44px;padding:4px;gap:0;justify-content:center}.menu-toggle [data-menu-label]{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.site-header-navigation .mobile-nav{left:9px;right:9px;padding-inline:12px}.mobile-nav-links>a{grid-template-columns:minmax(0,1fr) 32px;gap:7px}}
 @media(prefers-reduced-motion:reduce){.site-header-navigation *,.site-header-navigation *::before,.site-header-navigation *::after{transition:none!important}}
 .motion-off .site-header-navigation *,.motion-off .site-header-navigation *::before,.motion-off .site-header-navigation *::after{transition:none!important}
 
@@ -77,7 +75,6 @@
 @media(max-width:1023px){
  .site-header-navigation .mobile-nav-links>a.nav-menu-link{background:#ffde59}
  .site-header-navigation .mobile-nav-links>a[aria-current=page]{background:#062c1a;color:#fff8e5}
- .site-header-navigation .mobile-nav-links>a[aria-current=page] .nav-link-index{color:#d4d7b5}
  .site-header-navigation .mobile-nav-links>a[aria-current=page] .nav-link-arrow{background:#ffde59;border-color:#ffde59;color:#062c1a}
  .site-header-navigation .mobile-nav-links>a:is(:hover,:focus-visible){background:#ffde59;color:#062c1a}
 }
