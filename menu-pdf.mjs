@@ -13,7 +13,8 @@ const pageDescriptions = [
 
 export const menuPreviewSlug = 'our-menu/menu-preview';
 export const menuPreviewHref = `/${menuPreviewSlug}/`;
-export const menuPdfHref = 'https://github.com/PRABHMANNAT/Kesar-da-dhaba/releases/download/menu-pdf-60f35171/Menu.pdf';
+export const menuPdfHref = '/assets/kesar-da-dhaba-menu-optimized.pdf';
+const originalMenuPdfHref = 'https://github.com/PRABHMANNAT/Kesar-da-dhaba/releases/download/menu-pdf-60f35171/Menu.pdf';
 export const menuPdfPageCount = pageDescriptions.length;
 export const menuPreviewHead = '<link rel="stylesheet" href="/menu-preview.css">';
 
@@ -28,8 +29,9 @@ export function menuPreviewPage() {
       <a class="menu-preview-back" href="/our-menu/">← Back to Our Menu</a>
       <h1>Kesar Da Dhaba Menu</h1>
       <div class="menu-preview-actions">
-        <a class="button button-yellow" href="${menuPdfHref}">Download PDF <span aria-hidden="true">↓</span></a>
-        <span>Original PDF · ${menuPdfPageCount} pages · 139 MB</span>
+        <a class="button button-yellow" href="${menuPdfHref}" download="Kesar-Da-Dhaba-Menu.pdf">Download PDF <span aria-hidden="true">↓</span></a>
+        <span>${menuPdfPageCount} pages · 7.2 MB</span>
+        <a class="menu-preview-original" href="${originalMenuPdfHref}">Original PDF (139 MB)</a>
       </div>
     </header>
     <nav class="menu-preview-index" aria-label="Menu pages">

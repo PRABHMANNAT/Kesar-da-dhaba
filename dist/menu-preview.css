@@ -11,7 +11,7 @@
   letter-spacing: -.04em;
 }
 
-.menu-preview :is(.menu-preview-back, .menu-preview-page-header a) {
+.menu-preview :is(.menu-preview-back, .menu-preview-original, .menu-preview-page-header a) {
   color: var(--green);
   text-decoration: underline;
   text-underline-offset: 4px;
